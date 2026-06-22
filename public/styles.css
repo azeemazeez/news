@@ -1,0 +1,208 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Oatmeal palette (Shiori) */
+  --oatmeal-50:  oklch(98.5% .008 75);
+  --oatmeal-100: oklch(96%   .016 72);
+  --oatmeal-200: oklch(92%   .018 68);
+  --oatmeal-300: oklch(87%   .025 63);
+  --oatmeal-400: oklch(71%   .038 58);
+  --oatmeal-500: oklch(55%   .042 55);
+  --oatmeal-600: oklch(44%   .038 52);
+  --oatmeal-950: oklch(14.5% .012 44);
+
+  --bg:        var(--oatmeal-50);
+  --bg-raised: var(--oatmeal-100);
+  --border:    var(--oatmeal-200);
+  --text:      var(--oatmeal-950);
+  --secondary: var(--oatmeal-600);
+  --tertiary:  var(--oatmeal-500);
+  --accent:    #ff8c42;
+  --link:      #2c6fad;
+
+  --max-width: 660px;
+}
+
+html {
+  font-size: 20px;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+  line-height: 1.6;
+  padding: 0 1.5rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Masthead */
+.masthead {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1.75rem 0 1.1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.masthead-inner {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.site-name {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--text);
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.tagline {
+  font-size: 0.7rem;
+  color: var(--tertiary);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/* Date bar */
+.date-bar {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0.55rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 0.25rem;
+}
+
+.date-display {
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--secondary);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.date-nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.date-nav button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--secondary);
+  font-size: 0.72rem;
+  font-family: inherit;
+  font-weight: 500;
+  padding: 0;
+  letter-spacing: 0.01em;
+  transition: color 0.12s;
+}
+
+.date-nav button:hover:not(:disabled) {
+  color: var(--accent);
+}
+
+.date-nav button:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+/* Feed */
+.feed {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+/* Story */
+.story {
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.story:last-child {
+  border-bottom: none;
+}
+
+.story-line {
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: var(--text);
+  font-weight: 400;
+}
+
+.story-line strong {
+  font-weight: 600;
+}
+
+.story-link {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-color: var(--link);
+  transition: color 0.12s, text-decoration-color 0.12s;
+}
+
+.story-link:hover {
+  color: var(--accent);
+  text-decoration-color: var(--accent);
+}
+
+/* States */
+.state-message {
+  max-width: var(--max-width);
+  margin: 4rem auto;
+  text-align: center;
+  color: var(--secondary);
+  font-size: 0.875rem;
+  line-height: 1.7;
+}
+
+.state-message h2 {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+
+.state-message code {
+  background: var(--bg-raised);
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.8125rem;
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  border: 1px solid var(--border);
+}
+
+/* Footer */
+.footer {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1.25rem 0 2.5rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.68rem;
+  font-weight: 500;
+  color: var(--tertiary);
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 480px) {
+  html { font-size: 15px; }
+  .masthead { padding: 1.25rem 0 0.9rem; }
+}

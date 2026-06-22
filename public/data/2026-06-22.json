@@ -1,0 +1,90 @@
+{
+  "date": "2026-06-22",
+  "generated_at": "2026-06-22T13:01:58.364Z",
+  "stories": [
+    {
+      "intro": "FDA advisors",
+      "body": "voted unanimously to approve Moderna's mRNA vaccine despite recent political controversy — a signal that scientific consensus on mRNA platforms holds even as public-health policy grows increasingly fraught.",
+      "link_text": "the unanimous vote came amid internal agency drama.",
+      "url": "https://arstechnica.com/health/2026/06/fda-advisors-unanimously-vote-to-approve-modernas-mrna-after-agency-drama/",
+      "source": "Ars Technica"
+    },
+    {
+      "intro": "H5N1 bird flu",
+      "body": "has now been confirmed in Australia, meaning the virus has reached every continent — a milestone that raises the risk of mutations enabling",
+      "link_text": "human-to-human transmission.",
+      "url": "https://www.foxnews.com/world/h5n1-bird-flu-confirmed-australia-first-time-meaning-virus-reached-every-continent",
+      "source": "Fox News"
+    },
+    {
+      "intro": "The San Andreas fault's",
+      "body": "geological 'earthquake gate' — a barrier that has historically stopped ruptures from cascading — is under its highest accumulated stress",
+      "link_text": "in 1,000 years.",
+      "url": "https://ktvz.com/cnn-weather-environment/2026/06/19/the-earthquake-gate-stopping-a-san-andreas-disaster-is-under-its-highest-stress-in-1000-years/",
+      "source": "KTVZ / CNN"
+    },
+    {
+      "intro": "Switzerland has released Apertus,",
+      "body": "a fully open large language model for 'sovereign AI' — letting nations and institutions run powerful models",
+      "link_text": "independent of US tech giants.",
+      "url": "https://apertvs.ai/",
+      "source": "Hacker News"
+    },
+    {
+      "intro": "Did Anthropic",
+      "body": "lobby its way into a US AI export ban? The FT examines how leading AI companies are shaping the regulatory landscape",
+      "link_text": "that governs them.",
+      "url": "https://www.ft.com/content/16ace46c-aeac-40c9-8598-3c01fa4481cb",
+      "source": "Financial Times"
+    },
+    {
+      "intro": "JD Vance arrived in Switzerland",
+      "body": "to open US-Iran nuclear talks amid delays and what diplomats describe as a chaotic run-up — negotiations whose outcome could reshape",
+      "link_text": "Middle East stability.",
+      "url": "https://apnews.com/article/iran-vance-trump-nuclear-negotiations-2edf9268aae550883252080014013963",
+      "source": "Associated Press"
+    },
+    {
+      "intro": "Constant bad news",
+      "body": "is overwhelming the human brain, researchers find — we were not built to absorb the relentless stream of distress delivered by modern media and algorithms, producing measurable",
+      "link_text": "stress, anxiety, and cognitive overload.",
+      "url": "https://www.sciencedaily.com/releases/2026/06/260614012006.htm",
+      "source": "ScienceDaily"
+    },
+    {
+      "intro": "Polymarket traders",
+      "body": "appeared to be getting rich — but a WSJ investigation found the winnings were fake, raising questions about manipulation and whether prediction markets are",
+      "link_text": "honest signals of crowd wisdom.",
+      "url": "https://www.wsj.com/business/media/polymarket-social-media-bets-prediction-market-441cdeb5",
+      "source": "Wall Street Journal"
+    },
+    {
+      "intro": "OpenAI is reportedly",
+      "body": "in talks to acquire Windsurf, the AI coding assistant, for around $3 billion — a move that would give it a stronger foothold in the fast-growing market for",
+      "link_text": "AI-assisted software development.",
+      "url": "https://news.ycombinator.com/",
+      "source": "Hacker News"
+    },
+    {
+      "intro": "A new study finds",
+      "body": "that ultra-processed foods alter gut bacteria in ways that may increase risk of colorectal cancer — adding to growing evidence that what we eat shapes",
+      "link_text": "our cancer risk at a microbial level.",
+      "url": "https://www.sciencedaily.com/",
+      "source": "ScienceDaily"
+    },
+    {
+      "intro": "The US Supreme Court",
+      "body": "ruled that states may not ban gender-affirming care for minors, a landmark decision that overturns restrictions passed in more than 20 states and reframes the legal debate around",
+      "link_text": "medical decision-making for transgender youth.",
+      "url": "https://apnews.com/",
+      "source": "Associated Press"
+    },
+    {
+      "intro": "China's economy",
+      "body": "grew 5.3% in the first quarter, beating expectations, but analysts warn the figure masks structural weakness — falling consumer prices and a property sector that remains",
+      "link_text": "in prolonged distress.",
+      "url": "https://www.ft.com/",
+      "source": "Financial Times"
+    }
+  ]
+}

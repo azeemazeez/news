@@ -1,0 +1,40 @@
+name: Daily News Fetch
+
+on:
+  schedule:
+    - cron: '0 7 * * *'  # 7 AM UTC daily
+  workflow_dispatch:       # Manual trigger from GitHub UI
+
+permissions:
+  contents: write
+
+jobs:
+  fetch-news:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Fetch and curate news
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
+        run: node scripts/fetch-news.js
+
+      - name: Commit new data files
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add public/data/
+          git diff --quiet --exit-code --cached || git commit -m "Daily news: $(date -u +%Y-%m-%d)"
+          git push

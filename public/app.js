@@ -1,0 +1,116 @@
+const SITE_NAME = 'The Brief';
+
+let manifest = { dates: [] };
+let currentDate = null;
+
+function formatDate(iso) {
+  const [year, month, day] = iso.split('-').map(Number);
+  const d = new Date(year, month - 1, day);
+  return d.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+}
+
+function renderStory(story) {
+  return `
+    <article class="story">
+      <p class="story-line"><strong>${story.intro}</strong> ${story.body} <a class="story-link" href="${story.url}" target="_blank" rel="noopener noreferrer">${story.link_text}</a></p>
+    </article>
+  `;
+}
+
+function renderFeed(data) {
+  if (!data || !data.stories || data.stories.length === 0) {
+    return `<div class="state-message"><h2>No stories available for this date.</h2></div>`;
+  }
+  return data.stories.map(renderStory).join('');
+}
+
+function updateNav() {
+  const idx = manifest.dates.indexOf(currentDate);
+  const prevBtn = document.getElementById('prev-btn');
+  const nextBtn = document.getElementById('next-btn');
+  const prevDate = manifest.dates[idx + 1]; // older
+  const nextDate = manifest.dates[idx - 1]; // newer
+
+  prevBtn.textContent = prevDate ? `← ${prevDate}` : '←';
+  prevBtn.disabled = !prevDate;
+  nextBtn.textContent = nextDate ? `${nextDate} →` : '→';
+  nextBtn.disabled = !nextDate;
+
+  document.getElementById('date-display').textContent = formatDate(currentDate);
+}
+
+async function loadDay(date) {
+  currentDate = date;
+  document.getElementById('feed').innerHTML = '<div class="state-message"><p>Loading...</p></div>';
+  updateNav();
+
+  try {
+    const res = await fetch(`/data/${date}.json?t=${Date.now()}`);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const data = await res.json();
+    document.getElementById('feed').innerHTML = renderFeed(data);
+  } catch (e) {
+    document.getElementById('feed').innerHTML = `
+      <div class="state-message">
+        <h2>Could not load ${date}</h2>
+        <p>The data file may not exist yet. Run <code>npm run fetch</code> to generate it.</p>
+      </div>`;
+  }
+}
+
+async function init() {
+  // Render shell immediately
+  document.getElementById('site-name').textContent = SITE_NAME;
+
+  try {
+    const res = await fetch('/data/manifest.json?t=' + Date.now());
+    if (res.ok) manifest = await res.json();
+  } catch (e) {
+    // no manifest yet
+  }
+
+  if (manifest.dates.length === 0) {
+    document.getElementById('date-display').textContent = 'No issues yet';
+    document.getElementById('prev-btn').disabled = true;
+    document.getElementById('next-btn').disabled = true;
+    document.getElementById('feed').innerHTML = `
+      <div class="state-message">
+        <h2>No news yet</h2>
+        <p>Run <code>npm run fetch</code> to pull today's news, or wait for the daily cron to run.</p>
+      </div>`;
+    return;
+  }
+
+  // Check if URL has a date param
+  const params = new URLSearchParams(window.location.search);
+  const reqDate = params.get('d');
+  const startDate = (reqDate && manifest.dates.includes(reqDate)) ? reqDate : manifest.dates[0];
+
+  await loadDay(startDate);
+}
+
+function navigate(direction) {
+  const idx = manifest.dates.indexOf(currentDate);
+  const next = direction === 'prev' ? manifest.dates[idx + 1] : manifest.dates[idx - 1];
+  if (!next) return;
+  history.pushState({}, '', `?d=${next}`);
+  loadDay(next);
+}
+
+window.addEventListener('popstate', () => {
+  const params = new URLSearchParams(window.location.search);
+  const d = params.get('d');
+  if (d && manifest.dates.includes(d)) loadDay(d);
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('prev-btn').addEventListener('click', () => navigate('prev'));
+  document.getElementById('next-btn').addEventListener('click', () => navigate('next'));
+  document.getElementById('site-name').addEventListener('click', () => {
+    if (manifest.dates.length > 0) {
+      history.pushState({}, '', '/');
+      loadDay(manifest.dates[0]);
+    }
+  });
+  init();
+});
