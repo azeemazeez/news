@@ -90,7 +90,7 @@
           msg.classList.add('subscribe-msg--success');
           e.target.reset();
         } else {
-          throw new Error(data.error || 'Something went wrong');
+          throw new Error(data.error || `Error ${res.status} — please try again`);
         }
       } catch (err) {
         msg.textContent = err.message;
