@@ -66,7 +66,7 @@ function buildHtml(stories, date) {
               <p style="margin:0;font-size:11px;color:#c0b8b0;font-family:Inter,-apple-system,sans-serif;text-transform:uppercase;letter-spacing:0.04em;">
                 <a href="${SITE_URL}" style="color:#c0b8b0;text-decoration:none;">thenuus.com</a>
                 &nbsp;&middot;&nbsp;
-                <a href="{{{RESEND_UNSUBSCRIBE_URL}}}" style="color:#c0b8b0;text-decoration:none;">Unsubscribe</a>
+                <a href="${SITE_URL}/api/unsubscribe?email={{EMAIL}}" style="color:#c0b8b0;text-decoration:none;">Unsubscribe</a>
               </p>
             </td>
           </tr>
@@ -92,45 +92,51 @@ async function main() {
   const dateLabel = formatDate(date);
   const html = buildHtml(stories, date);
 
-  // Create broadcast
-  const createRes = await fetch('https://api.resend.com/broadcasts', {
-    method: 'POST',
-    headers: {
-      Authorization: `Bearer ${RESEND_API_KEY}`,
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-      audience_id: RESEND_AUDIENCE_ID,
-      from: FROM,
-      subject: `The Nuus — ${dateLabel}`,
-      html,
-    }),
-  });
+  // Fetch subscribers from audience
+  const contactsRes = await fetch(
+    `https://api.resend.com/audiences/${RESEND_AUDIENCE_ID}/contacts`,
+    { headers: { Authorization: `Bearer ${RESEND_API_KEY}` } }
+  );
 
-  if (!createRes.ok) {
-    const err = await createRes.json();
-    throw new Error(`Failed to create broadcast: ${JSON.stringify(err)}`);
+  if (!contactsRes.ok) {
+    const err = await contactsRes.json();
+    throw new Error(`Failed to fetch contacts: ${JSON.stringify(err)}`);
   }
 
-  const { id } = await createRes.json();
-  console.log(`Broadcast created: ${id}`);
+  const { data: contacts } = await contactsRes.json();
+  const active = contacts.filter(c => !c.unsubscribed);
+  console.log(`Sending to ${active.length} subscribers...`);
 
-  // Send immediately
-  const sendRes = await fetch(`https://api.resend.com/broadcasts/${id}/send`, {
-    method: 'POST',
-    headers: {
-      Authorization: `Bearer ${RESEND_API_KEY}`,
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({}),
-  });
+  // Send individual transactional emails
+  let sent = 0;
+  for (const contact of active) {
+    const res = await fetch('https://api.resend.com/emails', {
+      method: 'POST',
+      headers: {
+        Authorization: `Bearer ${RESEND_API_KEY}`,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        from: FROM,
+        to: contact.email,
+        subject: `The Nuus — ${dateLabel}`,
+        html: html.replace('{{EMAIL}}', encodeURIComponent(contact.email)),
+        headers: {
+          'List-Unsubscribe': `<https://thenuus.com/unsubscribe?email=${encodeURIComponent(contact.email)}>`,
+          'List-Unsubscribe-Post': 'List-Unsubscribe=One-Click',
+        },
+      }),
+    });
 
-  if (!sendRes.ok) {
-    const err = await sendRes.json();
-    throw new Error(`Failed to send broadcast: ${JSON.stringify(err)}`);
+    if (res.ok) {
+      sent++;
+    } else {
+      const err = await res.json();
+      console.error(`Failed to send to ${contact.email}:`, err.message);
+    }
   }
 
-  console.log(`Digest sent for ${date}`);
+  console.log(`Digest sent to ${sent}/${active.length} subscribers for ${date}`);
 }
 
 main().catch(err => {
