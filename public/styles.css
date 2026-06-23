@@ -194,6 +194,59 @@ a.site-name {
   font-size: 0.9375rem;
 }
 
+.cal-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  margin-bottom: 0.25rem;
+}
+
+.cal-th {
+  font-size: 0.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--tertiary);
+  text-align: center;
+  padding: 0 0 0.4rem;
+}
+
+.cal-empty {
+  padding: 0.2rem 0;
+}
+
+.cal-day {
+  text-align: center;
+  padding: 0.2rem 0;
+}
+
+.cal-dim {
+  font-size: 0.8125rem;
+  color: var(--oatmeal-300);
+}
+
+.cal-active {
+  font-size: 0.8125rem;
+}
+
+.cal-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  color: var(--link);
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.12s, color 0.12s;
+}
+
+.cal-link:hover {
+  background: var(--link);
+  color: #fff;
+}
+
 .about-content .story {
   border-bottom: none;
   padding: 0.4rem 0;

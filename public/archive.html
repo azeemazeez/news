@@ -44,22 +44,40 @@
   </footer>
 
   <script>
-    function monthYear(iso) {
-      const [year, month] = iso.split('-').map(Number);
-      return new Date(year, month - 1, 1).toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
-    }
+    const DAY_NAMES = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
-    function ordinal(n) {
-      const v = n % 100;
-      if (v >= 11 && v <= 13) return n + 'th';
-      return n + (['th','st','nd','rd'][n % 10] || 'th');
-    }
+    function renderCalendar(year, mon, dateSet) {
+      const label = new Date(year, mon - 1, 1).toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+      const firstDay = new Date(year, mon - 1, 1).getDay();
+      const daysInMonth = new Date(year, mon, 0).getDate();
 
-    function dayLabel(iso) {
-      const [year, month, day] = iso.split('-').map(Number);
-      const d = new Date(year, month - 1, day);
-      const mon = d.toLocaleDateString('en-US', { month: 'short' });
-      return `${ordinal(day)} ${mon}, ${year}`;
+      const cells = [];
+      for (let i = 0; i < firstDay; i++) cells.push(null);
+      for (let d = 1; d <= daysInMonth; d++) {
+        const iso = `${year}-${String(mon).padStart(2, '0')}-${String(d).padStart(2, '0')}`;
+        cells.push({ d, iso, has: dateSet.has(iso) });
+      }
+      while (cells.length % 7 !== 0) cells.push(null);
+
+      const headers = DAY_NAMES.map(n => `<th class="cal-th">${n}</th>`).join('');
+      let rows = '';
+      for (let i = 0; i < cells.length; i += 7) {
+        const tds = cells.slice(i, i + 7).map(c => {
+          if (!c) return '<td class="cal-empty"></td>';
+          if (c.has) return `<td class="cal-day cal-active"><a class="cal-link" href="/?d=${c.iso}">${c.d}</a></td>`;
+          return `<td class="cal-day cal-dim">${c.d}</td>`;
+        }).join('');
+        rows += `<tr>${tds}</tr>`;
+      }
+
+      return `
+        <div class="archive-group">
+          <p class="archive-month">${label}</p>
+          <table class="cal-table">
+            <thead><tr>${headers}</tr></thead>
+            <tbody>${rows}</tbody>
+          </table>
+        </div>`;
     }
 
     async function init() {
@@ -73,26 +91,20 @@
           return;
         }
 
-        // Group by month/year
+        const dateSet = new Set(manifest.dates);
+
+        // Group by year-month
         const groups = {};
         for (const date of manifest.dates) {
-          const key = monthYear(date);
-          if (!groups[key]) groups[key] = [];
-          groups[key].push(date);
+          const [year, mon] = date.split('-').map(Number);
+          const key = `${year}-${String(mon).padStart(2, '0')}`;
+          if (!groups[key]) groups[key] = { year, mon };
         }
 
-        const html = Object.entries(groups).map(([month, dates]) => `
-          <div class="archive-group">
-            <p class="archive-month">${month}</p>
-            ${dates.map(date => `
-              <p class="archive-item">
-                <a class="story-link" href="/?d=${date}">${dayLabel(date)}</a>
-              </p>
-            `).join('')}
-          </div>
-        `).join('');
-
-        feed.innerHTML = html;
+        feed.innerHTML = Object.keys(groups)
+          .sort((a, b) => b.localeCompare(a))
+          .map(k => renderCalendar(groups[k].year, groups[k].mon, dateSet))
+          .join('');
       } catch (e) {
         feed.innerHTML = '<div class="state-message"><p>Could not load archive.</p></div>';
       }
