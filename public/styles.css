@@ -171,6 +171,10 @@ a.site-name {
   border-bottom: none;
 }
 
+.about-content .story {
+  border-bottom: none;
+}
+
 .story-line {
   font-size: 0.9375rem;
   line-height: 1.7;
