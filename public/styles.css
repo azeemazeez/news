@@ -230,9 +230,8 @@ a.site-name {
   letter-spacing: 0.02em;
   text-transform: uppercase;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 1.25rem;
 }
 
 .footer p {
