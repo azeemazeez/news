@@ -37,15 +37,6 @@ jobs:
           RESEND_AUDIENCE_ID: ${{ secrets.RESEND_AUDIENCE_ID }}
         run: node scripts/send-digest.js
 
-      - name: Send run notification
-        env:
-          RESEND_SUBSCRIBE_KEY: ${{ secrets.RESEND_SUBSCRIBE_KEY }}
-        run: |
-          curl -s -X POST https://api.resend.com/emails \
-            -H "Authorization: Bearer $RESEND_SUBSCRIBE_KEY" \
-            -H "Content-Type: application/json" \
-            -d "{\"from\":\"The Nuus <hi@thenuus.com>\",\"to\":\"hi@azeem.me\",\"subject\":\"The Nuus ran successfully — $(date -u +%Y-%m-%d)\",\"text\":\"Today's digest has been fetched and sent.\"}"
-
       - name: Commit new data files
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"

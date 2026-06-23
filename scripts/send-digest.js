@@ -142,6 +142,21 @@ async function main() {
   }
 
   console.log(`Digest sent to ${sent}/${active.length} subscribers for ${date}`);
+
+  // Notify owner
+  await fetch('https://api.resend.com/emails', {
+    method: 'POST',
+    headers: {
+      Authorization: `Bearer ${RESEND_API_KEY}`,
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      from: FROM,
+      to: 'hi@azeem.me',
+      subject: `The Nuus ran — ${dateLabel}`,
+      text: `Today's digest was sent successfully.\n\nSent: ${sent}/${active.length} subscribers`,
+    }),
+  });
 }
 
 main().catch(err => {
