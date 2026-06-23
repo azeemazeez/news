@@ -148,7 +148,7 @@ a.site-name {
 }
 
 .date-nav button:disabled {
-  visibility: hidden;
+  display: none;
 }
 
 /* Feed */
