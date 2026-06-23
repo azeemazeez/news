@@ -1,110 +1,110 @@
 {
   "date": "2026-06-23",
-  "generated_at": "2026-06-23T10:56:59.208Z",
+  "generated_at": "2026-06-23T20:11:20.136Z",
   "stories": [
     {
-      "intro": "Starmer steps down",
-      "body": "After mounting political pressure, the UK prime minister has announced his departure, throwing British politics into fresh uncertainty and setting off a succession scramble — even as Trump bizarrely predicted the resignation days earlier, stunning observers when",
-      "link_text": "Keir Starmer resigns as Prime Minister.",
-      "url": "https://www.bbc.co.uk/sounds/play/p0ntfddg?at_medium=RSS&amp;at_campaign=rss",
-      "source": "BBC News"
+      "intro": "UN declares genocide in Gaza",
+      "body": "A UN commission of inquiry concluded that Israel is committing genocide by deliberately targeting children, a landmark finding likely to reverberate through international courts and diplomacy for",
+      "link_text": "years to come.",
+      "url": "https://www.reuters.com/world/middle-east/israel-targeted-gaza-children-resulting-genocide-un-inquiry-says-2026-06-23/",
+      "source": "Reuters"
     },
     {
-      "intro": "Canada bets big on nuclear",
-      "body": "Ottawa has unveiled a sweeping federal strategy to build up to ten reactors by 2040, a generational pivot toward atomic power that the government is calling a",
-      "link_text": "nuclear renaissance.",
-      "url": "https://www.cbc.ca/news/politics/federal-nuclear-strategy-9.7244509",
-      "source": "Hacker News"
-    },
-    {
-      "intro": "China seizes supercomputer crown",
-      "body": "For the first time since 2017, China has built the world's fastest supercomputer, a symbolically charged milestone in the escalating technological rivalry as Beijing",
-      "link_text": "takes the crown from the U.S.",
+      "intro": "China takes the supercomputer crown",
+      "body": "For the first time since 2017, a Chinese machine tops the global supercomputing rankings, part of a broader pattern of Chinese technological gains that has Washington fearing it could become",
+      "link_text": "dependent on Beijing.",
       "url": "https://www.nytimes.com/2026/06/23/technology/china-supercomputer-crown-us.html",
       "source": "New York Times"
     },
     {
-      "intro": "Tiny model beats giants",
-      "body": "A 3-billion-parameter model called VibeThinker reportedly outperforms far larger frontier systems on reasoning benchmarks using a novel training approach, suggesting raw scale may matter less than method as it",
-      "link_text": "beats Opus 4.5 on reasoning.",
-      "url": "https://arxiv.org/abs/2606.16140",
-      "source": "Hacker News"
-    },
-    {
-      "intro": "Iran maneuvers on Hormuz",
-      "body": "As U.S.-Iran negotiations open in Switzerland under Vance, Tehran is making moves to assert control over the vital oil chokepoint, with Trump's threats rattling talks and global markets while Iran tightens its grip on the",
-      "link_text": "Strait of Hormuz.",
-      "url": "https://www.nytimes.com/2026/06/23/world/middleeast/iran-control-strait-of-hormuz.html",
+      "intro": "Senate rebukes Trump on Iran",
+      "body": "Lawmakers voted to direct an end to U.S. involvement in the Iran war, a rare bipartisan assertion of congressional war powers against the",
+      "link_text": "president's military actions.",
+      "url": "https://www.nytimes.com/2026/06/23/us/politics/senate-trump-war-powers-iran.html",
       "source": "New York Times"
     },
     {
-      "intro": "Tech rout shakes markets",
-      "body": "A sharp global sell-off driven by AI and tech stocks sent indices tumbling across Asia, Europe and the U.S., raising fresh questions about whether the AI-fueled rally has peaked as",
-      "link_text": "markets recoil in global sell-off.",
+      "intro": "Canada bets big on nuclear",
+      "body": "Ottawa unveiled a 'nuclear renaissance' strategy to build up to 10 new reactors by 2040, a major shift toward atomic energy as countries scramble for",
+      "link_text": "low-carbon baseload power.",
+      "url": "https://www.cbc.ca/news/politics/federal-nuclear-strategy-9.7244509",
+      "source": "Hacker News"
+    },
+    {
+      "intro": "Age verification is mass surveillance",
+      "body": "Cory Doctorow argues that the wave of online age-verification mandates spreading across the world amounts to a sweeping system of identity tracking that will erode privacy under the guise of",
+      "link_text": "protecting children.",
+      "url": "https://pluralistic.net/2026/06/23/destroy-the-village/",
+      "source": "Hacker News"
+    },
+    {
+      "intro": "AI fears trigger a sell-off",
+      "body": "Global markets recoiled as investors grew anxious about the enormous and possibly unsustainable spending behind the AI boom, dragging down tech stocks in a",
+      "link_text": "broad global slide.",
       "url": "https://www.nytimes.com/2026/06/23/business/stock-market-down-tech-ai-asia-sp500-oil-gas.html",
       "source": "New York Times"
     },
     {
-      "intro": "Type 1 diabetes breakthrough",
-      "body": "The NHS will now offer the first drug shown to delay the onset of type 1 diabetes, potentially buying patients years before they need insulin in a landmark made",
-      "link_text": "available on the NHS.",
-      "url": "https://www.bbc.co.uk/news/articles/ce8mzd94r76o?at_medium=RSS&amp;at_campaign=rss",
-      "source": "BBC News"
+      "intro": "Europe's heat hits new extremes",
+      "body": "As a brutal heat wave bakes the continent and drives a surge in drowning deaths, scientists are openly asking how much hotter conditions can become in a",
+      "link_text": "rapidly warming climate.",
+      "url": "https://www.nytimes.com/2026/06/23/climate/europe-heat-wave-climate-change.html",
+      "source": "New York Times"
     },
     {
-      "intro": "Police abuse license-plate cameras",
-      "body": "An investigation found police chiefs using Flock surveillance networks to stalk women, a stark illustration of how mass automated tracking invites abuse and why critics argue",
-      "link_text": "warrants are needed.",
-      "url": "https://ipvm.com/reports/police-chiefs-track",
+      "intro": "A tiny model beats the giants",
+      "body": "VibeThinker, a 3-billion-parameter model, reportedly outperforms far larger systems on reasoning benchmarks using a novel training approach, challenging assumptions that bigger always means",
+      "link_text": "better in AI.",
+      "url": "https://arxiv.org/abs/2606.16140",
       "source": "Hacker News"
     },
     {
-      "intro": "Greenspan dies at 100",
-      "body": "Alan Greenspan, who chaired the Federal Reserve for nearly two decades and became the most influential central banker of his era, has died, leaving a contested legacy as the",
-      "link_text": "most powerful central banker.",
+      "intro": "Europe pushes its own digital currency",
+      "body": "The digital euro cleared a key parliamentary hurdle as the EU seeks to reduce its dependence on American payment networks like Visa and Mastercard and assert",
+      "link_text": "financial sovereignty.",
+      "url": "https://finance.yahoo.com/markets/currencies/articles/ecb-secures-key-parliamentary-backing-102718449.html",
+      "source": "Hacker News"
+    },
+    {
+      "intro": "MSG spied on its critics",
+      "body": "Madison Square Garden compiled a dossier on activists who opposed its use of facial recognition technology, a striking example of how surveillance tools can be turned against",
+      "link_text": "those who challenge them.",
+      "url": "https://www.404media.co/madison-square-garden-made-dossier-on-activists-who-opposed-facial-recognition/",
+      "source": "Hacker News"
+    },
+    {
+      "intro": "Alan Greenspan dies at 100",
+      "body": "The longtime Federal Reserve chairman, whose pronouncements once moved global markets and shaped decades of economic policy, has died, closing the book on one of the most influential",
+      "link_text": "central bankers of his era.",
       "url": "https://www.washingtonpost.com/obituaries/2026/06/22/alan-greenspan-most-powerful-central-banker-modern-times-dies-100/",
       "source": "Washington Post"
     },
     {
-      "intro": "Prediction markets buy influence",
-      "body": "Polymarket has quietly flooded social platforms with deceptive videos from paid creators promoting its bets, blurring the line between organic commentary and advertising in a campaign of",
-      "link_text": "deceptive videos by paid creators.",
-      "url": "https://www.wsj.com/business/media/polymarket-social-media-bets-prediction-market-441cdeb5?st=HhTZY2",
-      "source": "Hacker News"
+      "intro": "Trump's refugee program favors whites",
+      "body": "An investigation reveals how the administration reshaped America's refugee system into a pathway primarily for white people, including welcome packages prepared for",
+      "link_text": "white South African arrivals.",
+      "url": "https://www.nytimes.com/2026/06/23/us/politics/trump-refugee-program-whites.html",
+      "source": "New York Times"
     },
     {
-      "intro": "Brexit's decade-long bill",
-      "body": "Ten years after the referendum, analysts conclude the UK's departure from the EU has measurably dented economic growth, with British strawberries now picked by Central Asian workers as the country counts the",
-      "link_text": "cost in lost growth.",
+      "intro": "Carlson and Greene quit the GOP",
+      "body": "Two prominent right-wing figures declared they are done with the Republican Party, signaling deepening fractures within the conservative movement that could reshape its",
+      "link_text": "future direction.",
+      "url": "https://www.nytimes.com/2026/06/23/us/politics/tucker-carlson-marjorie-taylor-greene.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Brexit's lasting economic toll",
+      "body": "A decade after the vote, analysts conclude that Britain remains stuck in Brexit's shadow, having sacrificed measurable economic growth in exchange for",
+      "link_text": "leaving the EU.",
       "url": "https://www.nytimes.com/2026/06/23/business/brexit-uk-economy.html",
       "source": "New York Times"
     },
     {
-      "intro": "Hospitals defeat cyberattack on paper",
-      "body": "When a national cyberattack crippled digital systems, roughly 100 hospitals kept running by reverting to pen and paper, a striking reminder of the fragility of medical IT and the value of analog backups as they",
-      "link_text": "switched to pen and paper.",
-      "url": "https://www.bbc.co.uk/news/articles/c4gyk756mzlo?at_medium=RSS&amp;at_campaign=rss",
-      "source": "BBC News"
-    },
-    {
-      "intro": "Europe's deadly heat dome",
-      "body": "A record-breaking heat wave is testing Europe's newly built protections as drowning deaths soar in France and temperatures spike, turning the continent's climate adaptations into a real-world",
-      "link_text": "crash test.",
-      "url": "https://www.nytimes.com/2026/06/23/climate/europe-heat-wave-protective-measures.html",
-      "source": "New York Times"
-    },
-    {
-      "intro": "Microsoft buys 20 years of power",
-      "body": "Chevron has signed a two-decade power agreement to feed a West Texas data center, the latest sign of how AI's voracious energy appetite is reshaping deals between Big Tech and fossil fuel giants in an unusual",
-      "link_text": "20-year power agreement.",
-      "url": "https://www.chevron.com/newsroom/2026/q2/chevron-signs-20-year-power-agreement-with-microsoft-for-west-texas-data-center",
-      "source": "Hacker News"
-    },
-    {
-      "intro": "Social Security shortfall looms",
-      "body": "A bipartisan op-ed warns that the program's trust funds are depleting faster than projected, forcing an uncomfortable reckoning over benefits and taxes as Social Security is",
-      "link_text": "running out of money, fast.",
-      "url": "https://www.nytimes.com/2026/06/23/opinion/moreno-warren-social-security.html",
+      "intro": "Milder Ebola raises new questions",
+      "body": "Symptoms in the current outbreak appear to be less severe than in past epidemics, a development that could complicate detection while offering clues about the virus's",
+      "link_text": "evolving behavior.",
+      "url": "https://www.nytimes.com/2026/06/23/health/ebola-symptoms-death-rate.html",
       "source": "New York Times"
     }
   ]
