@@ -111,7 +111,9 @@ async function main() {
 
   // Send individual transactional emails
   let sent = 0;
-  for (const contact of active) {
+  for (let i = 0; i < active.length; i++) {
+    await new Promise(r => setTimeout(r, 1000));
+    const contact = active[i];
     const res = await fetch('https://api.resend.com/emails', {
       method: 'POST',
       headers: {
@@ -137,8 +139,6 @@ async function main() {
       console.error(`Failed to send to ${contact.email}:`, err.message);
     }
 
-    // Stay under Resend's 2 req/sec rate limit
-    await new Promise(r => setTimeout(r, 600));
   }
 
   console.log(`Digest sent to ${sent}/${active.length} subscribers for ${date}`);
