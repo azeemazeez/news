@@ -103,9 +103,11 @@ async function main() {
     throw new Error(`Failed to fetch contacts: ${JSON.stringify(err)}`);
   }
 
-  const { data: contacts } = await contactsRes.json();
+  const contactsBody = await contactsRes.json();
+  console.log('Contacts API response:', JSON.stringify(contactsBody));
+  const contacts = contactsBody.data || [];
   const active = contacts.filter(c => !c.unsubscribed);
-  console.log(`Sending to ${active.length} subscribers...`);
+  console.log(`Total contacts: ${contacts.length}, active: ${active.length}`);
 
   // Send individual transactional emails
   let sent = 0;
