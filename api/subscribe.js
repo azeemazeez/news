@@ -15,7 +15,7 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: 'Valid email required' });
   }
 
-  if (!process.env.RESEND_API_KEY || !process.env.RESEND_AUDIENCE_ID) {
+  if (!process.env.RESEND_SUBSCRIBE_KEY || !process.env.RESEND_AUDIENCE_ID) {
     return res.status(500).json({ error: 'Server configuration error — env vars missing' });
   }
 
@@ -25,7 +25,7 @@ export default async function handler(req, res) {
       {
         method: 'POST',
         headers: {
-          Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
+          Authorization: `Bearer ${process.env.RESEND_SUBSCRIBE_KEY}`,
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({ email, unsubscribed: false }),
