@@ -253,10 +253,8 @@ a.site-name {
 .subscribe-section {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 2rem 1.5rem 1.5rem;
+  padding: 2rem 0 1.5rem;
   border-top: 1px solid var(--border);
-  background: #f3effe;
-  border-radius: 8px;
 }
 
 .subscribe-label {
