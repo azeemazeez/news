@@ -1,90 +1,90 @@
 {
   "date": "2026-06-23",
-  "generated_at": "2026-06-23T09:12:36.380Z",
+  "generated_at": "2026-06-23T09:30:22.649Z",
   "stories": [
     {
       "intro": "Canada bets big on nuclear",
-      "body": "Ottawa unveiled a federal strategy to build as many as 10 reactors by 2040, framing atomic power as central to meeting surging electricity demand and climate goals in what officials are calling a",
-      "link_text": "'nuclear renaissance.'",
+      "body": "Ottawa unveiled a federal strategy to build as many as 10 new reactors by 2040, framing it as a \"nuclear renaissance\" to meet surging electricity demand and climate goals. The plan signals a major shift after decades of stalled atomic ambitions in",
+      "link_text": "Canada's energy policy.",
       "url": "https://www.cbc.ca/news/politics/federal-nuclear-strategy-9.7244509",
       "source": "CBC"
     },
     {
-      "intro": "Police are stalking with surveillance tech",
-      "body": "An investigation found that police chiefs used the Flock license-plate camera network to track individual women, a chilling case study in how mass surveillance infrastructure invites abuse and why",
-      "link_text": "warrants are needed.",
+      "intro": "Police tracked women with surveillance",
+      "body": "An investigation found that police chiefs used Flock's automated license-plate reader network to stalk and monitor individual women, exposing how warrantless mass surveillance tools can be abused. The findings strengthen calls for",
+      "link_text": "warrant requirements on these systems.",
       "url": "https://ipvm.com/reports/police-chiefs-track",
       "source": "IPVM"
     },
     {
-      "intro": "Greenspan, the maestro, dies at 100",
-      "body": "Alan Greenspan, who shaped the modern global economy across nearly two decades as Federal Reserve chairman and became both celebrated and blamed for the era's booms and busts, has died as the",
-      "link_text": "most powerful central banker.",
-      "url": "https://www.washingtonpost.com/obituaries/2026/06/22/alan-greenspan-most-powerful-central-banker-modern-times-dies-100/",
-      "source": "The Washington Post"
-    },
-    {
-      "intro": "Tiny model beats the giants",
-      "body": "VibeThinker, a 3-billion-parameter model, reportedly outperforms far larger frontier systems on reasoning benchmarks using a novel training approach — challenging the assumption that scale alone wins, beating",
-      "link_text": "Opus 4.5 on reasoning.",
-      "url": "https://arxiv.org/abs/2606.16140",
-      "source": "arXiv"
-    },
-    {
-      "intro": "US and Iran talk under threats",
-      "body": "The first round of negotiations ended with technical talks set to continue, but Trump's public threats over the Strait of Hormuz rattled the summit and sent oil markets jumping during the",
-      "link_text": "US-Iran negotiations.",
+      "intro": "US and Iran resume talks",
+      "body": "The first round of negotiations ended with both sides agreeing to continue technical discussions, even as President Trump's threats over the Strait of Hormuz rattled the summit and pushed up oil prices. The fragile diplomacy could reshape",
+      "link_text": "Middle East tensions for years.",
       "url": "https://www.nbcnews.com/world/iran/president-jd-vance-switzerland-iran-talks-trump-threatens-toll-rcna351033",
       "source": "NBC News"
     },
     {
-      "intro": "China retaliates on trade",
-      "body": "Beijing imposed restrictions on dozens of American companies, escalating economic tensions and signaling that the trade conflict between the world's two largest economies is far from over as",
-      "link_text": "China slaps restrictions.",
+      "intro": "China hits back at US firms",
+      "body": "Beijing imposed restrictions on dozens of American companies in a sharp escalation of trade tensions, signaling that economic decoupling between the world's two largest economies is",
+      "link_text": "accelerating once again.",
       "url": "https://www.wsj.com/world/china/china-slaps-restrictions-on-dozens-of-u-s-companies-bd337a1c",
       "source": "The Wall Street Journal"
     },
     {
-      "intro": "Prediction markets game social media",
-      "body": "Polymarket flooded platforms with deceptive videos produced by paid creators, raising questions about how betting markets manufacture the appearance of organic sentiment through",
-      "link_text": "deceptive paid videos.",
-      "url": "https://www.wsj.com/business/media/polymarket-social-media-bets-prediction-market-441cdeb5?st=HhTZY2",
-      "source": "The Wall Street Journal"
-    },
-    {
-      "intro": "Big Tech buys decades of power",
-      "body": "Chevron signed a 20-year agreement to supply electricity to a Microsoft data center in West Texas, underscoring how AI's appetite for energy is reshaping long-term deals between oil giants and",
-      "link_text": "cloud computing companies.",
-      "url": "https://www.chevron.com/newsroom/2026/q2/chevron-signs-20-year-power-agreement-with-microsoft-for-west-texas-data-center",
-      "source": "Chevron"
-    },
-    {
       "intro": "Trump predicts Starmer's downfall",
-      "body": "The president's post declaring that the British prime minister 'will resign' stunned officials in the UK, an extraordinary intervention in an ally's domestic politics that the British government",
-      "link_text": "has not addressed.",
+      "body": "The president's social media claim that the British prime minister \"will resign\" blindsided officials in London, who said Starmer had given no such indication. The remark deepened questions about how Trump's interventions affect",
+      "link_text": "transatlantic political relations.",
       "url": "https://www.washingtonpost.com/world/2026/06/21/trump-declares-british-pm-will-resign-starmer-has-not-said-anything/",
       "source": "The Washington Post"
     },
     {
-      "intro": "Brexit at ten years",
-      "body": "A decade after the referendum, Britain remains deeply divided over the economic and political consequences of leaving the EU, with a fresh reckoning over what the departure actually delivered as the",
-      "link_text": "legacy still divides Britain.",
+      "intro": "Tiny model beats giants",
+      "body": "A 3-billion-parameter model called VibeThinker reportedly outperforms far larger systems like Opus 4.5 on reasoning benchmarks using a novel training approach, challenging assumptions that bigger always means smarter in",
+      "link_text": "the race for AI reasoning.",
+      "url": "https://arxiv.org/abs/2606.16140",
+      "source": "Hacker News"
+    },
+    {
+      "intro": "Prediction markets gamed virality",
+      "body": "Polymarket has flooded social platforms with deceptive videos produced by paid creators, raising fresh concerns about how betting platforms blur the line between information and",
+      "link_text": "manipulative marketing.",
+      "url": "https://www.wsj.com/business/media/polymarket-social-media-bets-prediction-market-441cdeb5?st=HhTZY2",
+      "source": "The Wall Street Journal"
+    },
+    {
+      "intro": "Big Tech buys its own power",
+      "body": "Chevron signed a 20-year agreement to supply electricity to a Microsoft data center in West Texas, the latest sign that AI's energy appetite is reshaping deals between",
+      "link_text": "oil giants and cloud companies.",
+      "url": "https://www.chevron.com/newsroom/2026/q2/chevron-signs-20-year-power-agreement-with-microsoft-for-west-texas-data-center",
+      "source": "Chevron"
+    },
+    {
+      "intro": "Brexit at ten",
+      "body": "A decade after the vote to leave the EU, Britain remains deeply divided over the economic and political legacy of a decision that continues to shape",
+      "link_text": "the nation's identity.",
       "url": "https://www.pbs.org/newshour/world/what-to-know-about-the-legacy-of-brexit-which-still-divides-britain-10-years-on",
       "source": "PBS"
     },
     {
-      "intro": "Butterflies cheat aging",
-      "body": "Some tropical butterflies live 25 times longer than their relatives thanks to an unusual survival strategy, offering biologists a striking natural example of how lifespan can be radically extended through",
-      "link_text": "an unusual strategy.",
-      "url": "https://www.ksl.com/article/51514061/an-unusual-strategy-helps-some-tropical-butterflies-live-25-times-longer-than-their-relatives",
-      "source": "KSL"
+      "intro": "AI's roots run deep",
+      "body": "A historical account traces the foundations of today's AI boom back to pioneering work done in Munich in 1991, revealing how long-overlooked research quietly set the stage for",
+      "link_text": "the modern machine learning era.",
+      "url": "https://people.idsia.ch/~juergen/ai-boom-roots-munich-1991.html",
+      "source": "Hacker News"
     },
     {
-      "intro": "Where the AI boom began",
-      "body": "A look back at pioneering 1991 work in Munich argues that the foundations of today's neural network revolution were laid decades before the current frenzy, tracing the surprising",
-      "link_text": "roots of the AI boom.",
-      "url": "https://people.idsia.ch/~juergen/ai-boom-roots-munich-1991.html",
-      "source": "Jürgen Schmidhuber"
+      "intro": "Butterflies cheat aging",
+      "body": "Researchers discovered that an unusual feeding strategy lets some tropical butterflies live up to 25 times longer than close relatives, offering intriguing clues about the biology of",
+      "link_text": "longevity in nature.",
+      "url": "https://www.ksl.com/article/51514061/an-unusual-strategy-helps-some-tropical-butterflies-live-25-times-longer-than-their-relatives",
+      "source": "KSL.com"
+    },
+    {
+      "intro": "Near-miss over Boston",
+      "body": "Two jets came within 300 feet of each other, forcing a Delta flight to abort its landing in a close call that aviation experts say underscores ongoing strains on",
+      "link_text": "the air traffic system.",
+      "url": "https://www.pbs.org/newshour/nation/jets-were-300-feet-apart-in-boston-close-call-that-forced-delta-flight-to-abort-landing-expert-says",
+      "source": "PBS"
     }
   ]
 }
