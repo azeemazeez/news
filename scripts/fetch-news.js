@@ -104,7 +104,7 @@ async function curateWithClaude(stories) {
         role: 'user',
         content: `You are the editor of a sharp, intelligent daily news digest — like The Morning News or Arts & Letters Daily. Your readers are curious, educated generalists who want to understand the world.
 
-From the stories below (collected in the last 24 hours), select exactly 12 that an intelligent general audience would most want to know about.
+From the stories below (collected in the last 24 hours), select exactly 15 that an intelligent general audience would most want to know about.
 
 Prioritize stories that:
 - Have broad significance or represent a meaningful shift
