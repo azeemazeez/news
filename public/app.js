@@ -1,4 +1,4 @@
-const SITE_NAME = 'The Brief';
+const SITE_NAME = 'The Nuus';
 
 let manifest = { dates: [] };
 let currentDate = null;
