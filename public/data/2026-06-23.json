@@ -1,110 +1,110 @@
 {
   "date": "2026-06-23",
-  "generated_at": "2026-06-23T10:51:07.162Z",
+  "generated_at": "2026-06-23T10:56:59.208Z",
   "stories": [
     {
-      "intro": "**Starmer steps down**",
-      "body": "The UK prime minister has resigned amid mounting political turmoil, with Manchester mayor Andy Burnham emerging as the favorite to inherit what observers are calling",
-      "link_text": "a terrible inheritance.",
-      "url": "https://www.nytimes.com/2026/06/23/world/europe/uk-burnham-starmer-politics.html",
-      "source": "New York Times"
+      "intro": "Starmer steps down",
+      "body": "After mounting political pressure, the UK prime minister has announced his departure, throwing British politics into fresh uncertainty and setting off a succession scramble — even as Trump bizarrely predicted the resignation days earlier, stunning observers when",
+      "link_text": "Keir Starmer resigns as Prime Minister.",
+      "url": "https://www.bbc.co.uk/sounds/play/p0ntfddg?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC News"
     },
     {
-      "intro": "**UN declares genocide**",
-      "body": "A United Nations inquiry has concluded that Israel deliberately targeted children in Gaza, amounting to acts of genocide — a finding that will reverberate through",
-      "link_text": "international law for years.",
-      "url": "https://www.reuters.com/world/middle-east/israel-targeted-gaza-children-resulting-genocide-un-inquiry-says-2026-06-23/",
-      "source": "Reuters"
-    },
-    {
-      "intro": "**Canada's nuclear bet**",
-      "body": "Ottawa unveiled a sweeping federal strategy to build up to 10 new reactors by 2040, marking what officials are calling a national",
+      "intro": "Canada bets big on nuclear",
+      "body": "Ottawa has unveiled a sweeping federal strategy to build up to ten reactors by 2040, a generational pivot toward atomic power that the government is calling a",
       "link_text": "nuclear renaissance.",
       "url": "https://www.cbc.ca/news/politics/federal-nuclear-strategy-9.7244509",
-      "source": "CBC"
+      "source": "Hacker News"
     },
     {
-      "intro": "**China takes the crown**",
-      "body": "For the first time since 2017, China has claimed the world's fastest supercomputer title from the United States, a symbolic blow in the escalating",
-      "link_text": "tech race between powers.",
+      "intro": "China seizes supercomputer crown",
+      "body": "For the first time since 2017, China has built the world's fastest supercomputer, a symbolically charged milestone in the escalating technological rivalry as Beijing",
+      "link_text": "takes the crown from the U.S.",
       "url": "https://www.nytimes.com/2026/06/23/technology/china-supercomputer-crown-us.html",
       "source": "New York Times"
     },
     {
-      "intro": "**Iran nuclear talks falter**",
-      "body": "The first round of US-Iran negotiations led by Vice President Vance ended without firm commitments after Trump's public threats over the Strait of Hormuz",
-      "link_text": "shook the summit.",
-      "url": "https://www.nbcnews.com/world/iran/president-jd-vance-switzerland-iran-talks-trump-threatens-toll-rcna351033",
-      "source": "NBC News"
-    },
-    {
-      "intro": "**Tiny model, huge punch**",
-      "body": "A 3-billion-parameter model called VibeThinker reportedly outperforms far larger systems like Opus 4.5 on reasoning tasks, suggesting clever training may matter more than",
-      "link_text": "sheer scale.",
+      "intro": "Tiny model beats giants",
+      "body": "A 3-billion-parameter model called VibeThinker reportedly outperforms far larger frontier systems on reasoning benchmarks using a novel training approach, suggesting raw scale may matter less than method as it",
+      "link_text": "beats Opus 4.5 on reasoning.",
       "url": "https://arxiv.org/abs/2606.16140",
       "source": "Hacker News"
     },
     {
-      "intro": "**Police surveillance abuse**",
-      "body": "An investigation found police chiefs using Flock's license-plate camera network to stalk women, a stark illustration of why civil liberties advocates insist",
+      "intro": "Iran maneuvers on Hormuz",
+      "body": "As U.S.-Iran negotiations open in Switzerland under Vance, Tehran is making moves to assert control over the vital oil chokepoint, with Trump's threats rattling talks and global markets while Iran tightens its grip on the",
+      "link_text": "Strait of Hormuz.",
+      "url": "https://www.nytimes.com/2026/06/23/world/middleeast/iran-control-strait-of-hormuz.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Tech rout shakes markets",
+      "body": "A sharp global sell-off driven by AI and tech stocks sent indices tumbling across Asia, Europe and the U.S., raising fresh questions about whether the AI-fueled rally has peaked as",
+      "link_text": "markets recoil in global sell-off.",
+      "url": "https://www.nytimes.com/2026/06/23/business/stock-market-down-tech-ai-asia-sp500-oil-gas.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Type 1 diabetes breakthrough",
+      "body": "The NHS will now offer the first drug shown to delay the onset of type 1 diabetes, potentially buying patients years before they need insulin in a landmark made",
+      "link_text": "available on the NHS.",
+      "url": "https://www.bbc.co.uk/news/articles/ce8mzd94r76o?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC News"
+    },
+    {
+      "intro": "Police abuse license-plate cameras",
+      "body": "An investigation found police chiefs using Flock surveillance networks to stalk women, a stark illustration of how mass automated tracking invites abuse and why critics argue",
       "link_text": "warrants are needed.",
       "url": "https://ipvm.com/reports/police-chiefs-track",
       "source": "Hacker News"
     },
     {
-      "intro": "**Prediction markets go astroturf**",
-      "body": "Polymarket has flooded social media with deceptive videos produced by paid creators, blurring the line between organic enthusiasm and",
-      "link_text": "manufactured hype.",
+      "intro": "Greenspan dies at 100",
+      "body": "Alan Greenspan, who chaired the Federal Reserve for nearly two decades and became the most influential central banker of his era, has died, leaving a contested legacy as the",
+      "link_text": "most powerful central banker.",
+      "url": "https://www.washingtonpost.com/obituaries/2026/06/22/alan-greenspan-most-powerful-central-banker-modern-times-dies-100/",
+      "source": "Washington Post"
+    },
+    {
+      "intro": "Prediction markets buy influence",
+      "body": "Polymarket has quietly flooded social platforms with deceptive videos from paid creators promoting its bets, blurring the line between organic commentary and advertising in a campaign of",
+      "link_text": "deceptive videos by paid creators.",
       "url": "https://www.wsj.com/business/media/polymarket-social-media-bets-prediction-market-441cdeb5?st=HhTZY2",
-      "source": "Wall Street Journal"
+      "source": "Hacker News"
     },
     {
-      "intro": "**A type 1 diabetes first**",
-      "body": "The NHS has begun offering the first-ever drug shown to delay the onset of type 1 diabetes, potentially buying years of healthy life for",
-      "link_text": "at-risk patients.",
-      "url": "https://www.bbc.co.uk/news/articles/ce8mzd94r76o?at_medium=RSS&amp;at_campaign=rss",
-      "source": "BBC News"
-    },
-    {
-      "intro": "**Hospitals defeat cyberattack**",
-      "body": "When a national cyberattack hit, around 100 hospitals reverted to pen and paper to keep running — an unexpected lesson in resilience and",
-      "link_text": "analog backup plans.",
-      "url": "https://www.bbc.co.uk/news/articles/c4gyk756mzlo?at_medium=RSS&amp;at_campaign=rss",
-      "source": "BBC News"
-    },
-    {
-      "intro": "**Brexit's decade-long bill**",
-      "body": "Ten years after the referendum, analysts tally substantial lost economic growth, with British strawberries now picked by workers flown in from",
-      "link_text": "Central Asia.",
+      "intro": "Brexit's decade-long bill",
+      "body": "Ten years after the referendum, analysts conclude the UK's departure from the EU has measurably dented economic growth, with British strawberries now picked by Central Asian workers as the country counts the",
+      "link_text": "cost in lost growth.",
       "url": "https://www.nytimes.com/2026/06/23/business/brexit-uk-economy.html",
       "source": "New York Times"
     },
     {
-      "intro": "**Gasoline demand may never recover**",
-      "body": "America's thirst for gasoline could be permanently dented in the wake of the Iran war, a structural shift in energy consumption with implications for",
-      "link_text": "oil markets and climate.",
-      "url": "https://www.nytimes.com/2026/06/23/business/economy/gasoline-demand-destruction.html",
+      "intro": "Hospitals defeat cyberattack on paper",
+      "body": "When a national cyberattack crippled digital systems, roughly 100 hospitals kept running by reverting to pen and paper, a striking reminder of the fragility of medical IT and the value of analog backups as they",
+      "link_text": "switched to pen and paper.",
+      "url": "https://www.bbc.co.uk/news/articles/c4gyk756mzlo?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC News"
+    },
+    {
+      "intro": "Europe's deadly heat dome",
+      "body": "A record-breaking heat wave is testing Europe's newly built protections as drowning deaths soar in France and temperatures spike, turning the continent's climate adaptations into a real-world",
+      "link_text": "crash test.",
+      "url": "https://www.nytimes.com/2026/06/23/climate/europe-heat-wave-protective-measures.html",
       "source": "New York Times"
     },
     {
-      "intro": "**Big Tech triggers sell-off**",
-      "body": "Global markets recoiled in a broad sell-off driven by AI and tech stocks, raising fresh questions about whether the boom has reached",
-      "link_text": "bubble territory.",
-      "url": "https://www.nytimes.com/2026/06/23/business/stock-market-down-tech-ai-asia-sp500-oil-gas.html",
-      "source": "New York Times"
-    },
-    {
-      "intro": "**Powering AI with fossil fuels**",
-      "body": "Chevron signed a 20-year power agreement with Microsoft for a West Texas data center, underscoring how the AI buildout is reshaping",
-      "link_text": "energy partnerships.",
+      "intro": "Microsoft buys 20 years of power",
+      "body": "Chevron has signed a two-decade power agreement to feed a West Texas data center, the latest sign of how AI's voracious energy appetite is reshaping deals between Big Tech and fossil fuel giants in an unusual",
+      "link_text": "20-year power agreement.",
       "url": "https://www.chevron.com/newsroom/2026/q2/chevron-signs-20-year-power-agreement-with-microsoft-for-west-texas-data-center",
       "source": "Hacker News"
     },
     {
-      "intro": "**Europe's heat reckoning**",
-      "body": "A punishing heat dome has driven record temperatures across Europe, putting newly created heat-wave protections through their first real",
-      "link_text": "crash test.",
-      "url": "https://www.nytimes.com/2026/06/23/climate/europe-heat-wave-protective-measures.html",
+      "intro": "Social Security shortfall looms",
+      "body": "A bipartisan op-ed warns that the program's trust funds are depleting faster than projected, forcing an uncomfortable reckoning over benefits and taxes as Social Security is",
+      "link_text": "running out of money, fast.",
+      "url": "https://www.nytimes.com/2026/06/23/opinion/moreno-warren-social-security.html",
       "source": "New York Times"
     }
   ]
