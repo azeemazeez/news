@@ -184,6 +184,36 @@ async function main() {
   }
   writeFileSync(manifestPath, JSON.stringify(manifest, null, 2));
   console.log('Updated manifest.json');
+
+  const siteUrl = 'https://thenuus.com';
+  const today = new Date().toISOString().split('T')[0];
+  const dateUrls = manifest.dates.map(d => `
+  <url>
+    <loc>${siteUrl}/?d=${d}</loc>
+    <lastmod>${d}</lastmod>
+    <changefreq>never</changefreq>
+  </url>`).join('');
+
+  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>${siteUrl}/</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>${siteUrl}/archive</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>${siteUrl}/about</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+${dateUrls}
+</urlset>`;
+
+  writeFileSync(join(__dirname, '../public/sitemap.xml'), sitemap);
+  console.log('Updated sitemap.xml');
 }
 
 main().catch(err => {

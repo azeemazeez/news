@@ -59,6 +59,10 @@ body {
   gap: 0.4rem;
 }
 
+a.site-name {
+  text-decoration: none;
+}
+
 .site-name {
   font-size: 2.5rem;
   font-weight: 900;
@@ -76,6 +80,29 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   font-weight: 500;
+}
+
+/* Masthead nav */
+.masthead-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding-top: 0.6rem;
+}
+
+.masthead-nav a {
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--secondary);
+  text-decoration: none;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  transition: color 0.12s;
+}
+
+.masthead-nav a:hover,
+.masthead-nav a.active {
+  color: var(--link);
 }
 
 /* Date bar */
@@ -189,6 +216,28 @@ body {
   font-size: 0.8125rem;
   font-family: 'SF Mono', 'Fira Code', monospace;
   border: 1px solid var(--border);
+}
+
+/* Footer nav */
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-top: 0.4rem;
+}
+
+.footer-nav a {
+  color: var(--tertiary);
+  text-decoration: none;
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  transition: color 0.12s;
+}
+
+.footer-nav a:hover {
+  color: var(--link);
 }
 
 /* Footer */

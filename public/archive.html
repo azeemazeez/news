@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Archive — The Nuus</title>
+  <meta name="description" content="Browse all past editions of The Nuus.">
+  <link rel="canonical" href="https://thenuus.com/archive">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thenuus.com/archive">
+  <meta property="og:site_name" content="The Nuus">
+  <meta property="og:title" content="Archive — The Nuus">
+  <meta property="og:description" content="Browse all past editions of The Nuus.">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Archive — The Nuus">
+  <meta name="twitter:description" content="Browse all past editions of The Nuus.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+  <header class="masthead">
+    <div class="masthead-inner">
+      <a class="site-name" href="/">The Nuus</a>
+    </div>
+    <nav class="masthead-nav">
+      <a href="/archive" class="active">Archive</a>
+      <a href="/about">About</a>
+    </nav>
+  </header>
+
+  <main class="feed" id="feed">
+    <div class="state-message"><p>Loading&hellip;</p></div>
+  </main>
+
+  <footer class="footer">
+    <p>The Nuus &mdash; Curated daily</p>
+    <nav class="footer-nav">
+      <a href="/archive">Archive</a>
+      <a href="/about">About</a>
+    </nav>
+  </footer>
+
+  <script>
+    function formatDate(iso) {
+      const [year, month, day] = iso.split('-').map(Number);
+      return new Date(year, month - 1, day).toLocaleDateString('en-US', {
+        weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
+      });
+    }
+
+    async function init() {
+      const feed = document.getElementById('feed');
+      try {
+        const res = await fetch('/data/manifest.json?t=' + Date.now());
+        const manifest = await res.json();
+
+        if (!manifest.dates || manifest.dates.length === 0) {
+          feed.innerHTML = '<div class="state-message"><p>No editions yet.</p></div>';
+          return;
+        }
+
+        const items = manifest.dates.map(date => `
+          <article class="story">
+            <p class="story-line">
+              <a class="story-link" href="/?d=${date}">${formatDate(date)}</a>
+            </p>
+          </article>
+        `).join('');
+
+        feed.innerHTML = `
+          <article class="story" style="border-bottom: none; padding-bottom: 0;">
+            <p class="story-line" style="font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--secondary);">
+              ${manifest.dates.length} edition${manifest.dates.length !== 1 ? 's' : ''}
+            </p>
+          </article>
+          ${items}
+        `;
+      } catch (e) {
+        feed.innerHTML = '<div class="state-message"><p>Could not load archive.</p></div>';
+      }
+    }
+
+    init();
+  </script>
+</body>
+</html>
