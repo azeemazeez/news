@@ -1,0 +1,111 @@
+{
+  "date": "2026-06-24",
+  "generated_at": "2026-06-23T20:23:01.785Z",
+  "stories": [
+    {
+      "intro": "UN inquiry finds genocide",
+      "body": "A UN commission of inquiry has concluded that Israel is committing genocide in Gaza by deliberately targeting children, a finding that sharply escalates international scrutiny and could shape legal and diplomatic",
+      "link_text": "consequences for years to come.",
+      "url": "https://www.reuters.com/world/middle-east/israel-targeted-gaza-children-resulting-genocide-un-inquiry-says-2026-06-23/",
+      "source": "Reuters"
+    },
+    {
+      "intro": "China takes the supercomputer crown",
+      "body": "For the first time since 2017, China has claimed the world's fastest supercomputer, a symbolic milestone in a broader race where U.S. officials increasingly fear becoming",
+      "link_text": "dependent on Chinese technology.",
+      "url": "https://www.nytimes.com/2026/06/23/technology/china-supercomputer-crown-us.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Canada bets big on nuclear",
+      "body": "Ottawa unveiled plans for a 'nuclear renaissance' that could see up to 10 new reactors built by 2040, a major reversal that signals nuclear power's growing role in",
+      "link_text": "decarbonizing electricity grids.",
+      "url": "https://www.cbc.ca/news/politics/federal-nuclear-strategy-9.7244509",
+      "source": "CBC"
+    },
+    {
+      "intro": "Senate rebukes Trump on war",
+      "body": "In a striking assertion of congressional authority, the Senate voted to direct an end to the Iran war, challenging the president's unilateral",
+      "link_text": "exercise of war powers.",
+      "url": "https://www.nytimes.com/2026/06/23/us/politics/senate-trump-war-powers-iran.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Age verification is mass surveillance",
+      "body": "Cory Doctorow argues that what governments and platforms market as 'age verification' is in practice a sweeping infrastructure for identity tracking that threatens",
+      "link_text": "everyone's online anonymity.",
+      "url": "https://pluralistic.net/2026/06/23/destroy-the-village/",
+      "source": "Pluralistic"
+    },
+    {
+      "intro": "Markets recoil on AI fears",
+      "body": "A global sell-off driven by tech stocks rattled markets as investors grew anxious about the enormous spending on artificial intelligence and whether those bets will ever",
+      "link_text": "deliver matching returns.",
+      "url": "https://www.nytimes.com/2026/06/23/business/stock-market-down-tech-ai-asia-sp500-oil-gas.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Europe bakes in record heat",
+      "body": "An extreme heat wave is gripping Europe with deadly consequences, including dozens of drownings in France, prompting scientists to ask how much hotter the continent",
+      "link_text": "can realistically get.",
+      "url": "https://www.nytimes.com/2026/06/23/climate/europe-heat-wave-climate-change.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "MSG built activist dossiers",
+      "body": "Madison Square Garden compiled a dossier on activists who opposed its use of facial recognition, a chilling example of how venues are turning surveillance tech",
+      "link_text": "against their own critics.",
+      "url": "https://www.404media.co/madison-square-garden-made-dossier-on-activists-who-opposed-facial-recognition/",
+      "source": "404 Media"
+    },
+    {
+      "intro": "Tiny model beats the giants",
+      "body": "A 3-billion-parameter model called VibeThinker reportedly outperforms far larger systems like Opus 4.5 on reasoning benchmarks, using a novel training approach that could upend assumptions about",
+      "link_text": "the necessity of scale.",
+      "url": "https://arxiv.org/abs/2606.16140",
+      "source": "Hacker News"
+    },
+    {
+      "intro": "Europe seeks payment independence",
+      "body": "The digital euro cleared a key parliamentary hurdle as the EU pushes to reduce its reliance on American credit card networks and build a sovereign",
+      "link_text": "European payments system.",
+      "url": "https://finance.yahoo.com/markets/currencies/articles/ecb-secures-key-parliamentary-backing-102718449.html",
+      "source": "Yahoo Finance"
+    },
+    {
+      "intro": "AI hiring tools show bias",
+      "body": "Stanford researchers found that AI hiring systems can produce systematic racial bias, rejecting Black applicants at significantly higher rates and raising urgent questions about automated",
+      "link_text": "gatekeeping in employment.",
+      "url": "https://hai.stanford.edu/news/ai-hiring-tools-can-yield-racial-bias-and-systemic-rejection",
+      "source": "Stanford HAI"
+    },
+    {
+      "intro": "Trump's refugee program reshaped",
+      "body": "An investigation reveals how the Trump administration transformed America's refugee program into a pathway favoring white applicants, including welcome bags prepared for incoming",
+      "link_text": "white South African refugees.",
+      "url": "https://www.nytimes.com/2026/06/23/us/politics/trump-refugee-program-whites.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Alan Greenspan dies at 100",
+      "body": "The most powerful central banker of his era, whose decisions shaped the global economy for nearly two decades at the Federal Reserve, has died, closing a chapter on an outsized",
+      "link_text": "and contested legacy.",
+      "url": "https://www.washingtonpost.com/obituaries/2026/06/22/alan-greenspan-most-powerful-central-banker-modern-times-dies-100/",
+      "source": "Washington Post"
+    },
+    {
+      "intro": "Brexit's decade-long cost",
+      "body": "Ten years after the referendum, analysts say Brexit has measurably reduced UK growth, leaving Britain still deep in the economic and political shadow of",
+      "link_text": "its decision to leave.",
+      "url": "https://www.nytimes.com/2026/06/23/business/brexit-uk-economy.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Deadly trucks reshape roads",
+      "body": "The rise of ever-larger trucks and SUVs is fueling a surge in pedestrian deaths, a design and regulatory shift whose toll is mounting on",
+      "link_text": "American streets.",
+      "url": "https://www.nytimes.com/interactive/2026/06/21/us/trucks-suv-pedestrian-crashes.html",
+      "source": "New York Times"
+    }
+  ]
+}
