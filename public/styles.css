@@ -40,7 +40,8 @@ body {
   padding: 0 1.5rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  border-top: 12px solid var(--link);
+  border-top: 12px solid transparent;
+  border-image: linear-gradient(to right, #6b33be, #c026d3) 1;
 }
 
 /* Masthead */
