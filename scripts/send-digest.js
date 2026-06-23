@@ -136,6 +136,9 @@ async function main() {
       const err = await res.json();
       console.error(`Failed to send to ${contact.email}:`, err.message);
     }
+
+    // Stay under Resend's 2 req/sec rate limit
+    await new Promise(r => setTimeout(r, 600));
   }
 
   console.log(`Digest sent to ${sent}/${active.length} subscribers for ${date}`);
