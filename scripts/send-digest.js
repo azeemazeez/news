@@ -84,7 +84,7 @@ function buildHtml(stories, date) {
 }
 
 async function main() {
-  const date = new Date().toISOString().split('T')[0];
+  const date = new Date(Date.now() + 4 * 60 * 60 * 1000).toISOString().split('T')[0];
   const dataPath = join(__dirname, '../public/data', `${date}.json`);
 
   if (!existsSync(dataPath)) {

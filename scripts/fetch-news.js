@@ -192,7 +192,7 @@ async function main() {
 
   const curated = await curateWithClaude(unique);
 
-  const date = new Date().toISOString().split('T')[0];
+  const date = new Date(Date.now() + 4 * 60 * 60 * 1000).toISOString().split('T')[0];
   const output = {
     date,
     generated_at: new Date().toISOString(),
@@ -217,7 +217,7 @@ async function main() {
   console.log('Updated manifest.json');
 
   const siteUrl = 'https://thenuus.com';
-  const today = new Date().toISOString().split('T')[0];
+  const today = new Date(Date.now() + 4 * 60 * 60 * 1000).toISOString().split('T')[0];
   const dateUrls = manifest.dates.map(d => `
   <url>
     <loc>${siteUrl}/?d=${d}</loc>
