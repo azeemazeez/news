@@ -218,12 +218,30 @@ a.site-name {
   border: 1px solid var(--border);
 }
 
-/* Footer nav */
-.footer-nav {
+/* Footer */
+.footer {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1.25rem 0 2.5rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.68rem;
+  font-weight: 500;
+  color: var(--tertiary);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 1.25rem;
-  margin-top: 0.4rem;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 1.25rem;
 }
 
 .footer-nav a {
@@ -238,20 +256,6 @@ a.site-name {
 
 .footer-nav a:hover {
   color: var(--link);
-}
-
-/* Footer */
-.footer {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 1.25rem 0 2.5rem;
-  border-top: 1px solid var(--border);
-  font-size: 0.68rem;
-  font-weight: 500;
-  color: var(--tertiary);
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
 }
 
 @media (max-width: 480px) {
