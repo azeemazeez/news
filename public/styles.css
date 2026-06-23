@@ -171,6 +171,29 @@ a.site-name {
   border-bottom: none;
 }
 
+.archive-group {
+  padding: 1.25rem 0 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.archive-group:last-child {
+  border-bottom: none;
+}
+
+.archive-month {
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--secondary);
+  margin: 0 0 0.6rem;
+}
+
+.archive-item {
+  margin: 0 0 0.35rem;
+  font-size: 0.9375rem;
+}
+
 .about-content .story {
   border-bottom: none;
   padding: 0.4rem 0;

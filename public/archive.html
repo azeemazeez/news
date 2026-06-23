@@ -44,11 +44,14 @@
   </footer>
 
   <script>
-    function formatDate(iso) {
+    function monthYear(iso) {
+      const [year, month] = iso.split('-').map(Number);
+      return new Date(year, month - 1, 1).toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+    }
+
+    function dayLabel(iso) {
       const [year, month, day] = iso.split('-').map(Number);
-      return new Date(year, month - 1, day).toLocaleDateString('en-US', {
-        weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
-      });
+      return new Date(year, month - 1, day).toLocaleDateString('en-US', { weekday: 'long', day: 'numeric' });
     }
 
     async function init() {
@@ -62,22 +65,26 @@
           return;
         }
 
-        const items = manifest.dates.map(date => `
-          <article class="story">
-            <p class="story-line">
-              <a class="story-link" href="/?d=${date}">${formatDate(date)}</a>
-            </p>
-          </article>
+        // Group by month/year
+        const groups = {};
+        for (const date of manifest.dates) {
+          const key = monthYear(date);
+          if (!groups[key]) groups[key] = [];
+          groups[key].push(date);
+        }
+
+        const html = Object.entries(groups).map(([month, dates]) => `
+          <div class="archive-group">
+            <p class="archive-month">${month}</p>
+            ${dates.map(date => `
+              <p class="archive-item">
+                <a class="story-link" href="/?d=${date}">${dayLabel(date)}</a>
+              </p>
+            `).join('')}
+          </div>
         `).join('');
 
-        feed.innerHTML = `
-          <article class="story" style="border-bottom: none; padding-bottom: 0;">
-            <p class="story-line" style="font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--secondary);">
-              ${manifest.dates.length} edition${manifest.dates.length !== 1 ? 's' : ''}
-            </p>
-          </article>
-          ${items}
-        `;
+        feed.innerHTML = html;
       } catch (e) {
         feed.innerHTML = '<div class="state-message"><p>Could not load archive.</p></div>';
       }
