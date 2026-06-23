@@ -1,90 +1,90 @@
 {
   "date": "2026-06-23",
-  "generated_at": "2026-06-23T05:47:12.693Z",
+  "generated_at": "2026-06-23T09:12:36.380Z",
   "stories": [
     {
-      "intro": "Iran closes Hormuz",
-      "body": "Oil prices jumped and stock futures fell after Tehran shut the strategic Strait of Hormuz, even as JD Vance held peace talks in Switzerland to defuse a confrontation that could",
-      "link_text": "reshape global energy markets.",
-      "url": "https://www.barrons.com/articles/stock-futures-oil-trading-sunday-a0a615fa",
-      "source": "Barron's"
-    },
-    {
-      "intro": "Canada's nuclear renaissance",
-      "body": "Ottawa unveiled a federal strategy to build up to 10 new reactors by 2040, betting on atomic power to meet surging electricity demand and",
-      "link_text": "decarbonize its energy grid.",
+      "intro": "Canada bets big on nuclear",
+      "body": "Ottawa unveiled a federal strategy to build as many as 10 reactors by 2040, framing atomic power as central to meeting surging electricity demand and climate goals in what officials are calling a",
+      "link_text": "'nuclear renaissance.'",
       "url": "https://www.cbc.ca/news/politics/federal-nuclear-strategy-9.7244509",
       "source": "CBC"
     },
     {
-      "intro": "Greenspan dies at 100",
-      "body": "Alan Greenspan, the most powerful central banker of the modern era, has died, leaving behind a contested legacy of long booms and the financial crisis that",
-      "link_text": "shadowed his final years.",
-      "url": "https://www.washingtonpost.com/obituaries/2026/06/22/alan-greenspan-most-powerful-central-banker-modern-times-dies-100/",
-      "source": "Washington Post"
-    },
-    {
-      "intro": "Bird flu reaches Australia",
-      "body": "H5N1 has now been confirmed on every continent after its first detection in Australia, raising fresh concern about mutations that could enable",
-      "link_text": "human-to-human transmission.",
-      "url": "https://www.foxnews.com/world/h5n1-bird-flu-confirmed-australia-first-time-meaning-virus-reached-every-continent",
-      "source": "Fox News"
-    },
-    {
-      "intro": "Chinese AI rattles Silicon Valley",
-      "body": "The open-source GLM-5.2 model is reportedly matching or beating Anthropic's flagship Opus on coding tasks, intensifying questions about whether American labs can",
-      "link_text": "maintain their lead.",
-      "url": "https://www.businessinsider.com/what-is-glm-5-2-chinese-ai-coding-model-2026-6#article",
-      "source": "Business Insider"
-    },
-    {
-      "intro": "Police tracking women",
-      "body": "An investigation found police chiefs using Flock's license-plate camera network to stalk specific women, a chilling case study in why surveillance dragnets should",
-      "link_text": "require warrants.",
+      "intro": "Police are stalking with surveillance tech",
+      "body": "An investigation found that police chiefs used the Flock license-plate camera network to track individual women, a chilling case study in how mass surveillance infrastructure invites abuse and why",
+      "link_text": "warrants are needed.",
       "url": "https://ipvm.com/reports/police-chiefs-track",
       "source": "IPVM"
     },
     {
-      "intro": "A 3B model out-reasons giants",
-      "body": "Researchers claim VibeThinker, a tiny 3-billion-parameter model, beats far larger frontier systems on reasoning benchmarks using a novel training recipe that could",
-      "link_text": "upend the scaling consensus.",
+      "intro": "Greenspan, the maestro, dies at 100",
+      "body": "Alan Greenspan, who shaped the modern global economy across nearly two decades as Federal Reserve chairman and became both celebrated and blamed for the era's booms and busts, has died as the",
+      "link_text": "most powerful central banker.",
+      "url": "https://www.washingtonpost.com/obituaries/2026/06/22/alan-greenspan-most-powerful-central-banker-modern-times-dies-100/",
+      "source": "The Washington Post"
+    },
+    {
+      "intro": "Tiny model beats the giants",
+      "body": "VibeThinker, a 3-billion-parameter model, reportedly outperforms far larger frontier systems on reasoning benchmarks using a novel training approach — challenging the assumption that scale alone wins, beating",
+      "link_text": "Opus 4.5 on reasoning.",
       "url": "https://arxiv.org/abs/2606.16140",
       "source": "arXiv"
     },
     {
-      "intro": "Microsoft buys 20 years of power",
-      "body": "Chevron signed a two-decade agreement to supply electricity to a West Texas data center, the latest sign that AI's energy appetite is reshaping deals between",
-      "link_text": "Big Tech and Big Oil.",
+      "intro": "US and Iran talk under threats",
+      "body": "The first round of negotiations ended with technical talks set to continue, but Trump's public threats over the Strait of Hormuz rattled the summit and sent oil markets jumping during the",
+      "link_text": "US-Iran negotiations.",
+      "url": "https://www.nbcnews.com/world/iran/president-jd-vance-switzerland-iran-talks-trump-threatens-toll-rcna351033",
+      "source": "NBC News"
+    },
+    {
+      "intro": "China retaliates on trade",
+      "body": "Beijing imposed restrictions on dozens of American companies, escalating economic tensions and signaling that the trade conflict between the world's two largest economies is far from over as",
+      "link_text": "China slaps restrictions.",
+      "url": "https://www.wsj.com/world/china/china-slaps-restrictions-on-dozens-of-u-s-companies-bd337a1c",
+      "source": "The Wall Street Journal"
+    },
+    {
+      "intro": "Prediction markets game social media",
+      "body": "Polymarket flooded platforms with deceptive videos produced by paid creators, raising questions about how betting markets manufacture the appearance of organic sentiment through",
+      "link_text": "deceptive paid videos.",
+      "url": "https://www.wsj.com/business/media/polymarket-social-media-bets-prediction-market-441cdeb5?st=HhTZY2",
+      "source": "The Wall Street Journal"
+    },
+    {
+      "intro": "Big Tech buys decades of power",
+      "body": "Chevron signed a 20-year agreement to supply electricity to a Microsoft data center in West Texas, underscoring how AI's appetite for energy is reshaping long-term deals between oil giants and",
+      "link_text": "cloud computing companies.",
       "url": "https://www.chevron.com/newsroom/2026/q2/chevron-signs-20-year-power-agreement-with-microsoft-for-west-texas-data-center",
       "source": "Chevron"
     },
     {
-      "intro": "Memory prices to the moon",
-      "body": "The deepening RAM shortage has grown so severe that even decades-old retro memory chips are spiking in price, squeezing everyone from data centers to",
-      "link_text": "vintage computing hobbyists.",
-      "url": "https://www.theregister.com/personal-tech/2026/06/22/the-memory-crisis-is-getting-so-bad-that-even-retro-ram-prices-are-going-to-the-moon/5259627",
-      "source": "The Register"
+      "intro": "Trump predicts Starmer's downfall",
+      "body": "The president's post declaring that the British prime minister 'will resign' stunned officials in the UK, an extraordinary intervention in an ally's domestic politics that the British government",
+      "link_text": "has not addressed.",
+      "url": "https://www.washingtonpost.com/world/2026/06/21/trump-declares-british-pm-will-resign-starmer-has-not-said-anything/",
+      "source": "The Washington Post"
     },
     {
-      "intro": "Mexico's $10k EV",
-      "body": "The Mexican government revealed a prototype for a homegrown, ultra-affordable electric vehicle, an ambitious bid to build domestic manufacturing and",
-      "link_text": "challenge cheap Chinese imports.",
-      "url": "https://gizmodo.com/mexico-just-showed-off-a-new-extremely-cheap-government-backed-ev-2000769080",
-      "source": "Gizmodo"
+      "intro": "Brexit at ten years",
+      "body": "A decade after the referendum, Britain remains deeply divided over the economic and political consequences of leaving the EU, with a fresh reckoning over what the departure actually delivered as the",
+      "link_text": "legacy still divides Britain.",
+      "url": "https://www.pbs.org/newshour/world/what-to-know-about-the-legacy-of-brexit-which-still-divides-britain-10-years-on",
+      "source": "PBS"
     },
     {
-      "intro": "Polymarket's deceptive influencers",
-      "body": "The prediction market flooded social media with misleading videos from paid creators, raising questions about how betting platforms manipulate sentiment to",
-      "link_text": "move their own markets.",
-      "url": "https://www.wsj.com/business/media/polymarket-social-media-bets-prediction-market-441cdeb5?st=HhTZY2",
-      "source": "WSJ"
+      "intro": "Butterflies cheat aging",
+      "body": "Some tropical butterflies live 25 times longer than their relatives thanks to an unusual survival strategy, offering biologists a striking natural example of how lifespan can be radically extended through",
+      "link_text": "an unusual strategy.",
+      "url": "https://www.ksl.com/article/51514061/an-unusual-strategy-helps-some-tropical-butterflies-live-25-times-longer-than-their-relatives",
+      "source": "KSL"
     },
     {
-      "intro": "Democratic socialists surge",
-      "body": "Buoyed by high-profile races in Los Angeles and Washington, DSA-aligned candidates are roaring back into the spotlight and reshaping the left flank of",
-      "link_text": "American politics.",
-      "url": "https://thehill.com/homenews/campaign/5932183-democratic-socialists-dsa-political-change/",
-      "source": "The Hill"
+      "intro": "Where the AI boom began",
+      "body": "A look back at pioneering 1991 work in Munich argues that the foundations of today's neural network revolution were laid decades before the current frenzy, tracing the surprising",
+      "link_text": "roots of the AI boom.",
+      "url": "https://people.idsia.ch/~juergen/ai-boom-roots-munich-1991.html",
+      "source": "Jürgen Schmidhuber"
     }
   ]
 }
