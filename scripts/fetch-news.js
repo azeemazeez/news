@@ -131,7 +131,7 @@ Return ONLY valid JSON, no markdown, no other text:
 {
   "stories": [
     {
-      "intro": "2–5 word bold hook, no trailing punctuation",
+      "intro": "2–5 word hook, no trailing punctuation, no markdown",
       "body": "Prose continuing from intro, 1–2 sentences, ends with a space before the link phrase.",
       "link_text": "3–8 word concluding phrase with trailing period, will be hyperlinked.",
       "url": "original URL unchanged",

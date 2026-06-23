@@ -9,10 +9,14 @@ function formatDate(iso) {
   return d.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
 }
 
+function strip(str) {
+  return (str || '').replace(/\*\*/g, '');
+}
+
 function renderStory(story) {
   return `
     <article class="story">
-      <p class="story-line"><strong>${story.intro}</strong> ${story.body} <a class="story-link" href="${story.url}" target="_blank" rel="noopener noreferrer">${story.link_text}</a></p>
+      <p class="story-line"><strong>${strip(story.intro)}</strong> ${strip(story.body)} <a class="story-link" href="${story.url}" target="_blank" rel="noopener noreferrer">${strip(story.link_text)}</a></p>
     </article>
   `;
 }
