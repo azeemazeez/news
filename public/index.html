@@ -45,6 +45,17 @@
     <div class="state-message"><p>Loading&hellip;</p></div>
   </main>
 
+  <section class="subscribe-section">
+    <form class="subscribe-form" id="subscribe-form">
+      <label class="subscribe-label" for="subscribe-email">Get the daily digest in your inbox</label>
+      <div class="subscribe-row">
+        <input class="subscribe-input" id="subscribe-email" type="email" placeholder="you@example.com" required autocomplete="email">
+        <button class="subscribe-btn" type="submit">Subscribe</button>
+      </div>
+      <p class="subscribe-msg" id="subscribe-msg" aria-live="polite"></p>
+    </form>
+  </section>
+
   <footer class="footer">
     <p>The Nuus: Curated daily</p>
     <nav class="footer-nav">
@@ -54,5 +65,40 @@
   </footer>
 
   <script src="/app.js"></script>
+  <script>
+    document.getElementById('subscribe-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const email = document.getElementById('subscribe-email').value;
+      const msg = document.getElementById('subscribe-msg');
+      const btn = e.target.querySelector('button');
+
+      btn.disabled = true;
+      btn.textContent = 'Subscribing…';
+      msg.textContent = '';
+      msg.className = 'subscribe-msg';
+
+      try {
+        const res = await fetch('/api/subscribe', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email }),
+        });
+        const data = await res.json();
+        if (res.ok) {
+          msg.textContent = 'You\'re subscribed. See you tomorrow.';
+          msg.classList.add('subscribe-msg--success');
+          e.target.reset();
+        } else {
+          throw new Error(data.error || 'Something went wrong');
+        }
+      } catch (err) {
+        msg.textContent = err.message;
+        msg.classList.add('subscribe-msg--error');
+      } finally {
+        btn.disabled = false;
+        btn.textContent = 'Subscribe';
+      }
+    });
+  </script>
 </body>
 </html>

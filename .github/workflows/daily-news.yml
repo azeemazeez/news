@@ -31,6 +31,12 @@ jobs:
           NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
         run: node scripts/fetch-news.js
 
+      - name: Send email digest
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          RESEND_AUDIENCE_ID: ${{ secrets.RESEND_AUDIENCE_ID }}
+        run: node scripts/send-digest.js
+
       - name: Commit new data files
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
