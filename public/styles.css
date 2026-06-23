@@ -148,8 +148,7 @@ a.site-name {
 }
 
 .date-nav button:disabled {
-  opacity: 0.3;
-  cursor: default;
+  visibility: hidden;
 }
 
 /* Feed */
