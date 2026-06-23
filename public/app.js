@@ -49,7 +49,7 @@ async function loadDay(date) {
   updateNav();
 
   try {
-    const res = await fetch(`/data/${date}.json?t=${Date.now()}`);
+    const res = await fetch(`/data/${date}.json`);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const data = await res.json();
     document.getElementById('feed').innerHTML = renderFeed(data);
