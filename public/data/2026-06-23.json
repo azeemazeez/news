@@ -1,90 +1,111 @@
 {
   "date": "2026-06-23",
-  "generated_at": "2026-06-23T09:30:22.649Z",
+  "generated_at": "2026-06-23T10:51:07.162Z",
   "stories": [
     {
-      "intro": "Canada bets big on nuclear",
-      "body": "Ottawa unveiled a federal strategy to build as many as 10 new reactors by 2040, framing it as a \"nuclear renaissance\" to meet surging electricity demand and climate goals. The plan signals a major shift after decades of stalled atomic ambitions in",
-      "link_text": "Canada's energy policy.",
+      "intro": "**Starmer steps down**",
+      "body": "The UK prime minister has resigned amid mounting political turmoil, with Manchester mayor Andy Burnham emerging as the favorite to inherit what observers are calling",
+      "link_text": "a terrible inheritance.",
+      "url": "https://www.nytimes.com/2026/06/23/world/europe/uk-burnham-starmer-politics.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "**UN declares genocide**",
+      "body": "A United Nations inquiry has concluded that Israel deliberately targeted children in Gaza, amounting to acts of genocide — a finding that will reverberate through",
+      "link_text": "international law for years.",
+      "url": "https://www.reuters.com/world/middle-east/israel-targeted-gaza-children-resulting-genocide-un-inquiry-says-2026-06-23/",
+      "source": "Reuters"
+    },
+    {
+      "intro": "**Canada's nuclear bet**",
+      "body": "Ottawa unveiled a sweeping federal strategy to build up to 10 new reactors by 2040, marking what officials are calling a national",
+      "link_text": "nuclear renaissance.",
       "url": "https://www.cbc.ca/news/politics/federal-nuclear-strategy-9.7244509",
       "source": "CBC"
     },
     {
-      "intro": "Police tracked women with surveillance",
-      "body": "An investigation found that police chiefs used Flock's automated license-plate reader network to stalk and monitor individual women, exposing how warrantless mass surveillance tools can be abused. The findings strengthen calls for",
-      "link_text": "warrant requirements on these systems.",
-      "url": "https://ipvm.com/reports/police-chiefs-track",
-      "source": "IPVM"
+      "intro": "**China takes the crown**",
+      "body": "For the first time since 2017, China has claimed the world's fastest supercomputer title from the United States, a symbolic blow in the escalating",
+      "link_text": "tech race between powers.",
+      "url": "https://www.nytimes.com/2026/06/23/technology/china-supercomputer-crown-us.html",
+      "source": "New York Times"
     },
     {
-      "intro": "US and Iran resume talks",
-      "body": "The first round of negotiations ended with both sides agreeing to continue technical discussions, even as President Trump's threats over the Strait of Hormuz rattled the summit and pushed up oil prices. The fragile diplomacy could reshape",
-      "link_text": "Middle East tensions for years.",
+      "intro": "**Iran nuclear talks falter**",
+      "body": "The first round of US-Iran negotiations led by Vice President Vance ended without firm commitments after Trump's public threats over the Strait of Hormuz",
+      "link_text": "shook the summit.",
       "url": "https://www.nbcnews.com/world/iran/president-jd-vance-switzerland-iran-talks-trump-threatens-toll-rcna351033",
       "source": "NBC News"
     },
     {
-      "intro": "China hits back at US firms",
-      "body": "Beijing imposed restrictions on dozens of American companies in a sharp escalation of trade tensions, signaling that economic decoupling between the world's two largest economies is",
-      "link_text": "accelerating once again.",
-      "url": "https://www.wsj.com/world/china/china-slaps-restrictions-on-dozens-of-u-s-companies-bd337a1c",
-      "source": "The Wall Street Journal"
-    },
-    {
-      "intro": "Trump predicts Starmer's downfall",
-      "body": "The president's social media claim that the British prime minister \"will resign\" blindsided officials in London, who said Starmer had given no such indication. The remark deepened questions about how Trump's interventions affect",
-      "link_text": "transatlantic political relations.",
-      "url": "https://www.washingtonpost.com/world/2026/06/21/trump-declares-british-pm-will-resign-starmer-has-not-said-anything/",
-      "source": "The Washington Post"
-    },
-    {
-      "intro": "Tiny model beats giants",
-      "body": "A 3-billion-parameter model called VibeThinker reportedly outperforms far larger systems like Opus 4.5 on reasoning benchmarks using a novel training approach, challenging assumptions that bigger always means smarter in",
-      "link_text": "the race for AI reasoning.",
+      "intro": "**Tiny model, huge punch**",
+      "body": "A 3-billion-parameter model called VibeThinker reportedly outperforms far larger systems like Opus 4.5 on reasoning tasks, suggesting clever training may matter more than",
+      "link_text": "sheer scale.",
       "url": "https://arxiv.org/abs/2606.16140",
       "source": "Hacker News"
     },
     {
-      "intro": "Prediction markets gamed virality",
-      "body": "Polymarket has flooded social platforms with deceptive videos produced by paid creators, raising fresh concerns about how betting platforms blur the line between information and",
-      "link_text": "manipulative marketing.",
-      "url": "https://www.wsj.com/business/media/polymarket-social-media-bets-prediction-market-441cdeb5?st=HhTZY2",
-      "source": "The Wall Street Journal"
-    },
-    {
-      "intro": "Big Tech buys its own power",
-      "body": "Chevron signed a 20-year agreement to supply electricity to a Microsoft data center in West Texas, the latest sign that AI's energy appetite is reshaping deals between",
-      "link_text": "oil giants and cloud companies.",
-      "url": "https://www.chevron.com/newsroom/2026/q2/chevron-signs-20-year-power-agreement-with-microsoft-for-west-texas-data-center",
-      "source": "Chevron"
-    },
-    {
-      "intro": "Brexit at ten",
-      "body": "A decade after the vote to leave the EU, Britain remains deeply divided over the economic and political legacy of a decision that continues to shape",
-      "link_text": "the nation's identity.",
-      "url": "https://www.pbs.org/newshour/world/what-to-know-about-the-legacy-of-brexit-which-still-divides-britain-10-years-on",
-      "source": "PBS"
-    },
-    {
-      "intro": "AI's roots run deep",
-      "body": "A historical account traces the foundations of today's AI boom back to pioneering work done in Munich in 1991, revealing how long-overlooked research quietly set the stage for",
-      "link_text": "the modern machine learning era.",
-      "url": "https://people.idsia.ch/~juergen/ai-boom-roots-munich-1991.html",
+      "intro": "**Police surveillance abuse**",
+      "body": "An investigation found police chiefs using Flock's license-plate camera network to stalk women, a stark illustration of why civil liberties advocates insist",
+      "link_text": "warrants are needed.",
+      "url": "https://ipvm.com/reports/police-chiefs-track",
       "source": "Hacker News"
     },
     {
-      "intro": "Butterflies cheat aging",
-      "body": "Researchers discovered that an unusual feeding strategy lets some tropical butterflies live up to 25 times longer than close relatives, offering intriguing clues about the biology of",
-      "link_text": "longevity in nature.",
-      "url": "https://www.ksl.com/article/51514061/an-unusual-strategy-helps-some-tropical-butterflies-live-25-times-longer-than-their-relatives",
-      "source": "KSL.com"
+      "intro": "**Prediction markets go astroturf**",
+      "body": "Polymarket has flooded social media with deceptive videos produced by paid creators, blurring the line between organic enthusiasm and",
+      "link_text": "manufactured hype.",
+      "url": "https://www.wsj.com/business/media/polymarket-social-media-bets-prediction-market-441cdeb5?st=HhTZY2",
+      "source": "Wall Street Journal"
     },
     {
-      "intro": "Near-miss over Boston",
-      "body": "Two jets came within 300 feet of each other, forcing a Delta flight to abort its landing in a close call that aviation experts say underscores ongoing strains on",
-      "link_text": "the air traffic system.",
-      "url": "https://www.pbs.org/newshour/nation/jets-were-300-feet-apart-in-boston-close-call-that-forced-delta-flight-to-abort-landing-expert-says",
-      "source": "PBS"
+      "intro": "**A type 1 diabetes first**",
+      "body": "The NHS has begun offering the first-ever drug shown to delay the onset of type 1 diabetes, potentially buying years of healthy life for",
+      "link_text": "at-risk patients.",
+      "url": "https://www.bbc.co.uk/news/articles/ce8mzd94r76o?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC News"
+    },
+    {
+      "intro": "**Hospitals defeat cyberattack**",
+      "body": "When a national cyberattack hit, around 100 hospitals reverted to pen and paper to keep running — an unexpected lesson in resilience and",
+      "link_text": "analog backup plans.",
+      "url": "https://www.bbc.co.uk/news/articles/c4gyk756mzlo?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC News"
+    },
+    {
+      "intro": "**Brexit's decade-long bill**",
+      "body": "Ten years after the referendum, analysts tally substantial lost economic growth, with British strawberries now picked by workers flown in from",
+      "link_text": "Central Asia.",
+      "url": "https://www.nytimes.com/2026/06/23/business/brexit-uk-economy.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "**Gasoline demand may never recover**",
+      "body": "America's thirst for gasoline could be permanently dented in the wake of the Iran war, a structural shift in energy consumption with implications for",
+      "link_text": "oil markets and climate.",
+      "url": "https://www.nytimes.com/2026/06/23/business/economy/gasoline-demand-destruction.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "**Big Tech triggers sell-off**",
+      "body": "Global markets recoiled in a broad sell-off driven by AI and tech stocks, raising fresh questions about whether the boom has reached",
+      "link_text": "bubble territory.",
+      "url": "https://www.nytimes.com/2026/06/23/business/stock-market-down-tech-ai-asia-sp500-oil-gas.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "**Powering AI with fossil fuels**",
+      "body": "Chevron signed a 20-year power agreement with Microsoft for a West Texas data center, underscoring how the AI buildout is reshaping",
+      "link_text": "energy partnerships.",
+      "url": "https://www.chevron.com/newsroom/2026/q2/chevron-signs-20-year-power-agreement-with-microsoft-for-west-texas-data-center",
+      "source": "Hacker News"
+    },
+    {
+      "intro": "**Europe's heat reckoning**",
+      "body": "A punishing heat dome has driven record temperatures across Europe, putting newly created heat-wave protections through their first real",
+      "link_text": "crash test.",
+      "url": "https://www.nytimes.com/2026/06/23/climate/europe-heat-wave-protective-measures.html",
+      "source": "New York Times"
     }
   ]
 }
