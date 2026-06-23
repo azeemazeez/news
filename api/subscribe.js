@@ -38,6 +38,21 @@ export default async function handler(req, res) {
       return res.status(500).json({ error: data.message || data.name || 'Resend error' });
     }
 
+    // Notify owner
+    await fetch('https://api.resend.com/emails', {
+      method: 'POST',
+      headers: {
+        Authorization: `Bearer ${process.env.RESEND_SUBSCRIBE_KEY}`,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        from: 'The Nuus <hi@thenuus.com>',
+        to: 'hi@azeem.me',
+        subject: `New subscriber: ${email}`,
+        text: `${email} just subscribed to The Nuus.`,
+      }),
+    });
+
     return res.status(200).json({ success: true });
   } catch (err) {
     return res.status(500).json({ error: err.message });
