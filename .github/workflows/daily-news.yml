@@ -33,7 +33,7 @@ jobs:
 
       - name: Send email digest
         env:
-          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          RESEND_SUBSCRIBE_KEY: ${{ secrets.RESEND_SUBSCRIBE_KEY }}
           RESEND_AUDIENCE_ID: ${{ secrets.RESEND_AUDIENCE_ID }}
         run: node scripts/send-digest.js
 

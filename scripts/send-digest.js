@@ -3,7 +3,7 @@ import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const RESEND_API_KEY = process.env.RESEND_API_KEY;
+const RESEND_API_KEY = process.env.RESEND_SUBSCRIBE_KEY;
 const RESEND_AUDIENCE_ID = process.env.RESEND_AUDIENCE_ID;
 const FROM = 'The Nuus <hi@thenuus.com>';
 const SITE_URL = 'https://thenuus.com';
