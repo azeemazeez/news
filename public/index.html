@@ -83,7 +83,8 @@
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ email }),
         });
-        const data = await res.json();
+        let data = {};
+        try { data = await res.json(); } catch {}
         if (res.ok) {
           msg.textContent = 'You\'re subscribed. See you tomorrow.';
           msg.classList.add('subscribe-msg--success');
