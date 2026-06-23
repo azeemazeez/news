@@ -88,13 +88,17 @@ async function fetchNewsAPI() {
     }));
 }
 
-async function curateWithClaude(stories) {
+async function curateWithClaude(stories, previousStories = []) {
   const storyList = stories
     .slice(0, 120)
     .map((s, i) =>
       `${i + 1}. [${s.source}${s.score ? `, score:${s.score}` : ''}] ${s.title}\n   ${s.url}`
     )
     .join('\n');
+
+  const previousBlock = previousStories.length > 0
+    ? `\n\nYESTERDAY'S STORIES (already published — skip these topics and anything closely related):\n${previousStories.map(s => `- ${s.intro} ${s.body}`).join('\n')}\n`
+    : '';
 
   const message = await client.messages.create({
     model: 'claude-opus-4-8',
@@ -104,7 +108,7 @@ async function curateWithClaude(stories) {
         role: 'user',
         content: `You are the editor of a sharp, intelligent daily news digest — like The Morning News or Arts & Letters Daily. Your readers are curious, educated generalists who want to understand the world.
 
-From the stories below (collected in the last 24 hours), select exactly 15 that an intelligent general audience would most want to know about.
+From the stories below (collected in the last 24 hours), select exactly 15 that an intelligent general audience would most want to know about.${previousBlock}
 
 Prioritize stories that:
 - Have broad significance or represent a meaningful shift
@@ -190,9 +194,21 @@ async function main() {
 
   console.log(`Collected ${unique.length} unique stories, curating with Claude...`);
 
-  const curated = await curateWithClaude(unique);
-
+  // Load yesterday's stories to avoid repeats
   const date = new Date(Date.now() + 4 * 60 * 60 * 1000).toISOString().split('T')[0];
+  const [year, month, day] = date.split('-').map(Number);
+  const yesterday = new Date(Date.UTC(year, month - 1, day - 1)).toISOString().split('T')[0];
+  const yesterdayPath = join(dataDir, `${yesterday}.json`);
+  let previousStories = [];
+  if (existsSync(yesterdayPath)) {
+    try {
+      previousStories = JSON.parse(readFileSync(yesterdayPath, 'utf8')).stories || [];
+      console.log(`Loaded ${previousStories.length} stories from ${yesterday} for dedup`);
+    } catch {}
+  }
+
+  const curated = await curateWithClaude(unique, previousStories);
+
   const output = {
     date,
     generated_at: new Date().toISOString(),
