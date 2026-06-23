@@ -154,6 +154,13 @@ Return ONLY valid JSON, no markdown, no other text:
 }
 
 async function main() {
+  const dateIdx = process.argv.indexOf('--date');
+  const dateArg = dateIdx !== -1 ? process.argv[dateIdx + 1] : null;
+  if (dateArg && !/^\d{4}-\d{2}-\d{2}$/.test(dateArg)) {
+    console.error('Invalid date format. Use --date YYYY-MM-DD');
+    process.exit(1);
+  }
+
   console.log('Fetching news sources...');
 
   const [hn, worldnews, technology, science, uplift, bbc, nyt] = await Promise.allSettled([
@@ -195,7 +202,7 @@ async function main() {
   console.log(`Collected ${unique.length} unique stories, curating with Claude...`);
 
   // Load yesterday's stories to avoid repeats
-  const date = new Date(Date.now() + 4 * 60 * 60 * 1000).toISOString().split('T')[0];
+  const date = dateArg || new Date(Date.now() + 4 * 60 * 60 * 1000).toISOString().split('T')[0];
   const [year, month, day] = date.split('-').map(Number);
   const yesterday = new Date(Date.UTC(year, month - 1, day - 1)).toISOString().split('T')[0];
   const yesterdayPath = join(dataDir, `${yesterday}.json`);
