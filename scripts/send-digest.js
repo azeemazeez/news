@@ -122,7 +122,7 @@ async function main() {
       Authorization: `Bearer ${RESEND_API_KEY}`,
       'Content-Type': 'application/json',
     },
-    body: JSON.stringify({ scheduled_at: 'now' }),
+    body: JSON.stringify({}),
   });
 
   if (!sendRes.ok) {
