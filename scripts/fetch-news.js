@@ -7,6 +7,33 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const dataDir = join(__dirname, '../public/data');
 const client = new Anthropic();
 
+async function fetchRSS(url, sourceName) {
+  const res = await fetch(url, { headers: { 'User-Agent': 'daily-news-portal/1.0' } });
+  const xml = await res.text();
+
+  const items = [];
+  const itemRegex = /<item>([\s\S]*?)<\/item>/g;
+  let match;
+
+  while ((match = itemRegex.exec(xml)) !== null) {
+    const block = match[1];
+    const extract = tag => {
+      const cdataMatch = block.match(new RegExp(`<${tag}[^>]*><!\\[CDATA\\[([\\s\\S]*?)\\]\\]><\\/${tag}>`));
+      const plainMatch = block.match(new RegExp(`<${tag}[^>]*>([^<]*)<\\/${tag}>`));
+      return (cdataMatch?.[1] || plainMatch?.[1] || '').trim();
+    };
+
+    const title = extract('title');
+    const link = extract('link') || extract('guid');
+
+    if (title && link && link.startsWith('http')) {
+      items.push({ title, url: link, source: sourceName, score: 0 });
+    }
+  }
+
+  return items;
+}
+
 async function fetchHackerNews() {
   const res = await fetch('https://hacker-news.firebaseio.com/v0/topstories.json');
   const ids = await res.json();
@@ -125,12 +152,14 @@ Return ONLY valid JSON, no markdown, no other text:
 async function main() {
   console.log('Fetching news sources...');
 
-  const [hn, worldnews, technology, science, uplift] = await Promise.allSettled([
+  const [hn, worldnews, technology, science, uplift, bbc, nyt] = await Promise.allSettled([
     fetchHackerNews(),
     fetchReddit('worldnews'),
     fetchReddit('technology'),
     fetchReddit('science'),
     fetchReddit('UpliftingNews'),
+    fetchRSS('https://feeds.bbci.co.uk/news/rss.xml', 'BBC News'),
+    fetchRSS('https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml', 'New York Times'),
   ]);
 
   let newsApiStories = [];
@@ -146,6 +175,8 @@ async function main() {
     ...(technology.status === 'fulfilled' ? technology.value : []),
     ...(science.status === 'fulfilled' ? science.value : []),
     ...(uplift.status === 'fulfilled' ? uplift.value : []),
+    ...(bbc.status === 'fulfilled' ? bbc.value : []),
+    ...(nyt.status === 'fulfilled' ? nyt.value : []),
     ...newsApiStories,
   ];
 
