@@ -173,6 +173,7 @@ a.site-name {
 
 .about-content .story {
   border-bottom: none;
+  padding: 0.4rem 0;
 }
 
 .story-line {
