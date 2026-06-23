@@ -56,9 +56,13 @@ function buildHtml(stories, date) {
           <tr><td style="height:1px;background:#ede9e0;"></td></tr>
 
           <!-- Articles -->
-          <table width="100%" cellpadding="0" cellspacing="0">
-            ${articles}
-          </table>
+          <tr>
+            <td>
+              <table width="100%" cellpadding="0" cellspacing="0">
+                ${articles}
+              </table>
+            </td>
+          </tr>
 
           <!-- Footer -->
           <tr>
@@ -126,7 +130,7 @@ async function main() {
         subject: `The Nuus — ${dateLabel}`,
         html: html.replace('{{EMAIL}}', encodeURIComponent(contact.email)),
         headers: {
-          'List-Unsubscribe': `<https://thenuus.com/unsubscribe?email=${encodeURIComponent(contact.email)}>`,
+          'List-Unsubscribe': `<https://thenuus.com/api/unsubscribe?email=${encodeURIComponent(contact.email)}>`,
           'List-Unsubscribe-Post': 'List-Unsubscribe=One-Click',
         },
       }),
