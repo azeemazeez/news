@@ -1,111 +1,111 @@
 {
   "date": "2026-06-24",
-  "generated_at": "2026-06-23T20:26:47.349Z",
+  "generated_at": "2026-06-24T03:01:08.078Z",
   "stories": [
     {
-      "intro": "Canada bets big on nuclear",
-      "body": "Ottawa has unveiled a sweeping federal strategy to build as many as ten new reactors by 2040, a sharp reversal of decades of stagnation as the country pursues an energy",
-      "link_text": "nuclear renaissance by 2040.",
-      "url": "https://www.cbc.ca/news/politics/federal-nuclear-strategy-9.7244509",
-      "source": "Hacker News"
+      "intro": "Starmer resigns as PM",
+      "body": "Keir Starmer has announced his resignation as prime minister and Labour leader, triggering a succession contest that could see Manchester mayor Andy Burnham make a play for the",
+      "link_text": "top job in British politics.",
+      "url": "https://www.bbc.com/news/articles/cdxd00lg599o",
+      "source": "BBC News"
     },
     {
-      "intro": "Crypto enters its dark age",
-      "body": "Stephen Diehl surveys the state of digital currencies in 2026 and concludes the industry has curdled into a landscape of fraud, political capture, and broken promises in what he calls",
-      "link_text": "the bad place.",
-      "url": "https://www.stephendiehl.com/posts/bad_place_2026/",
-      "source": "Hacker News"
+      "intro": "Oracle blames AI for cuts",
+      "body": "Oracle says it eliminated 21,000 jobs in 2026 and explicitly attributed some of the reductions to artificial intelligence, one of the clearest corporate admissions yet that AI is already",
+      "link_text": "displacing white-collar workers.",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-22/oracle-layoffs-fueled-by-ai-reduces-workforce-by-21-000",
+      "source": "Bloomberg"
     },
     {
-      "intro": "Greenspan dies at 100",
-      "body": "The Federal Reserve chairman who shaped the global economy for nearly two decades and became the most influential central banker of the modern era has died, leaving a contested",
-      "link_text": "legacy of booms and busts.",
-      "url": "https://www.washingtonpost.com/obituaries/2026/06/22/alan-greenspan-most-powerful-central-banker-modern-times-dies-100/",
-      "source": "The Washington Post"
+      "intro": "Ebola tops 1,000 cases",
+      "body": "An outbreak in eastern DR Congo has crossed a grim threshold, with UNICEF warning that nearly three million children and adolescents now face rising risks amid a fragile and",
+      "link_text": "conflict-strained health response.",
+      "url": "https://www.unicef.org/press-releases/ebola-cases-hit-1000-almost-3-million-children-and-adolescents-face-rising-risks",
+      "source": "UNICEF"
     },
     {
-      "intro": "Trump's whites-first refugee turn",
-      "body": "An investigation details how the administration redirected America's refugee system to favor white South Africans, complete with welcome bags, upending decades of",
-      "link_text": "humanitarian precedent.",
-      "url": "https://www.nytimes.com/2026/06/23/us/politics/trump-refugee-program-whites.html",
+      "intro": "NSA loses its AI tool",
+      "body": "A dispute with Anthropic has cut off the National Security Agency's access to a powerful AI model, exposing how dependent intelligence agencies have become on private companies that can",
+      "link_text": "revoke access at will.",
+      "url": "https://www.nytimes.com/2026/06/23/us/politics/nsa-lost-access-anthropic-tool.html",
       "source": "New York Times"
     },
     {
-      "intro": "AI hiring tools show bias",
-      "body": "A Stanford study found that AI-powered recruiting systems systematically reject candidates by race, rejecting 26% of Black and 15% of Asian applicants, raising fresh alarms about automation in",
-      "link_text": "employment decisions.",
+      "intro": "Senate cracks down on Wall Street landlords",
+      "body": "In a rare bipartisan move, the Senate passed a housing bill aimed at lowering costs and restricting big investment firms from buying up single-family homes, taking direct aim at",
+      "link_text": "Wall Street's role in housing.",
+      "url": "https://www.nbcnews.com/politics/congress/senate-passes-bill-lower-housing-costs-restrict-wall-street-buying-hom-rcna350753",
+      "source": "NBC News"
+    },
+    {
+      "intro": "AI hiring tools rejecting the same people",
+      "body": "Stanford researchers find that widely used algorithmic hiring systems create a 'monoculture' that can systematically reject identical candidates across employers, amplifying racial bias and locking some applicants out of",
+      "link_text": "the entire job market.",
       "url": "https://hai.stanford.edu/news/ai-hiring-tools-can-yield-racial-bias-and-systemic-rejection",
       "source": "Hacker News"
     },
     {
-      "intro": "Meta drops worker tracking",
-      "body": "Facebook's parent company has halted a plan to monitor employees for AI training data after internal privacy concerns, a rare retreat in the race to feed models with",
-      "link_text": "human behavioral data.",
-      "url": "https://www.bbc.co.uk/news/articles/cq615g3z36po",
-      "source": "BBC News"
-    },
-    {
-      "intro": "A tiny model beats giants",
-      "body": "Researchers claim VibeThinker, a 3-billion-parameter model, outperforms vastly larger systems on reasoning tasks using a novel training approach, challenging the assumption that bigger always means",
-      "link_text": "smarter AI.",
-      "url": "https://arxiv.org/abs/2606.16140",
+      "intro": "Geothermal drills through granite",
+      "body": "Quaise Energy used millimeter-wave technology to bore 100 meters into solid granite, a milestone that could unlock deep geothermal energy almost anywhere on Earth and reshape the future of",
+      "link_text": "clean baseload power.",
+      "url": "https://www.thinkgeoenergy.com/quaise-energy-achieves-100-meters-of-drilling-using-millimeter-wave-technology/",
       "source": "Hacker News"
     },
     {
-      "intro": "AI's economics don't add up",
-      "body": "A growing analysis argues that the costs of running large AI models far outpace revenue in ways that threaten the entire industry's foundations, pointing toward an",
-      "link_text": "affordability crisis.",
-      "url": "https://blog.dshr.org/2026/06/ais-affordability-crisis.html",
-      "source": "Hacker News"
+      "intro": "Court voids Trump voter system",
+      "body": "A federal judge ruled that a Trump administration data system designed to verify voters is unlawful, the latest in a string of legal defeats for the government's expansive efforts to",
+      "link_text": "police voter rolls.",
+      "url": "https://www.npr.org/2026/06/22/nx-s1-5866719/save-voter-data-trump-judge-unlawful",
+      "source": "NPR"
     },
     {
-      "intro": "Ebola may be milder",
-      "body": "Health officials report that symptoms and death rates in the current outbreak appear less severe than in previous epidemics, a potentially significant shift in how the virus",
-      "link_text": "presents and kills.",
-      "url": "https://www.nytimes.com/2026/06/23/health/ebola-symptoms-death-rate.html",
-      "source": "New York Times"
-    },
-    {
-      "intro": "Social Security running dry",
-      "body": "A bipartisan opinion warns that the program's trust fund is depleting faster than projected, forcing an uncomfortable reckoning over benefit cuts or tax hikes that lawmakers have long",
-      "link_text": "refused to confront.",
-      "url": "https://www.nytimes.com/2026/06/23/opinion/moreno-warren-social-security.html",
-      "source": "New York Times"
-    },
-    {
-      "intro": "Supreme Court spares prison guards",
-      "body": "The justices ruled that a Rastafarian man cannot sue the officers who forcibly shaved his dreadlocks, a decision narrowing the avenues for inmates seeking redress over",
-      "link_text": "religious-liberty violations.",
-      "url": "https://www.nytimes.com/2026/06/23/us/politics/supreme-court-inmates-dreadlocks.html",
-      "source": "New York Times"
-    },
-    {
-      "intro": "Carlson and Greene quit GOP",
-      "body": "Two of the right's loudest voices announced they are done with the Republican Party, an unexpected fracture among MAGA-aligned figures that signals deepening turmoil within the",
-      "link_text": "conservative coalition.",
-      "url": "https://www.nytimes.com/2026/06/23/us/politics/tucker-carlson-marjorie-taylor-greene.html",
-      "source": "New York Times"
-    },
-    {
-      "intro": "Strait of Hormuz reopens",
-      "body": "Dozens of ships began moving through the vital chokepoint after a US-Iran deal, though Rubio's warnings against new tolls and stranded sailors reveal how fragile peace remains in the",
-      "link_text": "world's busiest oil corridor.",
-      "url": "https://www.bbc.co.uk/news/articles/cx23rnzdgl8o",
-      "source": "BBC News"
-    },
-    {
-      "intro": "Mozilla's anonymous web credentials",
-      "body": "A new protocol called PACT aims to let websites verify users without tracking their identities, offering a privacy-preserving alternative as governments push intrusive",
-      "link_text": "age-verification mandates.",
-      "url": "https://hacks.mozilla.org/2026/06/pact-anonymous-credentials-for-the-web/",
-      "source": "Hacker News"
-    },
-    {
-      "intro": "The Vitamin D verdict",
-      "body": "A careful reexamination of the evidence suggests the supplement isn't as useless as recent skeptical headlines implied, finding real but modest benefits hidden in the",
-      "link_text": "messy clinical data.",
+      "intro": "Vitamin D isn't useless after all",
+      "body": "A careful reanalysis pushes back on the fashionable claim that vitamin D supplements do nothing, arguing the evidence for benefits in certain conditions has been unfairly dismissed in the",
+      "link_text": "rush to debunk the hype.",
       "url": "https://dynomight.net/vitamin-d/",
       "source": "Hacker News"
+    },
+    {
+      "intro": "IVF add-ons lack evidence",
+      "body": "A new study finds that many of the costly extra services sold to boost fertility-treatment odds are backed by little or no scientific support, raising hard questions about how clinics",
+      "link_text": "market hope to desperate patients.",
+      "url": "https://www.nytimes.com/2026/06/23/well/live/ivf-fertility-treatment-study.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Germany's rail network froze",
+      "body": "Trains across Germany were briefly halted nationwide after a failure in the communications system, a striking reminder of how vulnerable critical infrastructure remains to single points of",
+      "link_text": "technical failure.",
+      "url": "https://apnews.com/article/germany-trains-halted-communications-radio-problem-deutsche-bahn-e8fd970b2d889f3ae7ce03322d5c726b",
+      "source": "Hacker News"
+    },
+    {
+      "intro": "Reflecting Pool sabotage claim questioned",
+      "body": "President Trump blamed vandals for the deteriorating state of the National Mall's Reflecting Pool, but internal documents reviewed by reporters suggest the damage had far more mundane",
+      "link_text": "and bureaucratic origins.",
+      "url": "https://www.nytimes.com/2026/06/23/us/trump-reflecting-pool-green-peeling.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "ABC fights back against the FCC",
+      "body": "ABC has launched an unusual public campaign urging viewers to resist federal regulatory pressure, an extraordinary move that signals how directly the FCC is now leaning on",
+      "link_text": "major broadcast networks.",
+      "url": "https://www.washingtonpost.com/business/2026/06/22/new-abc-campaign-urges-viewers-push-back-against-fcc-pressure/",
+      "source": "The Washington Post"
+    },
+    {
+      "intro": "California may ban student 3D printers",
+      "body": "A proposed California bill, AB 2047, would make 3D printers off-limits to students, educators and businesses, alarming makers and educators who say the sweeping restrictions could",
+      "link_text": "cripple hands-on learning.",
+      "url": "https://www.the3dprintingnerd.com/ab2047",
+      "source": "Hacker News"
+    },
+    {
+      "intro": "Tesla disputes Autopilot crash story",
+      "body": "After a fatal crash in Texas, Tesla is publicly pushing back on accounts blaming its Autopilot system, reigniting the long-running fight over how much responsibility the company bears for",
+      "link_text": "its driver-assistance technology.",
+      "url": "https://techcrunch.com/2026/06/22/tesla-pushes-back-on-autopilot-narrative-after-fatal-texas-crash/",
+      "source": "TechCrunch"
     }
   ]
 }
