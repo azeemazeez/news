@@ -13,10 +13,4 @@
     <loc>https://thenuus.com/about</loc>
     <changefreq>monthly</changefreq>
   </url>
-
-  <url>
-    <loc>https://thenuus.com/?d=2026-06-22</loc>
-    <lastmod>2026-06-22</lastmod>
-    <changefreq>never</changefreq>
-  </url>
 </urlset>

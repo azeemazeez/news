@@ -28,6 +28,14 @@ function renderFeed(data) {
   return data.stories.map(renderStory).join('');
 }
 
+function updateCanonical(date) {
+  const el = document.querySelector('link[rel="canonical"]');
+  if (!el) return;
+  el.href = (date === manifest.dates[0])
+    ? 'https://thenuus.com/'
+    : `https://thenuus.com/?d=${date}`;
+}
+
 function updateNav() {
   const idx = manifest.dates.indexOf(currentDate);
   const prevBtn = document.getElementById('prev-btn');
@@ -47,6 +55,7 @@ async function loadDay(date) {
   currentDate = date;
   document.getElementById('feed').innerHTML = '<div class="state-message"><p>Loading...</p></div>';
   updateNav();
+  updateCanonical(date);
 
   try {
     const res = await fetch(`/data/${date}.json`);
