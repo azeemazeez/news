@@ -1,111 +1,111 @@
 {
   "date": "2026-06-24",
-  "generated_at": "2026-06-24T03:01:08.078Z",
+  "generated_at": "2026-06-24T04:31:35.293Z",
   "stories": [
     {
-      "intro": "Starmer resigns as PM",
-      "body": "Keir Starmer has announced his resignation as prime minister and Labour leader, triggering a succession contest that could see Manchester mayor Andy Burnham make a play for the",
-      "link_text": "top job in British politics.",
-      "url": "https://www.bbc.com/news/articles/cdxd00lg599o",
-      "source": "BBC News"
+      "intro": "Myanmar's war turns apocalyptic",
+      "body": "The country's civil war has descended into relentless airstrikes and atrocities that have devastated whole regions, a humanitarian catastrophe unfolding largely beyond the world's",
+      "link_text": "attention and comprehension.",
+      "url": "https://www.nytimes.com/2026/06/24/world/asia/myanmar-civil-war-rebels-airstrikes.html",
+      "source": "New York Times"
     },
     {
-      "intro": "Oracle blames AI for cuts",
-      "body": "Oracle says it eliminated 21,000 jobs in 2026 and explicitly attributed some of the reductions to artificial intelligence, one of the clearest corporate admissions yet that AI is already",
-      "link_text": "displacing white-collar workers.",
-      "url": "https://www.bloomberg.com/news/articles/2026-06-22/oracle-layoffs-fueled-by-ai-reduces-workforce-by-21-000",
-      "source": "Bloomberg"
-    },
-    {
-      "intro": "Ebola tops 1,000 cases",
-      "body": "An outbreak in eastern DR Congo has crossed a grim threshold, with UNICEF warning that nearly three million children and adolescents now face rising risks amid a fragile and",
-      "link_text": "conflict-strained health response.",
-      "url": "https://www.unicef.org/press-releases/ebola-cases-hit-1000-almost-3-million-children-and-adolescents-face-rising-risks",
-      "source": "UNICEF"
-    },
-    {
-      "intro": "NSA loses its AI tool",
-      "body": "A dispute with Anthropic has cut off the National Security Agency's access to a powerful AI model, exposing how dependent intelligence agencies have become on private companies that can",
-      "link_text": "revoke access at will.",
+      "intro": "NSA loses its AI",
+      "body": "A dispute with Anthropic cut the National Security Agency off from a powerful AI model it had relied on, exposing how dependent U.S. intelligence has become on a handful of private",
+      "link_text": "frontier AI companies.",
       "url": "https://www.nytimes.com/2026/06/23/us/politics/nsa-lost-access-anthropic-tool.html",
       "source": "New York Times"
     },
     {
-      "intro": "Senate cracks down on Wall Street landlords",
-      "body": "In a rare bipartisan move, the Senate passed a housing bill aimed at lowering costs and restricting big investment firms from buying up single-family homes, taking direct aim at",
-      "link_text": "Wall Street's role in housing.",
-      "url": "https://www.nbcnews.com/politics/congress/senate-passes-bill-lower-housing-costs-restrict-wall-street-buying-hom-rcna350753",
-      "source": "NBC News"
+      "intro": "Trump threatens to sue ABC",
+      "body": "After the network reported that the White House's claims of vandalism at the Reflecting Pool didn't hold up, the president openly threatened lawsuits, in another escalation of his campaign against",
+      "link_text": "critical press coverage.",
+      "url": "https://www.cnbc.com/2026/06/23/trump-threatens-lawsuits-against-abc-network-for-reporting-on-reflecting-pool.html",
+      "source": "CNBC"
     },
     {
-      "intro": "AI hiring tools rejecting the same people",
-      "body": "Stanford researchers find that widely used algorithmic hiring systems create a 'monoculture' that can systematically reject identical candidates across employers, amplifying racial bias and locking some applicants out of",
-      "link_text": "the entire job market.",
-      "url": "https://hai.stanford.edu/news/ai-hiring-tools-can-yield-racial-bias-and-systemic-rejection",
+      "intro": "War on terror's autocratic seeds",
+      "body": "The Economist argues that two decades of expanded surveillance, executive power, and emergency rationales after 9/11 quietly built the institutional machinery now enabling America's slide toward",
+      "link_text": "authoritarian governance.",
+      "url": "https://www.economist.com/by-invitation/2026/06/02/how-the-war-on-terror-primed-america-for-autocracy",
       "source": "Hacker News"
     },
     {
-      "intro": "Geothermal drills through granite",
-      "body": "Quaise Energy used millimeter-wave technology to bore 100 meters into solid granite, a milestone that could unlock deep geothermal energy almost anywhere on Earth and reshape the future of",
-      "link_text": "clean baseload power.",
+      "intro": "Drilling for unlimited geothermal",
+      "body": "Quaise Energy used millimeter-wave technology to drill 100 meters into solid granite, a milestone toward tapping deep heat almost anywhere on Earth and unlocking a potentially vast source of",
+      "link_text": "clean baseload energy.",
       "url": "https://www.thinkgeoenergy.com/quaise-energy-achieves-100-meters-of-drilling-using-millimeter-wave-technology/",
       "source": "Hacker News"
     },
     {
-      "intro": "Court voids Trump voter system",
-      "body": "A federal judge ruled that a Trump administration data system designed to verify voters is unlawful, the latest in a string of legal defeats for the government's expansive efforts to",
-      "link_text": "police voter rolls.",
-      "url": "https://www.npr.org/2026/06/22/nx-s1-5866719/save-voter-data-trump-judge-unlawful",
-      "source": "NPR"
+      "intro": "AI hiring tools amplify bias",
+      "body": "Stanford researchers find that the same algorithmic screening systems used across companies can produce a 'monoculture' that systematically rejects the same candidates everywhere, encoding racial bias into",
+      "link_text": "automated hiring decisions.",
+      "url": "https://hai.stanford.edu/news/ai-hiring-tools-can-yield-racial-bias-and-systemic-rejection",
+      "source": "Hacker News"
     },
     {
-      "intro": "Vitamin D isn't useless after all",
-      "body": "A careful reanalysis pushes back on the fashionable claim that vitamin D supplements do nothing, arguing the evidence for benefits in certain conditions has been unfairly dismissed in the",
-      "link_text": "rush to debunk the hype.",
+      "intro": "Vitamin D reconsidered",
+      "body": "After years of disappointing trials suggesting the supplement does little, a careful reanalysis argues the evidence has been oversold in the other direction, and that vitamin D may still",
+      "link_text": "matter more than thought.",
       "url": "https://dynomight.net/vitamin-d/",
       "source": "Hacker News"
     },
     {
+      "intro": "A diabetes breakthrough on the NHS",
+      "body": "Britain will roll out teplizumab, a drug shown to delay the onset of type 1 diabetes by years, giving at-risk patients precious extra time before they become",
+      "link_text": "dependent on insulin.",
+      "url": "https://www.bbc.com/news/articles/ce8mzd94r76o",
+      "source": "BBC News"
+    },
+    {
       "intro": "IVF add-ons lack evidence",
-      "body": "A new study finds that many of the costly extra services sold to boost fertility-treatment odds are backed by little or no scientific support, raising hard questions about how clinics",
-      "link_text": "market hope to desperate patients.",
+      "body": "A new study finds that many costly extra services sold to couples to improve their chances of conceiving through IVF rest on remarkably little scientific support, raising questions about a lucrative",
+      "link_text": "fertility industry.",
       "url": "https://www.nytimes.com/2026/06/23/well/live/ivf-fertility-treatment-study.html",
       "source": "New York Times"
     },
     {
-      "intro": "Germany's rail network froze",
-      "body": "Trains across Germany were briefly halted nationwide after a failure in the communications system, a striking reminder of how vulnerable critical infrastructure remains to single points of",
-      "link_text": "technical failure.",
-      "url": "https://apnews.com/article/germany-trains-halted-communications-radio-problem-deutsche-bahn-e8fd970b2d889f3ae7ce03322d5c726b",
-      "source": "Hacker News"
-    },
-    {
-      "intro": "Reflecting Pool sabotage claim questioned",
-      "body": "President Trump blamed vandals for the deteriorating state of the National Mall's Reflecting Pool, but internal documents reviewed by reporters suggest the damage had far more mundane",
-      "link_text": "and bureaucratic origins.",
-      "url": "https://www.nytimes.com/2026/06/23/us/trump-reflecting-pool-green-peeling.html",
+      "intro": "Meta launches prediction markets",
+      "body": "The social media giant has quietly built an app letting users bet on real-world events, wading into a contentious arena that blends gambling, finance, and information markets at",
+      "link_text": "enormous scale.",
+      "url": "https://www.nytimes.com/2026/06/23/technology/meta-prediction-markets-app.html",
       "source": "New York Times"
     },
     {
-      "intro": "ABC fights back against the FCC",
-      "body": "ABC has launched an unusual public campaign urging viewers to resist federal regulatory pressure, an extraordinary move that signals how directly the FCC is now leaning on",
-      "link_text": "major broadcast networks.",
-      "url": "https://www.washingtonpost.com/business/2026/06/22/new-abc-campaign-urges-viewers-push-back-against-fcc-pressure/",
-      "source": "The Washington Post"
+      "intro": "Germany's rail network freezes",
+      "body": "A nationwide communications system failure briefly halted trains across Germany, a stark reminder of how dependent critical infrastructure has become on fragile and increasingly",
+      "link_text": "vulnerable digital systems.",
+      "url": "https://www.bbc.co.uk/news/articles/crm0ek4z7ggo",
+      "source": "BBC News"
     },
     {
-      "intro": "California may ban student 3D printers",
-      "body": "A proposed California bill, AB 2047, would make 3D printers off-limits to students, educators and businesses, alarming makers and educators who say the sweeping restrictions could",
-      "link_text": "cripple hands-on learning.",
-      "url": "https://www.the3dprintingnerd.com/ab2047",
+      "intro": "America's many forgotten founders",
+      "body": "As the nation approaches its 250th anniversary, a sweeping reconsideration looks past the familiar handful of names to the far larger and messier cast who actually shaped",
+      "link_text": "the American founding.",
+      "url": "https://www.nytimes.com/2026/06/22/magazine/america-founders-history-usa-250th-anniversary.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Court blocks voter purge tool",
+      "body": "A federal judge barred the administration from using a federal database to check citizenship for voter rolls, warning the flawed system could wrongly strip eligible Americans of their",
+      "link_text": "right to vote.",
+      "url": "https://apnews.com/article/trump-elections-noncitizens-voting-save-lawsuit-a9612cfffa40c938e67b99f265c9e817",
+      "source": "Associated Press"
+    },
+    {
+      "intro": "A rare bipartisan housing win",
+      "body": "Congress passed a major housing affordability bill aimed at restraining Wall Street investors and boosting supply, a notable instance of cooperation amid otherwise bitter",
+      "link_text": "partisan gridlock.",
+      "url": "https://www.nytimes.com/2026/06/23/us/politics/congress-housing-bill.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Heat conference defeated by heat",
+      "body": "An LSE conference on governing extreme heat was cancelled because of an extreme heat warning, an almost too-perfect illustration of how unprepared institutions remain for a",
+      "link_text": "warming world.",
+      "url": "https://www.lse.ac.uk/granthaminstitute/events/extreme-heat-improving-governance-and-strengthening-action-around-the-world/",
       "source": "Hacker News"
-    },
-    {
-      "intro": "Tesla disputes Autopilot crash story",
-      "body": "After a fatal crash in Texas, Tesla is publicly pushing back on accounts blaming its Autopilot system, reigniting the long-running fight over how much responsibility the company bears for",
-      "link_text": "its driver-assistance technology.",
-      "url": "https://techcrunch.com/2026/06/22/tesla-pushes-back-on-autopilot-narrative-after-fatal-texas-crash/",
-      "source": "TechCrunch"
     }
   ]
 }
