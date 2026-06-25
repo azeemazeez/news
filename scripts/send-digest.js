@@ -148,7 +148,7 @@ async function main() {
   console.log(`Digest sent to ${sent}/${active.length} subscribers for ${date}`);
 
   // Notify owner
-  await fetch('https://api.resend.com/emails', {
+  const notifyRes = await fetch('https://api.resend.com/emails', {
     method: 'POST',
     headers: {
       Authorization: `Bearer ${RESEND_API_KEY}`,
@@ -161,6 +161,13 @@ async function main() {
       text: `Today's digest was sent successfully.\n\nSent: ${sent}/${active.length} subscribers`,
     }),
   });
+
+  if (notifyRes.ok) {
+    console.log('Owner notification sent');
+  } else {
+    const err = await notifyRes.json();
+    console.error('Owner notification failed:', JSON.stringify(err));
+  }
 }
 
 main().catch(err => {
