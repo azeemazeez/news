@@ -214,7 +214,17 @@ async function main() {
     } catch {}
   }
 
-  const curated = await curateWithClaude(unique, previousStories);
+  let curated;
+  for (let attempt = 1; attempt <= 3; attempt++) {
+    try {
+      curated = await curateWithClaude(unique, previousStories);
+      break;
+    } catch (err) {
+      console.warn(`Claude API attempt ${attempt} failed: ${err.message}`);
+      if (attempt === 3) throw err;
+      await new Promise(r => setTimeout(r, attempt * 5000));
+    }
+  }
 
   const output = {
     date,
