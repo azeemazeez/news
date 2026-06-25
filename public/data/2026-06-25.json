@@ -1,0 +1,111 @@
+{
+  "date": "2026-06-25",
+  "generated_at": "2026-06-25T03:01:05.609Z",
+  "stories": [
+    {
+      "intro": "OpenAI builds its own chip",
+      "body": "The AI giant unveiled its first custom silicon, designed with Broadcom, in a bid to reduce its dependence on Nvidia and control the spiraling costs of training and running ever-larger",
+      "link_text": "frontier AI models.",
+      "url": "https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/",
+      "source": "TechCrunch"
+    },
+    {
+      "intro": "Anthropic accuses Alibaba of theft",
+      "body": "The AI firm alleges that the Chinese tech giant illicitly extracted Claude's model capabilities, escalating tensions over how closely guarded American AI systems can be reverse-engineered by",
+      "link_text": "foreign competitors.",
+      "url": "https://www.reuters.com/world/china/anthropic-says-alibaba-illicitly-extracted-claude-ai-model-capabilities-2026-06-24/",
+      "source": "Reuters"
+    },
+    {
+      "intro": "Congress rebukes Trump on Iran",
+      "body": "Lawmakers passed a war powers measure for the first time, a rare bipartisan attempt to reclaim authority over military action as the president seeks billions more for the ongoing",
+      "link_text": "conflict with Iran.",
+      "url": "https://www.bbc.com/news/articles/ce8j6g3v3r4o",
+      "source": "BBC News"
+    },
+    {
+      "intro": "Trump wants $88 billion for war",
+      "body": "The president asked Congress for a massive emergency appropriation, most of it earmarked for the costs of the war with Iran, in a request that could reshape the Pentagon's budget and test",
+      "link_text": "Republican support.",
+      "url": "https://www.nytimes.com/2026/06/24/us/politics/trump-congress-iran-war-pentagon.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Iran rules out inspections",
+      "body": "Tehran reported progress in talks with Washington but flatly refused to allow nuclear inspectors back in, leaving the central question of its enrichment program unresolved even as Trump dismissed",
+      "link_text": "the standoff.",
+      "url": "https://www.washingtonpost.com/world/2026/06/23/iran-says-no-nuclear-inspections-countering-vance-statement/",
+      "source": "Washington Post"
+    },
+    {
+      "intro": "Europe's deadly heatwave",
+      "body": "France recorded its hottest day ever as 40 people drowned trying to escape the heat, and Britain saw its hottest June day on record, a grim signal of how unprepared the continent remains for",
+      "link_text": "extreme summers.",
+      "url": "https://www.aljazeera.com/news/2026/6/23/about-20-drown-in-france-trying-to-escape-heatwave-sweeping-much-of-europe",
+      "source": "Al Jazeera"
+    },
+    {
+      "intro": "Air conditioning splits France",
+      "body": "As temperatures soar, a surprisingly bitter political divide has emerged over whether widespread adoption of air conditioning is a sensible adaptation or an environmental surrender, revealing deep cultural rifts about how to",
+      "link_text": "live with heat.",
+      "url": "https://www.bbc.co.uk/news/articles/c4gyqldl3p5o",
+      "source": "BBC News"
+    },
+    {
+      "intro": "AI labs hire philosophers",
+      "body": "The biggest AI companies are recruiting philosophers in unusual numbers, turning to ethicists and logicians to grapple with questions about consciousness, alignment, and moral reasoning that engineering alone",
+      "link_text": "cannot answer.",
+      "url": "https://www.economist.com/science-and-technology/2026/06/24/why-big-ai-labs-are-hiring-so-many-philosophers",
+      "source": "The Economist"
+    },
+    {
+      "intro": "Trump cancels housing bill signing",
+      "body": "After Congress passed a rare bipartisan measure to lower housing costs and restrain Wall Street investors, the president abruptly backed out of signing it, throwing the legislation's fate into",
+      "link_text": "sudden doubt.",
+      "url": "https://www.nytimes.com/2026/06/24/briefing/trump-cancels-plans-to-sign-a-bipartisan-housing-bill.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Mamdani reshapes the Democrats",
+      "body": "New York's primary results showed the party's establishment and labor unions falling in line behind an insurgent left, even as national leaders urge moderation, exposing a widening gulf between the base and",
+      "link_text": "its own leadership.",
+      "url": "https://www.nytimes.com/2026/06/24/nyregion/democrats-unions-primaries-nyc.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "The right turns on abortion patients",
+      "body": "A growing faction of conservatives is openly pushing to criminally prosecute women who obtain abortions, a once-taboo position that signals how far the post-Roe legal landscape may still",
+      "link_text": "shift.",
+      "url": "https://www.nytimes.com/2026/06/24/us/politics/abortion-prosecution-women.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Blocked COVID study published",
+      "body": "Research showing the effectiveness of COVID-19 vaccines, which the CDC reportedly barred from its own journal, has been published elsewhere, raising fresh concerns about political interference in",
+      "link_text": "federal science.",
+      "url": "https://apnews.com/article/cdc-covid-vaccine-effective-study-256e61b5ff4fcf3bfecd48826077e389",
+      "source": "Associated Press"
+    },
+    {
+      "intro": "A nuclear renaissance gets funded",
+      "body": "The Energy Department announced $17.5 billion in loans to revive American reactor construction, betting that next-generation nuclear power can meet surging demand from data centers and",
+      "link_text": "electrification.",
+      "url": "https://www.foxbusiness.com/politics/energy-secretary-says-loans-help-unleash-next-american-nuclear-renaissance-reactors",
+      "source": "Fox Business"
+    },
+    {
+      "intro": "Russia eyes a new front",
+      "body": "Moscow is pressuring Belarus to open another avenue of attack in the Ukraine war, a move that could dramatically widen the conflict and draw the neighboring nation more directly into",
+      "link_text": "the fighting.",
+      "url": "https://www.wsj.com/world/russia/russia-pressures-belarus-in-bid-to-open-new-front-in-ukraine-war-8020d37e",
+      "source": "Wall Street Journal"
+    },
+    {
+      "intro": "A $25,000 electric truck",
+      "body": "Startup Slate unveiled a bare-bones EV pickup starting under $25,000, a radical bet that stripping away luxury features and touchscreens could finally make electric vehicles genuinely affordable for",
+      "link_text": "ordinary buyers.",
+      "url": "https://www.slate.auto/en",
+      "source": "Slate"
+    }
+  ]
+}
