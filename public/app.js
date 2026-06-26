@@ -37,17 +37,6 @@ function updateCanonical(date) {
 }
 
 function updateNav() {
-  const idx = manifest.dates.indexOf(currentDate);
-  const prevBtn = document.getElementById('prev-btn');
-  const nextBtn = document.getElementById('next-btn');
-  const prevDate = manifest.dates[idx + 1]; // older
-  const nextDate = manifest.dates[idx - 1]; // newer
-
-  prevBtn.textContent = prevDate ? `← ${prevDate}` : '←';
-  prevBtn.disabled = !prevDate;
-  nextBtn.textContent = nextDate ? `${nextDate} →` : '→';
-  nextBtn.disabled = !nextDate;
-
   document.getElementById('date-display').textContent = formatDate(currentDate);
 }
 
@@ -84,8 +73,6 @@ async function init() {
 
   if (manifest.dates.length === 0) {
     document.getElementById('date-display').textContent = 'No issues yet';
-    document.getElementById('prev-btn').disabled = true;
-    document.getElementById('next-btn').disabled = true;
     document.getElementById('feed').innerHTML = `
       <div class="state-message">
         <h2>No news yet</h2>
@@ -102,14 +89,6 @@ async function init() {
   await loadDay(startDate);
 }
 
-function navigate(direction) {
-  const idx = manifest.dates.indexOf(currentDate);
-  const next = direction === 'prev' ? manifest.dates[idx + 1] : manifest.dates[idx - 1];
-  if (!next) return;
-  history.pushState({}, '', `?d=${next}`);
-  loadDay(next);
-}
-
 window.addEventListener('popstate', () => {
   const params = new URLSearchParams(window.location.search);
   const d = params.get('d');
@@ -117,8 +96,6 @@ window.addEventListener('popstate', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  document.getElementById('prev-btn').addEventListener('click', () => navigate('prev'));
-  document.getElementById('next-btn').addEventListener('click', () => navigate('next'));
   document.getElementById('site-name').addEventListener('click', () => {
     if (manifest.dates.length > 0) {
       history.pushState({}, '', '/');
