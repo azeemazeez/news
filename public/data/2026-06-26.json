@@ -1,0 +1,111 @@
+{
+  "date": "2026-06-26",
+  "generated_at": "2026-06-26T04:59:29.972Z",
+  "stories": [
+    {
+      "intro": "An ancient scroll finally speaks",
+      "body": "For the first time, researchers have read an entire Herculaneum scroll carbonized by Vesuvius nearly two millennia ago, using AI and high-resolution scanning to recover text no human has seen since antiquity. The breakthrough opens a buried library to",
+      "link_text": "scholars at last.",
+      "url": "https://scrollprize.org/firstscroll",
+      "source": "Scroll Prize"
+    },
+    {
+      "intro": "Venezuela reels from catastrophe",
+      "body": "A series of powerful earthquakes has killed at least 235 people, collapsing buildings in Caracas as rescuers dig through rubble searching for survivors amid a nation already weakened by political and economic",
+      "link_text": "uncertainty and crisis.",
+      "url": "https://www.bbc.co.uk/news/articles/cjegdqw5d3yo?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC News"
+    },
+    {
+      "intro": "Iran strikes a tanker",
+      "body": "Tehran attacked a cargo ship in the Strait of Hormuz, undermining efforts to restore traffic through the world's most critical oil chokepoint and forcing the UN to pause an",
+      "link_text": "evacuation plan there.",
+      "url": "https://www.nytimes.com/2026/06/25/world/middleeast/iran-strait-of-hormuz-threat-rubio-bahrain.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Supreme Court backs deportations",
+      "body": "The justices allowed the Trump administration to end protected status for Haitian and Syrian immigrants, with members clashing openly over whether race played a role in the decision affecting hundreds of thousands of",
+      "link_text": "lawful TPS holders.",
+      "url": "https://www.bbc.co.uk/news/articles/c4g8ym422lko?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC News"
+    },
+    {
+      "intro": "The internet's identity checkpoint",
+      "body": "Age-verification laws are ushering in a 'papers, please' era online, where proving who you are becomes the price of admission, a shift critics warn could decimate anonymity and",
+      "link_text": "everyday digital privacy.",
+      "url": "https://expression.fire.org/p/the-papers-please-era-of-the-internet",
+      "source": "Hacker News"
+    },
+    {
+      "intro": "IBM cracks the nanometer barrier",
+      "body": "Big Blue unveiled what it calls the world's first sub-1-nanometer chip technology, a milestone that could extend Moore's Law and reshape the economics of computing as demand for AI hardware",
+      "link_text": "continues to surge.",
+      "url": "https://newsroom.ibm.com/2026-06-25-ibm-debuts-worlds-first-sub-1-nanometer-chip-technology",
+      "source": "Hacker News"
+    },
+    {
+      "intro": "Climate's fingerprint on the heat",
+      "body": "Scientists have confirmed that human-caused climate change is directly fueling Europe's ferocious heat wave, making the deadly temperatures far more likely and intense across a continent struggling to",
+      "link_text": "adapt to extremes.",
+      "url": "https://www.nytimes.com/2026/06/26/climate/europe-heat-wave-climate-change.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "A hack that bruised Britain",
+      "body": "A $2.5 billion cyberattack tied to Russia crippled Jaguar Land Rover's operations and rippled across the UK economy, a whodunit revealing how a single intrusion can dent",
+      "link_text": "an entire nation's output.",
+      "url": "https://www.nytimes.com/2026/06/26/world/europe/jaguar-russia-hack.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Apple raises the price",
+      "body": "Citing skyrocketing memory costs, Apple hiked prices on MacBooks and iPads by nearly 20 percent, with Xbox following suit, signaling that the chip-supply squeeze is now reaching",
+      "link_text": "consumers' wallets directly.",
+      "url": "https://www.bbc.co.uk/news/articles/c3ryj81ywlro?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC News"
+    },
+    {
+      "intro": "Japan's animators are vanishing",
+      "body": "Despite anime's global boom, the artists who draw it are disappearing, driven out by punishing pay and grueling hours that threaten the future of an entire",
+      "link_text": "cultural industry.",
+      "url": "https://economist.com/interactive/1843/2026/06/19/the-strange-disappearance-of-japans-animators",
+      "source": "Hacker News"
+    },
+    {
+      "intro": "Research tools breeding junk science",
+      "body": "Medical students are using a popular database to mass-produce misleading studies, churning out plausible-looking but flawed research that threatens to pollute the scientific literature at",
+      "link_text": "industrial scale.",
+      "url": "https://www.science.org/content/article/medical-students-are-using-popular-research-tool-pump-out-misleading-studies",
+      "source": "Hacker News"
+    },
+    {
+      "intro": "Childhood adversity etched in cells",
+      "body": "A primate study finds that early-life hardship leaves a lasting molecular imprint across the entire body, offering hard biological evidence for how trauma can shape health",
+      "link_text": "for a lifetime.",
+      "url": "https://medicalxpress.com/news/2026-06-early-life-adversity-molecular-imprint.html",
+      "source": "Hacker News"
+    },
+    {
+      "intro": "California targets its billionaires",
+      "body": "Voters will weigh a ballot measure to tax the state's wealthiest residents, a high-stakes experiment in funding public services that the billionaires themselves are mobilizing to",
+      "link_text": "fight at the polls.",
+      "url": "https://www.nytimes.com/2026/06/25/us/california-billionaires-tax-ballot-measure.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Obesity surges among the young",
+      "body": "New data shows obesity cases are rising fastest among young adults, a worrying generational shift with long-term consequences for public health systems already straining to",
+      "link_text": "keep pace.",
+      "url": "https://www.bbc.com/news/articles/c8j2m2zrrxko",
+      "source": "BBC News"
+    },
+    {
+      "intro": "Space tourism prepares for liftoff",
+      "body": "After years of hype and setbacks, the industry of flying paying passengers to the edge of space and beyond may finally be reaching genuine commercial",
+      "link_text": "viability at last.",
+      "url": "https://www.nytimes.com/2026/06/25/travel/space-tourism-future.html",
+      "source": "New York Times"
+    }
+  ]
+}
