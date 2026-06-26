@@ -157,7 +157,7 @@ async function main() {
     body: JSON.stringify({
       from: FROM,
       to: 'hi@azeem.me',
-      subject: `The Nuus ran — ${dateLabel}`,
+      subject: `NUUS REPORT: ${dateLabel}`,
       text: `Today's digest was sent successfully.\n\nSent: ${sent}/${active.length} subscribers`,
     }),
   });
