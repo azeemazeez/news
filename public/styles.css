@@ -48,7 +48,7 @@ body {
 .masthead {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 1.75rem 0 0.5rem;
+  padding: 1.75rem 0 0;
   border-bottom: none;
 }
 
