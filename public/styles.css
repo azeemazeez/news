@@ -113,7 +113,7 @@ a.site-name {
 .date-bar {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 0.3rem 0;
+  padding: 0 0 0.3rem;
   text-align: center;
   border-bottom: 1px solid var(--border);
   margin-bottom: 0.25rem;
