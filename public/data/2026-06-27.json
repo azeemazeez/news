@@ -1,0 +1,111 @@
+{
+  "date": "2026-06-27",
+  "generated_at": "2026-06-27T03:01:01.565Z",
+  "stories": [
+    {
+      "intro": "Washington gains a veto over AI",
+      "body": "OpenAI says the U.S. government will vet who can use its newest GPT-5.6 model, an unprecedented arrangement that signals frontier AI is now treated like a strategic national asset subject to",
+      "link_text": "government screening of users.",
+      "url": "https://www.washingtonpost.com/technology/2026/06/26/openai-says-us-government-will-vet-users-its-latest-ai-model/",
+      "source": "The Washington Post"
+    },
+    {
+      "intro": "America strikes Iran",
+      "body": "U.S. forces launched retaliatory strikes after Tehran attacked a cargo vessel in the Strait of Hormuz, sharply escalating a confrontation over the world's most vital oil chokepoint and risking",
+      "link_text": "a wider Gulf conflict.",
+      "url": "https://www.nytimes.com/2026/06/26/world/middleeast/strait-of-hormuz-iran-attack.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Israel and Lebanon strike a deal",
+      "body": "In a US-brokered framework, Israel agreed to withdraw from two areas in southern Lebanon, a modest but rare diplomatic step that could ease tensions along one of the region's most",
+      "link_text": "volatile borders.",
+      "url": "https://www.bbc.co.uk/news/articles/cg5315n1v5go?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC News"
+    },
+    {
+      "intro": "AI is unsettling mathematics",
+      "body": "As machines begin generating proofs and conjectures, mathematicians are confronting uncomfortable questions about creativity, rigor, and what it means to truly understand a result when a model arrives at",
+      "link_text": "the answer first.",
+      "url": "https://spectrum.ieee.org/ai-in-mathematics",
+      "source": "Hacker News"
+    },
+    {
+      "intro": "Data centers backfire at the ballot box",
+      "body": "Sprawling AI and cloud facilities are driving up local electricity bills and water use, fueling a voter backlash that politicians say is now costing them elections across the country as communities resist",
+      "link_text": "the infrastructure of the AI boom.",
+      "url": "https://www.newsweek.com/cost-me-the-election-data-centers-trigger-voter-backlash-12118327",
+      "source": "Hacker News"
+    },
+    {
+      "intro": "Famous physics papers retracted",
+      "body": "Springer Nature has pulled two studies linked to one of history's most celebrated physicists at the Max Planck Institute, a rare move that raises hard questions about how even revered names face",
+      "link_text": "scientific scrutiny.",
+      "url": "https://www.science.org/content/article/why-have-papers-one-history-s-most-famous-physicists-been-retracted",
+      "source": "Hacker News"
+    },
+    {
+      "intro": "A Mozart notebook surfaces",
+      "body": "Researchers in Paris have unearthed a handwritten notebook by a 22-year-old Mozart, a discovery hailed as major that offers an intimate window into the working mind of the composer at",
+      "link_text": "a pivotal moment.",
+      "url": "https://www.classicfm.com/composers/mozart/handwritten-notebook-discovered-major-paris/",
+      "source": "Hacker News"
+    },
+    {
+      "intro": "PlayStation deletes movies you bought",
+      "body": "Sony is removing 551 films from customers' accounts due to licensing changes, a stark reminder that 'purchased' digital media can vanish and reigniting debate over who really owns",
+      "link_text": "digital libraries.",
+      "url": "https://kotaku.com/playstation-store-movies-digital-studio-canal-terminator-2000711013",
+      "source": "Hacker News"
+    },
+    {
+      "intro": "Texas mandates Bible reading",
+      "body": "A new Texas law requiring Bible stories as compulsory reading in public schools has triggered a constitutional fight over religion in the classroom, with critics warning it blurs the line between",
+      "link_text": "church and state.",
+      "url": "https://www.bbc.co.uk/news/articles/ckg8m2xkg84o?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC News"
+    },
+    {
+      "intro": "New York freezes the rent",
+      "body": "The city has passed a rent freeze in line with a campaign promise from mayoral candidate Mamdani, a major test of left-wing housing policy whose effects on supply and affordability will play out for",
+      "link_text": "years to come.",
+      "url": "https://www.washingtonpost.com/nation/2026/06/25/nyc-passes-rent-freeze-line-with-mamdani-campaign-promise/",
+      "source": "The Washington Post"
+    },
+    {
+      "intro": "The world depends on open source",
+      "body": "A widely signed open letter warns that the free software underpinning nearly all modern technology is dangerously under-resourced and under threat, calling on companies and governments to",
+      "link_text": "defend it together.",
+      "url": "https://akrites.org/letter/",
+      "source": "Hacker News"
+    },
+    {
+      "intro": "California eyes your 3D printer",
+      "body": "Civil liberties advocates are mobilizing against a California proposal to surveil 3D printers, arguing the well-meaning effort to curb untraceable guns would set a sweeping precedent for monitoring",
+      "link_text": "personal manufacturing.",
+      "url": "https://www.eff.org/deeplinks/2026/06/we-can-still-stop-californias-3d-printer-surveillance-scheme",
+      "source": "Hacker News"
+    },
+    {
+      "intro": "Long-wave radio goes dark",
+      "body": "The UK's Droitwich transmitter is set to switch off, ending the long-wave radio era and a century-old broadcasting technology that still quietly powered everything from clocks to",
+      "link_text": "emergency signals.",
+      "url": "https://www.bbc.com/news/articles/c74yn7v7k4qo",
+      "source": "Hacker News"
+    },
+    {
+      "intro": "Bolton pleads guilty",
+      "body": "Former Trump national security adviser John Bolton admitted to mishandling classified documents, a striking turn for a longtime hawk and a case with implications for how Washington handles",
+      "link_text": "secrets and accountability.",
+      "url": "https://www.bbc.co.uk/news/articles/czxqwg4nrvlo?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC News"
+    },
+    {
+      "intro": "Trump threatens 100% tariffs",
+      "body": "The president vowed to slap massive tariffs on European nations over their digital taxes targeting US tech giants, escalating a transatlantic trade fight that could reshape the economics of",
+      "link_text": "the global internet.",
+      "url": "https://www.bbc.co.uk/news/articles/cn4rd71411ko?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC News"
+    }
+  ]
+}
