@@ -1,5 +1,8 @@
 {
   "outputDirectory": "public",
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/:date", "destination": "/api/edition?date=:date" }
+  ]
 }
