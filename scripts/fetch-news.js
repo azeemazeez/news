@@ -191,10 +191,13 @@ async function main() {
     ...newsApiStories,
   ];
 
+  const PAYWALLED = ['washingtonpost.com', 'wsj.com', 'ft.com', 'thetimes.co.uk'];
+
   const seen = new Set();
   const unique = allStories.filter(s => {
     const key = s.url;
     if (!key || seen.has(key)) return false;
+    if (PAYWALLED.some(domain => key.includes(domain))) return false;
     seen.add(key);
     return true;
   });
