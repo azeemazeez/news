@@ -33,7 +33,7 @@ function updateCanonical(date) {
   if (!el) return;
   el.href = (date === manifest.dates[0])
     ? 'https://thenuus.com/'
-    : `https://thenuus.com/?d=${date}`;
+    : `https://thenuus.com/${date}`;
 }
 
 function updateNav() {
@@ -81,17 +81,19 @@ async function init() {
     return;
   }
 
-  // Check if URL has a date param
-  const params = new URLSearchParams(window.location.search);
-  const reqDate = params.get('d');
+  // Check if URL has a date path (/YYYY-MM-DD) or legacy query param (?d=)
+  const pathDate = window.location.pathname.match(/^\/(\d{4}-\d{2}-\d{2})$/)?.[1];
+  const paramDate = new URLSearchParams(window.location.search).get('d');
+  const reqDate = pathDate || paramDate;
   const startDate = (reqDate && manifest.dates.includes(reqDate)) ? reqDate : manifest.dates[0];
 
   await loadDay(startDate);
 }
 
 window.addEventListener('popstate', () => {
-  const params = new URLSearchParams(window.location.search);
-  const d = params.get('d');
+  const pathDate = window.location.pathname.match(/^\/(\d{4}-\d{2}-\d{2})$/)?.[1];
+  const paramDate = new URLSearchParams(window.location.search).get('d');
+  const d = pathDate || paramDate;
   if (d && manifest.dates.includes(d)) loadDay(d);
 });
 

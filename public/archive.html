@@ -67,7 +67,7 @@
       for (let i = 0; i < cells.length; i += 7) {
         const tds = cells.slice(i, i + 7).map(c => {
           if (!c) return '<td class="cal-empty"></td>';
-          if (c.has) return `<td class="cal-day cal-active"><a class="cal-link" href="/?d=${c.iso}">${c.d}</a></td>`;
+          if (c.has) return `<td class="cal-day cal-active"><a class="cal-link" href="/${c.iso}">${c.d}</a></td>`;
           return `<td class="cal-day cal-dim">${c.d}</td>`;
         }).join('');
         rows += `<tr>${tds}</tr>`;
@@ -118,7 +118,7 @@
           itemListElement: manifest.dates.map((d, i) => ({
             '@type': 'ListItem',
             position: i + 1,
-            url: `https://thenuus.com/?d=${d}`,
+            url: `https://thenuus.com/${d}`,
             name: `The Nuus — ${d}`,
           })),
         };

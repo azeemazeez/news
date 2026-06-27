@@ -256,7 +256,7 @@ async function main() {
   const today = new Date(Date.now() + 4 * 60 * 60 * 1000).toISOString().split('T')[0];
 
   const dateUrls = manifest.dates.map(d => `  <url>
-    <loc>${siteUrl}/?d=${d}</loc>
+    <loc>${siteUrl}/${d}</loc>
     <lastmod>${d}</lastmod>
     <changefreq>never</changefreq>
   </url>`).join('\n');
