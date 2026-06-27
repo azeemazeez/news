@@ -3,6 +3,6 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
-    { "source": "/:date(\\d{4}-\\d{2}-\\d{2})", "destination": "/index.html" }
+    { "source": "/:path", "destination": "/index.html" }
   ]
 }
