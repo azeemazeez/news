@@ -19,6 +19,7 @@
   <meta name="twitter:description" content="Browse all past editions of The Nuus.">
 
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/manifest.json">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Inter:wght@400;500;600;900&display=swap" rel="stylesheet">
@@ -107,6 +108,24 @@
           .sort((a, b) => b.localeCompare(a))
           .map(k => renderCalendar(groups[k].year, groups[k].mon, dateSet))
           .join('');
+
+        const itemList = {
+          '@context': 'https://schema.org',
+          '@type': 'ItemList',
+          name: 'The Nuus — Archive',
+          url: 'https://thenuus.com/archive',
+          numberOfItems: manifest.dates.length,
+          itemListElement: manifest.dates.map((d, i) => ({
+            '@type': 'ListItem',
+            position: i + 1,
+            url: `https://thenuus.com/?d=${d}`,
+            name: `The Nuus — ${d}`,
+          })),
+        };
+        const script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.textContent = JSON.stringify(itemList);
+        document.head.appendChild(script);
       } catch (e) {
         feed.innerHTML = '<div class="state-message"><p>Could not load archive.</p></div>';
       }
