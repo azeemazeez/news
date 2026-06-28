@@ -1,0 +1,111 @@
+{
+  "date": "2026-06-28",
+  "generated_at": "2026-06-28T03:01:06.599Z",
+  "stories": [
+    {
+      "intro": "A new GPT looms",
+      "body": "OpenAI is previewing GPT-5.6 Sol, billing it as a next-generation model that signals just how quickly the frontier of artificial intelligence keeps",
+      "link_text": "moving past its predecessors.",
+      "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+      "source": "OpenAI"
+    },
+    {
+      "intro": "Anonymous account dumps 0-days",
+      "body": "A mysterious GitHub account is mass-publishing undisclosed exploits with no warning to vendors, an unprecedented breach of security norms that could leave countless systems",
+      "link_text": "exposed to immediate attack.",
+      "url": "https://github.com/bikini/exploitarium",
+      "source": "Hacker News"
+    },
+    {
+      "intro": "Zuckerberg's whistleblower crackdown",
+      "body": "A scathing investigation details how Meta has escalated efforts to silence internal critics, deploying legal and technical pressure that may ultimately amplify the very revelations it",
+      "link_text": "is trying to suppress.",
+      "url": "https://pluralistic.net/2026/06/27/zuckerstreisand-2/",
+      "source": "Pluralistic"
+    },
+    {
+      "intro": "A grocery price emergency",
+      "body": "A data-driven analysis argues that American food costs have surged into genuine crisis territory, with everyday staples climbing far faster than wages and reshaping household",
+      "link_text": "budgets across the country.",
+      "url": "https://www.nytimes.com/2026/06/27/opinion/grocery-prices-inflation.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Screens harm toddlers",
+      "body": "A landmark study suggests that early screen exposure can measurably damage the development of children under two, adding fresh urgency to debates about how families manage",
+      "link_text": "devices in the home.",
+      "url": "https://www.theguardian.com/society/2026/jun/27/screen-time-damage-under-twos-development-study",
+      "source": "The Guardian"
+    },
+    {
+      "intro": "Ozempic rewires the brain",
+      "body": "Researchers are uncovering how blockbuster weight-loss drugs act on the gut-brain axis, a mechanism that may explain their surprising effects on cravings, mood, and",
+      "link_text": "behavior beyond appetite.",
+      "url": "https://www.psychologytoday.com/au/blog/mood-by-microbe/202606/what-ozempic-does-to-the-gut-brain-axis",
+      "source": "Psychology Today"
+    },
+    {
+      "intro": "Burkina Faso cuts France ties",
+      "body": "The West African nation has severed diplomatic relations with its former colonial power, the latest dramatic rupture in a wave of anti-French realignment sweeping across the",
+      "link_text": "Sahel region of Africa.",
+      "url": "https://www.bbc.co.uk/news/articles/c7vymlgl5vgo?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC News"
+    },
+    {
+      "intro": "Foreign money fuels housing crisis",
+      "body": "New research finds that international investment combined with restrictive local rules is pushing home prices up faster than supply can grow, deepening an affordability problem in",
+      "link_text": "cities around the world.",
+      "url": "https://news.mccombs.utexas.edu/research/foreign-funds-help-make-housing-unaffordable/",
+      "source": "UT Austin"
+    },
+    {
+      "intro": "Michigan's $1.8 billion bust",
+      "body": "A sweeping economic development program spent nearly two billion dollars in incentives and created just 602 jobs, a striking case study in how subsidy-driven industrial policy can",
+      "link_text": "fail to deliver results.",
+      "url": "https://www.msn.com/en-us/money/general/michigan-spent-1-8-billion-and-only-created-602-jobs/ar-AA26Cusu",
+      "source": "MSN"
+    },
+    {
+      "intro": "Deadly heat grips Europe",
+      "body": "A record-shattering heat wave has forced Paris to halt alcohol sales to relieve overwhelmed hospitals, as scientists directly attribute the lethal conditions to",
+      "link_text": "human-caused climate change.",
+      "url": "https://www.cbsnews.com/news/heat-paris-europe-extreme-weather-alcohol/",
+      "source": "CBS News"
+    },
+    {
+      "intro": "AI masters chip design",
+      "body": "Machine learning systems are now tackling the so-called 'dark art' of radio-frequency integrated circuit design, automating intuition-driven work that engineers long believed could not be",
+      "link_text": "reduced to algorithms.",
+      "url": "https://spectrum.ieee.org/ai-radio-chip-design",
+      "source": "IEEE Spectrum"
+    },
+    {
+      "intro": "The hidden math of energy",
+      "body": "A deceptively simple question — why kinetic energy grows with the square of speed rather than linearly — opens a surprisingly deep window into how physics and frames of reference truly",
+      "link_text": "shape our intuitions.",
+      "url": "https://physics.stackexchange.com/questions/535/why-does-kinetic-energy-increase-quadratically-not-linearly-with-speed",
+      "source": "Physics StackExchange"
+    },
+    {
+      "intro": "Counting nature's building blocks",
+      "body": "Physicists are revisiting one of science's most basic questions — how many elementary particles actually exist — and finding the answer far murkier than the tidy Standard Model",
+      "link_text": "suggests at first glance.",
+      "url": "https://www.quantamagazine.org/how-many-elementary-particles-are-there-really-20260615/",
+      "source": "Quanta Magazine"
+    },
+    {
+      "intro": "Australia toughens social media ban",
+      "body": "The government plans to double the maximum penalties for platforms that breach its landmark restrictions on youth access, sharpening one of the world's most aggressive experiments in",
+      "link_text": "regulating social media.",
+      "url": "https://www.bbc.co.uk/news/articles/c78yv5g74e9o?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC News"
+    },
+    {
+      "intro": "NASA's risky telescope rescue",
+      "body": "The agency is spending $30 million on a first-of-its-kind mission to save the aging Swift observatory before it falls from orbit, a gamble that tests whether reviving old spacecraft is",
+      "link_text": "worth the cost.",
+      "url": "https://www.space.com/space-exploration/launches-spacecraft/nasa-is-paying-usd30-million-for-a-1st-of-its-kind-rescue-mission-to-the-aging-swift-telescope-before-it-falls-from-space-is-it-worth-it",
+      "source": "Space.com"
+    }
+  ]
+}
