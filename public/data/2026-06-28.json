@@ -1,111 +1,111 @@
 {
   "date": "2026-06-28",
-  "generated_at": "2026-06-28T03:01:06.599Z",
+  "generated_at": "2026-06-28T04:37:02.452Z",
   "stories": [
     {
-      "intro": "A new GPT looms",
-      "body": "OpenAI is previewing GPT-5.6 Sol, billing it as a next-generation model that signals just how quickly the frontier of artificial intelligence keeps",
-      "link_text": "moving past its predecessors.",
+      "intro": "OpenAI previews its next model",
+      "body": "The company unveiled GPT-5.6 Sol, a next-generation system that it touts as a major leap in capability — even as access to such frontier models grows increasingly restricted by",
+      "link_text": "government and corporate gatekeeping.",
       "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
       "source": "OpenAI"
     },
     {
-      "intro": "Anonymous account dumps 0-days",
-      "body": "A mysterious GitHub account is mass-publishing undisclosed exploits with no warning to vendors, an unprecedented breach of security norms that could leave countless systems",
-      "link_text": "exposed to immediate attack.",
+      "intro": "Anonymous account dumps zero-days",
+      "body": "A mysterious GitHub account has been mass-publishing undisclosed software vulnerabilities, igniting alarm across the security world about the ethics and dangers of",
+      "link_text": "uncontrolled exploit disclosure.",
       "url": "https://github.com/bikini/exploitarium",
       "source": "Hacker News"
     },
     {
-      "intro": "Zuckerberg's whistleblower crackdown",
-      "body": "A scathing investigation details how Meta has escalated efforts to silence internal critics, deploying legal and technical pressure that may ultimately amplify the very revelations it",
-      "link_text": "is trying to suppress.",
-      "url": "https://pluralistic.net/2026/06/27/zuckerstreisand-2/",
-      "source": "Pluralistic"
+      "intro": "A faster path for AI",
+      "body": "DeepSeek's new DSpark paper details a speculative decoding technique that meaningfully accelerates LLM inference, the kind of efficiency gain that could reshape the economics of",
+      "link_text": "running large models.",
+      "url": "https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf",
+      "source": "Hacker News"
     },
     {
-      "intro": "A grocery price emergency",
-      "body": "A data-driven analysis argues that American food costs have surged into genuine crisis territory, with everyday staples climbing far faster than wages and reshaping household",
-      "link_text": "budgets across the country.",
+      "intro": "Zuckerberg targets whistleblowers",
+      "body": "A blistering report details Meta's escalating campaign against insiders who speak out, raising fresh questions about corporate power and the",
+      "link_text": "suppression of internal dissent.",
+      "url": "https://pluralistic.net/2026/06/27/zuckerstreisand-2/",
+      "source": "Hacker News"
+    },
+    {
+      "intro": "America's grocery price emergency",
+      "body": "A data-driven analysis argues that food costs have surged into genuine crisis territory for ordinary households, a slow-burning economic story with major",
+      "link_text": "political consequences ahead.",
       "url": "https://www.nytimes.com/2026/06/27/opinion/grocery-prices-inflation.html",
       "source": "New York Times"
     },
     {
-      "intro": "Screens harm toddlers",
-      "body": "A landmark study suggests that early screen exposure can measurably damage the development of children under two, adding fresh urgency to debates about how families manage",
-      "link_text": "devices in the home.",
-      "url": "https://www.theguardian.com/society/2026/jun/27/screen-time-damage-under-twos-development-study",
-      "source": "The Guardian"
-    },
-    {
-      "intro": "Ozempic rewires the brain",
-      "body": "Researchers are uncovering how blockbuster weight-loss drugs act on the gut-brain axis, a mechanism that may explain their surprising effects on cravings, mood, and",
-      "link_text": "behavior beyond appetite.",
-      "url": "https://www.psychologytoday.com/au/blog/mood-by-microbe/202606/what-ozempic-does-to-the-gut-brain-axis",
-      "source": "Psychology Today"
-    },
-    {
-      "intro": "Burkina Faso cuts France ties",
-      "body": "The West African nation has severed diplomatic relations with its former colonial power, the latest dramatic rupture in a wave of anti-French realignment sweeping across the",
-      "link_text": "Sahel region of Africa.",
-      "url": "https://www.bbc.co.uk/news/articles/c7vymlgl5vgo?at_medium=RSS&amp;at_campaign=rss",
-      "source": "BBC News"
-    },
-    {
-      "intro": "Foreign money fuels housing crisis",
-      "body": "New research finds that international investment combined with restrictive local rules is pushing home prices up faster than supply can grow, deepening an affordability problem in",
-      "link_text": "cities around the world.",
-      "url": "https://news.mccombs.utexas.edu/research/foreign-funds-help-make-housing-unaffordable/",
-      "source": "UT Austin"
-    },
-    {
-      "intro": "Michigan's $1.8 billion bust",
-      "body": "A sweeping economic development program spent nearly two billion dollars in incentives and created just 602 jobs, a striking case study in how subsidy-driven industrial policy can",
-      "link_text": "fail to deliver results.",
-      "url": "https://www.msn.com/en-us/money/general/michigan-spent-1-8-billion-and-only-created-602-jobs/ar-AA26Cusu",
-      "source": "MSN"
-    },
-    {
-      "intro": "Deadly heat grips Europe",
-      "body": "A record-shattering heat wave has forced Paris to halt alcohol sales to relieve overwhelmed hospitals, as scientists directly attribute the lethal conditions to",
+      "intro": "Europe bakes in record heat",
+      "body": "A brutal heatwave has shattered temperature records across Germany, Denmark and the Czech Republic while Paris halted alcohol sales to ease hospital strain, with scientists pinning the blame squarely on",
       "link_text": "human-caused climate change.",
       "url": "https://www.cbsnews.com/news/heat-paris-europe-extreme-weather-alcohol/",
       "source": "CBS News"
     },
     {
-      "intro": "AI masters chip design",
-      "body": "Machine learning systems are now tackling the so-called 'dark art' of radio-frequency integrated circuit design, automating intuition-driven work that engineers long believed could not be",
-      "link_text": "reduced to algorithms.",
-      "url": "https://spectrum.ieee.org/ai-radio-chip-design",
-      "source": "IEEE Spectrum"
+      "intro": "Ceasefire already fraying",
+      "body": "The U.S. and Iran have exchanged fresh strikes and each accused the other of breaking the truce, exposing how the vague language of their deal is already",
+      "link_text": "unraveling fragile peace efforts.",
+      "url": "https://www.nytimes.com/2026/06/27/world/middleeast/us-iran-deal-vague-language.html",
+      "source": "New York Times"
     },
     {
-      "intro": "The hidden math of energy",
-      "body": "A deceptively simple question — why kinetic energy grows with the square of speed rather than linearly — opens a surprisingly deep window into how physics and frames of reference truly",
-      "link_text": "shape our intuitions.",
-      "url": "https://physics.stackexchange.com/questions/535/why-does-kinetic-energy-increase-quadratically-not-linearly-with-speed",
-      "source": "Physics StackExchange"
+      "intro": "Venezuela digs for survivors",
+      "body": "As the earthquake death toll climbs, desperate families are taking the search for missing loved ones into their own hands amid devastation across the",
+      "link_text": "Caracas and La Guaira region.",
+      "url": "https://apnews.com/article/venezuela-caracas-guaira-earthquakes-dead-injured-missing-b07aff1cb886cfe616a0e89b3687b8b8",
+      "source": "Associated Press"
+    },
+    {
+      "intro": "Mamdani reshapes the Democrats",
+      "body": "His winning coalition in New York signals a dramatically different future for the party, with implications for how Democrats define themselves",
+      "link_text": "nationally for years to come.",
+      "url": "https://www.politico.com/news/2026/06/26/moderates-beware-mamdani-coalition-portends-a-dramatically-different-democratic-party-in-nyc-00978431",
+      "source": "Politico"
+    },
+    {
+      "intro": "Michigan's $1.8 billion misfire",
+      "body": "The state spent nearly two billion dollars on economic incentives that yielded just 602 jobs, a stark case study in the failures of",
+      "link_text": "big-ticket corporate subsidies.",
+      "url": "https://www.msn.com/en-us/money/general/michigan-spent-1-8-billion-and-only-created-602-jobs/ar-AA26Cusu",
+      "source": "MSN"
+    },
+    {
+      "intro": "Ozempic and the brain",
+      "body": "New research explores how the blockbuster weight-loss drug acts on the gut-brain axis, revealing mechanisms that may explain its surprising effects on mood, appetite, and",
+      "link_text": "behavior beyond weight loss.",
+      "url": "https://www.psychologytoday.com/au/blog/mood-by-microbe/202606/what-ozempic-does-to-the-gut-brain-axis",
+      "source": "Psychology Today"
     },
     {
       "intro": "Counting nature's building blocks",
-      "body": "Physicists are revisiting one of science's most basic questions — how many elementary particles actually exist — and finding the answer far murkier than the tidy Standard Model",
-      "link_text": "suggests at first glance.",
+      "body": "A fresh look at the Standard Model asks how many elementary particles truly exist, untangling the surprisingly slippery question of what counts as",
+      "link_text": "a fundamental particle.",
       "url": "https://www.quantamagazine.org/how-many-elementary-particles-are-there-really-20260615/",
       "source": "Quanta Magazine"
     },
     {
-      "intro": "Australia toughens social media ban",
-      "body": "The government plans to double the maximum penalties for platforms that breach its landmark restrictions on youth access, sharpening one of the world's most aggressive experiments in",
-      "link_text": "regulating social media.",
-      "url": "https://www.bbc.co.uk/news/articles/c78yv5g74e9o?at_medium=RSS&amp;at_campaign=rss",
-      "source": "BBC News"
+      "intro": "Newsom's billionaire-tax contradiction",
+      "body": "The California governor is championing a national wealth tax on billionaires even as he resists a similar measure in his own state, exposing tensions within",
+      "link_text": "Democratic tax politics.",
+      "url": "https://apnews.com/article/gavin-newsom-billionaires-tax-ebb72ccf542ae5dc2f444d16000f307c",
+      "source": "Associated Press"
     },
     {
-      "intro": "NASA's risky telescope rescue",
-      "body": "The agency is spending $30 million on a first-of-its-kind mission to save the aging Swift observatory before it falls from orbit, a gamble that tests whether reviving old spacecraft is",
-      "link_text": "worth the cost.",
+      "intro": "A risky orbital rescue",
+      "body": "NASA is spending $30 million on a first-of-its-kind mission to save the aging Swift telescope before it falls from space, testing whether such satellite rescues are",
+      "link_text": "worth the cost and risk.",
       "url": "https://www.space.com/space-exploration/launches-spacecraft/nasa-is-paying-usd30-million-for-a-1st-of-its-kind-rescue-mission-to-the-aging-swift-telescope-before-it-falls-from-space-is-it-worth-it",
       "source": "Space.com"
+    },
+    {
+      "intro": "Ford's AI gamble backfires",
+      "body": "After replacing human workers with automation, Ford found the experiment went badly wrong, offering a cautionary tale about the limits of AI in",
+      "link_text": "real-world operations.",
+      "url": "https://www.the-independent.com/tech/ford-ai-automation-human-workers-b3003787.html",
+      "source": "The Independent"
     }
   ]
 }
