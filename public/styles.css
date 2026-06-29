@@ -40,7 +40,7 @@ body {
   padding: 0 1.5rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  border-top: 12px solid transparent;
+  border-top: 18px solid transparent;
   border-image: linear-gradient(to right, #6b33be, #c026d3) 1;
 }
 
@@ -65,7 +65,7 @@ a.site-name {
 }
 
 .site-name {
-  font-size: 2.5rem;
+  font-size: 5.4rem;
   font-weight: 900;
   letter-spacing: -0.01em;
   cursor: pointer;
