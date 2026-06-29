@@ -116,6 +116,8 @@ Prioritize stories that:
 - Illuminate important scientific, technological, political, or cultural developments
 - Have implications that will matter months or years from now
 
+Favour stories from outside the US when coverage quality is comparable — actively seek out international perspectives from Africa, Asia, Latin America, the Middle East, and Europe.
+
 Skip: sports scores, celebrity gossip, stock price moves, local crime, product announcements, earnings reports, pure political horse-race coverage.
 
 Stories:
@@ -163,7 +165,7 @@ async function main() {
 
   console.log('Fetching news sources...');
 
-  const [hn, worldnews, technology, science, uplift, bbc, nyt] = await Promise.allSettled([
+  const [hn, worldnews, technology, science, uplift, bbc, nyt, aljazeera, reuters, guardian] = await Promise.allSettled([
     fetchHackerNews(),
     fetchReddit('worldnews'),
     fetchReddit('technology'),
@@ -171,6 +173,9 @@ async function main() {
     fetchReddit('UpliftingNews'),
     fetchRSS('https://feeds.bbci.co.uk/news/rss.xml', 'BBC News'),
     fetchRSS('https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml', 'New York Times'),
+    fetchRSS('https://www.aljazeera.com/xml/rss/all.xml', 'Al Jazeera'),
+    fetchRSS('https://feeds.reuters.com/reuters/worldNews', 'Reuters World'),
+    fetchRSS('https://www.theguardian.com/world/rss', 'The Guardian'),
   ]);
 
   let newsApiStories = [];
@@ -188,6 +193,9 @@ async function main() {
     ...(uplift.status === 'fulfilled' ? uplift.value : []),
     ...(bbc.status === 'fulfilled' ? bbc.value : []),
     ...(nyt.status === 'fulfilled' ? nyt.value : []),
+    ...(aljazeera.status === 'fulfilled' ? aljazeera.value : []),
+    ...(reuters.status === 'fulfilled' ? reuters.value : []),
+    ...(guardian.status === 'fulfilled' ? guardian.value : []),
     ...newsApiStories,
   ];
 
