@@ -1,0 +1,111 @@
+{
+  "date": "2026-06-29",
+  "generated_at": "2026-06-29T03:01:05.719Z",
+  "stories": [
+    {
+      "intro": "Central bankers sound the alarm",
+      "body": "The world's top monetary authorities warn that the frenzied investment in artificial intelligence has inflated valuations to a point where a sudden correction could trigger a",
+      "link_text": "global financial crash.",
+      "url": "https://www.telegraph.co.uk/business/2026/06/28/ai-boom-risks-global-financial-crash-central-bankers-warn/",
+      "source": "The Telegraph"
+    },
+    {
+      "intro": "EU revives Chat Control",
+      "body": "Brussels is preparing to legislate mandatory scanning of private messages through closed-door negotiations, reigniting fears that the bloc is on the verge of dismantling",
+      "link_text": "encrypted private communication.",
+      "url": "https://www.patrick-breyer.de/en/double-threat-to-private-communications-undemocratic-chat-control-backroom-deals-and-imminent-concessions-spark-relaunch-of-fightchatcontrol-eu/",
+      "source": "Patrick Breyer"
+    },
+    {
+      "intro": "Surveillance cameras everywhere",
+      "body": "Flock's automated license-plate readers are quietly proliferating across American towns, and an investigation reveals they capture far more than plates — building a sprawling, searchable record of",
+      "link_text": "everyday movements.",
+      "url": "https://www.engadget.com/2203000/flock-cameras-recording-license-plate/",
+      "source": "Engadget"
+    },
+    {
+      "intro": "AI cheating scandal at Brown",
+      "body": "A professor has gone public denouncing widespread AI-assisted fraud on an exam, the latest sign that generative tools are pushing universities toward a reckoning over",
+      "link_text": "academic integrity.",
+      "url": "https://english.elpais.com/education/2026-06-28/ai-fraud-at-brown-university-academic-integrity-is-at-risk.html",
+      "source": "El País"
+    },
+    {
+      "intro": "The age-verification internet",
+      "body": "The proposed KIDS Act would require Americans to prove their age before getting online, a sweeping mandate that digital-rights advocates warn would effectively end",
+      "link_text": "anonymous browsing.",
+      "url": "https://www.eff.org/deeplinks/2026/06/kids-act-would-require-age-checks-get-online",
+      "source": "EFF"
+    },
+    {
+      "intro": "California joins a national license database",
+      "body": "State lawmakers have agreed to upload residents' driver's licenses to a federal system, a move privacy advocates argue lays the groundwork for nationwide",
+      "link_text": "identity tracking.",
+      "url": "https://papersplease.org/wp/2026/06/27/california-legislature-agrees-to-upload-drivers-licenses-to-national-database/",
+      "source": "Papers, Please"
+    },
+    {
+      "intro": "The right to disconnect",
+      "body": "A Michigan bill would bar employers from requiring workers to answer messages outside their scheduled hours, part of a growing legislative push to draw clear lines around",
+      "link_text": "after-hours communication.",
+      "url": "https://www.cbsnews.com/detroit/news/workplace-boundaries-act-employees-after-hours/",
+      "source": "CBS News"
+    },
+    {
+      "intro": "Diagnosing your own MRI",
+      "body": "A patient describes feeding his medical scan into an AI coding assistant to get a second opinion, an experiment that hints at both the promise and peril of",
+      "link_text": "DIY medical interpretation.",
+      "url": "https://antoine.fi/mri-analysis-using-claude-code-opus",
+      "source": "Hacker News"
+    },
+    {
+      "intro": "The 747 bows out",
+      "body": "After more than half a century reshaping global travel, Boeing's iconic jumbo jet is making its final descent, marking the end of an era that democratized",
+      "link_text": "long-haul air travel.",
+      "url": "https://www.theatlantic.com/magazine/2026/07/boeing-747-retirement/687304/",
+      "source": "The Atlantic"
+    },
+    {
+      "intro": "Trump's billion-dollar mining deal",
+      "body": "A new investigation reveals that a major Kazakhstan mining agreement struck under the administration stands to enrich the president's own sons, raising fresh questions about",
+      "link_text": "presidential conflicts of interest.",
+      "url": "https://www.nytimes.com/2026/06/28/world/europe/trump-lutnick-sons-kazakhstan.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Iran plays the Hormuz card",
+      "body": "Tehran is gambling its fragile peace talks with Washington to keep control over the world's most critical oil chokepoint, a standoff that could send shockwaves through",
+      "link_text": "global energy markets.",
+      "url": "https://www.nytimes.com/2026/06/28/world/europe/iran-us-strait-of-hormuz-peace-talks.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Heatwave's deadly toll",
+      "body": "The WHO links Europe's record-shattering heatwave to roughly 1,300 deaths as Germany hits an unprecedented 41.7C, underscoring how rising temperatures are becoming a measurable",
+      "link_text": "public health crisis.",
+      "url": "https://www.bbc.co.uk/news/articles/cn4d2vv935lo?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC News"
+    },
+    {
+      "intro": "Ancient life on Mars",
+      "body": "Fresh analysis of Martian rock chemistry adds to mounting evidence that the red planet may once have hosted microbial life, edging scientists closer to answering one of",
+      "link_text": "humanity's oldest questions.",
+      "url": "https://www.cbc.ca/radio/quirks/more-evidence-of-life-on-mars-but-still-no-life-1.7649645",
+      "source": "CBC"
+    },
+    {
+      "intro": "Pixels that see and shine",
+      "body": "Swiss researchers have engineered a new kind of pixel that can both emit and analyze light simultaneously, a dual-purpose breakthrough that could transform displays, cameras, and",
+      "link_text": "optical sensing.",
+      "url": "https://ethz.ch/en/news-and-events/eth-news/news/2026/06/a-new-type-of-pixel.html",
+      "source": "ETH Zürich"
+    },
+    {
+      "intro": "Google curbs Meta's AI",
+      "body": "Google has moved to restrict its rival's access to the Gemini models, a telling sign that the frontier-AI race is hardening into walled gardens and tightening",
+      "link_text": "competitive leverage.",
+      "url": "https://www.cnbc.com/2026/06/28/google-limits-metas-use-of-its-gemini-ai-models-ft-reports.html",
+      "source": "CNBC"
+    }
+  ]
+}
