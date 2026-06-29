@@ -48,7 +48,7 @@ body {
 .masthead {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 1.75rem 0 0;
+  padding: 1.31rem 0 0;
   border-bottom: none;
 }
 
@@ -387,5 +387,5 @@ a.site-name {
 
 @media (max-width: 480px) {
   html { font-size: 18px; }
-  .masthead { padding: 1.25rem 0 0.9rem; }
+  .masthead { padding: 0.94rem 0 0.9rem; }
 }
