@@ -165,7 +165,7 @@ async function main() {
 
   console.log('Fetching news sources...');
 
-  const [hn, worldnews, technology, science, uplift, bbc, nyt, aljazeera, reuters, guardian] = await Promise.allSettled([
+  const [hn, worldnews, technology, science, uplift, bbc, nyt, aljazeera, guardian] = await Promise.allSettled([
     fetchHackerNews(),
     fetchReddit('worldnews'),
     fetchReddit('technology'),
@@ -174,7 +174,6 @@ async function main() {
     fetchRSS('https://feeds.bbci.co.uk/news/rss.xml', 'BBC News'),
     fetchRSS('https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml', 'New York Times'),
     fetchRSS('https://www.aljazeera.com/xml/rss/all.xml', 'Al Jazeera'),
-    fetchRSS('https://feeds.reuters.com/reuters/worldNews', 'Reuters World'),
     fetchRSS('https://www.theguardian.com/world/rss', 'The Guardian'),
   ]);
 
@@ -194,7 +193,6 @@ async function main() {
     ...(bbc.status === 'fulfilled' ? bbc.value : []),
     ...(nyt.status === 'fulfilled' ? nyt.value : []),
     ...(aljazeera.status === 'fulfilled' ? aljazeera.value : []),
-    ...(reuters.status === 'fulfilled' ? reuters.value : []),
     ...(guardian.status === 'fulfilled' ? guardian.value : []),
     ...newsApiStories,
   ];
