@@ -1,111 +1,111 @@
 {
   "date": "2026-07-02",
-  "generated_at": "2026-07-02T01:01:07.958Z",
+  "generated_at": "2026-07-02T04:29:54.214Z",
   "stories": [
     {
       "intro": "A cell built from scratch",
-      "body": "Scientists have for the first time constructed a synthetic cell that can grow and divide on its own, a landmark in the quest to understand — and engineer — the basic machinery of",
-      "link_text": "life itself.",
+      "body": "For the first time, scientists have engineered a synthetic cell that can both grow and divide on its own, a landmark achievement that moves biology toward",
+      "link_text": "fully designed living systems.",
       "url": "https://www.quantamagazine.org/for-the-first-time-a-cell-built-from-scratch-grows-and-divides-20260701/",
       "source": "Quanta Magazine"
     },
     {
-      "intro": "Sudan's RSF accused of atrocities",
-      "body": "Amnesty International says the Rapid Support Forces committed crimes against humanity in El Fasher, documenting ethnic cleansing as the paramilitary group tightens its grip on a devastated",
-      "link_text": "Darfur region.",
-      "url": "https://www.theguardian.com/world/2026/jul/01/sudan-rsf-rapid-support-forces-crimes-against-humanity-el-fasher-amnesty-ethnic-cleansing",
-      "source": "The Guardian"
-    },
-    {
-      "intro": "A witch-hunt in Niger",
-      "body": "Niger's military regime is rounding up members of the country's LGBTQ+ population, part of a broader authoritarian crackdown that human rights groups warn is spreading across the",
-      "link_text": "Sahel.",
-      "url": "https://www.theguardian.com/world/2026/jul/01/witch-hunt-in-niger-as-military-regime-rounds-up-lgbtq-population",
-      "source": "The Guardian"
-    },
-    {
-      "intro": "Xenophobia surges in South Africa",
-      "body": "Immigrants are fleeing amid a wave of violence and anti-foreigner protests, exposing the deepening social tensions and economic anxieties driving a dangerous",
-      "link_text": "backlash against migrants.",
-      "url": "https://www.theguardian.com/world/2026/jun/30/they-will-attack-me-if-i-stay-immigrants-in-south-africa-flee-for-safety-amid-violence-and-anti-foreigner-protests",
-      "source": "The Guardian"
-    },
-    {
-      "intro": "US walks away from USMCA",
-      "body": "Washington declined to renew the North American trade pact, starting a 10-year countdown to its expiration and injecting fresh uncertainty into commerce with Canada and",
-      "link_text": "Mexico.",
-      "url": "https://www.nytimes.com/2026/07/01/business/economy/usmca-north-america-trade.html",
-      "source": "New York Times"
-    },
-    {
-      "intro": "Bolivia's currency in freefall",
-      "body": "A state of emergency has been declared as the boliviano plummets and public anger simmers, marking one of the most severe economic crises in the country's",
-      "link_text": "recent history.",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/1/state-of-emergency-bolivias-currency-plummets-as-anger-simmers",
-      "source": "Al Jazeera"
-    },
-    {
-      "intro": "US and Iran signal thaw",
-      "body": "Indirect talks in Qatar wrapped up with reports of 'positive progress' and plans for a communication channel, a tentative step toward de-escalation after weeks of",
-      "link_text": "open war.",
-      "url": "https://www.aljazeera.com/news/2026/7/1/iran-to-open-communication-channel-on-mou-with-us-after-talks-in-qatar",
-      "source": "Al Jazeera"
-    },
-    {
-      "intro": "Claude Code's hidden watermark",
-      "body": "A developer discovered that Anthropic's coding tool has been steganographically marking its requests with invisible identifiers, raising fresh questions about surveillance and transparency in the tools",
-      "link_text": "programmers rely on.",
+      "intro": "Claude is secretly watermarking you",
+      "body": "Researchers discovered that Claude Code embeds hidden steganographic markers in its requests, raising fresh questions about transparency and surveillance in the AI tools",
+      "link_text": "millions of developers now rely on.",
       "url": "https://thereallo.dev/blog/claude-code-prompt-steganography",
       "source": "Hacker News"
     },
     {
-      "intro": "Sony deletes movies you bought",
-      "body": "PlayStation is wiping 551 StudioCanal films from libraries of customers who paid for them, a stark reminder that in the age of digital licensing, you may not truly own",
-      "link_text": "what you purchase.",
-      "url": "https://reclaimthenet.org/sony-deletes-551-studiocanal-movies-playstation-owners-paid-for",
-      "source": "Hacker News"
+      "intro": "mRNA vindicated",
+      "body": "A sweeping global review confirms that mRNA vaccines are both safe and effective, and points to a broad new frontier of applications from cancer to rare diseases as the platform",
+      "link_text": "moves well beyond COVID.",
+      "url": "https://news.ubc.ca/2026/06/mrna-vaccines-are-safe-effective-and-full-of-promise/",
+      "source": "UBC News"
     },
     {
-      "intro": "The disc era ends",
-      "body": "Sony will stop producing physical discs for new PlayStation games in January 2028, cementing a fully digital future for console gaming and the collector culture built around",
-      "link_text": "owning physical copies.",
-      "url": "https://blog.playstation.com/2026/07/01/physical-disc-production-ending-in-january-2028-for-new-games-releasing-on-playstation-consoles/",
-      "source": "Hacker News"
-    },
-    {
-      "intro": "AI weaponized against Muslim women",
-      "body": "In India, deepfakes and AI-generated abuse are being deployed to harass and humiliate Muslim women, a chilling new frontier in the intersection of technology and",
-      "link_text": "communal hatred.",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/1/how-ai-is-being-weaponised-against-indias-muslim-women",
+      "intro": "Deadly Russian barrage hits Kyiv",
+      "body": "At least eight people were killed as Russia unleashed a massive wave of missile and drone strikes on Ukraine's capital, an escalation that came after Zelenskyy warned of",
+      "link_text": "an imminent large-scale assault.",
+      "url": "https://www.aljazeera.com/news/2026/7/2/kyiv-attacked-after-ukraines-zelenskyy-warns-of-massive-russian-strike?traffic_source=rss",
       "source": "Al Jazeera"
     },
     {
-      "intro": "Heat is quietly killing millions",
-      "body": "A sweeping global study estimates the mortality burden from non-optimal temperatures across two decades, revealing how cold and heat exact a far larger human toll than most people",
-      "link_text": "ever realize.",
-      "url": "https://www.researchgate.net/publication/353058947_Global_regional_and_national_burden_of_mortality_associated_with_non-optimal_ambient_temperatures_from_2000_to_2019_a_three-stage_modelling_study",
-      "source": "Hacker News"
+      "intro": "Nord Stream charge lands",
+      "body": "German prosecutors have formally charged a Ukrainian suspect over the 2022 explosions that ruptured the Nord Stream pipelines, reviving one of Europe's most consequential",
+      "link_text": "unsolved sabotage mysteries.",
+      "url": "https://www.aljazeera.com/news/2026/7/2/german-prosecutors-charge-ukrainian-suspect-over-nord-stream-explosions?traffic_source=rss",
+      "source": "Al Jazeera"
     },
     {
-      "intro": "Why China can't build jet engines",
-      "body": "Despite manufacturing dominance across nearly every sector, China still struggles to produce high-performance jet engines, a technological bottleneck that reveals the limits of industrial catch-up and the depth of Western",
-      "link_text": "engineering advantages.",
+      "intro": "The end of the disc",
+      "body": "PlayStation will stop producing physical discs for new games in January 2028, a milestone in gaming's shift to all-digital ownership that carries real questions about",
+      "link_text": "what buyers actually own.",
+      "url": "https://blog.playstation.com/2026/07/01/physical-disc-production-ending-in-january-2028-for-new-games-releasing-on-playstation-consoles/",
+      "source": "PlayStation Blog"
+    },
+    {
+      "intro": "Sony deletes movies you bought",
+      "body": "PlayStation owners lost access to 551 films they had already paid for after a licensing lapse, a stark illustration of how digital 'purchases' can vanish and why",
+      "link_text": "ownership is now an illusion.",
+      "url": "https://reclaimthenet.org/sony-deletes-551-studiocanal-movies-playstation-owners-paid-for",
+      "source": "Reclaim The Net"
+    },
+    {
+      "intro": "Ebola on the front line",
+      "body": "Health workers in the Democratic Republic of Congo are battling a fresh Ebola outbreak under harrowing conditions, a reminder of the persistent threat the virus poses across",
+      "link_text": "Central Africa's fragile health systems.",
+      "url": "https://www.aljazeera.com/editorial/2026/7/2/on-the-front-line-of-congos-ebola-outbreak?traffic_source=rss",
+      "source": "Al Jazeera"
+    },
+    {
+      "intro": "Oceans hit record heat",
+      "body": "Sea surface temperatures have surged to unprecedented highs just as a new El Niño builds, a combination that scientists warn could supercharge extreme weather and",
+      "link_text": "accelerate marine ecosystem collapse.",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/2/ocean-temperatures-hit-record-highs-as-el-nino-looms?traffic_source=rss",
+      "source": "Al Jazeera"
+    },
+    {
+      "intro": "The crypto that enriched one, ruined many",
+      "body": "Trump's memecoin and crypto ventures delivered him an enormous windfall even as ordinary investors who bought in suffered heavy losses, exposing the lopsided economics of",
+      "link_text": "presidentially branded speculation.",
+      "url": "https://www.nytimes.com/2026/07/01/us/politics/trump-crypto-memecoin-world-liberty.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "The cost of killing USAID",
+      "body": "A hard-eyed accounting argues that dismantling the US aid agency has already led to preventable deaths abroad, a blunt reckoning with the human consequences of",
+      "link_text": "slashing foreign assistance.",
+      "url": "https://www.nytimes.com/2026/07/01/opinion/usaid-elon-musk-doge.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "AI without the layoffs",
+      "body": "German software giant SAP says it is trying to adopt artificial intelligence while retraining rather than firing its workers, an experiment that could offer a template for",
+      "link_text": "navigating the AI transition humanely.",
+      "url": "https://www.nytimes.com/2026/07/02/world/europe/germany-sap-ai-jobs-skilled-workers.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Sitting is aging your cells",
+      "body": "New research finds that even healthy but sedentary people show early declines in cellular energy production, evidence that inactivity itself may quietly accelerate",
+      "link_text": "the biology of aging.",
+      "url": "https://news.cuanschutz.edu/news-stories/healthy-but-sedentary-individuals-show-early-decline-in-cellular-energy-production",
+      "source": "CU Anschutz"
+    },
+    {
+      "intro": "China's jet engine wall",
+      "body": "Despite dominating manufacturing, China still cannot reliably build advanced jet engines, and a close look at why reveals the hidden metallurgical and institutional barriers behind",
+      "link_text": "one of technology's hardest problems.",
       "url": "https://aakash.substack.com/p/why-jet-engines-arent-made-in-china",
       "source": "Hacker News"
     },
     {
-      "intro": "The Pope warns of schism",
-      "body": "Controversial bishops have been ordained despite the pontiff's warnings, exposing widening theological fault lines that threaten to fracture the world's largest",
-      "link_text": "Christian church.",
-      "url": "https://www.bbc.co.uk/news/articles/c74y7k8wyz8o?at_medium=RSS&amp;at_campaign=rss",
+      "intro": "Exiled and still cracking jokes",
+      "body": "A comedian banned by Beijing is building a new career performing for Chinese speakers around the world, a story about the limits of censorship and the resilience of",
+      "link_text": "diaspora free speech.",
+      "url": "https://www.bbc.co.uk/news/articles/cx2x01q21wlo?at_medium=RSS&amp;at_campaign=rss",
       "source": "BBC News"
-    },
-    {
-      "intro": "Sedentary living damages cells early",
-      "body": "New research finds that even healthy but inactive people show early declines in cellular energy production, suggesting that a lack of movement begins degrading the body's power plants far sooner than",
-      "link_text": "symptoms appear.",
-      "url": "https://news.cuanschutz.edu/news-stories/healthy-but-sedentary-individuals-show-early-decline-in-cellular-energy-production",
-      "source": "Hacker News"
     }
   ]
 }
