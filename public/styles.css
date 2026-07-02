@@ -388,4 +388,5 @@ a.site-name {
 @media (max-width: 480px) {
   html { font-size: 18px; }
   .masthead { padding: 0.94rem 0 0.9rem; }
+  .site-name { font-size: 3rem; white-space: nowrap; }
 }
