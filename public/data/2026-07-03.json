@@ -1,111 +1,111 @@
 {
   "date": "2026-07-03",
-  "generated_at": "2026-07-03T01:01:08.254Z",
+  "generated_at": "2026-07-03T06:37:09.333Z",
   "stories": [
     {
+      "intro": "Khamenei's death reshapes Iran",
+      "body": "Tehran prepares a seven-day national funeral for its supreme leader as the region braces for a fraught succession, with new maps charting where mourners will gather each day of the",
+      "link_text": "elaborate national mourning ritual.",
+      "url": "https://www.aljazeera.com/news/2026/7/3/mapping-irans-ali-khamenei-funeral-where-mourners-will-gather-each-day?traffic_source=rss",
+      "source": "Al Jazeera"
+    },
+    {
       "intro": "Spain blacklists Palantir",
-      "body": "In a striking move against US surveillance-tech reach, Spain has ordered public and private companies to stop working with the American data giant, signaling growing European resistance to",
-      "link_text": "Palantir's data infrastructure.",
+      "body": "Madrid has ordered both public agencies and private companies to sever ties with the American data-analytics giant, a striking European rebuke of US surveillance tech and a sign of deepening transatlantic distrust over",
+      "link_text": "who controls sensitive data.",
       "url": "https://clashreport.com/world/articles/spain-orders-blacklist-of-us-tech-giant-palantir-from-public-and-private-companies-fsnc2z17gjv",
       "source": "Hacker News"
     },
     {
-      "intro": "Google tightens Android's grip",
-      "body": "F-Droid warns that Google's new developer verification requirement is a threat masquerading as protection, potentially killing off independent app distribution and open-source software on",
-      "link_text": "the world's dominant mobile OS.",
+      "intro": "Google's Android lockdown",
+      "body": "F-Droid warns that Google's new developer-verification requirements, sold as anti-malware protection, could effectively kill independent app distribution and sideloading — a fundamental shift in who gets to decide what runs on",
+      "link_text": "your own phone.",
       "url": "https://f-droid.org/2026/07/01/adv-malware.html",
       "source": "Hacker News"
     },
     {
-      "intro": "AI can't be an inventor",
-      "body": "Japan's top court ruled that artificial intelligence cannot be named as an inventor on patent applications, joining courts worldwide in wrestling with who owns the fruits of",
-      "link_text": "machine-generated innovation.",
-      "url": "https://japannews.yomiuri.co.jp/science-nature/technology/20260306-314930/",
-      "source": "Hacker News"
-    },
-    {
-      "intro": "Crime pays for egg cartels",
-      "body": "The producers behind a massive egg price-fixing scheme pocketed roughly a thousand times more than the fine they paid, a vivid illustration of how weak antitrust enforcement",
-      "link_text": "makes lawbreaking profitable.",
-      "url": "https://www.thebignewsletter.com/p/crime-pays-the-egg-bandits-made-a",
-      "source": "Hacker News"
-    },
-    {
       "intro": "Virginia bans location data sales",
-      "body": "A new state law prohibits the sale of precise geolocation data, a notable win for privacy advocates and a template other states may follow amid the largely unregulated",
-      "link_text": "US data-broker economy.",
+      "body": "In a rare state-level privacy win, Virginia has prohibited the sale of geolocation data, striking at a shadowy industry that quietly tracks and monetizes the movements of",
+      "link_text": "millions of ordinary people.",
       "url": "https://www.hunton.com/privacy-and-cybersecurity-law-blog/virginia-bans-sale-of-geolocation-data",
       "source": "Hacker News"
     },
     {
-      "intro": "Israel's plot against negotiators",
-      "body": "US officials believed Israel was planning to assassinate Iranian nuclear negotiators, a revelation that exposes how close diplomacy came to collapsing into",
-      "link_text": "open regional war.",
-      "url": "https://www.nytimes.com/2026/07/02/us/politics/israel-iran-negotiators-plot.html",
-      "source": "New York Times"
+      "intro": "Japan rejects AI inventors",
+      "body": "The country's top court has ruled that artificial intelligence cannot be named as an inventor on patent applications, joining a global legal consensus that is forcing hard questions about creativity, ownership, and",
+      "link_text": "who deserves credit.",
+      "url": "https://japannews.yomiuri.co.jp/science-nature/technology/20260306-314930/",
+      "source": "Hacker News"
     },
     {
-      "intro": "Uneasy calm on Hormuz",
-      "body": "The BBC finds seized ships and shark fishermen along the world's most important oil chokepoint as a fragile lull settles over waters that could still trigger",
-      "link_text": "a global energy shock.",
+      "intro": "Canada pivots away from US",
+      "body": "Prime Minister Carney has secured a major pipeline deal to expand oil exports beyond the American market, a strategic realignment that reflects fraying ties with Washington and Ottawa's hunt for",
+      "link_text": "new energy customers.",
+      "url": "https://www.aljazeera.com/economy/2026/7/3/canadas-carney-secures-deal-for-pipeline-to-expand-oil-exports-beyond-us?traffic_source=rss",
+      "source": "Al Jazeera"
+    },
+    {
+      "intro": "Europe's summers are changing",
+      "body": "As punishing heat waves become an annual fixture, scientists weigh in on whether Europe's extreme summers now represent a permanent new climate baseline rather than",
+      "link_text": "isolated freak events.",
+      "url": "https://www.aljazeera.com/features/2026/7/3/are-europes-extreme-summers-the-new-normal-what-the-science-says?traffic_source=rss",
+      "source": "Al Jazeera"
+    },
+    {
+      "intro": "Tension in the Strait of Hormuz",
+      "body": "BBC reporters find seized ships and wary fishermen along the world's most critical oil chokepoint as Iran warns vessels against straying from approved routes, leaving trade under an",
+      "link_text": "uneasy and fragile calm.",
       "url": "https://www.bbc.co.uk/news/articles/cvg53ngvvpxo?at_medium=RSS&amp;at_campaign=rss",
       "source": "BBC News"
     },
     {
-      "intro": "Europe's glaciers are vanishing",
-      "body": "Successive heat waves have accelerated the melting of the Alps' ice, and new aerial imagery captures the alarming pace at which some of the continent's most iconic",
-      "link_text": "glaciers are disappearing.",
-      "url": "https://www.nytimes.com/2026/07/02/climate/europe-heat-waves-melting-glaciers.html",
-      "source": "New York Times"
+      "intro": "Egg cartel profits from fraud",
+      "body": "A group of egg producers pocketed roughly a thousand times more from illegal price-fixing than the fine they eventually paid, a stark case study in how weak penalties can make",
+      "link_text": "corporate crime pay.",
+      "url": "https://www.thebignewsletter.com/p/crime-pays-the-egg-bandits-made-a",
+      "source": "Hacker News"
     },
     {
-      "intro": "Water as a weapon",
-      "body": "Analysts warn that control over shared rivers could become the next flashpoint between nuclear-armed India and Pakistan, as treaty tensions turn a vital resource into",
-      "link_text": "a tool of coercion.",
-      "url": "https://www.aljazeera.com/video/inside-story/2026/7/2/could-water-become-a-flashpoint-between-islamabad-and-new-delhi?traffic_source=rss",
-      "source": "Al Jazeera"
+      "intro": "Instagram's dark ad problem",
+      "body": "A BBC investigation found the platform running advertisements that promoted child sexual abuse material in India, exposing severe failures in Meta's content moderation across its",
+      "link_text": "largest user market.",
+      "url": "https://www.bbc.co.uk/news/articles/cvgm4e0316zo?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC News"
     },
     {
-      "intro": "Tucker Carlson eyes a third party",
-      "body": "Having broken with Trump, the influential broadcaster now says he wants to help build a new political movement, a potential fracture in the American right with implications for",
-      "link_text": "the coming elections.",
-      "url": "https://www.nytimes.com/2026/07/02/us/politics/tucker-carlson-third-party.html",
-      "source": "New York Times"
+      "intro": "The internet monopoly myth",
+      "body": "A close comparison argues that Switzerland enjoys 25 Gbit home internet not because of freer markets but because of smart regulation, challenging a core American assumption about how to deliver",
+      "link_text": "fast, cheap broadband.",
+      "url": "https://stefan.schueller.net/posts/the-free-market-lie/",
+      "source": "Hacker News"
     },
     {
-      "intro": "Japan divided over a mayor's leave",
-      "body": "A female mayor's decision to take maternity leave has sparked national debate in a country wrestling with its low birthrate, rigid work culture and the role of women in",
-      "link_text": "positions of public power.",
+      "intro": "Ebola treatment trial launches",
+      "body": "As a fresh outbreak rages in the Democratic Republic of Congo, researchers have begun testing treatments in the field, an effort that could reshape how the world responds to future",
+      "link_text": "Ebola epidemics.",
+      "url": "https://www.bbc.co.uk/news/articles/c75ykve4zzxo?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC News"
+    },
+    {
+      "intro": "A Japanese mayor's maternity leave",
+      "body": "When a young mayor announced she would take maternity leave, it sparked a nationwide conversation in Japan about working mothers, political leadership, and the country's deep-rooted",
+      "link_text": "workplace expectations.",
       "url": "https://www.bbc.co.uk/news/articles/c1mykzj15xno?at_medium=RSS&amp;at_campaign=rss",
       "source": "BBC News"
     },
     {
-      "intro": "Reporter fined for protecting a source",
-      "body": "The US Supreme Court let stand penalties against a journalist who refused to name her source, a decision press-freedom advocates warn could chill",
-      "link_text": "investigative reporting nationwide.",
-      "url": "https://www.nytimes.com/2026/07/02/us/politics/supreme-court-herridge-first-amendment.html",
-      "source": "New York Times"
-    },
-    {
-      "intro": "The theorem economy collapses",
-      "body": "A mathematician argues that AI's growing ability to generate and verify proofs is upending the value system that has long governed mathematics, raising questions about what human",
-      "link_text": "mathematicians are now for.",
-      "url": "https://davidbessis.substack.com/p/the-fall-of-the-theorem-economy",
+      "intro": "Reality's hidden complexity",
+      "body": "A widely shared essay argues that every task contains far more detail than we ever anticipate, a deceptively simple insight that explains why projects run long and why expertise is",
+      "link_text": "so hard to acquire.",
+      "url": "https://johnsalvatier.org/blog/2017/reality-has-a-surprising-amount-of-detail",
       "source": "Hacker News"
     },
     {
-      "intro": "Albania erupts in protest",
-      "body": "Violent clashes between demonstrators and police have escalated as anti-government protests grip the Balkan nation, a test of stability for a country hoping to join",
-      "link_text": "the European Union.",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/2/violent-clashes-as-albanias-anti-government-protests-continue?traffic_source=rss",
-      "source": "Al Jazeera"
-    },
-    {
-      "intro": "Declaration found in a UK archive",
-      "body": "A rare early copy of the US Declaration of Independence has turned up in London records, a serendipitous discovery arriving just as America marks the 250th anniversary of",
-      "link_text": "its founding document.",
-      "url": "https://www.nytimes.com/2026/07/02/world/europe/declaration-independence-copy-uk-archive.html",
-      "source": "New York Times"
+      "intro": "Everest's frozen landmark identified",
+      "body": "After decades of mystery, a DNA test has finally revealed the identity of 'Green Boots,' the frozen climber whose body became a macabre navigational marker on the mountain's deadly",
+      "link_text": "northeast ridge.",
+      "url": "https://www.dailymail.com/news/article-15943905/Mystery-identity-Green-Boots-climber-macabre-landmark-frozen-ice-dying-Everest-finally-solved-DNA-test.html",
+      "source": "Hacker News"
     }
   ]
 }
