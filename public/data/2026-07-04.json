@@ -1,111 +1,111 @@
 {
   "date": "2026-07-04",
-  "generated_at": "2026-07-04T01:04:43.937Z",
+  "generated_at": "2026-07-04T06:25:02.611Z",
   "stories": [
     {
-      "intro": "Pegasus hits EU Parliament",
-      "body": "Citizen Lab has confirmed that a member of the very committee investigating spyware abuses was himself hacked with NSO Group's Pegasus, a striking escalation of surveillance against elected officials in the heart of",
-      "link_text": "European democratic institutions.",
+      "intro": "Pegasus hits Europe's Parliament",
+      "body": "Citizen Lab has confirmed that a member of the very committee investigating spyware abuses was himself hacked with Pegasus, a stunning escalation that suggests even Europe's watchdogs aren't safe from",
+      "link_text": "the tools they were probing.",
       "url": "https://citizenlab.ca/research/member-of-committee-investigating-spyware-hacked-with-pegasus/",
       "source": "Citizen Lab"
     },
     {
       "intro": "Africa embraces Starlink",
-      "body": "Across a continent long underserved by terrestrial broadband, Musk's satellite network is rapidly filling the gap, upending local telecom markets and raising questions about who controls the future of",
-      "link_text": "African internet access.",
+      "body": "Across a continent long underserved by terrestrial broadband, Elon Musk's satellite network is spreading fast, reshaping connectivity — and raising thorny questions about dependence on a single American company for",
+      "link_text": "Africa's digital future.",
       "url": "https://www.economist.com/middle-east-and-africa/2026/07/02/africans-are-turning-to-starlink",
       "source": "The Economist"
     },
     {
-      "intro": "Sudan atrocities documented",
-      "body": "Amnesty International says the Rapid Support Forces committed crimes against humanity in El Fasher, detailing ethnic cleansing in a war that has drawn far less attention than it warrants despite the scale of",
-      "link_text": "civilian suffering in Darfur.",
-      "url": "https://www.theguardian.com/world/2026/jul/01/sudan-rsf-rapid-support-forces-crimes-against-humanity-el-fasher-amnesty-ethnic-cleansing",
-      "source": "The Guardian"
+      "intro": "The right to run AI",
+      "body": "A growing movement argues that as governments and platforms tighten control over powerful models, individuals should retain a fundamental right to run open, local AI on their own hardware — before that door",
+      "link_text": "quietly closes for good.",
+      "url": "https://righttointelligence.org/",
+      "source": "Hacker News"
     },
     {
-      "intro": "Niger's LGBTQ crackdown",
-      "body": "The country's military regime has launched what activists call a witch-hunt, rounding up members of the LGBTQ+ population in a chilling sign of intensifying repression under West Africa's",
-      "link_text": "spreading military juntas.",
-      "url": "https://www.theguardian.com/world/2026/jul/01/witch-hunt-in-niger-as-military-regime-rounds-up-lgbtq-population",
-      "source": "The Guardian"
-    },
-    {
-      "intro": "Venezuela earthquake devastation",
-      "body": "A series of quakes has flattened a tourist town and left rescuers navigating what one called a war zone, while the government faces mounting anger over a response critics say has been catastrophically",
-      "link_text": "slow and inadequate.",
-      "url": "https://www.theguardian.com/world/ng-interactive/2026/jul/03/international-rescuers-venezuela-earthquake-hellscape",
-      "source": "The Guardian"
-    },
-    {
-      "intro": "Peru's Fujimori wins",
-      "body": "Keiko Fujimori has officially been declared the winner of Peru's presidential race, capping a dynastic comeback for a name that has dominated and divided the country's politics for",
-      "link_text": "more than three decades.",
-      "url": "https://www.aljazeera.com/news/2026/7/3/keiko-fujimori-officially-declared-winner-of-peru-presidential-race",
-      "source": "Al Jazeera"
-    },
-    {
-      "intro": "China's ethnic unity law",
-      "body": "Beijing's newly enacted legislation on ethnic unity is drawing scrutiny from rights observers who warn it may amount to a legal framework for forced assimilation of the country's",
-      "link_text": "minority populations.",
-      "url": "https://www.aljazeera.com/video/inside-story/2026/7/3/is-chinas-new-ethnic-unity-law-a-step-towards-forced-assimilation-2",
-      "source": "Al Jazeera"
-    },
-    {
-      "intro": "Supersonic flight returns",
-      "body": "The FAA is lifting a half-century-old ban on supersonic travel over US soil, betting that quieter 'no-boom' technology can revive a mode of flight abandoned since the Concorde era and reshape the future of",
-      "link_text": "high-speed air travel.",
-      "url": "https://www.forbes.com/sites/suzannerowankelleher/2026/06/30/faa-supersonic-flight-no-boom/",
-      "source": "Forbes"
-    },
-    {
-      "intro": "Screwworm's alarming return",
-      "body": "A deep look at the flesh-eating parasite once eradicated through an ingenious sterile-insect program explains why it is creeping back northward, threatening livestock and revealing the fragility of one of history's greatest",
-      "link_text": "public-health triumphs.",
-      "url": "https://www.construction-physics.com/p/the-fall-and-rise-of-screwworm",
-      "source": "Construction Physics"
-    },
-    {
-      "intro": "NASA races to save telescope",
-      "body": "The agency has launched a robotic mission to intercept and reboost an aging space telescope slipping back toward Earth, a technically daring rescue that could set a template for extending the life of",
-      "link_text": "orbital observatories.",
-      "url": "https://www.aljazeera.com/news/2026/7/3/nasa-launches-robotic-mission-to-save-telescope-falling-back-to-earth",
-      "source": "Al Jazeera"
-    },
-    {
-      "intro": "Costco versus Amazon",
-      "body": "A sharp analysis argues that Costco's membership-and-margins model represents a fundamentally different vision of retail capitalism than Amazon's data-driven dominance, offering lessons about how firms treat workers, suppliers, and",
+      "intro": "Costco, the anti-Amazon",
+      "body": "A sharp analysis argues that Costco's low-SKU, high-wage, membership-driven model represents a fundamentally different vision of retail than Amazon's sprawling marketplace, and one that quietly delivers more value to workers and",
       "link_text": "customers alike.",
       "url": "https://phenomenalworld.org/analysis/the-anti-amazon/",
       "source": "Phenomenal World"
     },
     {
-      "intro": "Trees defy physics limits",
-      "body": "New research overturns long-held assumptions about hydraulic constraints, showing that the tallest trees have no trouble pumping water hundreds of feet to their highest branches — a finding that reshapes our understanding of",
-      "link_text": "how giant trees survive.",
-      "url": "https://news.exeter.ac.uk/faculty-of-environment-science-and-economy/giant-trees-have-no-trouble-pumping-water-to-top-branches/",
-      "source": "University of Exeter"
+      "intro": "Australia stares down China",
+      "body": "Canberra's attempt to push back against Beijing's economic and diplomatic pressure met an even harder counter-push, offering a cautionary tale for every middle power trying to navigate life alongside an assertive",
+      "link_text": "and unyielding China.",
+      "url": "https://www.nytimes.com/2026/07/04/world/asia/australia-china-politics.html",
+      "source": "New York Times"
     },
     {
-      "intro": "Iran damage revealed",
-      "body": "Newly released restricted satellite imagery exposes the true extent of destruction at Iran's nuclear and military sites, offering the clearest independent picture yet of the strikes that reshaped the region's",
-      "link_text": "strategic balance.",
-      "url": "https://www.bbc.co.uk/news/articles/cr5j1qn6deno?at_medium=RSS&amp;at_campaign=rss",
+      "intro": "Putin vows to take more",
+      "body": "Visiting the battlefield in person, the Russian president pledged to seize additional Ukrainian territory in the Donbas, a defiant signal that the war grinds on with no diplomatic off-ramp",
+      "link_text": "in sight.",
+      "url": "https://www.nytimes.com/2026/07/03/world/europe/putin-ukraine-donbas-battlefield-visit.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Russia recruits its students",
+      "body": "Facing mounting battlefield losses, Moscow is increasingly looking to university students to fill its ranks, a shift that reveals both the war's grinding toll and the Kremlin's reluctance to order another unpopular",
+      "link_text": "mass mobilization.",
+      "url": "https://www.bbc.co.uk/news/articles/cp8lnnr080go?at_medium=RSS&amp;at_campaign=rss",
       "source": "BBC News"
     },
     {
-      "intro": "Ivory Coast floods kill dozens",
-      "body": "At least 59 people have died as torrential rains batter Côte d'Ivoire and neighboring countries, the latest evidence of how intensifying wet seasons are overwhelming infrastructure across",
-      "link_text": "West Africa.",
-      "url": "https://www.theguardian.com/world/2026/jul/02/cote-d-ivoire-floods-dead-west-africa-rains",
-      "source": "The Guardian"
+      "intro": "Albania's Flamingo Revolution",
+      "body": "Thousands have taken to the streets demanding the prime minister's resignation in a protest movement that has adopted an unlikely pink emblem, testing the durability of power in a Balkan nation long troubled by",
+      "link_text": "corruption and stagnation.",
+      "url": "https://www.bbc.co.uk/news/articles/c8925jnl0z3o?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC News"
     },
     {
-      "intro": "Ebola's wildlife roots",
-      "body": "As a new outbreak spreads through Congo, scientists argue that pinning down the virus's animal origins is the missing piece needed to anticipate and prevent the",
-      "link_text": "next major epidemic.",
-      "url": "https://www.theguardian.com/environment/2026/jul/02/understanding-ebola-wildlife-origins-crucial-preventing-next-big-outbreak",
-      "source": "The Guardian"
+      "intro": "Screwworm's alarming comeback",
+      "body": "A flesh-eating parasite once triumphantly eradicated from North America through one of history's great pest-control campaigns is creeping back, a story that reveals how fragile our hard-won victories over nature can",
+      "link_text": "actually be.",
+      "url": "https://www.construction-physics.com/p/the-fall-and-rise-of-screwworm",
+      "source": "Construction Physics"
+    },
+    {
+      "intro": "Settlements in Gaza?",
+      "body": "As Israeli officials float the once-taboo idea of rebuilding settlements in the devastated territory, analysts weigh how realistic — and legally fraught — such a project would be, and what it would mean for any future",
+      "link_text": "Palestinian statehood.",
+      "url": "https://www.aljazeera.com/news/2026/7/4/could-israel-really-build-settlements-in-gaza?traffic_source=rss",
+      "source": "Al Jazeera"
+    },
+    {
+      "intro": "Sudan's next catastrophe",
+      "body": "A former UN official warns that the crisis unfolding in El Obeid could eclipse even the horrors of El Fasher, a grim signal that Sudan's largely ignored war continues to spiral toward",
+      "link_text": "mass atrocity.",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/4/el-obeid-crisis-could-be-worse-than-el-fasher-warns-ex-un-official?traffic_source=rss",
+      "source": "Al Jazeera"
+    },
+    {
+      "intro": "Venezuela's quake reckoning",
+      "body": "As families identify loved ones at makeshift morgues and a tourist town lies in rubble, the government faces mounting fury over its response — which officials dismiss as mere",
+      "link_text": "opposition propaganda.",
+      "url": "https://www.aljazeera.com/news/longform/2026/7/3/a-nightmare-strugging-with-the-aftermath-of-venezuelas-earthquakes?traffic_source=rss",
+      "source": "Al Jazeera"
+    },
+    {
+      "intro": "Rwanda, 32 years on",
+      "body": "A generation born after the genocide reflects on their country's remarkable development alongside its unhealed wounds and constrained freedoms, offering a nuanced portrait of a nation still",
+      "link_text": "defined by its past.",
+      "url": "https://www.aljazeera.com/news/2026/7/4/thirty-two-years-on-young-rwandans-reflect-on-progress-pain-and-hope?traffic_source=rss",
+      "source": "Al Jazeera"
+    },
+    {
+      "intro": "NASA races to save a telescope",
+      "body": "In a novel robotic mission, the agency has launched a spacecraft to reboost an aging orbital telescope that is slowly falling back toward Earth, a test case for extending the life of costly assets",
+      "link_text": "already in space.",
+      "url": "https://www.aljazeera.com/news/2026/7/3/nasa-launches-robotic-mission-to-save-telescope-falling-back-to-earth?traffic_source=rss",
+      "source": "Al Jazeera"
+    },
+    {
+      "intro": "How giant trees defy gravity",
+      "body": "New research finally explains how the world's tallest trees pump water more than a hundred meters up to their highest branches, resolving a long-standing puzzle about the physical limits of",
+      "link_text": "life on land.",
+      "url": "https://news.exeter.ac.uk/faculty-of-environment-science-and-economy/giant-trees-have-no-trouble-pumping-water-to-top-branches/",
+      "source": "University of Exeter"
     }
   ]
 }
