@@ -1,111 +1,111 @@
 {
   "date": "2026-07-05",
-  "generated_at": "2026-07-05T01:01:09.727Z",
+  "generated_at": "2026-07-05T06:45:43.986Z",
   "stories": [
     {
-      "intro": "Webb telescope breaks the model",
-      "body": "The James Webb Space Telescope keeps finding galaxies that are too big and too mature for the early universe, and astrophysicists are now openly debating whether our standard cosmological",
-      "link_text": "picture needs serious revision.",
-      "url": "https://www.quantamagazine.org/astrophysicists-puzzle-over-webbs-new-universe-20260702/",
-      "source": "Quanta Magazine"
+      "intro": "A new era in Tehran",
+      "body": "Following the state funeral of Supreme Leader Ali Khamenei, analysts are dissecting how Iran's emerging regime differs fundamentally from the theocracy that preceded it, with implications for the region and for",
+      "link_text": "the world beyond its borders.",
+      "url": "https://www.bbc.co.uk/news/articles/cg534ryp660o?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC News"
     },
     {
-      "intro": "The air is making you dumber",
-      "body": "Rising CO2 levels in poorly ventilated rooms measurably degrade human decision-making and cognitive performance, suggesting the real bottleneck in many meetings and classrooms isn't the people but",
-      "link_text": "the stale air itself.",
-      "url": "https://blog.mikebowler.ca/2026/07/03/co2-and-decision-making/",
-      "source": "Mike Bowler"
-    },
-    {
-      "intro": "Reversing the aging brain",
-      "body": "Texas A&M researchers report that a nasal spray restored youthful cognitive function in aging animals, a striking early result that could point toward accessible treatments for",
-      "link_text": "age-related mental decline.",
-      "url": "https://stories.tamu.edu/news/2026/04/14/scientists-reverse-brain-aging-with-a-nasal-spray/",
-      "source": "Texas A&M"
-    },
-    {
-      "intro": "Decoding the language of finches",
-      "body": "A scientist claims to have cracked the structured communication of zebra finches, decoding meaningful patterns in their song that hint at how far animal language research",
-      "link_text": "could eventually go.",
-      "url": "https://www.freepressjournal.in/education/breaking-the-bird-barrier-scientist-decodes-zebra-finch-language",
-      "source": "Free Press Journal"
-    },
-    {
-      "intro": "Iran mourns its Supreme Leader",
-      "body": "Enormous crowds packed Tehran for the state funeral of Ali Khamenei, as the regime projected unity and vows of revenge abroad while quietly intensifying",
-      "link_text": "a crackdown on dissidents at home.",
+      "intro": "Iran mourns, then cracks down",
+      "body": "As millions filled Tehran's streets to project national unity during Khamenei's funeral, the government simultaneously intensified its pursuit of dissidents at home, revealing the",
+      "link_text": "two faces of the state.",
       "url": "https://www.nytimes.com/2026/07/04/world/middleeast/iran-dissidents-crackdown.html",
       "source": "New York Times"
     },
     {
-      "intro": "AI as the new ballot guide",
-      "body": "A growing number of voters are asking chatbots who they should vote for, outsourcing a fundamental democratic judgment to models whose hidden biases and errors could quietly",
-      "link_text": "shape election outcomes.",
+      "intro": "Webb rewrites the cosmos",
+      "body": "The James Webb Space Telescope keeps turning up galaxies and structures that appear too mature for the early universe, leaving astrophysicists scrambling to reconcile observations with the",
+      "link_text": "standard model of cosmology.",
+      "url": "https://www.quantamagazine.org/astrophysicists-puzzle-over-webbs-new-universe-20260702/",
+      "source": "Quanta Magazine"
+    },
+    {
+      "intro": "Voters ask the chatbot",
+      "body": "A growing number of Americans are turning to AI assistants to decide who deserves their ballot, a shift that raises unsettling questions about bias, manipulation, and the",
+      "link_text": "future of informed democracy.",
       "url": "https://www.nytimes.com/2026/07/04/us/politics/voters-ai-chatbots-elections.html",
       "source": "New York Times"
     },
     {
-      "intro": "Data centers versus drinking water",
-      "body": "A Wyoming city suspended discharges from a Meta facility after a contractor contaminated its reuse water system, a vivid warning of the mounting environmental costs of",
-      "link_text": "the AI infrastructure boom.",
-      "url": "https://www.tomshardware.com/tech-industry/data-centers/cheyenne-suspends-data-center-fill-and-flush-and-closed-loop-discharges-after-meta-contractor-contaminated-its-reuse-water-system",
-      "source": "Tom's Hardware"
-    },
-    {
-      "intro": "YouTube's private videos exposed",
-      "body": "A researcher found a flaw that leaked creators' unlisted and private videos, a reminder that even the largest platforms routinely mishandle the confidential content users",
-      "link_text": "trust them to protect.",
-      "url": "https://javoriuski.com/post/youtube",
-      "source": "Hacker News"
-    },
-    {
-      "intro": "A lost city beneath the sand",
-      "body": "Archaeologists have uncovered a sprawling Byzantine-era settlement in Egypt's western desert, offering fresh evidence of how far Roman and Christian civilization extended into",
-      "link_text": "the remote frontier of empire.",
+      "intro": "Byzantine city rises from sand",
+      "body": "Archaeologists have uncovered a sprawling ancient settlement in Egypt's western desert, a find that promises to reshape understanding of late antique life along the",
+      "link_text": "empire's forgotten frontier.",
       "url": "https://www.theguardian.com/world/2026/jul/04/archaeologists-uncover-ancient-byzantine-city-in-egypts-western-desert",
       "source": "The Guardian"
     },
     {
-      "intro": "Sudan's next great catastrophe",
-      "body": "Aid workers describe relentless drone strikes devastating El Obeid, warning that the largely ignored war is engulfing yet another city in a crisis the world",
-      "link_text": "continues to look away from.",
+      "intro": "The night sky under threat",
+      "body": "Astronomers warn that the surging number of satellites and proposed orbital mirrors is pushing light pollution 'beyond the limit,' endangering both scientific observation and humanity's ancient view of",
+      "link_text": "the stars overhead.",
+      "url": "https://www.eso.org/public/news/eso2607/",
+      "source": "European Southern Observatory"
+    },
+    {
+      "intro": "Sudan's other besieged city",
+      "body": "Aid workers describe El Obeid as a war zone hammered by relentless drone strikes, a grim on-the-ground account of a conflict the wider world continues to",
+      "link_text": "largely ignore.",
       "url": "https://www.theguardian.com/world/2026/jul/04/el-obeid-aid-workers-sudan-war-drone-strikes",
       "source": "The Guardian"
     },
     {
-      "intro": "West Africa's deadly deluge",
-      "body": "Torrential rains have killed dozens across Côte d'Ivoire as the region endures increasingly violent flooding, another sign of how climate extremes are hitting",
-      "link_text": "vulnerable communities hardest.",
-      "url": "https://www.theguardian.com/world/2026/jul/02/cote-d-ivoire-floods-dead-west-africa-rains",
-      "source": "The Guardian"
-    },
-    {
-      "intro": "Ukraine strikes deep into Russia",
-      "body": "Kyiv hit a major oil terminal near St Petersburg, extending its campaign to bring the economic pain of the war home to Russia and pressure the Kremlin",
-      "link_text": "far from the front lines.",
-      "url": "https://www.bbc.co.uk/news/articles/c8j2vmzxezro?at_medium=RSS&amp;at_campaign=rss",
-      "source": "BBC News"
-    },
-    {
-      "intro": "Europe's climate has already shifted",
-      "body": "Seven charts lay out how dramatically the continent has warmed, with heatwaves growing more frequent and severe in a transformation that is no longer a future threat but",
-      "link_text": "a present reality.",
-      "url": "https://www.bbc.co.uk/news/articles/c8e2j0j87reo?at_medium=RSS&amp;at_campaign=rss",
-      "source": "BBC News"
-    },
-    {
-      "intro": "The Trump coin's costly collapse",
-      "body": "Nearly a million investors lost a combined $3.8 billion on the president's crypto token, a staggering case study in how celebrity-backed memecoins funnel wealth",
-      "link_text": "away from ordinary buyers.",
+      "intro": "Trump's crypto coin cratered",
+      "body": "Nearly a million investors collectively lost $3.8 billion on the president's meme cryptocurrency, an episode that raises pointed questions about conflicts of interest and the",
+      "link_text": "ethics of presidential profiteering.",
       "url": "https://www.nytimes.com/2026/07/04/us/politics/trump-coin-crypto-investors-loss.html",
       "source": "New York Times"
     },
     {
-      "intro": "Yemen's health system unravels",
-      "body": "A brain drain of doctors and nurses fleeing war and collapse has left millions without care, deepening a humanitarian disaster that persists long after the headlines",
-      "link_text": "have moved elsewhere.",
-      "url": "https://www.aljazeera.com/features/2026/7/4/brain-drain-leaves-yemens-health-sector-in-tatters-and-millions-helpless",
+      "intro": "Decoding the zebra finch",
+      "body": "A scientist claims to have cracked the structured communication of zebra finches, an advance that hints at how animal 'language' works and where the boundaries of",
+      "link_text": "meaning truly lie.",
+      "url": "https://www.freepressjournal.in/education/breaking-the-bird-barrier-scientist-decodes-zebra-finch-language",
+      "source": "Free Press Journal"
+    },
+    {
+      "intro": "Finland's landlines fall silent",
+      "body": "After 150 years, the last analogue landline phones in Finland have been switched off, marking the quiet end of an era of communication infrastructure that once",
+      "link_text": "connected an entire nation.",
+      "url": "https://www.euronews.com/next/2026/06/30/finlands-last-analogue-landline-phones-go-silent-after-150-years",
+      "source": "Euronews"
+    },
+    {
+      "intro": "Jellyfish heal in minutes",
+      "body": "Scientists are studying the astonishing speed with which jellyfish close their wounds, hoping to unlock regenerative secrets that could transform medicine and our understanding of",
+      "link_text": "biological repair.",
+      "url": "https://www.mbl.edu/news/jellyfish-can-heal-wounds-minutes-scientists-want-their-secrets",
+      "source": "Marine Biological Laboratory"
+    },
+    {
+      "intro": "Canada's pipeline compromise",
+      "body": "A major new Alberta-to-BC pipeline will proceed after a C$150bn package aimed at addressing First Nations and provincial objections, a deal exposing the tensions between energy ambition and",
+      "link_text": "Indigenous and climate concerns.",
+      "url": "https://www.theguardian.com/world/2026/jul/03/canada-alberta-pipeline",
+      "source": "The Guardian"
+    },
+    {
+      "intro": "Cameroon's fight for identity",
+      "body": "Millions of children in Cameroon lack birth certificates, and a national campaign to register every child is a quiet battle over citizenship, rights, and the",
+      "link_text": "very shape of a future.",
+      "url": "https://www.aljazeera.com/news/2026/7/5/a-name-a-document-a-future-cameroons-fight-to-register-every-child",
       "source": "Al Jazeera"
+    },
+    {
+      "intro": "China frees a pastor",
+      "body": "The founder of a prominent underground church has been released from prison, a rare and telling moment in Beijing's long campaign to control unauthorized religious",
+      "link_text": "worship across the country.",
+      "url": "https://www.theguardian.com/world/2026/jul/05/founder-of-prominent-underground-church-released-from-prison-in-china",
+      "source": "The Guardian"
+    },
+    {
+      "intro": "Modi's medal collection",
+      "body": "India's prime minister has amassed a striking array of foreign honours on his overseas trips, a pattern that critics say reveals as much about diplomatic flattery as it does about",
+      "link_text": "genuine international standing.",
+      "url": "https://www.theguardian.com/world/2026/jul/03/narendra-modi-awards-honours-overseas-trips",
+      "source": "The Guardian"
     }
   ]
 }
