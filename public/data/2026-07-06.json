@@ -1,111 +1,111 @@
 {
   "date": "2026-07-06",
-  "generated_at": "2026-07-06T01:01:08.111Z",
+  "generated_at": "2026-07-06T07:18:06.291Z",
   "stories": [
     {
       "intro": "Europe moves to scan your messages",
-      "body": "The EU Council has fast-tracked so-called Chat Control legislation that would require messaging services to scan private communications, alarming privacy advocates who warn it undermines end-to-end encryption across",
-      "link_text": "the entire continent.",
+      "body": "The EU Council has fast-tracked so-called Chat Control legislation that would require messaging platforms to scan private communications, alarming privacy advocates who warn it undermines end-to-end encryption for",
+      "link_text": "hundreds of millions of Europeans.",
       "url": "https://www.heise.de/en/news/Chat-Control-1-0-EU-Council-forces-messenger-scans-via-fast-track-11353659.html",
       "source": "Heise"
     },
     {
-      "intro": "Wikipedia fights for the internet",
-      "body": "As AI-generated content floods the web and figures like Elon Musk attack its neutrality, the volunteer-run encyclopedia finds itself defending the idea of a shared, human-curated record of",
-      "link_text": "verifiable truth online.",
+      "intro": "China flexes its nuclear reach",
+      "body": "Beijing test-fired a long-range ballistic missile into the Pacific, a rare and provocative demonstration of its expanding arsenal that carries pointed signals for regional rivals and",
+      "link_text": "the United States.",
+      "url": "https://www.nytimes.com/2026/07/06/world/asia/china-pacific-nuclear-missile-launch.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Deadly strikes shadow NATO summit",
+      "body": "Russian attacks on Kyiv killed at least 11 people on the eve of a pivotal NATO gathering, a grim reminder of the war's toll as alliance leaders debate",
+      "link_text": "their next moves on Ukraine.",
+      "url": "https://www.nytimes.com/2026/07/05/world/europe/kyiv-ukraine-russia-attack-nato.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Wikipedia fights for the open web",
+      "body": "As AI scrapers and figures like Elon Musk challenge its model, the volunteer-run encyclopedia is waging a quiet but consequential battle over who controls",
+      "link_text": "the internet's shared knowledge.",
       "url": "https://www.nytimes.com/2026/07/05/business/media/wikipedia-ai-elon-musk.html",
       "source": "New York Times"
     },
     {
-      "intro": "Fortresses return to the Sahel",
-      "body": "As jihadist violence spreads across West Africa, communities and states are once again building medieval-style walls and defensive fortifications, a striking reversion to older forms of security in a region losing",
-      "link_text": "its open frontiers.",
+      "intro": "Fortress walls return to the Sahel",
+      "body": "Facing relentless jihadist violence, communities across the Sahel are rebuilding medieval-style fortifications, a striking sign of how insecurity is reshaping daily life across",
+      "link_text": "a vast African region.",
       "url": "https://www.economist.com/middle-east-and-africa/2026/06/25/medieval-style-fortifications-are-back-in-the-sahel",
       "source": "The Economist"
     },
     {
-      "intro": "Xi tightens his grip",
-      "body": "As China's leader maneuvers to extend his rule indefinitely, he is increasingly relying on a longtime loyalist, offering a rare window into the personal alliances underpinning",
-      "link_text": "Beijing's power structure.",
-      "url": "https://www.nytimes.com/2026/07/05/world/asia/china-xi-leadership-cai-qi.html",
+      "intro": "Rebels down a Russian helicopter",
+      "body": "Tuareg fighters claim to have shot down a Russian military helicopter in Mali, a striking blow against Moscow's mercenary presence in a conflict drawing in",
+      "link_text": "outside powers across the Sahara.",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/6/aje-onl-nf_mali-rebels-claim-to-have-shot-down-russian-helicop-050726",
+      "source": "Al Jazeera"
+    },
+    {
+      "intro": "Conflict minerals bankroll a war",
+      "body": "Fresh US sanctions target Rwandan firms accused of trafficking minerals that fund the M23 insurgency, spotlighting the global supply chains fueling bloodshed in",
+      "link_text": "eastern DR Congo.",
+      "url": "https://www.aljazeera.com/news/2026/7/6/us-sanctions-target-rwandan-firms-linked-to-conflict-minerals-funding-m23",
+      "source": "Al Jazeera"
+    },
+    {
+      "intro": "Venezuela's deadly building collapses",
+      "body": "Years of warnings about shoddy public housing preceded the earthquakes that flattened homes and killed residents, exposing how government neglect turned a natural disaster into",
+      "link_text": "a preventable catastrophe.",
+      "url": "https://www.nytimes.com/2026/07/05/world/americas/venezuela-earthquake-la-guaira-building-collapse-government.html",
       "source": "New York Times"
     },
     {
       "intro": "A weight-loss pill arrives",
-      "body": "Wegovy is now available in tablet form in the UK, potentially transforming access to a class of drugs that has upended obesity treatment, though questions remain about cost, supply, and",
-      "link_text": "who actually benefits.",
-      "url": "https://www.bbc.co.uk/news/articles/czj8w4pjd4yo?at_medium=RSS&amp;at_campaign=rss",
+      "body": "An oral version of Wegovy is now available in the UK, potentially making one of the most sought-after obesity treatments far easier to access and reshaping how millions manage",
+      "link_text": "their weight and health.",
+      "url": "https://www.bbc.co.uk/news/articles/czj8w4pjd4yo",
       "source": "BBC News"
     },
     {
-      "intro": "Mass-producing the chip factory",
-      "body": "Legendary chip architect Jim Keller's startup is building a facility to churn out small, cheap semiconductor fabs, a bet that could radically decentralize an industry currently dominated by",
-      "link_text": "a handful of giants.",
+      "intro": "Britain's likely next leader",
+      "body": "Andy Burnham built his brand as the mayor of Greater Manchester with buses, trams and 'Manchesterism,' and that record now underpins his emergence as the UK's",
+      "link_text": "probable next prime minister.",
+      "url": "https://www.nytimes.com/2026/07/06/world/europe/andy-burnham-manchesterism-uk.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Vietnam targets the fakes",
+      "body": "Long a global hub for counterfeit luxury goods, Vietnam is launching an aggressive crackdown on its sprawling black market, a shift with ripple effects for",
+      "link_text": "brands and shoppers worldwide.",
+      "url": "https://www.bbc.co.uk/news/articles/cdx7zzywz7wo",
+      "source": "BBC News"
+    },
+    {
+      "intro": "Jim Keller wants tiny fabs",
+      "body": "The legendary chip designer's startup is building a factory to mass-produce miniature semiconductor fabrication plants, a bet that could radically lower the cost and geography of",
+      "link_text": "making advanced chips.",
       "url": "https://www.tomshardware.com/tech-industry/atomic-semi-rebrands-as-fab2-and-shifts-operations-to-texas",
       "source": "Tom's Hardware"
     },
     {
-      "intro": "Le Pen's fate and France's future",
-      "body": "An appeals court verdict in Marine Le Pen's case carries outsized consequences for French politics, potentially reshaping the far right's path to power and the country's",
-      "link_text": "next presidential contest.",
-      "url": "https://www.bbc.co.uk/news/articles/clyeele4leeo?at_medium=RSS&amp;at_campaign=rss",
-      "source": "BBC News"
-    },
-    {
       "intro": "The great blogging collapse",
-      "body": "A survey of 100 once-thriving blogs finds most abandoned, sold, or vanished entirely, a quiet mapping of how the open, personal web gave way to platforms and",
-      "link_text": "algorithmic feeds.",
+      "body": "A survey of 100 once-thriving blogs finds most have gone silent, a quiet reckoning that reveals how the economics and culture of independent writing online",
+      "link_text": "quietly fell apart.",
       "url": "https://danielstanica.com/posts/Great-Blogging-Collapse",
       "source": "Hacker News"
     },
     {
-      "intro": "Vietnam raids the fakes",
-      "body": "Long a global hub for counterfeit luxury goods, Vietnam has launched an aggressive crackdown on its sprawling black market, a shift with implications for trade, tourism, and",
-      "link_text": "its international reputation.",
-      "url": "https://www.bbc.co.uk/news/articles/cdx7zzywz7wo?at_medium=RSS&amp;at_campaign=rss",
-      "source": "BBC News"
-    },
-    {
-      "intro": "AI tutor posts striking gains",
-      "body": "A new AI tutor tested in a Dartmouth course produced learning effect sizes between 0.71 and 1.30 standard deviations, an unusually large result that could reshape debates over",
-      "link_text": "technology in education.",
+      "intro": "An AI tutor that works",
+      "body": "A new AI tutor deployed in a Dartmouth course produced learning gains of up to 1.3 standard deviations, an unusually large effect size that could signal a real turning point for",
+      "link_text": "education technology.",
       "url": "https://intextbooks.science.uu.nl/workshop2026/files/itb26_s1s2.pdf",
       "source": "Hacker News"
     },
     {
-      "intro": "The dark side of the BBL",
-      "body": "The booming demand for Brazilian butt lifts has produced one of the most dangerous cosmetic procedures on the market, with rising complications and deaths exposing the human cost of",
-      "link_text": "a global beauty trend.",
-      "url": "https://www.bbc.co.uk/news/articles/c20y39wy760o?at_medium=RSS&amp;at_campaign=rss",
-      "source": "BBC News"
-    },
-    {
-      "intro": "Zuckerberg admits AI is slow",
-      "body": "Meta's chief acknowledges that development of autonomous AI agents is progressing more slowly than expected, a rare note of caution from an industry that has promised imminent",
-      "link_text": "transformative breakthroughs.",
+      "intro": "Zuckerberg admits AI is hard",
+      "body": "Meta's CEO conceded that development of autonomous AI agents is progressing more slowly than expected, a rare dose of realism from a leader who has staked billions on the technology's",
+      "link_text": "imminent breakthrough.",
       "url": "https://www.reuters.com/business/zuckerberg-says-ai-agent-development-going-slower-than-expected-2026-07-02/",
       "source": "Reuters"
-    },
-    {
-      "intro": "West Africa drowns",
-      "body": "Torrential rains have killed at least 59 people in Côte d'Ivoire as flooding batters the region, part of an intensifying pattern of deadly downpours across a warming",
-      "link_text": "West Africa.",
-      "url": "https://www.theguardian.com/world/2026/jul/02/cote-d-ivoire-floods-dead-west-africa-rains",
-      "source": "The Guardian"
-    },
-    {
-      "intro": "Black wealth on parade",
-      "body": "At South Africa's Durban July, the country's most lucrative horse race, the real spectacle is a rising Black elite displaying its affluence, a vivid marker of shifting",
-      "link_text": "post-apartheid fortunes.",
-      "url": "https://www.nytimes.com/2026/07/05/world/africa/durban-july-south-africa-black-wealth.html",
-      "source": "New York Times"
-    },
-    {
-      "intro": "Trump unwinds gun rules",
-      "body": "The administration has rolled back dozens of firearm regulations in a sweeping move that could reshape American gun policy for years, loosening restrictions on ownership, sales, and",
-      "link_text": "enforcement nationwide.",
-      "url": "https://www.nytimes.com/2026/07/05/us/politics/trump-gun-rights-laws.html",
-      "source": "New York Times"
     }
   ]
 }
