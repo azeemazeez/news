@@ -1,110 +1,110 @@
 {
   "date": "2026-07-07",
-  "generated_at": "2026-07-07T01:01:05.261Z",
+  "generated_at": "2026-07-07T06:51:37.928Z",
   "stories": [
     {
-      "intro": "Khamenei killed, Iran mourns",
-      "body": "The body of Iran's slain Supreme Leader Ali Khamenei arrived in Qom amid vows of revenge, as Tehran signaled a defiant message about the future of the",
-      "link_text": "Islamic Republic after his death.",
-      "url": "https://www.bbc.co.uk/news/articles/c07yy3j3nljo?at_medium=RSS&amp;at_campaign=rss",
+      "intro": "Iran mourns its supreme leader",
+      "body": "Vast crowds flooded Tehran's streets and Khamenei's coffin arrived in the holy city of Qom, as a wounded regime turned his funeral into a message of resistance and revenge amid a fragile ceasefire with the US. The scale of the procession offers a rare window into",
+      "link_text": "Iran's post-conflict politics.",
+      "url": "https://www.nytimes.com/2026/07/07/world/middleeast/tehran-khamenei-funeral-procession.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Tanker ablaze off Oman",
+      "body": "A projectile struck a vessel in the Strait of Hormuz, setting it on fire and testing a shaky US-Iran ceasefire in one of the world's most critical oil chokepoints where any escalation would ripple through",
+      "link_text": "global energy markets.",
+      "url": "https://www.aljazeera.com/news/2026/7/7/tanker-on-fire-off-coast-of-oman-after-being-hit-by-projectile?traffic_source=rss",
+      "source": "Al Jazeera"
+    },
+    {
+      "intro": "Le Pen's political fate",
+      "body": "France's Court of Appeal is set to rule on Marine Le Pen's conviction and an election ban that could bar the far-right leader from a presidential run, a verdict with the power to fundamentally",
+      "link_text": "reshape France's politics.",
+      "url": "https://www.nytimes.com/2026/07/07/world/europe/marine-le-pen-verdict-election-ban-appeal.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Canada's historic submarine deal",
+      "body": "Ottawa ordered 12 submarines from Germany in the largest defence procurement of its kind, a striking bet on NATO partners over traditional suppliers as Arctic and Pacific security concerns push Canada to",
+      "link_text": "rearm at scale.",
+      "url": "https://www.bbc.co.uk/news/articles/cn4ddppz3jqo?at_medium=RSS&amp;at_campaign=rss",
       "source": "BBC News"
     },
     {
-      "intro": "Hamas cedes Gaza governance",
-      "body": "In a major shift amid the wider Iran war, Hamas has relinquished control over the administration of Gaza, a development that could reshape the territory's political",
-      "link_text": "future and postwar order.",
-      "url": "https://www.aljazeera.com/news/liveblog/2026/7/7/iran-war-live-khameneis-body-arrives-in-qom-hamas-cedes-gaza-governance?traffic_source=rss",
-      "source": "Al Jazeera"
-    },
-    {
-      "intro": "Sudan's war enters new phase",
-      "body": "The battle for el-Obeid marks a strategic turning point as fighting displaces thousands of children and aid workers describe conditions under relentless drone strikes as",
-      "link_text": "terrible and worsening by the day.",
-      "url": "https://www.aljazeera.com/news/2026/7/7/why-el-obeid-matters-as-sudans-war-enters-a-new-phase?traffic_source=rss",
-      "source": "Al Jazeera"
-    },
-    {
       "intro": "Africa rejects Trump's aid",
-      "body": "Several African nations are turning down US aid money, wary of strings attached and shifting geopolitics, in a striking reversal of the traditional donor-recipient",
-      "link_text": "relationship with Washington.",
+      "body": "Several African nations are turning down US assistance money, wary of political strings and shifting priorities, a quiet realignment that signals how Washington's influence on the continent is being",
+      "link_text": "actively reassessed.",
       "url": "https://www.bbc.co.uk/news/articles/ckg0921y8kdo?at_medium=RSS&amp;at_campaign=rss",
       "source": "BBC News"
     },
     {
-      "intro": "Canada's historic arms deal",
-      "body": "Ottawa signed the largest defense procurement in its history, picking Germany's TKMS for a new submarine fleet and citing a 'dangerous and divided world' as it",
-      "link_text": "leans on NATO partners.",
-      "url": "https://www.aljazeera.com/economy/2026/7/6/canada-picks-germanys-tkms-for-new-submarines?traffic_source=rss",
-      "source": "Al Jazeera"
-    },
-    {
-      "intro": "China's robotaxi ambitions",
-      "body": "Having conquered the electric-vehicle market, Chinese firms are now racing to dominate autonomous ride-hailing, raising the question of whether Beijing can repeat its EV playbook with",
-      "link_text": "self-driving robotaxis at scale.",
-      "url": "https://www.bbc.co.uk/news/articles/cvgl8dlxjd3o?at_medium=RSS&amp;at_campaign=rss",
-      "source": "BBC News"
-    },
-    {
-      "intro": "Editing human embryos",
-      "body": "Cambridge scientists used precision gene editing on human embryos for the first time to study development, revealing the role of a master gene that governs the earliest stages of",
-      "link_text": "how a body forms.",
-      "url": "https://www.cam.ac.uk/research/news/first-use-of-precision-editing-to-study-human-embryo-development-reveals-role-of-master-gene",
-      "source": "University of Cambridge"
-    },
-    {
-      "intro": "A hidden fertility ceiling",
-      "body": "New research shows women face a biological limit on pregnancy success even when using younger donor eggs, upending assumptions about how far reproductive technology can",
-      "link_text": "extend the fertility window.",
-      "url": "https://www.bbc.co.uk/news/articles/ckg018w1r02o?at_medium=RSS&amp;at_campaign=rss",
-      "source": "BBC News"
-    },
-    {
-      "intro": "Egypt builds a new Nile",
-      "body": "In one of the world's most ambitious engineering projects, Egypt is constructing an artificial river to divert water into its western desert, a colossal bet on",
-      "link_text": "reclaiming land from the Sahara.",
-      "url": "https://www.theb1m.com/video/egypt-is-building-a-new-nile",
-      "source": "The B1M"
-    },
-    {
-      "intro": "Byzantine city unearthed",
-      "body": "Archaeologists have discovered an ancient Byzantine settlement buried in Egypt's western desert, offering fresh insight into life and trade at the edges of the",
-      "link_text": "late Roman world.",
-      "url": "https://www.theguardian.com/world/2026/jul/04/archaeologists-uncover-ancient-byzantine-city-in-egypts-western-desert",
-      "source": "The Guardian"
-    },
-    {
-      "intro": "The AI margin collapse",
-      "body": "The arrival of cheap, capable open models like GLM 5.2 threatens to gut the profit margins of the biggest AI labs, potentially upending the economics that have justified",
-      "link_text": "hundreds of billions in spending.",
-      "url": "https://martinalderson.com/posts/the-upcoming-ai-margin-collapse-part-1-glm-5-2/",
-      "source": "Hacker News"
-    },
-    {
-      "intro": "AI distillation fuels China race",
-      "body": "The technique of training smaller models by 'distilling' knowledge from larger ones has become a flashpoint in the US-China technology contest, blurring the lines around who really owns",
-      "link_text": "a cutting-edge AI model.",
-      "url": "https://www.nytimes.com/2026/07/06/technology/ai-distillation-china.html",
+      "intro": "Samsung's staggering AI windfall",
+      "body": "The chipmaker earned more profit last quarter than in the previous two years combined, as surging demand for AI memory chips reveals just how much the artificial intelligence boom is",
+      "link_text": "reshaping the semiconductor industry.",
+      "url": "https://www.nytimes.com/2026/07/06/business/samsung-earnings-chips.html",
       "source": "New York Times"
     },
     {
-      "intro": "Cuba goes dark again",
-      "body": "The island suffered its third nationwide blackout in six months, plunging millions into darkness and deepening a crisis that residents describe as making everyday life an",
-      "link_text": "unbearable daily agony.",
-      "url": "https://www.theguardian.com/world/2026/jul/06/cuba-suffers-third-nationwide-blackout-in-six-months",
-      "source": "The Guardian"
-    },
-    {
-      "intro": "Europe's deadly heat returns",
-      "body": "Extreme temperatures hit Europe for the third time this year, forcing 10,000 to evacuate a wildfire in southern France and killing livestock en masse, a stark preview of",
-      "link_text": "a warming continent's new normal.",
+      "intro": "Europe's third heat wave",
+      "body": "Extreme heat has struck the continent for the third time this year, fueling wildfires and even killing chickens en masse in France, a grim rhythm of climate stress that is fast becoming",
+      "link_text": "the new European normal.",
       "url": "https://www.nytimes.com/2026/07/06/weather/europe-heat-wave-latest-wildfire.html",
       "source": "New York Times"
     },
     {
-      "intro": "The Gambia weighs FGM ban",
-      "body": "As the country's highest court considers overturning a landmark ban on female genital mutilation, mothers fear a ruling could roll back hard-won protections for",
-      "link_text": "their daughters across the country.",
-      "url": "https://www.aljazeera.com/news/2026/7/7/gambian-mothers-fear-for-their-daughters-as-court-weighs-fgm-ban?traffic_source=rss",
+      "intro": "China's robotaxi ambitions",
+      "body": "After dominating the electric vehicle market, Chinese firms are racing to lead in autonomous ride-hailing, testing whether the country can repeat its manufacturing playbook in a technology that could redefine",
+      "link_text": "urban transport worldwide.",
+      "url": "https://www.bbc.co.uk/news/articles/cvgl8dlxjd3o?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC News"
+    },
+    {
+      "intro": "China's death penalty for graft",
+      "body": "A former local official was sentenced to death for taking $325m in bribes, one of the largest corruption cases in recent memory and a stark demonstration of Beijing's willingness to impose the",
+      "link_text": "ultimate penalty for corruption.",
+      "url": "https://www.bbc.co.uk/news/articles/c33y0n1v1xjo?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC News"
+    },
+    {
+      "intro": "The company that could spark a trade war",
+      "body": "Chinese security-scanner maker Nuctech is at the center of a brewing confrontation with Europe over technology, security and market access, a single firm capable of triggering a much broader",
+      "link_text": "EU-China trade rupture.",
+      "url": "https://www.nytimes.com/2026/07/06/business/china-europe-nuctech.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Egypt's audacious second Nile",
+      "body": "Cairo is constructing an enormous new artificial waterway and development corridor to relieve pressure on the overcrowded Nile Valley, a megaproject that could redraw where millions of Egyptians",
+      "link_text": "live and farm.",
+      "url": "https://www.theb1m.com/video/egypt-is-building-a-new-nile",
+      "source": "Hacker News"
+    },
+    {
+      "intro": "US risks its science crown",
+      "body": "Sweeping budget cuts to American research could hand China a decisive edge in fields from AI to biotech, as analysts warn that decades of scientific dominance may be surrendered through",
+      "link_text": "self-inflicted austerity.",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/7/us-budget-slashing-risks-losing-global-scientific-edge-to-china?traffic_source=rss",
+      "source": "Al Jazeera"
+    },
+    {
+      "intro": "The AI distillation arms race",
+      "body": "A technique for training cheaper models by learning from bigger ones has become a flashpoint in the US-China AI rivalry, raising thorny questions about intellectual property and whether frontier labs can",
+      "link_text": "protect their most valuable models.",
+      "url": "https://www.nytimes.com/2026/07/06/technology/ai-distillation-china.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Editing the human embryo",
+      "body": "Cambridge scientists used precision gene editing on human embryos for the first time and uncovered a master gene governing early development, a milestone that deepens understanding of the origins of life and",
+      "link_text": "raises fresh ethical stakes.",
+      "url": "https://www.cam.ac.uk/research/news/first-use-of-precision-editing-to-study-human-embryo-development-reveals-role-of-master-gene",
+      "source": "Hacker News"
+    },
+    {
+      "intro": "Cuba goes dark again",
+      "body": "The island lost power nationwide for the third time this year, a cascading collapse of its aging grid that leaves millions without electricity and lays bare the depth of the country's",
+      "link_text": "energy and economic crisis.",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/7/cuba-loses-power-across-nation-for-third-time-this-year?traffic_source=rss",
       "source": "Al Jazeera"
     }
   ]
