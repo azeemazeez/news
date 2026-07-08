@@ -2,17 +2,72 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://thenuus.com/</loc>
-    <lastmod>2026-06-27</lastmod>
+    <lastmod>2026-07-08</lastmod>
     <changefreq>daily</changefreq>
   </url>
   <url>
     <loc>https://thenuus.com/archive</loc>
-    <lastmod>2026-06-27</lastmod>
+    <lastmod>2026-07-08</lastmod>
     <changefreq>daily</changefreq>
   </url>
   <url>
     <loc>https://thenuus.com/about</loc>
     <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://thenuus.com/2026-07-08</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>never</changefreq>
+  </url>
+  <url>
+    <loc>https://thenuus.com/2026-07-07</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>never</changefreq>
+  </url>
+  <url>
+    <loc>https://thenuus.com/2026-07-06</loc>
+    <lastmod>2026-07-06</lastmod>
+    <changefreq>never</changefreq>
+  </url>
+  <url>
+    <loc>https://thenuus.com/2026-07-05</loc>
+    <lastmod>2026-07-05</lastmod>
+    <changefreq>never</changefreq>
+  </url>
+  <url>
+    <loc>https://thenuus.com/2026-07-04</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>never</changefreq>
+  </url>
+  <url>
+    <loc>https://thenuus.com/2026-07-03</loc>
+    <lastmod>2026-07-03</lastmod>
+    <changefreq>never</changefreq>
+  </url>
+  <url>
+    <loc>https://thenuus.com/2026-07-02</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>never</changefreq>
+  </url>
+  <url>
+    <loc>https://thenuus.com/2026-07-01</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>never</changefreq>
+  </url>
+  <url>
+    <loc>https://thenuus.com/2026-06-30</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>never</changefreq>
+  </url>
+  <url>
+    <loc>https://thenuus.com/2026-06-29</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>never</changefreq>
+  </url>
+  <url>
+    <loc>https://thenuus.com/2026-06-28</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>never</changefreq>
   </url>
   <url>
     <loc>https://thenuus.com/2026-06-27</loc>
