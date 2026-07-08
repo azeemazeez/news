@@ -108,7 +108,7 @@ async function curateWithClaude(stories, previousStories = []) {
         role: 'user',
         content: `You are the editor of a sharp, intelligent daily news digest — like The Morning News or Arts & Letters Daily. Your readers are curious, educated generalists who want to understand the world.
 
-From the stories below (collected in the last 24 hours), select exactly 15 that an intelligent general audience would most want to know about.${previousBlock}
+From the stories below (collected in the last 24 hours), select exactly 16 that an intelligent general audience would most want to know about.${previousBlock}
 
 Prioritize stories that:
 - Have broad significance or represent a meaningful shift
@@ -118,7 +118,9 @@ Prioritize stories that:
 
 Favour stories from outside the US when coverage quality is comparable — actively seek out international perspectives from Africa, Asia, Latin America, the Middle East, and Europe.
 
-Skip: sports scores, celebrity gossip, stock price moves, local crime, product announcements, earnings reports, pure political horse-race coverage.
+Dedicate exactly 1–2 slots to sport. Choose sports stories with significance beyond the scoreline — a milestone, a record, a controversy, a structural shift in the game, or a human story with wider resonance. Skip pure match scores or results with no broader angle.
+
+Skip: celebrity gossip, stock price moves, local crime, product announcements, earnings reports, pure political horse-race coverage.
 
 Stories:
 ${storyList}
@@ -165,7 +167,7 @@ async function main() {
 
   console.log('Fetching news sources...');
 
-  const [hn, worldnews, technology, science, uplift, bbc, nyt, aljazeera, guardian] = await Promise.allSettled([
+  const [hn, worldnews, technology, science, uplift, bbc, nyt, aljazeera, guardian, bbcSport, redditSports] = await Promise.allSettled([
     fetchHackerNews(),
     fetchReddit('worldnews'),
     fetchReddit('technology'),
@@ -175,6 +177,8 @@ async function main() {
     fetchRSS('https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml', 'New York Times'),
     fetchRSS('https://www.aljazeera.com/xml/rss/all.xml', 'Al Jazeera'),
     fetchRSS('https://www.theguardian.com/world/rss', 'The Guardian'),
+    fetchRSS('https://feeds.bbci.co.uk/sport/rss.xml', 'BBC Sport'),
+    fetchReddit('sports'),
   ]);
 
   let newsApiStories = [];
@@ -194,6 +198,8 @@ async function main() {
     ...(nyt.status === 'fulfilled' ? nyt.value : []),
     ...(aljazeera.status === 'fulfilled' ? aljazeera.value : []),
     ...(guardian.status === 'fulfilled' ? guardian.value : []),
+    ...(bbcSport.status === 'fulfilled' ? bbcSport.value : []),
+    ...(redditSports.status === 'fulfilled' ? redditSports.value : []),
     ...newsApiStories,
   ];
 
