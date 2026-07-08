@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync, existsSync } from 'fs';
+import { readFileSync, existsSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
@@ -86,15 +86,9 @@ function buildHtml(stories, date) {
 async function main() {
   const date = new Date(Date.now() + 4 * 60 * 60 * 1000).toISOString().split('T')[0];
   const dataPath = join(__dirname, '../public/data', `${date}.json`);
-  const sentFlagPath = join(__dirname, '../public/data', `${date}.sent`);
 
   if (!existsSync(dataPath)) {
     console.error(`No data file found for ${date} — skipping digest`);
-    process.exit(0);
-  }
-
-  if (existsSync(sentFlagPath)) {
-    console.log(`Digest already sent for ${date} — skipping to avoid duplicates`);
     process.exit(0);
   }
 
@@ -129,6 +123,7 @@ async function main() {
       headers: {
         Authorization: `Bearer ${RESEND_API_KEY}`,
         'Content-Type': 'application/json',
+        'Idempotency-Key': `nuus-digest-${date}-${contact.email}`,
       },
       body: JSON.stringify({
         from: FROM,
@@ -152,7 +147,6 @@ async function main() {
   }
 
   console.log(`Digest sent to ${sent}/${active.length} subscribers for ${date}`);
-  writeFileSync(sentFlagPath, new Date().toISOString());
 
   // Notify owner
   const notifyRes = await fetch('https://api.resend.com/emails', {
@@ -160,6 +154,7 @@ async function main() {
     headers: {
       Authorization: `Bearer ${RESEND_API_KEY}`,
       'Content-Type': 'application/json',
+      'Idempotency-Key': `nuus-digest-report-${date}`,
     },
     body: JSON.stringify({
       from: FROM,
