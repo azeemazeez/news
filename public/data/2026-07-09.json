@@ -1,110 +1,110 @@
 {
   "date": "2026-07-09",
-  "generated_at": "2026-07-09T01:01:16.739Z",
+  "generated_at": "2026-07-09T06:50:24.561Z",
   "stories": [
     {
-      "intro": "US bombs Iran again",
-      "body": "American strikes hit Bushehr, Chabahar, Bandar Abbas and Jask as a fragile ceasefire unravels, killing at least one person and pushing Washington and Tehran back toward open conflict with",
-      "link_text": "few good options left.",
-      "url": "https://www.aljazeera.com/news/liveblog/2026/7/9/iran-war-live-one-killed-as-us-bombs-bushehr-chabahar-bandar-abbas-jask?traffic_source=rss",
-      "source": "Al Jazeera"
-    },
-    {
-      "intro": "Khamenei laid to rest",
-      "body": "Iran's late supreme leader is being buried after passing through Karbala, as newly released footage of the ruins of his bombed compound underscores how dramatically the war has",
-      "link_text": "reshaped the Islamic Republic.",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/9/khameneis-coffin-in-karbala-on-last-stop-before-burial-in-mashhad?traffic_source=rss",
-      "source": "Al Jazeera"
-    },
-    {
       "intro": "Farmers win right to repair",
-      "body": "John Deere has agreed under an FTC settlement to let owners fix their own equipment, a landmark victory that could set a precedent for consumer control over",
-      "link_text": "everything from tractors to phones.",
+      "body": "John Deere has agreed under an FTC settlement to let equipment owners fix their own machines, a landmark victory in a fight that has become a rallying cry for the broader",
+      "link_text": "right-to-repair movement.",
       "url": "https://apnews.com/article/john-deere-right-to-repair-agriculture-equipment-cb7514ffedb95c130a976af661f2bc02",
-      "source": "Hacker News"
+      "source": "AP News"
     },
     {
-      "intro": "GitHub AI tricked into leaking",
-      "body": "Security researchers demonstrated how they manipulated GitHub's AI coding agent into exposing private repositories, a stark warning about the new attack surfaces opened up as companies rush to embed",
-      "link_text": "autonomous agents into their tools.",
-      "url": "https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaking-private-repos/",
-      "source": "Hacker News"
+      "intro": "US and Iran trade strikes",
+      "body": "Oil prices climbed as Washington and Tehran exchanged another round of attacks, with tanker strikes near the Strait of Hormuz raising fears of a wider war — though analysts warn Iran may be",
+      "link_text": "overplaying its hand.",
+      "url": "https://www.nytimes.com/2026/07/09/world/middleeast/iran-us-war-strait-of-hormuz.html",
+      "source": "New York Times"
     },
     {
-      "intro": "A T-shirt runs code",
-      "body": "A curious shopper decoded an obfuscated, self-evaluating bash script printed on a Uniqlo t-shirt, uncovering a strange intersection of retail merchandise, CDN infrastructure and the kind of hidden puzzle",
-      "link_text": "programmers love to unravel.",
-      "url": "https://tris.sherliker.net/blog/obfuscated-self-evaluating-bash-script-by-cdn-akamai-being-supplied-to-consumers-via-retail-stores/",
-      "source": "Hacker News"
-    },
-    {
-      "intro": "AI cheating exposed by exams",
-      "body": "When a Brown University professor suspecting rampant chatbot use ordered an in-person final, student scores collapsed by half, offering rare hard evidence of how deeply AI has infiltrated",
-      "link_text": "the modern classroom.",
-      "url": "https://arstechnica.com/ai/2026/07/we-cannot-choose-to-become-idiots-the-ai-cheating-scandal-roiling-brown-university/",
-      "source": "Hacker News"
-    },
-    {
-      "intro": "The microplastics inside us",
-      "body": "A leading researcher explains what science actually knows about the tiny plastic particles accumulating in human blood, brains and organs, and how worried we should really be about",
-      "link_text": "their long-term health effects.",
-      "url": "https://e360.yale.edu/features/cassandra-rauert-interview",
-      "source": "Hacker News"
-    },
-    {
-      "intro": "US delists Syria",
-      "body": "Washington is moving to remove Syria from its list of state sponsors of terrorism, a striking diplomatic shift that could reshape the country's economic future and the broader",
-      "link_text": "balance of power in the region.",
-      "url": "https://www.aljazeera.com/news/2026/7/8/us-moves-to-delist-syria-as-a-state-sponsor-of-terrorism?traffic_source=rss",
+      "intro": "IMF slashes growth forecast",
+      "body": "The International Monetary Fund cut its 2026 global growth projection, pinning the downgrade squarely on the economic fallout from the",
+      "link_text": "escalating Iran war.",
+      "url": "https://www.aljazeera.com/economy/2026/7/9/imf-cuts-2026-world-growth-forecast-citing-iran-war-fallout?traffic_source=rss",
       "source": "Al Jazeera"
+    },
+    {
+      "intro": "Sudan war crimes breakthrough",
+      "body": "The International Criminal Court has told the BBC of significant progress in its investigation into atrocities committed during Sudan's brutal civil war, offering a rare glimmer of accountability for",
+      "link_text": "a devastated nation.",
+      "url": "https://www.bbc.co.uk/news/articles/c9928zr2m5xo?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC News"
+    },
+    {
+      "intro": "Ebola workers under attack",
+      "body": "Misinformation is fueling violent assaults on health workers battling an Ebola outbreak, undermining containment efforts and echoing the deadly dynamics that hampered",
+      "link_text": "previous epidemic responses.",
+      "url": "https://www.bbc.co.uk/news/articles/c79yj09nd4qo?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC News"
+    },
+    {
+      "intro": "Trump lifts Syria terror label",
+      "body": "The president says he will remove Syria from the US list of state sponsors of terrorism, a dramatic shift that could reshape the country's path toward",
+      "link_text": "rejoining the global economy.",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/9/trump-says-he-will-remove-syria-from-the-state-sponsor-of-terrorism-list?traffic_source=rss",
+      "source": "Al Jazeera"
+    },
+    {
+      "intro": "GitHub's AI agent tricked",
+      "body": "Security researchers demonstrated how they manipulated GitHub's AI coding assistant into leaking private repositories, a stark warning about the new attack surfaces opening up as autonomous agents",
+      "link_text": "gain access to sensitive systems.",
+      "url": "https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaking-private-repos/",
+      "source": "Noma Security"
     },
     {
       "intro": "PlayStation can delete your games",
-      "body": "New EU disclosures reveal Sony can wipe purchased digital games from accounts after three years of inactivity, reigniting the fierce debate over whether consumers truly own anything they",
-      "link_text": "buy in digital storefronts.",
+      "body": "Under new terms, Sony can erase all your digital purchases after three years of inactivity in the EU, reigniting a fierce debate over whether consumers truly own",
+      "link_text": "the media they buy.",
       "url": "https://www.flatpanelshd.com/news.php?subaction=showfull&id=1783340582",
-      "source": "Hacker News"
+      "source": "FlatpanelsHD"
     },
     {
-      "intro": "Ants nurse their wounded",
-      "body": "German biologists have documented how ant colonies actively care for injured members, cleaning wounds and even performing what looks like triage, revealing surprisingly sophisticated social medicine among",
-      "link_text": "some of nature's smallest creatures.",
-      "url": "https://www.uni-wuerzburg.de/en/news-and-events/news/detail/news/ameisen-kolonie-verletzte-pflegt/",
-      "source": "Hacker News"
+      "intro": "Ukraine to build Patriots",
+      "body": "A new licensing agreement could allow Ukraine to manufacture its own Patriot missile systems, potentially transforming Kyiv's ability to defend its skies against relentless",
+      "link_text": "Russian bombardment.",
+      "url": "https://www.nytimes.com/2026/07/08/world/europe/a-license-to-make-patriot-defense-systems-may-be-a-big-boost-for-ukraine.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Spider venom saves bees",
+      "body": "Australian researchers found that a compound derived from spider venom kills the varroa mite — the honeybee's most devastating parasite — without harming the bees themselves, offering hope for",
+      "link_text": "collapsing pollinator populations.",
+      "url": "https://connectsci.au/news/news-parent/9703/Spider-venom-kills-varroa-mites-without-harming",
+      "source": "Connect Science"
+    },
+    {
+      "intro": "Do bees have feelings",
+      "body": "A new study probing the surprising inner lives of insects suggests bees may experience something akin to emotion, upending long-held assumptions about which creatures possess",
+      "link_text": "a subjective experience.",
+      "url": "https://www.bbc.co.uk/news/videos/cpq309jrve4o?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC News"
     },
     {
       "intro": "Measles kills again",
-      "body": "Children are dying in a country that had made enormous strides against measles, a sobering reversal that shows how quickly hard-won public health gains can unravel amid",
-      "link_text": "falling vaccination rates.",
+      "body": "Children are dying once more in a country that had made remarkable progress against measles, a sobering reversal that shows how quickly hard-won public health gains can",
+      "link_text": "unravel amid faltering vaccination.",
       "url": "https://www.bbc.co.uk/news/articles/cj0gel72mlgo?at_medium=RSS&amp;at_campaign=rss",
       "source": "BBC News"
     },
     {
-      "intro": "South Sudan's broken promise",
-      "body": "Fifteen years after independence, the world's youngest nation remains mired in conflict and poverty, a hard look at why the dream of statehood has yet to deliver",
-      "link_text": "peace for its people.",
-      "url": "https://www.aljazeera.com/news/2026/7/9/south-sudan-15-years-on-still-fighting-for-peace?traffic_source=rss",
-      "source": "Al Jazeera"
-    },
-    {
-      "intro": "Indonesia's free meals scandal",
-      "body": "President Prabowo's flagship program to feed millions of children is being undermined by alleged corruption and waste, a cautionary tale about the gap between ambitious welfare promises and",
-      "link_text": "their messy implementation.",
-      "url": "https://www.aljazeera.com/news/2026/7/8/indonesias-free-meals-programme-plagued-by-alleged-corruption-and-waste?traffic_source=rss",
-      "source": "Al Jazeera"
+      "intro": "The Uniqlo t-shirt code",
+      "body": "A curious sleuth decoded an obfuscated, self-evaluating bash script printed on a Uniqlo t-shirt, tracing a strange supply chain that led back to Akamai's CDN and a genuinely",
+      "link_text": "unexpected retail mystery.",
+      "url": "https://tris.sherliker.net/blog/obfuscated-self-evaluating-bash-script-by-cdn-akamai-being-supplied-to-consumers-via-retail-stores/",
+      "source": "Tris Sherliker"
     },
     {
       "intro": "Hayabusa2's next target",
-      "body": "Japan's asteroid probe is preparing for a flyby of the asteroid Torifune, the latest chapter in a pioneering mission that has already returned samples and continues to expand",
-      "link_text": "our reach across the solar system.",
+      "body": "Japan's asteroid-hunting probe is preparing a flyby of the asteroid Torifune, extending an already historic mission that previously returned pristine samples to Earth and continues to expand our understanding of",
+      "link_text": "the early solar system.",
       "url": "https://www3.nhk.or.jp/nhkworld/en/news/20260705_01/",
-      "source": "Hacker News"
+      "source": "NHK World"
     },
     {
-      "intro": "Ruth Ellis pardoned",
-      "body": "The last woman hanged in Britain has received a conditional posthumous pardon more than seventy years later, a decision that reopens questions about historic justice and how societies",
-      "link_text": "reckon with past executions.",
-      "url": "https://www.bbc.co.uk/news/articles/crel4rj801do?at_medium=RSS&amp;at_campaign=rss",
+      "intro": "Trump insults NATO allies",
+      "body": "After a summit in which the president berated fellow leaders, Trump insisted they actually love him — as the alliance's chief tried to reframe the tensions as merely a",
+      "link_text": "'family argument.'",
+      "url": "https://www.bbc.co.uk/news/articles/c98205r7dylo?at_medium=RSS&amp;at_campaign=rss",
       "source": "BBC News"
     }
   ]
