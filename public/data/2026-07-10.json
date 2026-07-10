@@ -1,111 +1,118 @@
 {
   "date": "2026-07-10",
-  "generated_at": "2026-07-10T01:01:04.329Z",
+  "generated_at": "2026-07-10T06:50:50.647Z",
   "stories": [
     {
-      "intro": "EU greenlights Chat Control",
-      "body": "The European Parliament has advanced a controversial measure that critics warn opens the door to mass scanning of private messages, reigniting a fierce fight over encryption and",
-      "link_text": "digital privacy across the continent.",
+      "intro": "EU advances Chat Control",
+      "body": "The European Parliament has greenlit a scaled-back version of the controversial message-scanning proposal, a compromise privacy advocates warn still opens the door to mass surveillance of",
+      "link_text": "private encrypted communications.",
       "url": "https://www.patrick-breyer.de/en/eu-parliament-greenlights-chat-control-1-0-breyer-our-children-lose-out/",
       "source": "Hacker News"
     },
     {
-      "intro": "The $3.2 trillion AI frenzy",
-      "body": "A wave of corporate deal-making, unprecedented in scale, is being driven almost entirely by the race to build out the",
-      "link_text": "artificial intelligence economy.",
-      "url": "https://www.nytimes.com/2026/07/09/business/ai-boom-corporate-deals.html",
+      "intro": "Iran-US fighting escalates",
+      "body": "As Washington steps up attacks and a tentative ceasefire collapses, analysts see the prospect of an all-out war rising while Trump searches for a diplomatic",
+      "link_text": "Plan C.",
+      "url": "https://www.nytimes.com/2026/07/09/us/politics/trump-iran-war.html",
       "source": "New York Times"
     },
     {
-      "intro": "DeepSeek goes for silicon",
-      "body": "The Chinese AI upstart that rattled Silicon Valley now aims to design its own chips, a strategic pivot that could loosen Nvidia's grip and reshape the",
-      "link_text": "global AI hardware race.",
-      "url": "https://www.proactiveinvestors.com/companies/news/1095178/deepseek-makes-pivot-that-should-put-silicon-valley-on-high-alert-1095178.html",
-      "source": "Hacker News"
-    },
-    {
-      "intro": "Burnham poised for power",
-      "body": "With 322 Labour MPs backing him in the first nomination tally, the Manchester mayor is on course to become Britain's next prime minister, pledging to",
-      "link_text": "stop the suffering in Gaza.",
-      "url": "https://www.bbc.co.uk/news/articles/c77y0n7k801o?at_medium=RSS&amp;at_campaign=rss",
-      "source": "BBC News"
-    },
-    {
-      "intro": "Venezuela's earthquake catastrophe",
-      "body": "The death toll from a series of powerful quakes has climbed to 3,889, and aid workers now warn that the collapse of sanitation is raising the",
-      "link_text": "risk of disease outbreaks.",
-      "url": "https://www.aljazeera.com/news/2026/7/9/venezuela-earthquakes-toll-rises-to-3889-as-risk-of-disease-grows?traffic_source=rss",
+      "intro": "Hormuz shipping grinds down",
+      "body": "Tanker traffic through the world's most important oil chokepoint has plunged as US and Iranian forces resume hostilities, threatening a supply shock that could ripple through",
+      "link_text": "the global economy.",
+      "url": "https://www.aljazeera.com/economy/2026/7/10/strait-of-hormuz-shipping-grinds-to-halt-as-us-iran-resume-fighting?traffic_source=rss",
       "source": "Al Jazeera"
     },
     {
-      "intro": "The Pentagon's drone reckoning",
-      "body": "After Iran destroyed roughly a billion dollars' worth of Reaper drones, the US military is scrambling for cheaper, expendable hunter-killers — a stark lesson in how",
-      "link_text": "modern warfare has changed.",
+      "intro": "$1B in drones lost",
+      "body": "After Iran destroyed a billion dollars' worth of Reaper drones, the Pentagon is urgently pivoting toward cheap, expendable hunter-killers — a reckoning with the era of the",
+      "link_text": "exquisite, unaffordable weapon.",
       "url": "https://arstechnica.com/gadgets/2026/07/us-seeks-cheaper-hunter-killer-drones-after-iran-destroys-1b-worth-of-reapers/",
       "source": "Hacker News"
     },
     {
       "intro": "The Army's fragile backbone",
-      "body": "A West Point analysis argues that America's military logistics rely on brittle networks that would shatter in a peer conflict, a warning about the hidden weakness beneath",
-      "link_text": "US warfighting capacity.",
+      "body": "A West Point analysis argues that America's military logistics depend on brittle, poorly defended networks that would collapse under the strain of a genuine great-power war, exposing a vulnerability few",
+      "link_text": "planners want to confront.",
       "url": "https://mwi.westpoint.edu/the-glass-backbone-why-the-armys-logistics-will-break-in-the-next-war/",
       "source": "Hacker News"
     },
     {
-      "intro": "Volkswagen retreats in China",
-      "body": "The German automaker is slashing production as its once-dominant China sales collapse under pressure from homegrown electric rivals, signaling a seismic shift in the",
-      "link_text": "global auto industry.",
-      "url": "https://www.nytimes.com/2026/07/09/business/volkswagen-china-sales.html",
-      "source": "New York Times"
-    },
-    {
-      "intro": "China sharpens sanctions weapons",
-      "body": "Beijing has expanded its legal toolkit to retaliate against foreign penalties, raising the stakes and the risks for international companies caught in the",
-      "link_text": "US-China economic standoff.",
-      "url": "https://www.aljazeera.com/news/2026/7/10/china-expands-anti-sanctions-toolkit-raising-risks-for-foreign-firms?traffic_source=rss",
-      "source": "Al Jazeera"
-    },
-    {
-      "intro": "Foreign powers stoke AI backlash",
-      "body": "China, Russia and others are quietly amplifying local opposition to American data centers, turning community fights over power and water into a new front in",
-      "link_text": "information warfare.",
+      "intro": "Adversaries stoke AI backlash",
+      "body": "China, Russia and others are quietly amplifying public opposition to power-hungry data centers in the US, weaponizing genuine local grievances to slow America's buildout of",
+      "link_text": "artificial intelligence infrastructure.",
       "url": "https://www.nytimes.com/2026/07/09/business/china-russia-ai-data-centers.html",
       "source": "New York Times"
     },
     {
-      "intro": "AI floods your feed",
-      "body": "New analysis finds machine-generated text has quietly saturated social media — nowhere more than LinkedIn — raising unsettling questions about what's authentic in the",
-      "link_text": "content we scroll past.",
-      "url": "https://www.pangram.com/blog/ai-in-your-feed",
+      "intro": "The AI deal frenzy",
+      "body": "A staggering $3.2 trillion in corporate deal-making is being driven by the scramble to build and finance the AI economy, a merger wave whose scale rivals the biggest",
+      "link_text": "booms in modern history.",
+      "url": "https://www.nytimes.com/2026/07/09/business/ai-boom-corporate-deals.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "DeepSeek goes for silicon",
+      "body": "The Chinese AI lab that upended the industry with cut-price models is now designing its own chips, a move that could loosen Nvidia's grip and further alarm",
+      "link_text": "Silicon Valley incumbents.",
+      "url": "https://www.proactiveinvestors.com/companies/news/1095178/deepseek-makes-pivot-that-should-put-silicon-valley-on-high-alert-1095178.html",
       "source": "Hacker News"
     },
     {
-      "intro": "The grid throttles AI",
-      "body": "The real bottleneck to the AI buildout isn't chips or capital but electricity, as data-center demand collides with aging power infrastructure that can't",
-      "link_text": "keep pace with ambition.",
-      "url": "https://www.worksinprogress.news/p/ai-is-bottlenecked-by-the-grid",
-      "source": "Hacker News"
+      "intro": "Volkswagen retreats in China",
+      "body": "The German giant is slashing production as its sales collapse in the world's largest car market, a stark sign of how fast domestic electric-vehicle makers have overtaken",
+      "link_text": "legacy Western automakers.",
+      "url": "https://www.nytimes.com/2026/07/09/business/volkswagen-china-sales.html",
+      "source": "New York Times"
     },
     {
-      "intro": "Africa's sons in Russia's war",
-      "body": "A haunting investigation follows young African men lured by promises of work who found themselves conscripted into the fighting in Ukraine, exposing a shadowy",
-      "link_text": "pipeline of recruitment and deceit.",
-      "url": "https://www.aljazeera.com/features/2026/7/9/waiting-for-moses-africas-sons-in-russias-war?traffic_source=rss",
-      "source": "Al Jazeera"
+      "intro": "Spain's deadly wildfires",
+      "body": "At least a dozen people have died as ferocious wildfires tear through southern Spain amid a punishing heatwave gripping much of Europe, a grim preview of increasingly",
+      "link_text": "hostile Mediterranean summers.",
+      "url": "https://www.nytimes.com/2026/07/10/world/europe/spain-wildfire-deaths.html",
+      "source": "New York Times"
     },
     {
-      "intro": "Publishers sanction bid against OpenAI",
-      "body": "A New York Times–led coalition has asked a court to penalize OpenAI in their landmark copyright fight, a case that could set the rules for how AI companies",
-      "link_text": "use published work.",
-      "url": "https://www.aljazeera.com/economy/2026/7/9/nyt-led-group-asks-court-to-sanction-openai-in-us-copyright-dispute?traffic_source=rss",
-      "source": "Al Jazeera"
+      "intro": "Bayeux Tapestry in London",
+      "body": "The nearly thousand-year-old embroidery depicting the Norman conquest has arrived at the British Museum under police guard, its first journey out of France in over",
+      "link_text": "nine centuries.",
+      "url": "https://www.bbc.co.uk/news/articles/cly9r54e5r4o?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC News"
     },
     {
-      "intro": "South Korea tracks the stalkers",
-      "body": "A new app will let victims monitor the movements of those who harass them, an unusual technological experiment in flipping surveillance to protect",
-      "link_text": "those most at risk.",
+      "intro": "Air Force One's missing shield",
+      "body": "The new presidential jet lacks the defensive countermeasures that protected previous models, officials say, leaving the aircraft potentially exposed to threats its predecessors were built",
+      "link_text": "to survive.",
+      "url": "https://www.nytimes.com/2026/07/09/us/politics/new-air-force-one-defensive-countermeasures.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "South Korea's stalker app",
+      "body": "A new government tool will let victims of stalking monitor the whereabouts of their pursuers in real time, an unusual technological response to a crime the country has",
+      "link_text": "long struggled to police.",
       "url": "https://www.bbc.co.uk/news/videos/c2dyw4zygrko?at_medium=RSS&amp;at_campaign=rss",
       "source": "BBC News"
+    },
+    {
+      "intro": "Anti-migrant tensions in South Africa",
+      "body": "A tense standoff erupted at an anti-migrant protest in a South African town, laying bare rising xenophobic pressures as the country grapples with economic strain and",
+      "link_text": "cross-border migration.",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/10/tense-standoff-at-an-anti-migrant-protest-in-a-south-african-town?traffic_source=rss",
+      "source": "Al Jazeera"
+    },
+    {
+      "intro": "Gaza mourns a World Cup dream",
+      "body": "Palestinians are grieving an aid worker killed in an Israeli strike who had organized public screenings so people in Gaza could watch the tournament, a small joy amid",
+      "link_text": "relentless devastation.",
+      "url": "https://www.aljazeera.com/sports/2026/7/10/gaza-mourns-aid-worker-killed-by-israel-who-helped-them-see-the-world-cup?traffic_source=rss",
+      "source": "Al Jazeera"
+    },
+    {
+      "intro": "Muchova stuns Gauff",
+      "body": "Karolina Muchova outlasted Coco Gauff in an epic tie-break thriller to reach her first Wimbledon final, a breakthrough for a player whose career has been repeatedly",
+      "link_text": "derailed by injury.",
+      "url": "https://www.aljazeera.com/sports/2026/7/10/muchova-beats-gauff-in-tie-break-thriller-to-reach-first-wimbledon-final?traffic_source=rss",
+      "source": "Al Jazeera"
     }
   ]
 }
