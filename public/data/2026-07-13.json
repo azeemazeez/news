@@ -1,117 +1,117 @@
 {
   "date": "2026-07-13",
-  "generated_at": "2026-07-13T01:01:16.422Z",
+  "generated_at": "2026-07-13T06:25:02.132Z",
   "stories": [
     {
-      "intro": "Shingles vaccine guards the brain",
-      "body": "A growing body of evidence suggests the shot may substantially cut the risk of dementia, hinting that a common virus could play a role in cognitive decline and offering an unexpectedly simple line of ",
-      "link_text": "defense for aging brains.",
+      "intro": "Shingles jab fights dementia",
+      "body": "A growing body of evidence suggests the shingles vaccine may substantially lower the risk of dementia, an unexpected bonus that could reshape how public health officials think about",
+      "link_text": "protecting the aging brain.",
       "url": "https://www.economist.com/leaders/2026/07/09/a-no-brainer-for-protecting-your-brain",
       "source": "The Economist"
     },
     {
       "intro": "China's robots leave workers behind",
-      "body": "As factories embrace automation at breakneck speed, a generation of Chinese laborers is discovering that the machines increasingly ",
-      "link_text": "don't need people at all.",
+      "body": "As Chinese factories automate at breakneck speed, a generation of laborers is finding there is simply no place for them, exposing the human cost of a manufacturing revolution that",
+      "link_text": "'doesn't need people.'",
       "url": "https://www.nytimes.com/2026/07/11/world/asia/china-workers-robots-factories.html",
       "source": "New York Times"
     },
     {
-      "intro": "Ireland's data center dilemma",
-      "body": "Data centers now consume 23% of the country's electricity, an extraordinary drain that is forcing a reckoning over whether the digital economy's growth is ",
-      "link_text": "compatible with the grid.",
-      "url": "https://www.theregister.com/on-prem/2026/07/11/irish-datacenters-now-guzzle-23-of-the-countrys-electricity/5270013",
-      "source": "The Register"
+      "intro": "Japan builds a spy agency",
+      "body": "With help from Western partners, Tokyo is establishing a new intelligence service — a striking shift for a country long constrained by its pacifist tradition and now confronting",
+      "link_text": "rising regional threats.",
+      "url": "https://www.nytimes.com/2026/07/13/world/asia/japan-intelligence-agency.html",
+      "source": "New York Times"
     },
     {
-      "intro": "Ebola's biggest treatment trial",
-      "body": "The first patients have been enrolled in a record-breaking trial in the Democratic Republic of Congo, a major step toward turning one of the world's deadliest diseases into a ",
-      "link_text": "treatable condition.",
+      "intro": "Sudan's forgotten genocide",
+      "body": "As the world fixates on other crises, mass atrocities are unfolding in Sudan with little international attention, a moral failure that demands the world reckon with",
+      "link_text": "the scale of the slaughter.",
+      "url": "https://www.nytimes.com/2026/07/13/opinion/sudan-genocide-atrocities-international.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Record Ebola trial begins",
+      "body": "The first patients have been enrolled in the largest-ever Ebola treatment trial in the Democratic Republic of Congo, a milestone that could transform how the world responds to",
+      "link_text": "future outbreaks.",
       "url": "https://www.theguardian.com/global-development/2026/jul/12/record-breaking-ebola-treatment-trial-drc",
       "source": "The Guardian"
     },
     {
-      "intro": "Britain's deadly heat",
-      "body": "Thousands may have died during the UK's exceptional May and June heatwaves, a sobering estimate as a second week of intensifying heat fuels wildfires and stretches emergency services across ",
-      "link_text": "the country.",
-      "url": "https://www.bbc.co.uk/news/articles/czx5zy82n7no?at_medium=RSS&amp;at_campaign=rss",
-      "source": "BBC News"
-    },
-    {
-      "intro": "Gibraltar's borders come down",
-      "body": "A new agreement removes 118-year-old border controls between Gibraltar and Spain, ushering in a post-Brexit era of open movement that reshapes daily life for a ",
-      "link_text": "long-contested frontier.",
-      "url": "https://www.bbc.co.uk/news/articles/cwydz60j3eno?at_medium=RSS&amp;at_campaign=rss",
-      "source": "BBC News"
-    },
-    {
-      "intro": "Mexico's alleged fentanyl kingpin",
-      "body": "A Chinese graduate has been accused of masterminding a vast fentanyl operation, a case that illuminates the surprising global supply chains behind the ",
-      "link_text": "opioid crisis.",
-      "url": "https://www.bbc.co.uk/news/articles/c39ymggglxeo?at_medium=RSS&amp;at_campaign=rss",
-      "source": "BBC News"
-    },
-    {
-      "intro": "Ukraine's fortunes turn",
-      "body": "Zelensky announced a sweeping leadership shuffle as the war shifts in Kyiv's favor, signaling a new phase in a conflict that has ground on for ",
-      "link_text": "years.",
-      "url": "https://www.nytimes.com/2026/07/12/world/europe/ukraine-zelensky-leadership.html",
-      "source": "New York Times"
-    },
-    {
-      "intro": "Deadly Bangkok bar fire",
-      "body": "At least 27 people were killed and dozens injured when a blaze engulfed a popular pub, renewing scrutiny of safety standards in crowded entertainment ",
-      "link_text": "venues.",
-      "url": "https://www.aljazeera.com/news/2026/7/12/fire-engulfs-popular-bangkok-pub-killing-27-people-and-injuring-63?traffic_source=rss",
+      "intro": "Nigeria's bid for drone sovereignty",
+      "body": "A homegrown drone industry is emerging in Nigeria, raising hopes that Africa could reduce its dependence on foreign arms suppliers and build genuine",
+      "link_text": "defence self-reliance.",
+      "url": "https://www.aljazeera.com/news/2026/7/13/can-nigerias-drone-industry-deliver-africas-defence-sovereignty",
       "source": "Al Jazeera"
     },
     {
-      "intro": "The status update dies",
-      "body": "Some 55% of Americans have stopped posting to social media, a striking retreat from public self-broadcasting that marks a quiet cultural shift in how people ",
-      "link_text": "share their lives.",
-      "url": "https://ca.pcmag.com/social-media/16790/the-death-of-the-status-update-why-55-of-americans-stopped-posting-on-social-media",
-      "source": "PC Mag"
+      "intro": "Gibraltar's border falls",
+      "body": "After 118 years, controls on the frontier between Gibraltar and Spain are being dismantled, ushering in a new era for the contested territory in the wake of",
+      "link_text": "the post-Brexit settlement.",
+      "url": "https://www.bbc.co.uk/news/articles/cwydz60j3eno",
+      "source": "BBC News"
     },
     {
-      "intro": "AI narrows the mind",
-      "body": "A new study finds that AI tools boost researchers' careers but shrink the span of ideas they explore, raising concerns that automation may be quietly ",
-      "link_text": "flattening scientific discovery.",
+      "intro": "Europe burns",
+      "body": "Wildfires of 'exceptional scale' are raging near Paris and across Spain and the UK as an intensifying heatwave grips the continent, a stark reminder of how climate change is",
+      "link_text": "reshaping European summers.",
+      "url": "https://www.bbc.co.uk/news/articles/clye4z168edo",
+      "source": "BBC News"
+    },
+    {
+      "intro": "Heatwaves killed thousands",
+      "body": "More than 2,700 people may have died during Britain's exceptional May and June heatwaves, new estimates suggest, underscoring the deadly and often invisible toll of",
+      "link_text": "extreme heat.",
+      "url": "https://www.bbc.co.uk/news/articles/czx5zy82n7no",
+      "source": "BBC News"
+    },
+    {
+      "intro": "Bangkok bar inferno",
+      "body": "At least 27 people died and dozens were injured when a fire tore through a popular pub near Chatuchak market, reviving long-standing concerns about",
+      "link_text": "fire safety lapses in Thailand.",
+      "url": "https://www.aljazeera.com/news/2026/7/12/fire-engulfs-popular-bangkok-pub-killing-27-people-and-injuring-63",
+      "source": "Al Jazeera"
+    },
+    {
+      "intro": "Japan's fur babies boom",
+      "body": "Pets now outnumber young children in Japan, fueling a booming pet care industry and offering a poignant window into a society grappling with",
+      "link_text": "a collapsing birth rate.",
+      "url": "https://www.aljazeera.com/economy/2026/7/13/japans-pet-care-industry-booms-as-fur-babies-outnumber-infants",
+      "source": "Al Jazeera"
+    },
+    {
+      "intro": "AI narrows science's horizons",
+      "body": "A new study finds that while AI tools boost individual research careers, they subtly flatten the diversity of ideas explored, raising uncomfortable questions about whether the technology is",
+      "link_text": "shrinking scientific discovery.",
       "url": "https://spectrum.ieee.org/ai-science-research-flattens-discovery",
       "source": "IEEE Spectrum"
     },
     {
       "intro": "The internet's father retires",
-      "body": "Vint Cerf, whose protocols underpin the modern web, is stepping back after decades shaping the network that reshaped human ",
-      "link_text": "communication.",
+      "body": "Vint Cerf, the co-designer of the TCP/IP protocols that underpin the modern internet, is stepping back after decades, closing a chapter on",
+      "link_text": "the web's founding era.",
       "url": "https://techcrunch.com/2026/06/30/the-father-of-the-internet-is-finally-retiring/",
       "source": "TechCrunch"
     },
     {
-      "intro": "Nigeria's phantom agency",
-      "body": "A furore has erupted after a fake federal agency was discovered operating inside the seat of government, exposing troubling gaps in oversight at the ",
-      "link_text": "heart of the state.",
-      "url": "https://www.theguardian.com/world/2026/jul/09/bola-tinubu-under-pressure-fake-nigerian-government-agency-political-storm",
-      "source": "The Guardian"
+      "intro": "The great social media silence",
+      "body": "A remarkable 55% of Americans have stopped posting status updates, signaling the quiet death of the public broadcast era and a fundamental shift in how people",
+      "link_text": "use social platforms.",
+      "url": "https://ca.pcmag.com/social-media/16790/the-death-of-the-status-update-why-55-of-americans-stopped-posting-on-social-media",
+      "source": "PCMag"
     },
     {
-      "intro": "The split reshaping Senegal",
-      "body": "A dramatic falling-out between former allies is redrawing the political landscape of one of West Africa's most stable democracies, with implications for the ",
-      "link_text": "wider region.",
-      "url": "https://www.aljazeera.com/video/talk-to-al-jazeera/2026/7/12/friends-turned-foes-the-split-reshaping-senegal?traffic_source=rss",
-      "source": "Al Jazeera"
+      "intro": "Browsers leak your OS",
+      "body": "A subtle change in Chromium 148 means the humble Math.tanh function can now be used to fingerprint and identify your underlying operating system, a fresh blow to",
+      "link_text": "online privacy.",
+      "url": "https://scrapfly.dev/posts/browser-math-os-fingerprint/",
+      "source": "Scrapfly"
     },
     {
-      "intro": "Sinner conquers Wimbledon again",
-      "body": "The world number one held off Alexander Zverev to defend his title, completing a resilient climb back to the top after a shock earlier loss and cementing his ",
-      "link_text": "dominance of the game.",
-      "url": "https://www.bbc.co.uk/sport/tennis/articles/cx2v84zje83o?at_medium=RSS&amp;at_campaign=rss",
-      "source": "BBC News"
-    },
-    {
-      "intro": "A 64-team World Cup?",
-      "body": "FIFA president Gianni Infantino has opened the door to a vastly expanded tournament, a potential structural overhaul that critics warn could dilute the sport's ",
-      "link_text": "premier competition.",
-      "url": "https://www.bbc.co.uk/sport/football/articles/cj9gm31jwg8o?at_medium=RSS&amp;at_campaign=rss",
+      "intro": "FIFA eyes a 64-team World Cup",
+      "body": "President Gianni Infantino has opened the door to expanding the tournament to 64 teams, a controversial proposal that would reshape football's showcase event and intensify debate over",
+      "link_text": "commercialization versus quality.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cj9gm31jwg8o",
       "source": "BBC News"
     }
   ]
