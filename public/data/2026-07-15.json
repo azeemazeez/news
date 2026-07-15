@@ -1,118 +1,118 @@
 {
   "date": "2026-07-15",
-  "generated_at": "2026-07-15T01:01:12.824Z",
+  "generated_at": "2026-07-15T05:37:31.734Z",
   "stories": [
     {
+      "intro": "China's growth stalls",
+      "body": "The world's second-largest economy expanded at its slowest pace in years, missing government targets and raising fresh questions about the durability of Beijing's",
+      "link_text": "post-pandemic recovery model.",
+      "url": "https://www.nytimes.com/2026/07/15/business/china-economy-gdp-growth.html",
+      "source": "New York Times"
+    },
+    {
       "intro": "A 27B model on your phone",
-      "body": "A new open model called Bonsai 27B claims to deliver frontier-class performance while running entirely on a smartphone, a potential shift in how and where powerful AI",
-      "link_text": "can actually be deployed.",
+      "body": "A new open model claims to deliver frontier-class performance while running entirely on a handset, a milestone that could shift AI away from cloud data centers and toward",
+      "link_text": "fully on-device intelligence.",
       "url": "https://prismml.com/news/bonsai-27b",
       "source": "Hacker News"
     },
     {
+      "intro": "Data centers hit your bill",
+      "body": "The AI buildout has quietly raised electricity prices for ordinary households by an estimated $23 billion, as the public increasingly subsidizes the power appetite of",
+      "link_text": "hyperscale computing.",
+      "url": "https://fortune.com/2026/07/14/data-centers-23-billion-electricity-bills/",
+      "source": "Hacker News"
+    },
+    {
       "intro": "Financing the AI boom",
-      "body": "The Bank for International Settlements warns that the AI buildout is increasingly funded by debt rather than cash flow, raising systemic questions about what happens if the",
-      "link_text": "returns fail to materialise.",
+      "body": "A Bank for International Settlements bulletin warns that the industry is increasingly turning from cash flows to debt to fund its expansion, echoing patterns that have preceded",
+      "link_text": "past financial bubbles.",
       "url": "https://www.bis.org/publ/bisbull120.pdf",
       "source": "Hacker News"
     },
     {
-      "intro": "Your app should be a webpage",
-      "body": "A widely-shared essay makes the case that countless mobile apps exist only to trap users and harvest data, when a simple website would serve them better — and demonstrates the point by",
-      "link_text": "rebuilding one himself.",
-      "url": "https://danq.me/2026/07/09/your-app-could-have-been-a-webpage/",
-      "source": "Hacker News"
-    },
-    {
-      "intro": "Are we outsourcing our minds",
-      "body": "A thoughtful piece asks whether the convenience of delegating reasoning to chatbots is quietly eroding the cognitive skills we need most, and what it means when we stop",
-      "link_text": "thinking for ourselves.",
-      "url": "https://www.artfish.ai/p/offloading-thinking-to-ai",
-      "source": "Hacker News"
-    },
-    {
-      "intro": "Europe's age-check backlash",
-      "body": "The EU's new age-verification app effectively forces every citizen onto Google or Apple's mobile platforms to prove their identity online, sparking fierce criticism over privacy and the entrenchment of",
-      "link_text": "Big Tech gatekeeping.",
+      "intro": "Europe's age-verification trap",
+      "body": "The EU's new digital identity age-verification scheme effectively forces everyone to own an Android or iOS device, sparking a backlash over how mandatory checks could entrench the dominance of",
+      "link_text": "two American tech giants.",
       "url": "https://github.com/eu-digital-identity-wallet/av-doc-technical-specification/discussions/19",
       "source": "Hacker News"
     },
     {
-      "intro": "Free daytime power arrives",
-      "body": "Australian energy retailers will soon be required to offer three hours of free electricity each day, a bold market response to a glut of midday solar that could reshape how households",
-      "link_text": "use and store energy.",
+      "intro": "Free daytime power in Australia",
+      "body": "Energy retailers will soon be required to offer three hours of free electricity during the day, a policy designed to soak up the country's abundant midday solar and reshape how households",
+      "link_text": "time their energy use.",
       "url": "https://lenergy.com.au/free-daytime-electricity-is-coming-heres-how-it-actually-works/",
       "source": "Hacker News"
     },
     {
-      "intro": "New York halts data centres",
-      "body": "The state has imposed a landmark one-year moratorium on large new data centres, an early sign that the enormous energy and water demands of the AI boom are colliding with",
-      "link_text": "local infrastructure limits.",
-      "url": "https://www.aljazeera.com/economy/2026/7/14/new-york-imposes-landmark-one-year-ban-on-large-data-centres",
-      "source": "Al Jazeera"
+      "intro": "Germany's 3°C warning",
+      "body": "A new German assessment lays out a sobering scenario in which global warming could reach 3°C by mid-century, well beyond international targets, forcing a reckoning with the pace of",
+      "link_text": "current emissions trajectories.",
+      "url": "https://worldcrunch.com/focus/green-or-gone/global-warming-at-3c-by-2050-what-s-behind-the-new-german-climate-warning/",
+      "source": "Hacker News"
+    },
+    {
+      "intro": "A Maya astronomer named",
+      "body": "Newly deciphered mathematical texts from a site in Guatemala have identified an individual ancient astronomer, offering a rare personal glimpse into the sophisticated science behind",
+      "link_text": "Maya celestial calculations.",
+      "url": "https://www.nature.com/articles/d41586-026-02170-8",
+      "source": "Hacker News"
     },
     {
       "intro": "Mapping the brainstem",
-      "body": "Indian scientists have produced the most detailed 3D atlas ever made of the human brainstem, a foundational resource for neurosurgery and for understanding the region that governs",
-      "link_text": "our most basic functions.",
+      "body": "Indian scientists have produced the most detailed three-dimensional atlas of the human brainstem yet, a foundational resource that could sharpen surgery and deepen understanding of the region controlling",
+      "link_text": "our most vital functions.",
       "url": "https://www.bbc.com/news/articles/cg53l737v1qo",
+      "source": "BBC News"
+    },
+    {
+      "intro": "Blood test for Alzheimer's",
+      "body": "New blood tests are showing striking promise not only in diagnosing Alzheimer's but in predicting it before symptoms appear, potentially transforming early intervention for a disease long diagnosed only by",
+      "link_text": "expensive scans and autopsy.",
+      "url": "https://www.nytimes.com/2026/07/15/well/mind/alzheimers-disease-blood-tests-symptoms.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Offloading our thinking",
+      "body": "As people increasingly delegate reasoning, writing, and memory to AI tools, researchers are asking whether the convenience comes at the cost of the cognitive skills that made",
+      "link_text": "the tools possible.",
+      "url": "https://www.artfish.ai/p/offloading-thinking-to-ai",
       "source": "Hacker News"
     },
     {
-      "intro": "Doubts about von Neumann probes",
-      "body": "A metallurgist argues that the physical challenges of building self-replicating interstellar probes may be far greater than enthusiasts assume, complicating a favourite thought experiment about",
-      "link_text": "colonising the galaxy.",
-      "url": "https://www.centauri-dreams.org/2026/07/10/a-metallurgists-doubts-about-self-replicating-probes/",
+      "intro": "The vanishing native app",
+      "body": "A viral essay argues that a huge share of mobile apps could and should have been simple webpages, a critique of an ecosystem that funnels users into walled gardens instead of the",
+      "link_text": "open web.",
+      "url": "https://danq.me/2026/07/09/your-app-could-have-been-a-webpage/",
       "source": "Hacker News"
     },
     {
-      "intro": "The kids are alright",
-      "body": "Pushing back against the moral panic over teenagers and smartphones, this essay questions the evidence behind sweeping bans and asks whether adults are projecting their own anxieties onto",
-      "link_text": "a generation growing up online.",
-      "url": "https://heatherburns.tech/2026/07/08/the-kids-with-phones-are-alright/",
-      "source": "Hacker News"
-    },
-    {
-      "intro": "A dying Amish tongue",
-      "body": "A deep look at Pennsylvania Dutch explores how one of America's most resilient minority languages survives inside the Amish community even as the wider world's dialects",
-      "link_text": "steadily disappear.",
-      "url": "https://www.thedial.world/articles/news/amish-pennsylvania-dutch",
-      "source": "Hacker News"
-    },
-    {
-      "intro": "Yemen's deadlock cracks",
-      "body": "After years of a grinding 'no war, no peace' stalemate, shifting regional dynamics suggest Yemen's long conflict may finally be heading toward a decisive resolution — for better",
-      "link_text": "or for worse.",
-      "url": "https://www.aljazeera.com/features/2026/7/14/why-yemens-long-no-war-no-peace-deadlock-may-be-ending",
-      "source": "Al Jazeera"
-    },
-    {
-      "intro": "Moroccan rapper arrested",
-      "body": "The outspoken artist Mehdi El Youbi has been detained in Casablanca, the latest case testing the limits of free expression and dissent through music in",
-      "link_text": "North Africa.",
-      "url": "https://www.aljazeera.com/news/2026/7/14/outspoken-moroccan-rapper-mehdi-el-youbi-arrested-in-casablanca",
-      "source": "Al Jazeera"
+      "intro": "UK weighs social media curfew",
+      "body": "Ministers are considering a midnight-to-morning social media curfew for older teenagers, part of a widening global effort to curb the addictive designs that keep young people",
+      "link_text": "glued to their screens.",
+      "url": "https://www.bbc.co.uk/news/articles/c982857nlrlo?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC News"
     },
     {
       "intro": "Buffett breaks with Gates",
-      "body": "Warren Buffett has halted his donations to the Bill & Melinda Gates Foundation, ending one of the most consequential partnerships in modern philanthropy and raising questions about the future of",
-      "link_text": "global health funding.",
-      "url": "https://www.bbc.co.uk/news/articles/c8x2x549vgdo",
+      "body": "The billionaire investor has halted his donations to the Bill Gates charitable foundation, ending one of philanthropy's most storied partnerships and raising questions about the future of",
+      "link_text": "his remaining fortune.",
+      "url": "https://www.bbc.co.uk/news/articles/c8x2x549vgdo?at_medium=RSS&amp;at_campaign=rss",
       "source": "BBC News"
     },
     {
-      "intro": "Spain's silky masterclass",
-      "body": "Led by teenager Lamine Yamal, Spain dismantled France 2-0 to reach the World Cup final, a performance hailed as the triumph of a cohesive team over a collection of",
-      "link_text": "brilliant individuals.",
-      "url": "https://www.bbc.co.uk/sport/football/articles/cpv3v0gkw9vo",
+      "intro": "China detains US scientist",
+      "body": "Authorities have detained an American researcher who studied North Korean nuclear tests, a move likely to deepen mistrust between the two powers and chill scholarly exchange on",
+      "link_text": "sensitive security topics.",
+      "url": "https://www.bbc.co.uk/news/articles/cqx1xdn3g4eo?at_medium=RSS&amp;at_campaign=rss",
       "source": "BBC News"
     },
     {
-      "intro": "Permanent daylight saving",
-      "body": "The US House has voted to make daylight saving time permanent, potentially ending the twice-yearly clock change despite sleep scientists' warnings about the health effects of",
-      "link_text": "year-round evening light.",
-      "url": "https://www.nytimes.com/2026/07/14/us/politics/house-daylight-savings-time-sunshine-protection-act.html",
-      "source": "New York Times"
+      "intro": "Spain outclass France",
+      "body": "A cohesive Spanish side dismantled a France team built around individual stars to reach the World Cup final, a result read by many as a triumph of collective system over",
+      "link_text": "generational talent.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cpv3v0gkw9vo?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC News"
     }
   ]
 }
