@@ -90,7 +90,6 @@ async function fetchNewsAPI() {
 
 async function curateWithClaude(stories, previousStories = []) {
   const storyList = stories
-    .slice(0, 120)
     .map((s, i) =>
       `${i + 1}. [${s.source}${s.score ? `, score:${s.score}` : ''}] ${s.title}\n   ${s.url}`
     )
@@ -214,7 +213,24 @@ async function main() {
     return true;
   });
 
-  console.log(`Collected ${unique.length} unique stories, curating with Claude...`);
+  // Cap each source's contribution so early-listed feeds can't crowd
+  // later ones (sports) out of the curation pool, and interleave
+  // round-robin so no single source dominates the top of the list.
+  const PER_SOURCE_CAP = 12;
+  const bySource = new Map();
+  for (const s of unique) {
+    const list = bySource.get(s.source) || [];
+    if (list.length < PER_SOURCE_CAP) list.push(s);
+    bySource.set(s.source, list);
+  }
+  const pool = [];
+  for (let i = 0; i < PER_SOURCE_CAP; i++) {
+    for (const list of bySource.values()) {
+      if (list[i]) pool.push(list[i]);
+    }
+  }
+
+  console.log(`Collected ${unique.length} unique stories (${pool.length} after per-source cap), curating with Claude...`);
 
   // Load yesterday's stories to avoid repeats
   const date = dateArg || new Date(Date.now() + 4 * 60 * 60 * 1000).toISOString().split('T')[0];
@@ -232,7 +248,7 @@ async function main() {
   let curated;
   for (let attempt = 1; attempt <= 3; attempt++) {
     try {
-      curated = await curateWithClaude(unique, previousStories);
+      curated = await curateWithClaude(pool, previousStories);
       break;
     } catch (err) {
       console.warn(`Claude API attempt ${attempt} failed: ${err.message}`);
