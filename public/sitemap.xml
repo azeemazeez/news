@@ -2,17 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://thenuus.com/</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>daily</changefreq>
   </url>
   <url>
     <loc>https://thenuus.com/archive</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>daily</changefreq>
   </url>
   <url>
     <loc>https://thenuus.com/about</loc>
     <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://thenuus.com/2026-07-18</loc>
+    <lastmod>2026-07-18</lastmod>
+    <changefreq>never</changefreq>
   </url>
   <url>
     <loc>https://thenuus.com/2026-07-17</loc>
