@@ -1,118 +1,118 @@
 {
   "date": "2026-07-19",
-  "generated_at": "2026-07-19T01:01:06.676Z",
+  "generated_at": "2026-07-19T06:02:11.879Z",
   "stories": [
     {
-      "intro": "Jordan becomes a new front",
-      "body": "An Iranian attack has killed two American troops and left one missing, drawing the kingdom deeper into the widening war and revealing how quickly the conflict is spilling beyond Iran's borders into",
-      "link_text": "a fragile US ally.",
-      "url": "https://www.bbc.co.uk/news/articles/cn8nynv8ze8o?at_medium=RSS&amp;at_campaign=rss",
-      "source": "BBC News"
+      "intro": "Iran war reaches Jordan",
+      "body": "Iranian missiles struck a US airbase in Jordan, killing American soldiers and drawing the kingdom into a widening regional conflict as Tehran retaliates against Gulf targets. Jordan's involvement marks a dangerous new front in the",
+      "link_text": "escalating US-Iran war.",
+      "url": "https://www.nytimes.com/2026/07/18/world/middleeast/iran-war-jordan-attacks.html",
+      "source": "New York Times"
     },
     {
-      "intro": "Water becomes a weapon",
-      "body": "An Iranian strike has damaged a Kuwaiti desalination plant, exposing how dependent the arid Gulf is on a handful of vulnerable facilities that could leave millions without",
-      "link_text": "access to drinking water.",
+      "intro": "Water as a weapon",
+      "body": "An Iranian strike damaged a Kuwaiti desalination plant, exposing the extreme fragility of the parched Gulf's water supply as the conflict spreads to civilian infrastructure across a region that depends on",
+      "link_text": "seawater for survival.",
       "url": "https://apnews.com/article/iran-strikes-kuwait-gulf-bahrain-desalination-25e6d5c8d8a027897b3fb80fad57b7d2",
       "source": "Associated Press"
     },
     {
-      "intro": "AI cracks a math frontier",
-      "body": "Days after OpenAI's proof announcement, researchers report GPT-5.6 used a single prompt to close a 30-year-old open problem in convex optimization, a striking sign that large models are beginning to contribute",
-      "link_text": "genuine mathematical discoveries.",
-      "url": "https://old.reddit.com/r/math/comments/1uxj3cy/after_openais_cdc_proof_announcement_gpt56_used_a/",
-      "source": "Hacker News"
+      "intro": "Russia hammers Kyiv",
+      "body": "Ballistic missiles struck the Ukrainian capital overnight, killing at least one person, a reminder that Moscow's war grinds on even as global attention fixes on the Middle East and the",
+      "link_text": "toll on Ukraine mounts.",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/19/at-least-one-killed-as-russian-ballistic-missiles-hit-kyiv?traffic_source=rss",
+      "source": "Al Jazeera"
     },
     {
-      "intro": "AI designs drugs from scratch",
-      "body": "DeepMind spinoff Isomorphic Labs has detailed its bioresilience push, unveiling an engine that generates novel molecules beyond AlphaFold's predictions and pointing toward a future of computationally engineered",
-      "link_text": "medicines and defenses.",
-      "url": "https://deepmind.google/blog/our-approach-to-bioresilience/",
-      "source": "DeepMind"
+      "intro": "Tate brothers arrested",
+      "body": "Andrew Tate and his brother were detained in Miami as Britain filed fresh rape and sex-trafficking charges, a transatlantic legal reckoning for the influencers whose misogynist online empire has shaped a generation of",
+      "link_text": "young male followers.",
+      "url": "https://www.aljazeera.com/news/2026/7/19/tate-brothers-arrested-in-miami-as-uk-adds-rape-trafficking-charges?traffic_source=rss",
+      "source": "Al Jazeera"
     },
     {
-      "intro": "Cuba edges toward collapse",
-      "body": "Chronic power cuts, economic freefall and renewed US pressure are pushing the island's society to the brink, raising the prospect of a breakdown that could trigger a fresh wave of",
-      "link_text": "migration and unrest.",
+      "intro": "Cuba nears collapse",
+      "body": "Chronic power cuts, economic ruin and renewed US pressure are pushing Cuban society toward breakdown, driving mass emigration and testing whether the revolution's institutions can survive the",
+      "link_text": "island's deepest crisis in decades.",
       "url": "https://www.theguardian.com/world/2026/jul/18/cuba-edges-toward-breakdown-as-power-cuts-and-us-meddling-push-society-to-brink",
       "source": "The Guardian"
     },
     {
-      "intro": "Cuba's dissident artist flees",
-      "body": "Luis Manuel Otero Alcántara, a leading figure in the island's protest art movement, has been cleared to travel and arrived in the US, marking a symbolic loss for Havana's beleaguered",
-      "link_text": "cultural opposition.",
-      "url": "https://www.theguardian.com/world/2026/jul/17/cuban-dissident-artist-luis-manuel-otero-alcantara-cleared-to-travel-to-us",
-      "source": "The Guardian"
+      "intro": "ICE gets Medicaid data",
+      "body": "Immigration enforcement obtained Medicaid records it was never authorized to access and shared them with data giant Palantir, a breach of medical privacy that could deter millions from seeking healthcare and signals a new frontier in",
+      "link_text": "government surveillance of migrants.",
+      "url": "https://www.npr.org/2026/07/17/nx-s1-5898504/ice-medicaid-palantir-data",
+      "source": "NPR"
     },
     {
-      "intro": "Venezuela's quake toll passes 5,000",
-      "body": "The death toll from the devastating earthquake continues to climb as survivors, including newly orphaned children, mark grim milestones amid a slow and overwhelmed",
-      "link_text": "recovery effort.",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/19/a-giant-cake-for-venezuelan-quake-child-survivors-as-death-toll-passes-5000?traffic_source=rss",
-      "source": "Al Jazeera"
+      "intro": "Trump targets TV licenses",
+      "body": "The FCC under Trump's chairman is moving to revoke broadcast licenses of networks that anger the president, an unprecedented weaponization of regulatory power that threatens the independence of American",
+      "link_text": "television news.",
+      "url": "https://www.politico.com/news/2026/07/17/trump-carr-fcc-broadcast-licenses-01003605",
+      "source": "Politico"
     },
     {
-      "intro": "Ebola workers quarantined in Kenya",
-      "body": "Seven American aid workers are isolating at a Kenyan facility after a US travel ban stranded them, a diplomatic and logistical snarl that complicates the international response to the ongoing",
-      "link_text": "outbreak in central Africa.",
-      "url": "https://www.theguardian.com/us-news/2026/jul/17/ebola-us-aid-workers-kenya",
-      "source": "The Guardian"
+      "intro": "Mamdani eyes Netanyahu arrest",
+      "body": "New York's incoming mayor said he may still order the arrest of the Israeli prime minister should he set foot in the city, an extraordinary assertion of local power over international war-crimes questions that could ignite a",
+      "link_text": "federal confrontation.",
+      "url": "https://www.nytimes.com/2026/07/18/nyregion/mamdani-netanyahu-interview.html",
+      "source": "New York Times"
     },
     {
-      "intro": "Russia's cash economy returns",
-      "body": "Sanctions and financial strain are pushing Russians back toward physical currency, a quiet symptom of a wartime economy that is slowing and straining under the weight of prolonged",
-      "link_text": "military spending.",
-      "url": "https://www.bbc.co.uk/news/articles/cglj255jk8ko?at_medium=RSS&amp;at_campaign=rss",
+      "intro": "A new cholesterol pill",
+      "body": "The FDA approved the first oral PCSK9 inhibitor, offering a convenient tablet alternative to injections for millions of people with stubbornly high LDL cholesterol and potentially reshaping how heart disease is",
+      "link_text": "prevented worldwide.",
+      "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-oral-pcsk9-inhibitor-lower-ldl-cholesterol-adults-high-cholesterol",
+      "source": "FDA"
+    },
+    {
+      "intro": "AI closes a math gap",
+      "body": "Researchers report that OpenAI's latest model, prompted cleverly, helped close a 30-year-old open problem in convex optimization, the newest sign that large language models are becoming genuine collaborators in",
+      "link_text": "frontier mathematics.",
+      "url": "https://old.reddit.com/r/math/comments/1uxj3cy/after_openais_cdc_proof_announcement_gpt56_used_a/",
+      "source": "Hacker News"
+    },
+    {
+      "intro": "Invisible illness pushes women out",
+      "body": "A poorly understood condition is quietly forcing women from their jobs, a hidden workforce toll that reflects how medicine and employers still fail to reckon with chronic",
+      "link_text": "female health problems.",
+      "url": "https://www.bbc.co.uk/news/articles/c79yyzw9v8xo?at_medium=RSS&amp;at_campaign=rss",
       "source": "BBC News"
     },
     {
-      "intro": "Bhutan's activist forcibly hospitalized",
-      "body": "Protests are intensifying after climate campaigner and reformer Sonam Wangchuk was forcibly hospitalized, escalating a standoff between grassroots demonstrators and authorities in the",
-      "link_text": "normally quiet Himalayan region.",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/18/cockroach-party-protest-intensifies-after-wangchuk-forcibly-hospitalised?traffic_source=rss",
+      "intro": "The hidden cost of night shifts",
+      "body": "New research illuminates the deep biological toll of overnight work and offers strategies to recover lost sleep, with implications for the health of millions of nurses, drivers and factory workers on the",
+      "link_text": "graveyard shift.",
+      "url": "https://www.bbc.co.uk/news/articles/cp9errxl97go?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC News"
+    },
+    {
+      "intro": "Somalia races to save its memory",
+      "body": "Archivists are scrambling to rescue Radio Mogadishu's decaying tape collection, a priceless sonic record of a nation's history at risk of vanishing before it can be preserved for",
+      "link_text": "future generations.",
+      "url": "https://www.aljazeera.com/news/2026/7/19/somalia-races-to-save-radio-mogadishus-fading-archive?traffic_source=rss",
       "source": "Al Jazeera"
     },
     {
       "intro": "Hybrid fish threaten a lake",
-      "body": "Human-bred flowerhorn cichlids have escaped into a Philippine lake and begun integrating with wild populations, alarming scientists who fear the invasive hybrids could unravel a fragile",
+      "body": "Human-bred flowerhorn cichlids released by aquarium owners have integrated into a Philippine lake, alarming scientists who warn the invaders could wipe out native species and reshape a fragile",
       "link_text": "freshwater ecosystem.",
       "url": "https://www.theguardian.com/environment/2026/jul/17/biodiversity-fears-flowerhorn-cichlids-philippines-lake",
       "source": "The Guardian"
     },
     {
-      "intro": "Laos poisoning charges announced",
-      "body": "A distillery owner could face just three months in jail over the mass methanol poisoning that killed several foreign tourists, a light penalty that has prompted Australia to update its",
-      "link_text": "travel advice for the region.",
-      "url": "https://www.theguardian.com/australia-news/2026/jul/17/distillery-owner-could-face-only-three-months-in-jail-over-alleged-poisoning-australian-teenagers",
-      "source": "The Guardian"
-    },
-    {
-      "intro": "The hidden cost of night shifts",
-      "body": "Researchers are mapping how overnight work disrupts the body's clock in ways that raise long-term health risks, along with emerging strategies workers can use to",
-      "link_text": "recover lost sleep.",
-      "url": "https://www.bbc.co.uk/news/articles/cp9errxl97go?at_medium=RSS&amp;at_campaign=rss",
-      "source": "BBC News"
-    },
-    {
-      "intro": "Kerr shatters a 27-year record",
-      "body": "Britain's Josh Kerr made athletics history in London by breaking the one-mile world record that had stood for nearly three decades, a landmark run that redraws the limits of middle-distance",
-      "link_text": "running.",
+      "intro": "Kerr shatters the mile",
+      "body": "Josh Kerr smashed the one-mile world record on a London track, a landmark run that rewrites the history books for one of athletics' most storied distances and cements his place among the sport's",
+      "link_text": "all-time greats.",
       "url": "https://www.theguardian.com/sport/2026/jul/18/josh-kerr-makes-athletics-history-by-shattering-one-mile-world-record-in-london",
       "source": "The Guardian"
     },
     {
-      "intro": "Infantino's bargain with Trump",
-      "body": "FIFA's president has entangled the World Cup with the White House in ways critics say have politicized football's biggest stage, from travel bans on players to a tournament shadowed by",
-      "link_text": "smoke, protest and controversy.",
-      "url": "https://www.theguardian.com/football/2026/jul/18/gianni-infantino-donald-trump-fifa-world-cup-comment",
+      "intro": "Latin America roots against Argentina",
+      "body": "Old regional rivalries and lingering resentments mean many Latin Americans are quietly cheering for Spain in the World Cup final, revealing the fractured continental politics beneath a match billed as",
+      "link_text": "the Americas versus Europe.",
+      "url": "https://www.theguardian.com/football/2026/jul/18/argentina-spain-latin-america-support-world-cup-final",
       "source": "The Guardian"
-    },
-    {
-      "intro": "Speech recognition in half a megabyte",
-      "body": "Developers have squeezed a working speech-recognition and text-to-speech system into less than 500kb, a feat that could bring voice interfaces to the smallest and most",
-      "link_text": "resource-constrained devices.",
-      "url": "https://github.com/moonshine-ai/moonshine/tree/main/micro",
-      "source": "Hacker News"
     }
   ]
 }
