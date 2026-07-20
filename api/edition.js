@@ -29,6 +29,9 @@ export default async function handler(req, res) {
   }
 
   const label = formatDateLong(date);
+  const [y, m, d] = date.split('-').map(Number);
+  const dt = new Date(y, m - 1, d);
+  const utilLabel = `${dt.toLocaleDateString('en-US', { weekday: 'long' })} · ${dt.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}`;
   const url = `https://thenuus.com/${date}`;
   const desc = `The Nuus — ${label}. The day's most significant stories, curated.`;
   const schema = JSON.stringify({
@@ -63,16 +66,31 @@ export default async function handler(req, res) {
   <link rel="manifest" href="/manifest.json">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Inter:wght@400;500;600;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600;900&family=Newsreader:ital,opsz,wght@1,6..72,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <script type="application/ld+json">${schema}</script>
 </head>
 <body>
 
   <header class="masthead">
-    <div class="masthead-inner">
-      <h1 class="site-name" id="site-name" role="link" tabindex="0">The Nuus</h1>
+    <div class="util-bar">
+      <span class="util-date">${utilLabel}</span>
+      <span class="util-center">Today's 5-minute read</span>
+      <div class="util-links">
+        <a href="/#subscribe-form">Subscribe</a>
+        <a href="/archive">Archive</a>
+      </div>
     </div>
+    <div class="masthead-block">
+      <div class="eyebrow">
+        <span class="eyebrow-rule"></span>
+        <span class="eyebrow-label">Est. 2026 · Daily Edition</span>
+        <span class="eyebrow-rule"></span>
+      </div>
+      <h1 class="site-name" id="site-name" role="link" tabindex="0">The Nuus</h1>
+      <p class="masthead-tagline">Serving you bite-sized news, every day.</p>
+    </div>
+    <div class="masthead-base-rule"></div>
   </header>
 
   <div class="date-bar">

@@ -98,6 +98,14 @@ window.addEventListener('popstate', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
+  const utilDate = document.getElementById('util-date');
+  if (utilDate) {
+    const now = new Date();
+    const weekday = now.toLocaleDateString('en-US', { weekday: 'long' });
+    const rest = now.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+    utilDate.textContent = `${weekday} · ${rest}`;
+  }
+
   document.getElementById('site-name').addEventListener('click', () => {
     if (manifest.dates.length > 0) {
       history.pushState({}, '', '/');

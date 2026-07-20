@@ -23,16 +23,31 @@
   <link rel="manifest" href="/manifest.json">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Inter:wght@400;500;600;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600;900&family=Newsreader:ital,opsz,wght@1,6..72,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Archive — The Nuus","url":"https://thenuus.com/archive","isPartOf":{"@type":"WebSite","name":"The Nuus","url":"https://thenuus.com"}}</script>
 </head>
 <body>
 
   <header class="masthead">
-    <div class="masthead-inner">
-      <a class="site-name" href="/">The Nuus</a>
+    <div class="util-bar">
+      <span id="util-date" class="util-date"></span>
+      <span class="util-center">Today's 5-minute read</span>
+      <div class="util-links">
+        <a href="/#subscribe-form">Subscribe</a>
+        <a href="/archive">Archive</a>
+      </div>
     </div>
+    <div class="masthead-block">
+      <div class="eyebrow">
+        <span class="eyebrow-rule"></span>
+        <span class="eyebrow-label">Est. 2026 · Daily Edition</span>
+        <span class="eyebrow-rule"></span>
+      </div>
+      <a class="site-name" href="/">The Nuus</a>
+      <p class="masthead-tagline">Serving you bite-sized news, every day.</p>
+    </div>
+    <div class="masthead-base-rule"></div>
   </header>
 
   <main class="feed" id="feed">
