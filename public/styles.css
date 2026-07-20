@@ -54,7 +54,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #5b16c4;
+  background: linear-gradient(90deg, #5b16c4, #c11fd6);
   color: #fff;
   padding: 10px 28px;
   font-size: 12px;
@@ -120,7 +120,11 @@ body {
   font-weight: 900;
   letter-spacing: -.045em;
   line-height: .9;
-  color: #5b16c4;
+  background: linear-gradient(92deg, #5b16c4, #a020c4 55%, #c11fd6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
   cursor: pointer;
   margin: 0;
 }
