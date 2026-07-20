@@ -36,14 +36,9 @@ function updateCanonical(date) {
     : `https://thenuus.com/${date}`;
 }
 
-function updateNav() {
-  document.getElementById('date-display').textContent = formatDate(currentDate);
-}
-
 async function loadDay(date) {
   currentDate = date;
   document.getElementById('feed').innerHTML = '<div class="state-message"><p>Loading...</p></div>';
-  updateNav();
   updateCanonical(date);
 
   try {
@@ -72,7 +67,6 @@ async function init() {
   }
 
   if (manifest.dates.length === 0) {
-    document.getElementById('date-display').textContent = 'No issues yet';
     document.getElementById('feed').innerHTML = `
       <div class="state-message">
         <h2>No news yet</h2>

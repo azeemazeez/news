@@ -146,11 +146,6 @@ a.site-name {
   margin-bottom: 0;
 }
 
-/* Masthead base rule */
-.masthead-base-rule {
-  height: 5px;
-  background: linear-gradient(90deg, #5b16c4, #c11fd6);
-}
 
 @media (max-width: 900px) {
   .util-center { display: none; }
@@ -166,23 +161,6 @@ a.site-name {
   .masthead-tagline { font-size: 17px; }
 }
 
-/* Date bar */
-.date-bar {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 0 0 0.3rem;
-  text-align: center;
-  border-bottom: 1px solid var(--border);
-  margin-bottom: 0.25rem;
-}
-
-.date-display {
-  font-size: 0.72rem;
-  font-weight: 500;
-  color: var(--secondary);
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-}
 
 /* Feed */
 .feed {
