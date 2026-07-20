@@ -1,9 +1,7 @@
 name: Daily News Fetch
 
 on:
-  schedule:
-    - cron: '0 3 * * *'  # 7 AM UAE (UTC+4) daily
-  workflow_dispatch:       # Manual trigger from GitHub UI
+  workflow_dispatch:
 
 permissions:
   contents: write
