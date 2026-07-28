@@ -133,6 +133,10 @@ struct StoryRow: View {
                 Text(story.cleanIntro).fontWeight(.semibold)
                     + Text(" ")
                     + Text(story.cleanBody)
+                    + Text(" ")
+                    + Text(story.cleanLinkText)
+                        .foregroundColor(Theme.purple)
+                        .underline()
             }
             .font(.system(size: 16))
             .foregroundStyle(Theme.text)
