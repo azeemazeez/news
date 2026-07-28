@@ -17,6 +17,7 @@
 		C9A4083D51E7E6E8E1C4A82B /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D793165A2C21E1D833792BD3 /* SplashView.swift */; };
 		CBC08B909E21A3AE827671FF /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C8FC71BC1A094FFDC346C3 /* Theme.swift */; };
 		F5325F5B0E729ACA4088FC25 /* TheNuusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35575FB67EC085BAD778C4DE /* TheNuusApp.swift */; };
+		FA448FD77501B7642A9DF686 /* MenuViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = C932CF89BDE0A4150C0B7529 /* MenuViews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		8160D6D378FD71BFA0375711 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		95C8FC71BC1A094FFDC346C3 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		ADB0F17E8AA50E91558CCCB7 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		C932CF89BDE0A4150C0B7529 /* MenuViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViews.swift; sourceTree = "<group>"; };
 		D793165A2C21E1D833792BD3 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		E0A3EAF5CF0A9A9B2F718664 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4B7BEDDB7F9A2341CBC1538 /* SiteHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteHeaderView.swift; sourceTree = "<group>"; };
@@ -41,6 +43,7 @@
 				E0A3EAF5CF0A9A9B2F718664 /* Assets.xcassets */,
 				46F2F0B32CD9D61EE32E21B0 /* FeedView.swift */,
 				8160D6D378FD71BFA0375711 /* Info.plist */,
+				C932CF89BDE0A4150C0B7529 /* MenuViews.swift */,
 				28A65B5FD4CA3880F87334F4 /* Model.swift */,
 				F36E82F52B727D36FB0781FF /* NewsService.swift */,
 				ADB0F17E8AA50E91558CCCB7 /* SafariView.swift */,
@@ -146,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D96010584C4998131982BE6 /* FeedView.swift in Sources */,
+				FA448FD77501B7642A9DF686 /* MenuViews.swift in Sources */,
 				31DDD18BAFA941863F7CDA08 /* Model.swift in Sources */,
 				A33C453631A4710CA986BDE6 /* NewsService.swift in Sources */,
 				19FE5FC4E49E974AF181FC51 /* SafariView.swift in Sources */,

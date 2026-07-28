@@ -41,6 +41,16 @@ struct NewsService {
         return edition
     }
 
+    /// Every published edition date, newest first.
+    func manifestDates() async throws -> [String] {
+        let manifest: Manifest = try await fetch("data/manifest.json")
+        return manifest.dates
+    }
+
+    func edition(for date: String) async throws -> Edition {
+        try await fetch("data/\(date).json")
+    }
+
     private func fetch<T: Decodable>(_ path: String) async throws -> T {
         let url = baseURL.appending(path: path)
 

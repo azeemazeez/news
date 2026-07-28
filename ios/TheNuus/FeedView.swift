@@ -34,6 +34,7 @@ struct FeedView: View {
     let model: FeedModel
 
     @State private var selectedArticle: URL?
+    @State private var menuScreen: MenuScreen?
 
     var body: some View {
         ScrollView {
@@ -56,8 +57,35 @@ struct FeedView: View {
         }
         .background(Theme.background.ignoresSafeArea())
         .refreshable { await model.load() }
+        .overlay(alignment: .topLeading) {
+            Menu {
+                Button {
+                    menuScreen = .archive
+                } label: {
+                    Label("Archive", systemImage: "calendar")
+                }
+                Button {
+                    menuScreen = .about
+                } label: {
+                    Label("About", systemImage: "info.circle")
+                }
+            } label: {
+                Image(systemName: "line.3.horizontal")
+                    .font(.system(size: 16, weight: .semibold))
+                    .foregroundStyle(.white)
+                    .frame(width: 40, height: 40)
+                    .contentShape(Rectangle())
+            }
+            .padding(.leading, 4)
+        }
         .sheet(item: $selectedArticle) { url in
             SafariView(url: url).ignoresSafeArea()
+        }
+        .sheet(item: $menuScreen) { screen in
+            switch screen {
+            case .archive: ArchiveView()
+            case .about: AboutView()
+            }
         }
     }
 

@@ -16,6 +16,16 @@
     "swift-dependencies" : "/Users/azeem/Dev/news/ios/build/Build/Intermediates.noindex/TheNuus.build/Debug-iphonesimulator/TheNuus.build/Objects-normal/arm64/FeedView.swiftdeps",
     "swiftmodule" : "/Users/azeem/Dev/news/ios/build/Build/Intermediates.noindex/TheNuus.build/Debug-iphonesimulator/TheNuus.build/Objects-normal/arm64/FeedView~partial.swiftmodule"
   },
+  "/Users/azeem/Dev/news/ios/TheNuus/MenuViews.swift" : {
+    "const-values" : "/Users/azeem/Dev/news/ios/build/Build/Intermediates.noindex/TheNuus.build/Debug-iphonesimulator/TheNuus.build/Objects-normal/arm64/MenuViews.swiftconstvalues",
+    "dependencies" : "/Users/azeem/Dev/news/ios/build/Build/Intermediates.noindex/TheNuus.build/Debug-iphonesimulator/TheNuus.build/Objects-normal/arm64/MenuViews.d",
+    "diagnostics" : "/Users/azeem/Dev/news/ios/build/Build/Intermediates.noindex/TheNuus.build/Debug-iphonesimulator/TheNuus.build/Objects-normal/arm64/MenuViews.dia",
+    "index-unit-output-path" : "/TheNuus.build/Debug-iphonesimulator/TheNuus.build/Objects-normal/arm64/MenuViews.o",
+    "llvm-bc" : "/Users/azeem/Dev/news/ios/build/Build/Intermediates.noindex/TheNuus.build/Debug-iphonesimulator/TheNuus.build/Objects-normal/arm64/MenuViews.bc",
+    "object" : "/Users/azeem/Dev/news/ios/build/Build/Intermediates.noindex/TheNuus.build/Debug-iphonesimulator/TheNuus.build/Objects-normal/arm64/MenuViews.o",
+    "swift-dependencies" : "/Users/azeem/Dev/news/ios/build/Build/Intermediates.noindex/TheNuus.build/Debug-iphonesimulator/TheNuus.build/Objects-normal/arm64/MenuViews.swiftdeps",
+    "swiftmodule" : "/Users/azeem/Dev/news/ios/build/Build/Intermediates.noindex/TheNuus.build/Debug-iphonesimulator/TheNuus.build/Objects-normal/arm64/MenuViews~partial.swiftmodule"
+  },
   "/Users/azeem/Dev/news/ios/TheNuus/Model.swift" : {
     "const-values" : "/Users/azeem/Dev/news/ios/build/Build/Intermediates.noindex/TheNuus.build/Debug-iphonesimulator/TheNuus.build/Objects-normal/arm64/Model.swiftconstvalues",
     "dependencies" : "/Users/azeem/Dev/news/ios/build/Build/Intermediates.noindex/TheNuus.build/Debug-iphonesimulator/TheNuus.build/Objects-normal/arm64/Model.d",
@@ -45,6 +55,16 @@
     "object" : "/Users/azeem/Dev/news/ios/build/Build/Intermediates.noindex/TheNuus.build/Debug-iphonesimulator/TheNuus.build/Objects-normal/arm64/SafariView.o",
     "swift-dependencies" : "/Users/azeem/Dev/news/ios/build/Build/Intermediates.noindex/TheNuus.build/Debug-iphonesimulator/TheNuus.build/Objects-normal/arm64/SafariView.swiftdeps",
     "swiftmodule" : "/Users/azeem/Dev/news/ios/build/Build/Intermediates.noindex/TheNuus.build/Debug-iphonesimulator/TheNuus.build/Objects-normal/arm64/SafariView~partial.swiftmodule"
+  },
+  "/Users/azeem/Dev/news/ios/TheNuus/SiteHeaderView.swift" : {
+    "const-values" : "/Users/azeem/Dev/news/ios/build/Build/Intermediates.noindex/TheNuus.build/Debug-iphonesimulator/TheNuus.build/Objects-normal/arm64/SiteHeaderView.swiftconstvalues",
+    "dependencies" : "/Users/azeem/Dev/news/ios/build/Build/Intermediates.noindex/TheNuus.build/Debug-iphonesimulator/TheNuus.build/Objects-normal/arm64/SiteHeaderView.d",
+    "diagnostics" : "/Users/azeem/Dev/news/ios/build/Build/Intermediates.noindex/TheNuus.build/Debug-iphonesimulator/TheNuus.build/Objects-normal/arm64/SiteHeaderView.dia",
+    "index-unit-output-path" : "/TheNuus.build/Debug-iphonesimulator/TheNuus.build/Objects-normal/arm64/SiteHeaderView.o",
+    "llvm-bc" : "/Users/azeem/Dev/news/ios/build/Build/Intermediates.noindex/TheNuus.build/Debug-iphonesimulator/TheNuus.build/Objects-normal/arm64/SiteHeaderView.bc",
+    "object" : "/Users/azeem/Dev/news/ios/build/Build/Intermediates.noindex/TheNuus.build/Debug-iphonesimulator/TheNuus.build/Objects-normal/arm64/SiteHeaderView.o",
+    "swift-dependencies" : "/Users/azeem/Dev/news/ios/build/Build/Intermediates.noindex/TheNuus.build/Debug-iphonesimulator/TheNuus.build/Objects-normal/arm64/SiteHeaderView.swiftdeps",
+    "swiftmodule" : "/Users/azeem/Dev/news/ios/build/Build/Intermediates.noindex/TheNuus.build/Debug-iphonesimulator/TheNuus.build/Objects-normal/arm64/SiteHeaderView~partial.swiftmodule"
   },
   "/Users/azeem/Dev/news/ios/TheNuus/SplashView.swift" : {
     "const-values" : "/Users/azeem/Dev/news/ios/build/Build/Intermediates.noindex/TheNuus.build/Debug-iphonesimulator/TheNuus.build/Objects-normal/arm64/SplashView.swiftconstvalues",
