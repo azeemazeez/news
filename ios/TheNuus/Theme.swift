@@ -9,9 +9,10 @@ enum Theme {
 
     static let purple = Color(hex: 0x5B16C4)
     static let magenta = Color(hex: 0xC11FD6)
+    static let eyebrow = Color(hex: 0x8A8577)
 
     static let wordmark = LinearGradient(
-        colors: [purple, magenta],
+        colors: [purple, Color(hex: 0xA020C4), magenta],
         startPoint: .leading,
         endPoint: .trailing
     )

@@ -9,8 +9,8 @@ struct SplashView: View {
 
             VStack(spacing: 18) {
                 Text("The Nuus")
-                    .font(.system(size: 54, weight: .black, design: .default))
-                    .kerning(-1.5)
+                    .font(.custom("ArchivoBlack-Regular", size: 54))
+                    .kerning(-2.5)
                     .foregroundStyle(Theme.wordmark)
 
                 Text("Serving you bite-sized news, every day.")

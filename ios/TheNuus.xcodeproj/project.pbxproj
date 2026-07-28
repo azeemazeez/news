@@ -1,0 +1,347 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A4FB2D9FC5B60BB18976198 /* ArchivoBlack-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 22B85C265EBF619B30FBCDE3 /* ArchivoBlack-Regular.ttf */; };
+		19FE5FC4E49E974AF181FC51 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0F17E8AA50E91558CCCB7 /* SafariView.swift */; };
+		26AAA77446B44AA74DAE4125 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0A3EAF5CF0A9A9B2F718664 /* Assets.xcassets */; };
+		31DDD18BAFA941863F7CDA08 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A65B5FD4CA3880F87334F4 /* Model.swift */; };
+		7D96010584C4998131982BE6 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F2F0B32CD9D61EE32E21B0 /* FeedView.swift */; };
+		A33C453631A4710CA986BDE6 /* NewsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36E82F52B727D36FB0781FF /* NewsService.swift */; };
+		AA71575A5FF0D9159A7C49FA /* SiteHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B7BEDDB7F9A2341CBC1538 /* SiteHeaderView.swift */; };
+		C9A4083D51E7E6E8E1C4A82B /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D793165A2C21E1D833792BD3 /* SplashView.swift */; };
+		CBC08B909E21A3AE827671FF /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C8FC71BC1A094FFDC346C3 /* Theme.swift */; };
+		F5325F5B0E729ACA4088FC25 /* TheNuusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35575FB67EC085BAD778C4DE /* TheNuusApp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		22B85C265EBF619B30FBCDE3 /* ArchivoBlack-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ArchivoBlack-Regular.ttf"; sourceTree = "<group>"; };
+		28A65B5FD4CA3880F87334F4 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		35575FB67EC085BAD778C4DE /* TheNuusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheNuusApp.swift; sourceTree = "<group>"; };
+		46F2F0B32CD9D61EE32E21B0 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		8160D6D378FD71BFA0375711 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		95C8FC71BC1A094FFDC346C3 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		ADB0F17E8AA50E91558CCCB7 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		D793165A2C21E1D833792BD3 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		E0A3EAF5CF0A9A9B2F718664 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E4B7BEDDB7F9A2341CBC1538 /* SiteHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteHeaderView.swift; sourceTree = "<group>"; };
+		F1C9EAA02A635FC0E81AF916 /* TheNuus.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = TheNuus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F36E82F52B727D36FB0781FF /* NewsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		5F246431D44DCD631C14C985 /* TheNuus */ = {
+			isa = PBXGroup;
+			children = (
+				E0A3EAF5CF0A9A9B2F718664 /* Assets.xcassets */,
+				46F2F0B32CD9D61EE32E21B0 /* FeedView.swift */,
+				8160D6D378FD71BFA0375711 /* Info.plist */,
+				28A65B5FD4CA3880F87334F4 /* Model.swift */,
+				F36E82F52B727D36FB0781FF /* NewsService.swift */,
+				ADB0F17E8AA50E91558CCCB7 /* SafariView.swift */,
+				E4B7BEDDB7F9A2341CBC1538 /* SiteHeaderView.swift */,
+				D793165A2C21E1D833792BD3 /* SplashView.swift */,
+				95C8FC71BC1A094FFDC346C3 /* Theme.swift */,
+				35575FB67EC085BAD778C4DE /* TheNuusApp.swift */,
+				79936603E437301D5D7F588F /* Fonts */,
+			);
+			path = TheNuus;
+			sourceTree = "<group>";
+		};
+		658C1AB6AD1C64F409D50501 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1C9EAA02A635FC0E81AF916 /* TheNuus.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79936603E437301D5D7F588F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				22B85C265EBF619B30FBCDE3 /* ArchivoBlack-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		E4066984390373B66DDA962D = {
+			isa = PBXGroup;
+			children = (
+				5F246431D44DCD631C14C985 /* TheNuus */,
+				658C1AB6AD1C64F409D50501 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0D1ED8525FC85F480D59EA9C /* TheNuus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9384165B1213CEF12D7B8E7 /* Build configuration list for PBXNativeTarget "TheNuus" */;
+			buildPhases = (
+				655F74638FAA036ED106E4FD /* Sources */,
+				C3F97E68B96EE207AE13B76E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TheNuus;
+			packageProductDependencies = (
+			);
+			productName = TheNuus;
+			productReference = F1C9EAA02A635FC0E81AF916 /* TheNuus.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F6CC8476CE77D43DFE09F9F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = D741B569EAE20A975A6D743A /* Build configuration list for PBXProject "TheNuus" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = E4066984390373B66DDA962D;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 658C1AB6AD1C64F409D50501 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0D1ED8525FC85F480D59EA9C /* TheNuus */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3F97E68B96EE207AE13B76E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A4FB2D9FC5B60BB18976198 /* ArchivoBlack-Regular.ttf in Resources */,
+				26AAA77446B44AA74DAE4125 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		655F74638FAA036ED106E4FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D96010584C4998131982BE6 /* FeedView.swift in Sources */,
+				31DDD18BAFA941863F7CDA08 /* Model.swift in Sources */,
+				A33C453631A4710CA986BDE6 /* NewsService.swift in Sources */,
+				19FE5FC4E49E974AF181FC51 /* SafariView.swift in Sources */,
+				AA71575A5FF0D9159A7C49FA /* SiteHeaderView.swift in Sources */,
+				C9A4083D51E7E6E8E1C4A82B /* SplashView.swift in Sources */,
+				F5325F5B0E729ACA4088FC25 /* TheNuusApp.swift in Sources */,
+				CBC08B909E21A3AE827671FF /* Theme.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0B179B249E91DE8D3C4A03E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = TheNuus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thenuus.app;
+				PRODUCT_NAME = "The Nuus";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0D318518FBA2D06F4B9C3538 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = TheNuus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thenuus.app;
+				PRODUCT_NAME = "The Nuus";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4AEA267BB222EAFF7FD2E11F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		ECC611DE6C4E090956F09C59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B9384165B1213CEF12D7B8E7 /* Build configuration list for PBXNativeTarget "TheNuus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D318518FBA2D06F4B9C3538 /* Debug */,
+				0B179B249E91DE8D3C4A03E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D741B569EAE20A975A6D743A /* Build configuration list for PBXProject "TheNuus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECC611DE6C4E090956F09C59 /* Debug */,
+				4AEA267BB222EAFF7FD2E11F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F6CC8476CE77D43DFE09F9F /* Project object */;
+}

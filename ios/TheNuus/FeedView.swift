@@ -36,25 +36,26 @@ struct FeedView: View {
     @State private var selectedArticle: URL?
 
     var body: some View {
-        NavigationStack {
-            Group {
+        ScrollView {
+            VStack(spacing: 0) {
+                SiteHeaderView()
+
                 switch model.state {
                 case .loading:
-                    ProgressView().tint(Theme.purple)
+                    ProgressView()
+                        .tint(Theme.purple)
+                        .padding(.top, 80)
 
                 case .loaded(let edition):
-                    storyList(edition)
+                    stories(edition)
 
                 case .failed(let message):
                     failureView(message)
                 }
             }
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(Theme.background)
-            .navigationTitle("The Nuus")
-            .navigationBarTitleDisplayMode(.inline)
         }
-        .tint(Theme.purple)
+        .background(Theme.background.ignoresSafeArea())
+        .refreshable { await model.load() }
         .sheet(item: $selectedArticle) { url in
             SafariView(url: url).ignoresSafeArea()
         }
@@ -62,42 +63,33 @@ struct FeedView: View {
 
     // MARK: - Subviews
 
-    private func storyList(_ edition: Edition) -> some View {
-        List {
-            Section {
-                ForEach(edition.stories) { story in
-                    Button {
-                        selectedArticle = story.articleURL
-                    } label: {
-                        StoryRow(story: story)
-                    }
-                    .buttonStyle(.plain)
-                    .listRowBackground(Theme.background)
-                    .listRowSeparatorTint(Theme.rule)
-                }
-            } header: {
-                header(for: edition)
-            }
-        }
-        .listStyle(.plain)
-        .refreshable { await model.load() }
-    }
-
-    private func header(for edition: Edition) -> some View {
-        VStack(alignment: .leading, spacing: 4) {
-            Text(edition.displayDate.uppercased())
-                .font(.system(size: 11, weight: .semibold))
-                .kerning(0.6)
-                .foregroundStyle(Theme.secondary)
-
+    private func stories(_ edition: Edition) -> some View {
+        VStack(alignment: .leading, spacing: 0) {
             if model.isStale {
                 Text("Showing the last saved edition — pull to refresh.")
-                    .font(.system(size: 11))
+                    .font(.system(size: 12))
                     .foregroundStyle(Theme.secondary.opacity(0.8))
+                    .frame(maxWidth: .infinity)
+                    .padding(.bottom, 12)
+            }
+
+            ForEach(edition.stories) { story in
+                Button {
+                    selectedArticle = story.articleURL
+                } label: {
+                    StoryRow(story: story)
+                }
+                .buttonStyle(.plain)
+
+                if story.id != edition.stories.last?.id {
+                    Rectangle()
+                        .fill(Theme.rule)
+                        .frame(height: 1)
+                }
             }
         }
-        .padding(.vertical, 6)
-        .textCase(nil)
+        .padding(.horizontal, 24)
+        .padding(.bottom, 32)
     }
 
     private func failureView(_ message: String) -> some View {
@@ -140,14 +132,14 @@ struct StoryRow: View {
             }
             .font(.system(size: 16))
             .foregroundStyle(Theme.text)
-            .lineSpacing(3)
+            .lineSpacing(4)
 
             Text(story.source)
                 .font(.system(size: 11, weight: .medium))
                 .kerning(0.4)
                 .foregroundStyle(Theme.purple)
         }
-        .padding(.vertical, 8)
+        .padding(.vertical, 16)
         .contentShape(Rectangle())
     }
 }

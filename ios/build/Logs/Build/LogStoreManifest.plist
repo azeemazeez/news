@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>12</integer>
+	<key>logs</key>
+	<dict>
+		<key>503ECC88-4402-49FD-A44A-3E78A5E4C0FA</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>503ECC88-4402-49FD-A44A-3E78A5E4C0FA.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>TheNuus project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>TheNuus</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project TheNuus with scheme TheNuus</string>
+			<key>timeStartedRecording</key>
+			<real>806908305.81915903</real>
+			<key>timeStoppedRecording</key>
+			<real>806908339.13639498</real>
+			<key>title</key>
+			<string>Building project TheNuus with scheme TheNuus</string>
+			<key>uniqueIdentifier</key>
+			<string>503ECC88-4402-49FD-A44A-3E78A5E4C0FA</string>
+		</dict>
+		<key>A628C3C3-5F3A-4E55-9F2D-276A20CC9C8A</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>A628C3C3-5F3A-4E55-9F2D-276A20CC9C8A.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>TheNuus project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>TheNuus</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project TheNuus with scheme TheNuus</string>
+			<key>timeStartedRecording</key>
+			<real>806909884.090711</real>
+			<key>timeStoppedRecording</key>
+			<real>806909889.45758402</real>
+			<key>title</key>
+			<string>Building project TheNuus with scheme TheNuus</string>
+			<key>uniqueIdentifier</key>
+			<string>A628C3C3-5F3A-4E55-9F2D-276A20CC9C8A</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
