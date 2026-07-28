@@ -181,9 +181,9 @@ struct StoryRow: View {
                     .foregroundColor(Theme.purple)
                     .underline()
         }
-        .font(.system(size: sizeClass == .regular ? 19 : 16))
+        .font(.system(size: sizeClass == .regular ? 22 : 16))
         .foregroundStyle(Theme.text)
-        .lineSpacing(sizeClass == .regular ? 6 : 4)
+        .lineSpacing(sizeClass == .regular ? 7 : 4)
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding(.vertical, sizeClass == .regular ? 20 : 16)
         .contentShape(Rectangle())
