@@ -48,6 +48,7 @@ final class FeedModel {
 struct FeedView: View {
     let model: FeedModel
 
+    @Environment(\.horizontalSizeClass) private var sizeClass
     @State private var selectedArticle: URL?
     @State private var menuScreen: MenuScreen?
 
@@ -77,6 +78,9 @@ struct FeedView: View {
 
                 case .loaded(let edition):
                     stories(edition)
+                        .containerRelativeFrame(.horizontal) { width, _ in
+                            sizeClass == .regular ? width * 0.75 : width
+                        }
 
                 case .failed(let message):
                     failureView(message)
@@ -165,6 +169,8 @@ struct FeedView: View {
 struct StoryRow: View {
     let story: Story
 
+    @Environment(\.horizontalSizeClass) private var sizeClass
+
     var body: some View {
         Group {
             Text(story.cleanIntro).fontWeight(.semibold)
@@ -175,11 +181,11 @@ struct StoryRow: View {
                     .foregroundColor(Theme.purple)
                     .underline()
         }
-        .font(.system(size: 16))
+        .font(.system(size: sizeClass == .regular ? 19 : 16))
         .foregroundStyle(Theme.text)
-        .lineSpacing(4)
+        .lineSpacing(sizeClass == .regular ? 6 : 4)
         .frame(maxWidth: .infinity, alignment: .leading)
-        .padding(.vertical, 16)
+        .padding(.vertical, sizeClass == .regular ? 20 : 16)
         .contentShape(Rectangle())
     }
 }
