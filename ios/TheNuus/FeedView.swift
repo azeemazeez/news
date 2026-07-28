@@ -120,25 +120,19 @@ struct StoryRow: View {
     let story: Story
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 6) {
-            Group {
-                Text(story.cleanIntro).fontWeight(.semibold)
-                    + Text(" ")
-                    + Text(story.cleanBody)
-                    + Text(" ")
-                    + Text(story.cleanLinkText)
-                        .foregroundColor(Theme.purple)
-                        .underline()
-            }
-            .font(.system(size: 16))
-            .foregroundStyle(Theme.text)
-            .lineSpacing(4)
-
-            Text(story.source)
-                .font(.system(size: 11, weight: .medium))
-                .kerning(0.4)
-                .foregroundStyle(Theme.purple)
+        Group {
+            Text(story.cleanIntro).fontWeight(.semibold)
+                + Text(" ")
+                + Text(story.cleanBody)
+                + Text(" ")
+                + Text(story.cleanLinkText)
+                    .foregroundColor(Theme.purple)
+                    .underline()
         }
+        .font(.system(size: 16))
+        .foregroundStyle(Theme.text)
+        .lineSpacing(4)
+        .frame(maxWidth: .infinity, alignment: .leading)
         .padding(.vertical, 16)
         .contentShape(Rectangle())
     }
