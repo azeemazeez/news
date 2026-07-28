@@ -171,6 +171,12 @@ struct StoryRow: View {
 
     @Environment(\.horizontalSizeClass) private var sizeClass
 
+    /// 22pt on iPad, 17pt on large iPhones (Pro Max class), 16pt otherwise.
+    private var textSize: CGFloat {
+        if sizeClass == .regular { return 22 }
+        return UIScreen.main.bounds.width >= 430 ? 17 : 16
+    }
+
     var body: some View {
         Group {
             Text(story.cleanIntro).fontWeight(.semibold)
@@ -181,7 +187,7 @@ struct StoryRow: View {
                     .foregroundColor(Theme.purple)
                     .underline()
         }
-        .font(.system(size: sizeClass == .regular ? 22 : 16))
+        .font(.system(size: textSize))
         .foregroundStyle(Theme.text)
         .lineSpacing(sizeClass == .regular ? 7 : 4)
         .frame(maxWidth: .infinity, alignment: .leading)
