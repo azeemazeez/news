@@ -13,11 +13,15 @@ final class FeedModel {
     /// True when what's on screen came from disk rather than the network.
     private(set) var isStale = false
 
+    /// Set when the user picked a past edition from the archive.
+    private(set) var pastEditionDate: String?
+
     func load() async {
         do {
             let edition = try await NewsService.shared.latestEdition()
             state = .loaded(edition)
             isStale = false
+            pastEditionDate = nil
         } catch {
             // Fall back to the last edition we successfully fetched.
             if let cached = NewsService.shared.cachedEdition() {
@@ -26,6 +30,17 @@ final class FeedModel {
             } else {
                 state = .failed(error.localizedDescription)
             }
+        }
+    }
+
+    func load(date: String) async {
+        do {
+            let edition = try await NewsService.shared.edition(for: date)
+            state = .loaded(edition)
+            isStale = false
+            pastEditionDate = date
+        } catch {
+            // Keep whatever is on screen; a failed archive tap shouldn't blank the feed.
         }
     }
 }
@@ -77,15 +92,22 @@ struct FeedView: View {
                     .contentShape(Rectangle())
             }
             .padding(.leading, 4)
+            // Attached here, not on the ScrollView: two sheet modifiers on
+            // one view conflict, and the article sheet already lives there.
+            .sheet(item: $menuScreen) { screen in
+                switch screen {
+                case .archive:
+                    ArchiveView { date in
+                        menuScreen = nil
+                        Task { await model.load(date: date) }
+                    }
+                case .about:
+                    AboutView()
+                }
+            }
         }
         .sheet(item: $selectedArticle) { url in
             SafariView(url: url).ignoresSafeArea()
-        }
-        .sheet(item: $menuScreen) { screen in
-            switch screen {
-            case .archive: ArchiveView()
-            case .about: AboutView()
-            }
         }
     }
 
@@ -95,6 +117,12 @@ struct FeedView: View {
         VStack(alignment: .leading, spacing: 0) {
             if model.isStale {
                 Text("Showing the last saved edition — pull to refresh.")
+                    .font(.system(size: 12))
+                    .foregroundStyle(Theme.secondary.opacity(0.8))
+                    .frame(maxWidth: .infinity)
+                    .padding(.bottom, 12)
+            } else if let date = model.pastEditionDate {
+                Text("Edition from \(ArchiveView.dayLabel(for: date)) — pull to refresh for today.")
                     .font(.system(size: 12))
                     .foregroundStyle(Theme.secondary.opacity(0.8))
                     .frame(maxWidth: .infinity)

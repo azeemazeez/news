@@ -14,6 +14,10 @@ struct ArchiveView: View {
         var id: String { title }
     }
 
+    /// Called with the picked date; the feed loads that edition.
+    let onSelect: (String) -> Void
+
+    @Environment(\.dismiss) private var dismiss
     @State private var groups: [MonthGroup] = []
     @State private var failed = false
 
@@ -31,8 +35,11 @@ struct ArchiveView: View {
                         ForEach(groups) { group in
                             Section(group.title) {
                                 ForEach(group.dates, id: \.self) { date in
-                                    NavigationLink(Self.dayLabel(for: date)) {
-                                        EditionView(date: date)
+                                    Button {
+                                        onSelect(date)
+                                    } label: {
+                                        Text(Self.dayLabel(for: date))
+                                            .foregroundStyle(Theme.text)
                                     }
                                 }
                             }
@@ -42,6 +49,11 @@ struct ArchiveView: View {
             }
             .navigationTitle("Archive")
             .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button("Done") { dismiss() }
+                }
+            }
         }
         .tint(Theme.purple)
         .task {
@@ -82,63 +94,11 @@ struct ArchiveView: View {
     }
 }
 
-struct EditionView: View {
-    let date: String
-
-    @State private var edition: Edition?
-    @State private var failed = false
-    @State private var selectedArticle: URL?
-
-    var body: some View {
-        Group {
-            if let edition {
-                ScrollView {
-                    VStack(alignment: .leading, spacing: 0) {
-                        ForEach(edition.stories) { story in
-                            Button {
-                                selectedArticle = story.articleURL
-                            } label: {
-                                StoryRow(story: story)
-                            }
-                            .buttonStyle(.plain)
-
-                            if story.id != edition.stories.last?.id {
-                                Rectangle()
-                                    .fill(Theme.rule)
-                                    .frame(height: 1)
-                            }
-                        }
-                    }
-                    .padding(.horizontal, 24)
-                    .padding(.bottom, 32)
-                }
-            } else if failed {
-                Text("Couldn't load this edition.")
-                    .font(.system(size: 14))
-                    .foregroundStyle(Theme.secondary)
-            } else {
-                ProgressView().tint(Theme.purple)
-            }
-        }
-        .background(Theme.background.ignoresSafeArea())
-        .navigationTitle(ArchiveView.dayLabel(for: date))
-        .navigationBarTitleDisplayMode(.inline)
-        .task {
-            do {
-                edition = try await NewsService.shared.edition(for: date)
-            } catch {
-                failed = true
-            }
-        }
-        .sheet(item: $selectedArticle) { url in
-            SafariView(url: url).ignoresSafeArea()
-        }
-    }
-}
-
 // MARK: - About
 
 struct AboutView: View {
+    @Environment(\.dismiss) private var dismiss
+
     private static let paragraphs = [
         "The Nuus is a daily news digest built on a simple idea: the stories that matter most, told clearly and without the noise.",
         "Keeping up with the world shouldn't mean juggling a dozen sources, sifting through ads, or hitting paywalls before you've had your first coffee. The Nuus was built to change that — a single, curated view of what's happening right now, delivered every morning.",
@@ -167,6 +127,11 @@ struct AboutView: View {
             .background(Theme.background.ignoresSafeArea())
             .navigationTitle("About")
             .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button("Done") { dismiss() }
+                }
+            }
         }
         .tint(Theme.purple)
     }
