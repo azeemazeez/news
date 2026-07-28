@@ -4,22 +4,49 @@ import SwiftUI
 /// with today's date, the eyebrow line, the Archivo Black gradient wordmark,
 /// and the italic serif tagline.
 struct SiteHeaderView: View {
+    let onMenu: (MenuScreen) -> Void
+
     var body: some View {
         VStack(spacing: 0) {
-            Text(Self.dateLine)
-                .font(.system(size: 12, weight: .semibold))
-                .kerning(1.0)
-                .textCase(.uppercase)
-                .foregroundStyle(.white)
-                .frame(maxWidth: .infinity)
-                .padding(.vertical, 10)
-                .background(
-                    LinearGradient(
-                        colors: [Theme.purple, Theme.magenta],
-                        startPoint: .leading,
-                        endPoint: .trailing
-                    )
+            ZStack {
+                Text(Self.dateLine)
+                    .font(.system(size: 12, weight: .semibold))
+                    .kerning(1.0)
+                    .textCase(.uppercase)
+                    .foregroundStyle(.white)
+                    .frame(maxWidth: .infinity)
+
+                HStack {
+                    Spacer()
+                    Menu {
+                        Button {
+                            onMenu(.archive)
+                        } label: {
+                            Label("Archive", systemImage: "calendar")
+                        }
+                        Button {
+                            onMenu(.about)
+                        } label: {
+                            Label("About", systemImage: "info.circle")
+                        }
+                    } label: {
+                        Image(systemName: "line.3.horizontal")
+                            .font(.system(size: 16, weight: .semibold))
+                            .foregroundStyle(.white)
+                            .frame(width: 40, height: 40)
+                            .contentShape(Rectangle())
+                    }
+                }
+                .padding(.trailing, 4)
+            }
+            .padding(.vertical, 2)
+            .background(
+                LinearGradient(
+                    colors: [Theme.purple, Theme.magenta],
+                    startPoint: .leading,
+                    endPoint: .trailing
                 )
+            )
 
             VStack(spacing: 0) {
                 Text("Est. 2026 · Daily Edition")
@@ -57,5 +84,5 @@ struct SiteHeaderView: View {
 }
 
 #Preview {
-    SiteHeaderView()
+    SiteHeaderView { _ in }
 }

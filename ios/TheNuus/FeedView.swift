@@ -54,7 +54,20 @@ struct FeedView: View {
     var body: some View {
         ScrollView {
             VStack(spacing: 0) {
-                SiteHeaderView()
+                SiteHeaderView { screen in
+                    menuScreen = screen
+                }
+                .sheet(item: $menuScreen) { screen in
+                    switch screen {
+                    case .archive:
+                        ArchiveView { date in
+                            menuScreen = nil
+                            Task { await model.load(date: date) }
+                        }
+                    case .about:
+                        AboutView()
+                    }
+                }
 
                 switch model.state {
                 case .loading:
@@ -72,40 +85,6 @@ struct FeedView: View {
         }
         .background(Theme.background.ignoresSafeArea())
         .refreshable { await model.load() }
-        .overlay(alignment: .topLeading) {
-            Menu {
-                Button {
-                    menuScreen = .archive
-                } label: {
-                    Label("Archive", systemImage: "calendar")
-                }
-                Button {
-                    menuScreen = .about
-                } label: {
-                    Label("About", systemImage: "info.circle")
-                }
-            } label: {
-                Image(systemName: "line.3.horizontal")
-                    .font(.system(size: 16, weight: .semibold))
-                    .foregroundStyle(.white)
-                    .frame(width: 40, height: 40)
-                    .contentShape(Rectangle())
-            }
-            .padding(.leading, 4)
-            // Attached here, not on the ScrollView: two sheet modifiers on
-            // one view conflict, and the article sheet already lives there.
-            .sheet(item: $menuScreen) { screen in
-                switch screen {
-                case .archive:
-                    ArchiveView { date in
-                        menuScreen = nil
-                        Task { await model.load(date: date) }
-                    }
-                case .about:
-                    AboutView()
-                }
-            }
-        }
         .sheet(item: $selectedArticle) { url in
             SafariView(url: url).ignoresSafeArea()
         }
@@ -122,11 +101,22 @@ struct FeedView: View {
                     .frame(maxWidth: .infinity)
                     .padding(.bottom, 12)
             } else if let date = model.pastEditionDate {
-                Text("Edition from \(ArchiveView.dayLabel(for: date)) — pull to refresh for today.")
-                    .font(.system(size: 12))
-                    .foregroundStyle(Theme.secondary.opacity(0.8))
-                    .frame(maxWidth: .infinity)
-                    .padding(.bottom, 12)
+                Label(
+                    "Edition from \(ArchiveView.dayLabel(for: date)) — pull to refresh for today.",
+                    systemImage: "clock.arrow.circlepath"
+                )
+                .font(.system(size: 13, weight: .semibold))
+                .foregroundStyle(Theme.purple)
+                .multilineTextAlignment(.center)
+                .frame(maxWidth: .infinity)
+                .padding(.vertical, 10)
+                .padding(.horizontal, 14)
+                .background(Theme.purple.opacity(0.08), in: RoundedRectangle(cornerRadius: 10))
+                .overlay(
+                    RoundedRectangle(cornerRadius: 10)
+                        .stroke(Theme.purple.opacity(0.25), lineWidth: 1)
+                )
+                .padding(.bottom, 16)
             }
 
             ForEach(edition.stories) { story in

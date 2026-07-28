@@ -6,7 +6,7 @@
 	<integer>12</integer>
 	<key>logs</key>
 	<dict>
-		<key>A628C3C3-5F3A-4E55-9F2D-276A20CC9C8A</key>
+		<key>3DD78145-FC81-4DC1-9D0E-5218B0FF3635</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>A628C3C3-5F3A-4E55-9F2D-276A20CC9C8A.xcactivitylog</string>
+			<string>3DD78145-FC81-4DC1-9D0E-5218B0FF3635.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -40,13 +40,13 @@
 			<key>signature</key>
 			<string>Building project TheNuus with scheme TheNuus</string>
 			<key>timeStartedRecording</key>
-			<real>806909884.090711</real>
+			<real>806910867.85407901</real>
 			<key>timeStoppedRecording</key>
-			<real>806909889.45758402</real>
+			<real>806910871.107988</real>
 			<key>title</key>
 			<string>Building project TheNuus with scheme TheNuus</string>
 			<key>uniqueIdentifier</key>
-			<string>A628C3C3-5F3A-4E55-9F2D-276A20CC9C8A</string>
+			<string>3DD78145-FC81-4DC1-9D0E-5218B0FF3635</string>
 		</dict>
 		<key>D367BD97-E8B1-4BCC-A68C-2F0538FFDCD0</key>
 		<dict>
