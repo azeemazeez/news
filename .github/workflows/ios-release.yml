@@ -1,0 +1,145 @@
+name: iOS Build & Upload
+
+# Runs on a macOS runner because Xcode, the iOS SDK and code signing are
+# macOS-only. Nothing here needs a Mac of your own.
+on:
+  workflow_dispatch:
+    inputs:
+      upload:
+        description: 'Upload the build to App Store Connect (off = build only)'
+        type: boolean
+        default: false
+
+jobs:
+  build:
+    runs-on: macos-15
+    timeout-minutes: 40
+
+    env:
+      SCHEME: TheNuus
+      BUNDLE_ID: com.thenuus.app
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Select Xcode
+        run: sudo xcode-select -switch /Applications/Xcode.app
+
+      - name: Install build tools
+        run: brew install xcodegen xcbeautify
+
+      - name: Generate Xcode project
+        working-directory: ios
+        run: xcodegen generate
+
+      # A build number that always increases, so App Store Connect never
+      # rejects the upload as a duplicate. Passed to xcodebuild as a setting
+      # override rather than patched into the generated project.
+      - name: Set build number
+        run: echo "BUILD_NUMBER=$(date -u +%Y%m%d%H%M)" >> "$GITHUB_ENV"
+
+      # Compile without signing first. This catches real code errors with a
+      # clear message, instead of burying them under signing failures.
+      - name: Build (unsigned)
+        working-directory: ios
+        run: |
+          xcodebuild build \
+            -project TheNuus.xcodeproj \
+            -scheme "$SCHEME" \
+            -destination 'generic/platform=iOS Simulator' \
+            CODE_SIGNING_ALLOWED=NO \
+            | xcbeautify --renderer github-actions
+        continue-on-error: false
+
+      # --- Everything below only runs when you ask for an upload ---
+
+      - name: Install Apple certificate and provisioning profile
+        if: inputs.upload
+        env:
+          CERTIFICATE_P12: ${{ secrets.IOS_CERTIFICATE_P12 }}
+          CERTIFICATE_PASSWORD: ${{ secrets.IOS_CERTIFICATE_PASSWORD }}
+          PROVISIONING_PROFILE: ${{ secrets.IOS_PROVISIONING_PROFILE }}
+        run: |
+          KEYCHAIN=$RUNNER_TEMP/build.keychain
+          KEYCHAIN_PASSWORD=$(uuidgen)
+
+          security create-keychain -p "$KEYCHAIN_PASSWORD" "$KEYCHAIN"
+          security set-keychain-settings -lut 21600 "$KEYCHAIN"
+          security unlock-keychain -p "$KEYCHAIN_PASSWORD" "$KEYCHAIN"
+
+          echo -n "$CERTIFICATE_P12" | base64 --decode -o "$RUNNER_TEMP/cert.p12"
+          security import "$RUNNER_TEMP/cert.p12" -k "$KEYCHAIN" \
+            -P "$CERTIFICATE_PASSWORD" -T /usr/bin/codesign -T /usr/bin/security
+          security set-key-partition-list -S apple-tool:,apple: \
+            -k "$KEYCHAIN_PASSWORD" "$KEYCHAIN"
+          security list-keychain -d user -s "$KEYCHAIN" login.keychain
+
+          PROFILES=~/Library/MobileDevice/Provisioning\ Profiles
+          mkdir -p "$PROFILES"
+          echo -n "$PROVISIONING_PROFILE" | base64 --decode \
+            -o "$PROFILES/build.mobileprovision"
+
+      - name: Archive
+        if: inputs.upload
+        working-directory: ios
+        env:
+          TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
+        run: |
+          xcodebuild archive \
+            -project TheNuus.xcodeproj \
+            -scheme "$SCHEME" \
+            -destination 'generic/platform=iOS' \
+            -archivePath "$RUNNER_TEMP/TheNuus.xcarchive" \
+            DEVELOPMENT_TEAM="$TEAM_ID" \
+            CURRENT_PROJECT_VERSION="$BUILD_NUMBER" \
+            CODE_SIGN_STYLE=Manual \
+            | xcbeautify --renderer github-actions
+
+      - name: Export .ipa
+        if: inputs.upload
+        env:
+          TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
+        run: |
+          cat > "$RUNNER_TEMP/ExportOptions.plist" <<PLIST
+          <?xml version="1.0" encoding="UTF-8"?>
+          <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+          <plist version="1.0">
+          <dict>
+            <key>method</key><string>app-store-connect</string>
+            <key>teamID</key><string>${TEAM_ID}</string>
+            <key>uploadSymbols</key><true/>
+            <key>signingStyle</key><string>manual</string>
+          </dict>
+          </plist>
+          PLIST
+
+          xcodebuild -exportArchive \
+            -archivePath "$RUNNER_TEMP/TheNuus.xcarchive" \
+            -exportOptionsPlist "$RUNNER_TEMP/ExportOptions.plist" \
+            -exportPath "$RUNNER_TEMP/export"
+
+      - name: Upload to App Store Connect
+        if: inputs.upload
+        env:
+          ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
+          ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
+          ASC_PRIVATE_KEY: ${{ secrets.ASC_PRIVATE_KEY }}
+        run: |
+          mkdir -p ~/.appstoreconnect/private_keys
+          echo -n "$ASC_PRIVATE_KEY" | base64 --decode \
+            -o ~/.appstoreconnect/private_keys/AuthKey_${ASC_KEY_ID}.p8
+
+          xcrun altool --upload-app \
+            --type ios \
+            --file "$RUNNER_TEMP/export/The Nuus.ipa" \
+            --apiKey "$ASC_KEY_ID" \
+            --apiIssuer "$ASC_ISSUER_ID"
+
+      - name: Upload build artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ios-build
+          path: ${{ runner.temp }}/export/*.ipa
+          if-no-files-found: ignore
