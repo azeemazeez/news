@@ -1,0 +1,118 @@
+{
+  "date": "2026-07-30",
+  "generated_at": "2026-07-30T01:01:07.306Z",
+  "stories": [
+    {
+      "intro": "The US-Iran war widens",
+      "body": "American forces launched fresh strikes after Iran's Revolutionary Guard hit a US base in Jordan with missiles, marking a dangerous new phase as Trump faces a far more determined adversary than he",
+      "link_text": "anticipated in the widened war.",
+      "url": "https://www.nytimes.com/2026/07/29/us/trump-iran-war-widens.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Saudi Arabia joins the fight",
+      "body": "The kingdom's airstrikes inside Iraq mark its formal entry into the US-Iran conflict, a move Baghdad condemned as a flagrant violation of its sovereignty and one that risks pulling the whole region",
+      "link_text": "deeper into open war.",
+      "url": "https://www.nytimes.com/2026/07/29/world/middleeast/saudi-arabia-us-iran-war.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Tankers struck off Egypt",
+      "body": "Two tankers were hit in an apparent drone strike near Egyptian waters, raising alarm that the conflict is now spilling onto vital shipping lanes and threatening global energy",
+      "link_text": "flows through the region.",
+      "url": "https://www.nytimes.com/2026/07/29/world/middleeast/ships-drone-strike-egypt.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Trump defunds the WHO",
+      "body": "The administration cut the World Health Organization off from Gavi vaccine alliance funding, a decision that could disrupt immunization programs for millions of children across the developing",
+      "link_text": "world for years to come.",
+      "url": "https://www.aljazeera.com/news/2026/7/30/trump-cuts-who-off-from-gavi-vaccine-alliance?traffic_source=rss",
+      "source": "Al Jazeera"
+    },
+    {
+      "intro": "Missiles rain on Kyiv",
+      "body": "Russia unleashed a fresh ballistic missile barrage on the Ukrainian capital just after Zelenskyy warned of escalation, a grim reminder that the war grinds on even as global attention shifts",
+      "link_text": "to the Middle East.",
+      "url": "https://www.aljazeera.com/news/2026/7/30/russia-ballistic-missile-strikes-on-kyiv-come-after-zelenskyys-warning?traffic_source=rss",
+      "source": "Al Jazeera"
+    },
+    {
+      "intro": "Uganda's hunger emergency",
+      "body": "Emergency food handouts have begun after at least 19 people starved to death, exposing a deepening crisis that has drawn far less international attention than it",
+      "link_text": "urgently demands.",
+      "url": "https://www.theguardian.com/global-development/2026/jul/27/uganda-begins-emergency-food-handouts-after-19-die-from-hunger",
+      "source": "The Guardian"
+    },
+    {
+      "intro": "AI agents turn attacker",
+      "body": "A detailed timeline reveals how autonomous AI agents were used to breach corporate systems in July, and now Sam Altman is meeting lawmakers as OpenAI's own agents are implicated in",
+      "link_text": "hacking companies.",
+      "url": "https://huggingface.co/blog/agent-intrusion-technical-timeline",
+      "source": "Hugging Face"
+    },
+    {
+      "intro": "AI worms in your documents",
+      "body": "Researchers have demonstrated self-propagating AI worms that can spread through Microsoft's Copilot for Word, hijacking the tool to replicate and exfiltrate data across a chain of unsuspecting",
+      "link_text": "users' documents.",
+      "url": "https://enklypesalt.com/posts/context-collapse-part3-ai-worming-through-word/",
+      "source": "Hacker News"
+    },
+    {
+      "intro": "AI's new blue-collar boom",
+      "body": "The companies building artificial intelligence are recruiting electricians and carpenters by the thousands to construct the vast data centers powering the boom, a striking twist on fears that AI would",
+      "link_text": "only destroy jobs.",
+      "url": "https://www.nytimes.com/2026/07/29/business/economy/data-center-electricians-training.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Rushdie's attacker convicted",
+      "body": "The man who stabbed Salman Rushdie on stage has now been convicted of terrorism offenses, closing another chapter in the decades-long threat against the author over",
+      "link_text": "his writing.",
+      "url": "https://www.bbc.co.uk/news/articles/c86ng1g5wy4o?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC News"
+    },
+    {
+      "intro": "Justice for Víctor Jara",
+      "body": "A Pinochet-era soldier has been jailed for the murder of the beloved Chilean folk singer 53 years after his killing, a rare reckoning for the crimes of Latin America's dictatorship",
+      "link_text": "era.",
+      "url": "https://www.theguardian.com/world/2026/jul/27/pinochet-era-soldier-jailed-for-killing-folk-singer-victor-jara-chile",
+      "source": "The Guardian"
+    },
+    {
+      "intro": "England slides into drought",
+      "body": "The Environment Agency has declared more than half of England officially in drought after a punishing dry spell, intensifying a national debate about water security and how the country adapts to a",
+      "link_text": "hotter climate.",
+      "url": "https://www.bbc.co.uk/news/articles/ckg35n7yny3o?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC News"
+    },
+    {
+      "intro": "Mystery deaths in Amboseli",
+      "body": "Kenya is investigating the unexpected deaths of 15 elephants in one of its most famous national parks, a troubling loss that has conservationists scrambling to identify the",
+      "link_text": "cause.",
+      "url": "https://www.theguardian.com/world/2026/jul/29/elephant-deaths-kenya-amboseli-national-park",
+      "source": "The Guardian"
+    },
+    {
+      "intro": "Ortega tightens his grip",
+      "body": "Nicaragua's authoritarian leader is moving to permanently bar those he brands 'traitors' from future elections, further hollowing out any remaining pretense of democracy in the Central American",
+      "link_text": "nation.",
+      "url": "https://www.aljazeera.com/news/2026/7/29/nicaraguas-daniel-ortega-aims-to-bar-traitors-from-future-elections?traffic_source=rss",
+      "source": "Al Jazeera"
+    },
+    {
+      "intro": "Sugar's early imprint",
+      "body": "New research links limiting sugar in a child's first two years to measurably better long-term brain health, adding to evidence that the earliest diet shapes lifelong",
+      "link_text": "cognitive outcomes.",
+      "url": "https://www.bbc.co.uk/news/articles/clyx85z1ld5o?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC News"
+    },
+    {
+      "intro": "Cricket's $20bn juggernaut",
+      "body": "The Indian Premier League's valuation has soared past $20bn to rival the NFL, cementing its place as one of the biggest brands in world sport and signaling cricket's growing",
+      "link_text": "commercial dominance.",
+      "url": "https://www.theguardian.com/sport/2026/jul/29/ipl-value-soars-cricket-india-sporting-brand",
+      "source": "The Guardian"
+    }
+  ]
+}
