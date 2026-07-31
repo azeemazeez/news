@@ -12,6 +12,7 @@
 		26AAA77446B44AA74DAE4125 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0A3EAF5CF0A9A9B2F718664 /* Assets.xcassets */; };
 		31DDD18BAFA941863F7CDA08 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A65B5FD4CA3880F87334F4 /* Model.swift */; };
 		7D96010584C4998131982BE6 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F2F0B32CD9D61EE32E21B0 /* FeedView.swift */; };
+		8CB74891A84F1CFFAB22646D /* PostHog in Frameworks */ = {isa = PBXBuildFile; productRef = F98D643186F132635897CC24 /* PostHog */; };
 		A33C453631A4710CA986BDE6 /* NewsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36E82F52B727D36FB0781FF /* NewsService.swift */; };
 		AA71575A5FF0D9159A7C49FA /* SiteHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B7BEDDB7F9A2341CBC1538 /* SiteHeaderView.swift */; };
 		C9A4083D51E7E6E8E1C4A82B /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D793165A2C21E1D833792BD3 /* SplashView.swift */; };
@@ -35,6 +36,17 @@
 		F1C9EAA02A635FC0E81AF916 /* TheNuus.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = TheNuus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F36E82F52B727D36FB0781FF /* NewsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		33945D91D1BCA9116C37D94D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CB74891A84F1CFFAB22646D /* PostHog in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		5F246431D44DCD631C14C985 /* TheNuus */ = {
@@ -89,6 +101,7 @@
 			buildPhases = (
 				655F74638FAA036ED106E4FD /* Sources */,
 				C3F97E68B96EE207AE13B76E /* Resources */,
+				33945D91D1BCA9116C37D94D /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -96,6 +109,7 @@
 			);
 			name = TheNuus;
 			packageProductDependencies = (
+				F98D643186F132635897CC24 /* PostHog */,
 			);
 			productName = TheNuus;
 			productReference = F1C9EAA02A635FC0E81AF916 /* TheNuus.app */;
@@ -121,6 +135,9 @@
 			);
 			mainGroup = E4066984390373B66DDA962D;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				4C83B11413558B27E447EE4B /* XCRemoteSwiftPackageReference "posthog-ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 658C1AB6AD1C64F409D50501 /* Products */;
 			projectDirPath = "";
@@ -346,6 +363,25 @@
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4C83B11413558B27E447EE4B /* XCRemoteSwiftPackageReference "posthog-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/PostHog/posthog-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F98D643186F132635897CC24 /* PostHog */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4C83B11413558B27E447EE4B /* XCRemoteSwiftPackageReference "posthog-ios" */;
+			productName = PostHog;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3F6CC8476CE77D43DFE09F9F /* Project object */;
 }

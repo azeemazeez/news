@@ -1,3 +1,4 @@
+import PostHog
 import SwiftUI
 
 @Observable
@@ -22,6 +23,7 @@ final class FeedModel {
             state = .loaded(edition)
             isStale = false
             pastEditionDate = nil
+            PostHogSDK.shared.capture("edition_loaded", properties: ["edition": "latest"])
         } catch {
             // Fall back to the last edition we successfully fetched.
             if let cached = NewsService.shared.cachedEdition() {
@@ -39,6 +41,7 @@ final class FeedModel {
             state = .loaded(edition)
             isStale = false
             pastEditionDate = date
+            PostHogSDK.shared.capture("edition_loaded", properties: ["edition": "archive", "date": date])
         } catch {
             // Keep whatever is on screen; a failed archive tap shouldn't blank the feed.
         }
@@ -126,6 +129,9 @@ struct FeedView: View {
             ForEach(edition.stories) { story in
                 Button {
                     selectedArticle = story.articleURL
+                    if let url = story.articleURL {
+                        PostHogSDK.shared.capture("article_opened", properties: ["url": url.absoluteString])
+                    }
                 } label: {
                     StoryRow(story: story)
                 }

@@ -1,7 +1,16 @@
+import PostHog
 import SwiftUI
 
 @main
 struct TheNuusApp: App {
+    init() {
+        let config = PostHogConfig(
+            apiKey: "phc_rq8yTiZJXnUNeVbK7Uxar5Qe9nJKE6VFxXDsSeUANHdC",
+            host: "https://us.i.posthog.com"
+        )
+        PostHogSDK.shared.setup(config)
+    }
+
     var body: some Scene {
         WindowGroup {
             RootView()

@@ -6,6 +6,11 @@ options:
     iOS: "17.0"
   createIntermediateGroups: true
 
+packages:
+  PostHog:
+    url: https://github.com/PostHog/posthog-ios
+    from: "3.0.0"
+
 settings:
   base:
     SWIFT_VERSION: "5.9"
@@ -19,6 +24,8 @@ targets:
     platform: iOS
     sources:
       - path: TheNuus
+    dependencies:
+      - package: PostHog
     info:
       path: TheNuus/Info.plist
       properties:
