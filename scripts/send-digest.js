@@ -6,7 +6,11 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const RESEND_API_KEY = process.env.RESEND_SUBSCRIBE_KEY;
 const RESEND_AUDIENCE_ID = process.env.RESEND_AUDIENCE_ID;
 const FROM = 'The Nuus <hi@thenuus.com>';
+const OWNER = 'hi@azeem.me';
 const SITE_URL = 'https://thenuus.com';
+
+// Editions are dated by UAE time (UTC+4), matching the cron that publishes them.
+const DATE = new Date(Date.now() + 4 * 60 * 60 * 1000).toISOString().split('T')[0];
 
 function formatDate(iso) {
   const [year, month, day] = iso.split('-').map(Number);
@@ -83,8 +87,28 @@ function buildHtml(stories, date) {
 </html>`;
 }
 
+/// Emails the owner. Only called when something went wrong — a clean run stays silent.
+async function alertOwner(subject, text, idempotencyKey) {
+  const res = await fetch('https://api.resend.com/emails', {
+    method: 'POST',
+    headers: {
+      Authorization: `Bearer ${RESEND_API_KEY}`,
+      'Content-Type': 'application/json',
+      'Idempotency-Key': idempotencyKey,
+    },
+    body: JSON.stringify({ from: FROM, to: OWNER, subject, text }),
+  });
+
+  if (res.ok) {
+    console.log('Owner alert sent');
+  } else {
+    const err = await res.json().catch(() => ({}));
+    console.error('Owner alert failed:', JSON.stringify(err));
+  }
+}
+
 async function main() {
-  const date = new Date(Date.now() + 4 * 60 * 60 * 1000).toISOString().split('T')[0];
+  const date = DATE;
   const dataPath = join(__dirname, '../public/data', `${date}.json`);
 
   if (!existsSync(dataPath)) {
@@ -115,6 +139,7 @@ async function main() {
 
   // Send individual transactional emails
   let sent = 0;
+  const failures = [];
   for (let i = 0; i < active.length; i++) {
     await new Promise(r => setTimeout(r, 1000));
     const contact = active[i];
@@ -140,39 +165,47 @@ async function main() {
     if (res.ok) {
       sent++;
     } else {
-      const err = await res.json();
-      console.error(`Failed to send to ${contact.email}:`, err.message);
+      const err = await res.json().catch(() => ({}));
+      const reason = err.message || `HTTP ${res.status}`;
+      console.error(`Failed to send to ${contact.email}:`, reason);
+      failures.push({ email: contact.email, reason });
     }
 
   }
 
   console.log(`Digest sent to ${sent}/${active.length} subscribers for ${date}`);
 
-  // Notify owner
-  const notifyRes = await fetch('https://api.resend.com/emails', {
-    method: 'POST',
-    headers: {
-      Authorization: `Bearer ${RESEND_API_KEY}`,
-      'Content-Type': 'application/json',
-      'Idempotency-Key': `nuus-digest-report-${date}`,
-    },
-    body: JSON.stringify({
-      from: FROM,
-      to: 'hi@azeem.me',
-      subject: `NUUS REPORT: ${dateLabel}`,
-      text: `Today's digest was sent successfully.\n\nSent: ${sent}/${active.length} subscribers`,
-    }),
-  });
-
-  if (notifyRes.ok) {
-    console.log('Owner notification sent');
-  } else {
-    const err = await notifyRes.json();
-    console.error('Owner notification failed:', JSON.stringify(err));
+  // Silence is success: only email when at least one send failed.
+  if (failures.length === 0) {
+    console.log('All sends succeeded — no alert needed');
+    return;
   }
+
+  const detail = failures.map(f => `  - ${f.email}: ${f.reason}`).join('\n');
+  await alertOwner(
+    `NUUS ALERT: ${failures.length} of ${active.length} failed — ${dateLabel}`,
+    [
+      `${failures.length} of ${active.length} digest emails failed to send.`,
+      ``,
+      `Delivered: ${sent}`,
+      `Failed:    ${failures.length}`,
+      ``,
+      detail,
+      ``,
+    ].join('\n'),
+    `nuus-digest-failure-${date}`,
+  );
 }
 
-main().catch(err => {
+main().catch(async (err) => {
   console.error(err);
+
+  // A crash means nothing went out at all — the failure most worth knowing about.
+  await alertOwner(
+    `NUUS ALERT: digest run failed — ${formatDate(DATE)}`,
+    `The digest run failed before it finished sending.\n\n${err.stack || err.message}\n`,
+    `nuus-digest-crash-${DATE}`,
+  ).catch(() => {});
+
   process.exit(1);
 });
