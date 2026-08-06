@@ -15,7 +15,7 @@ settings:
   base:
     SWIFT_VERSION: "5.9"
     MARKETING_VERSION: "1.0"
-    CURRENT_PROJECT_VERSION: "1"
+    CURRENT_PROJECT_VERSION: "202608061000"
     ENABLE_USER_SCRIPT_SANDBOXING: YES
 
 targets:
@@ -26,6 +26,7 @@ targets:
       - path: TheNuus
     dependencies:
       - package: PostHog
+      - target: TheNuusWidget
     info:
       path: TheNuus/Info.plist
       properties:
@@ -50,4 +51,28 @@ targets:
         PRODUCT_NAME: The Nuus
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        TARGETED_DEVICE_FAMILY: "1,2"
+
+  TheNuusWidget:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: TheNuusWidget
+      - path: TheNuus/Model.swift
+      - path: TheNuus/Theme.swift
+      - path: TheNuus/Fonts/ArchivoBlack-Regular.ttf
+    info:
+      path: TheNuusWidget/Info.plist
+      properties:
+        CFBundleDisplayName: The Nuus
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        UIAppFonts:
+          - ArchivoBlack-Regular.ttf
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.thenuus.app.NuusWidget
+        SKIP_INSTALL: YES
         TARGETED_DEVICE_FAMILY: "1,2"

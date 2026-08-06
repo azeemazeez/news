@@ -54,6 +54,7 @@ struct FeedView: View {
     @Environment(\.horizontalSizeClass) private var sizeClass
     @State private var selectedArticle: URL?
     @State private var menuScreen: MenuScreen?
+    @State private var speech = SpeechController()
 
     var body: some View {
         ScrollView {
@@ -66,8 +67,11 @@ struct FeedView: View {
                     case .archive:
                         ArchiveView { date in
                             menuScreen = nil
+                            speech.stop()
                             Task { await model.load(date: date) }
                         }
+                    case .saved:
+                        SavedView()
                     case .about:
                         AboutView()
                     }
@@ -91,7 +95,10 @@ struct FeedView: View {
             }
         }
         .background(Theme.background.ignoresSafeArea())
-        .refreshable { await model.load() }
+        .refreshable {
+            speech.stop()
+            await model.load()
+        }
         .sheet(item: $selectedArticle) { url in
             SafariView(url: url).ignoresSafeArea()
         }
@@ -101,6 +108,23 @@ struct FeedView: View {
 
     private func stories(_ edition: Edition) -> some View {
         VStack(alignment: .leading, spacing: 0) {
+            Button {
+                speech.toggle(edition)
+            } label: {
+                Label(
+                    speech.isPlaying ? "Pause" : "Listen to this edition",
+                    systemImage: speech.isPlaying ? "pause.fill" : "play.fill"
+                )
+                .font(.system(size: 13, weight: .semibold))
+                .foregroundStyle(Theme.purple)
+                .padding(.vertical, 8)
+                .padding(.horizontal, 16)
+                .background(Capsule().stroke(Theme.purple.opacity(0.4), lineWidth: 1))
+            }
+            .buttonStyle(.plain)
+            .frame(maxWidth: .infinity)
+            .padding(.bottom, 16)
+
             if model.isStale {
                 Text("Showing the last saved edition — pull to refresh.")
                     .font(.system(size: 12))
@@ -127,15 +151,12 @@ struct FeedView: View {
             }
 
             ForEach(edition.stories) { story in
-                Button {
+                StoryRow(story: story) {
                     selectedArticle = story.articleURL
                     if let url = story.articleURL {
                         PostHogSDK.shared.capture("article_opened", properties: ["url": url.absoluteString])
                     }
-                } label: {
-                    StoryRow(story: story)
                 }
-                .buttonStyle(.plain)
 
                 if story.id != edition.stories.last?.id {
                     Rectangle()
@@ -174,6 +195,7 @@ struct FeedView: View {
 
 struct StoryRow: View {
     let story: Story
+    let onOpen: () -> Void
 
     @Environment(\.horizontalSizeClass) private var sizeClass
 
@@ -184,21 +206,47 @@ struct StoryRow: View {
     }
 
     var body: some View {
-        Group {
-            Text(story.cleanIntro).fontWeight(.semibold)
-                + Text(" ")
-                + Text(story.cleanBody)
-                + Text(" ")
-                + Text(story.cleanLinkText)
-                    .foregroundColor(Theme.purple)
-                    .underline()
+        let saved = SavedStore.shared.isSaved(story)
+
+        VStack(alignment: .leading, spacing: 12) {
+            Group {
+                Text(story.cleanIntro).fontWeight(.semibold)
+                    + Text(" ")
+                    + Text(story.cleanBody)
+                    + Text(" ")
+                    + Text(story.cleanLinkText)
+                        .foregroundColor(Theme.purple)
+                        .underline()
+            }
+            .font(.system(size: textSize))
+            .foregroundStyle(Theme.text)
+            .lineSpacing(sizeClass == .regular ? 7 : 4)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .contentShape(Rectangle())
+            .onTapGesture(perform: onOpen)
+
+            HStack(spacing: 22) {
+                Button {
+                    SavedStore.shared.toggle(story)
+                } label: {
+                    Image(systemName: saved ? "bookmark.fill" : "bookmark")
+                        .foregroundStyle(saved ? Theme.purple : Theme.secondary)
+                }
+                .buttonStyle(.plain)
+
+                if let url = story.articleURL {
+                    ShareLink(item: url, message: Text(story.cleanIntro)) {
+                        Image(systemName: "square.and.arrow.up")
+                            .foregroundStyle(Theme.secondary)
+                    }
+                    .buttonStyle(.plain)
+                }
+
+                Spacer()
+            }
+            .font(.system(size: 15))
         }
-        .font(.system(size: textSize))
-        .foregroundStyle(Theme.text)
-        .lineSpacing(sizeClass == .regular ? 7 : 4)
-        .frame(maxWidth: .infinity, alignment: .leading)
         .padding(.vertical, sizeClass == .regular ? 20 : 16)
-        .contentShape(Rectangle())
     }
 }
 

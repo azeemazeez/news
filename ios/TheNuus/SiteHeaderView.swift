@@ -25,6 +25,11 @@ struct SiteHeaderView: View {
                             Label("Archive", systemImage: "calendar")
                         }
                         Button {
+                            onMenu(.saved)
+                        } label: {
+                            Label("Saved", systemImage: "bookmark")
+                        }
+                        Button {
                             onMenu(.about)
                         } label: {
                             Label("About", systemImage: "info.circle")

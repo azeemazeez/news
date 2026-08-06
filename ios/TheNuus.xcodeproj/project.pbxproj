@@ -10,29 +10,65 @@
 		0A4FB2D9FC5B60BB18976198 /* ArchivoBlack-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 22B85C265EBF619B30FBCDE3 /* ArchivoBlack-Regular.ttf */; };
 		19FE5FC4E49E974AF181FC51 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0F17E8AA50E91558CCCB7 /* SafariView.swift */; };
 		26AAA77446B44AA74DAE4125 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0A3EAF5CF0A9A9B2F718664 /* Assets.xcassets */; };
+		304ED686A2477563B2C0A5E5 /* ArchivoBlack-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 22B85C265EBF619B30FBCDE3 /* ArchivoBlack-Regular.ttf */; };
 		31DDD18BAFA941863F7CDA08 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A65B5FD4CA3880F87334F4 /* Model.swift */; };
+		386CB83292E1FF721D434432 /* SavedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF14B9351AF0D217036DE53 /* SavedStore.swift */; };
+		567B8AD57804AE8A1B818C9C /* SpeechController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066ABB7ABE186A4325E6FDFD /* SpeechController.swift */; };
+		71F87A1D37B30D5DE80F23E4 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A65B5FD4CA3880F87334F4 /* Model.swift */; };
 		7D96010584C4998131982BE6 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F2F0B32CD9D61EE32E21B0 /* FeedView.swift */; };
 		8CB74891A84F1CFFAB22646D /* PostHog in Frameworks */ = {isa = PBXBuildFile; productRef = F98D643186F132635897CC24 /* PostHog */; };
 		A33C453631A4710CA986BDE6 /* NewsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36E82F52B727D36FB0781FF /* NewsService.swift */; };
+		A84D97BB9B69B26A08511E23 /* TheNuusWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = EAFE0C36DA95F59B0E452E61 /* TheNuusWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		AA71575A5FF0D9159A7C49FA /* SiteHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B7BEDDB7F9A2341CBC1538 /* SiteHeaderView.swift */; };
 		C9A4083D51E7E6E8E1C4A82B /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D793165A2C21E1D833792BD3 /* SplashView.swift */; };
 		CBC08B909E21A3AE827671FF /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C8FC71BC1A094FFDC346C3 /* Theme.swift */; };
+		D88F1B15E67068F490F9941B /* TheNuusWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2844F07B42E3619AEEF9EDFD /* TheNuusWidget.swift */; };
 		F5325F5B0E729ACA4088FC25 /* TheNuusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35575FB67EC085BAD778C4DE /* TheNuusApp.swift */; };
+		F5603D2EB2A8B52458FC01A2 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C8FC71BC1A094FFDC346C3 /* Theme.swift */; };
 		FA448FD77501B7642A9DF686 /* MenuViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = C932CF89BDE0A4150C0B7529 /* MenuViews.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		EF28A6E6A3D3E1CCFBFA1382 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F6CC8476CE77D43DFE09F9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F710816237FFF241C2B4E38E;
+			remoteInfo = TheNuusWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6A139CF04899F36CC723F0CF /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A84D97BB9B69B26A08511E23 /* TheNuusWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		066ABB7ABE186A4325E6FDFD /* SpeechController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechController.swift; sourceTree = "<group>"; };
 		22B85C265EBF619B30FBCDE3 /* ArchivoBlack-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ArchivoBlack-Regular.ttf"; sourceTree = "<group>"; };
+		2844F07B42E3619AEEF9EDFD /* TheNuusWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheNuusWidget.swift; sourceTree = "<group>"; };
 		28A65B5FD4CA3880F87334F4 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		35575FB67EC085BAD778C4DE /* TheNuusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheNuusApp.swift; sourceTree = "<group>"; };
 		46F2F0B32CD9D61EE32E21B0 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		7BF14B9351AF0D217036DE53 /* SavedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedStore.swift; sourceTree = "<group>"; };
 		8160D6D378FD71BFA0375711 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		95C8FC71BC1A094FFDC346C3 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		ADB0F17E8AA50E91558CCCB7 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		C06D310BB50102C33EB13C25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C932CF89BDE0A4150C0B7529 /* MenuViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViews.swift; sourceTree = "<group>"; };
 		D793165A2C21E1D833792BD3 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		E0A3EAF5CF0A9A9B2F718664 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4B7BEDDB7F9A2341CBC1538 /* SiteHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteHeaderView.swift; sourceTree = "<group>"; };
+		EAFE0C36DA95F59B0E452E61 /* TheNuusWidget.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = TheNuusWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1C9EAA02A635FC0E81AF916 /* TheNuus.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = TheNuus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F36E82F52B727D36FB0781FF /* NewsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -59,7 +95,9 @@
 				28A65B5FD4CA3880F87334F4 /* Model.swift */,
 				F36E82F52B727D36FB0781FF /* NewsService.swift */,
 				ADB0F17E8AA50E91558CCCB7 /* SafariView.swift */,
+				7BF14B9351AF0D217036DE53 /* SavedStore.swift */,
 				E4B7BEDDB7F9A2341CBC1538 /* SiteHeaderView.swift */,
+				066ABB7ABE186A4325E6FDFD /* SpeechController.swift */,
 				D793165A2C21E1D833792BD3 /* SplashView.swift */,
 				95C8FC71BC1A094FFDC346C3 /* Theme.swift */,
 				35575FB67EC085BAD778C4DE /* TheNuusApp.swift */,
@@ -72,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				F1C9EAA02A635FC0E81AF916 /* TheNuus.app */,
+				EAFE0C36DA95F59B0E452E61 /* TheNuusWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,10 +123,20 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		D9B4AC58F9DF50958DBC9E0C /* TheNuusWidget */ = {
+			isa = PBXGroup;
+			children = (
+				C06D310BB50102C33EB13C25 /* Info.plist */,
+				2844F07B42E3619AEEF9EDFD /* TheNuusWidget.swift */,
+			);
+			path = TheNuusWidget;
+			sourceTree = "<group>";
+		};
 		E4066984390373B66DDA962D = {
 			isa = PBXGroup;
 			children = (
 				5F246431D44DCD631C14C985 /* TheNuus */,
+				D9B4AC58F9DF50958DBC9E0C /* TheNuusWidget */,
 				658C1AB6AD1C64F409D50501 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,10 +151,12 @@
 				655F74638FAA036ED106E4FD /* Sources */,
 				C3F97E68B96EE207AE13B76E /* Resources */,
 				33945D91D1BCA9116C37D94D /* Frameworks */,
+				6A139CF04899F36CC723F0CF /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				273BF5B226437B56535A3F89 /* PBXTargetDependency */,
 			);
 			name = TheNuus;
 			packageProductDependencies = (
@@ -114,6 +165,24 @@
 			productName = TheNuus;
 			productReference = F1C9EAA02A635FC0E81AF916 /* TheNuus.app */;
 			productType = "com.apple.product-type.application";
+		};
+		F710816237FFF241C2B4E38E /* TheNuusWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BC25A7B8523B9B4A0A1EA11 /* Build configuration list for PBXNativeTarget "TheNuusWidget" */;
+			buildPhases = (
+				981BE94E350C7B716F572EE0 /* Sources */,
+				A35FC05DB1ED55F9AFE6919B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TheNuusWidget;
+			packageProductDependencies = (
+			);
+			productName = TheNuusWidget;
+			productReference = EAFE0C36DA95F59B0E452E61 /* TheNuusWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -144,11 +213,20 @@
 			projectRoot = "";
 			targets = (
 				0D1ED8525FC85F480D59EA9C /* TheNuus */,
+				F710816237FFF241C2B4E38E /* TheNuusWidget */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A35FC05DB1ED55F9AFE6919B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				304ED686A2477563B2C0A5E5 /* ArchivoBlack-Regular.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C3F97E68B96EE207AE13B76E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -170,14 +248,34 @@
 				31DDD18BAFA941863F7CDA08 /* Model.swift in Sources */,
 				A33C453631A4710CA986BDE6 /* NewsService.swift in Sources */,
 				19FE5FC4E49E974AF181FC51 /* SafariView.swift in Sources */,
+				386CB83292E1FF721D434432 /* SavedStore.swift in Sources */,
 				AA71575A5FF0D9159A7C49FA /* SiteHeaderView.swift in Sources */,
+				567B8AD57804AE8A1B818C9C /* SpeechController.swift in Sources */,
 				C9A4083D51E7E6E8E1C4A82B /* SplashView.swift in Sources */,
 				F5325F5B0E729ACA4088FC25 /* TheNuusApp.swift in Sources */,
 				CBC08B909E21A3AE827671FF /* Theme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		981BE94E350C7B716F572EE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71F87A1D37B30D5DE80F23E4 /* Model.swift in Sources */,
+				D88F1B15E67068F490F9941B /* TheNuusWidget.swift in Sources */,
+				F5603D2EB2A8B52458FC01A2 /* Theme.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		273BF5B226437B56535A3F89 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F710816237FFF241C2B4E38E /* TheNuusWidget */;
+			targetProxy = EF28A6E6A3D3E1CCFBFA1382 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0B179B249E91DE8D3C4A03E9 /* Release */ = {
@@ -216,6 +314,22 @@
 			};
 			name = Debug;
 		};
+		454B1EB0EF7113F79EC9EF1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TheNuusWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thenuus.app.NuusWidget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		4AEA267BB222EAFF7FD2E11F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -250,7 +364,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 202608061000;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -272,6 +386,22 @@
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		835B16B860570A7EF7A2BDB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TheNuusWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thenuus.app.NuusWidget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -309,7 +439,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 202608061000;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -344,6 +474,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2BC25A7B8523B9B4A0A1EA11 /* Build configuration list for PBXNativeTarget "TheNuusWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				454B1EB0EF7113F79EC9EF1A /* Debug */,
+				835B16B860570A7EF7A2BDB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
 		B9384165B1213CEF12D7B8E7 /* Build configuration list for PBXNativeTarget "TheNuus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
