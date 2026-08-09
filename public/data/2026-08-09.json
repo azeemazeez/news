@@ -1,0 +1,118 @@
+{
+  "date": "2026-08-09",
+  "generated_at": "2026-08-09T01:01:07.263Z",
+  "stories": [
+    {
+      "intro": "War with Iran turns economic",
+      "body": "Tehran is now demanding an end to a US blockade before it will reopen the Strait of Hormuz, a chokepoint through which a fifth of the world's oil flows, as Oman brokers tense talks over the",
+      "link_text": "global energy artery.",
+      "url": "https://www.nytimes.com/2026/08/08/world/middleeast/iran-us-oman-strait-of-hormuz.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "America's arsenal runs low",
+      "body": "The Pentagon is burning through precision weapons in its Iran campaign faster than it can replace them, a depletion that Russia and China are studying closely as they gauge",
+      "link_text": "US staying power in a long war.",
+      "url": "https://www.nytimes.com/2026/08/08/us/politics/pentagon-weapons-stockpiles-china-russia.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Colombia's fragile new order",
+      "body": "Hours after a hardline president was sworn in vowing to crush armed groups, a car bomb rattled the country while Washington pledged $1bn in security aid — a combustible mix that could",
+      "link_text": "reignite decades of conflict.",
+      "url": "https://www.aljazeera.com/news/2026/8/8/car-bomb-attack-rattles-colombia-after-inauguration-of-hardline-president?traffic_source=rss",
+      "source": "Al Jazeera"
+    },
+    {
+      "intro": "Yemen slides toward collapse",
+      "body": "Long overshadowed by other Middle East crises, Yemen is teetering on the edge of renewed civil war, a breakdown that could destabilise shipping lanes and shift the balance across",
+      "link_text": "the entire region.",
+      "url": "https://www.nytimes.com/2026/08/08/world/middleeast/yemen-houthis-regional-stability.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Ebola may be mutating",
+      "body": "Officials warn that the virus driving a massive outbreak in the Democratic Republic of Congo could be evolving, a development with alarming implications for treatment, vaccines, and the",
+      "link_text": "risk of wider spread.",
+      "url": "https://www.theguardian.com/world/2026/aug/06/ebola-virus-drc-mutating",
+      "source": "The Guardian"
+    },
+    {
+      "intro": "AI writes a bioweapon warning",
+      "body": "A Stanford study has shown artificial intelligence can help design viruses, raising the specter that the same tools accelerating medicine could lower the barrier to engineering",
+      "link_text": "dangerous pathogens.",
+      "url": "https://www.sfgate.com/tech/article/ai-virus-stanford-22378325.php",
+      "source": "SFGate"
+    },
+    {
+      "intro": "AI forecasts the next cyclone",
+      "body": "DeepMind's new WeatherNext model has achieved what its makers call a breakthrough in predicting tropical cyclones, potentially transforming how vulnerable coastlines prepare for",
+      "link_text": "increasingly violent storms.",
+      "url": "https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/",
+      "source": "Hacker News"
+    },
+    {
+      "intro": "Australia's extinction crisis",
+      "body": "The continent has become the planet's worst hotspot for species loss, yet one small marsupial's unexpected recovery offers conservationists a rare",
+      "link_text": "glimmer of hope.",
+      "url": "https://www.bbc.co.uk/news/articles/c9q94lxqrzzo?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC News"
+    },
+    {
+      "intro": "Wildfire smoke's hidden toll",
+      "body": "As blazes grow more frequent, researchers are only beginning to map the deadly and poorly understood health effects of breathing smoke — damage that may linger long after the",
+      "link_text": "flames are gone.",
+      "url": "https://www.theguardian.com/news/ng-interactive/2026/aug/08/wildfire-smoke-unknown-health-impacts",
+      "source": "The Guardian"
+    },
+    {
+      "intro": "Ozempic changes how we drink",
+      "body": "Patients on weight-loss medications are reporting a startling side effect: a fading desire for alcohol, a phenomenon that could reshape treatment for addiction and our understanding of",
+      "link_text": "how craving works.",
+      "url": "https://www.bbc.co.uk/news/articles/cr7kmlg0lxpo?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC News"
+    },
+    {
+      "intro": "Trump's man now runs Justice",
+      "body": "The Senate has confirmed Todd Blanche, the president's former personal lawyer, as attorney general — a move critics say cements a Justice Department bent to",
+      "link_text": "Trump's personal will.",
+      "url": "https://www.nytimes.com/2026/08/08/us/politics/blanche-attorney-general-doj-trump-power.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Archaeology as a weapon",
+      "body": "In the occupied West Bank, Israel is accused of using excavation and heritage sites to entrench control over contested land, turning the distant past into a tool of",
+      "link_text": "present-day sovereignty.",
+      "url": "https://www.bbc.co.uk/news/articles/c20d8qre98do?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC News"
+    },
+    {
+      "intro": "A nature reserve as land grab",
+      "body": "Washington has accused Beijing of dressing up a new marine 'nature reserve' as environmental protection while quietly advancing its sweeping claims over the contested",
+      "link_text": "South China Sea.",
+      "url": "https://www.aljazeera.com/news/2026/8/8/us-slams-chinese-nature-reserve-as-effort-to-claim-south-china-sea?traffic_source=rss",
+      "source": "Al Jazeera"
+    },
+    {
+      "intro": "Voyager cheats death again",
+      "body": "NASA engineers have found a way to extend the life of an instrument aboard Voyager 2, keeping humanity's most distant emissary transmitting from interstellar space just a little",
+      "link_text": "longer.",
+      "url": "https://thehill.com/homenews/space/6017091-nasa-scientists-extend-voyager-2-life-power/",
+      "source": "The Hill"
+    },
+    {
+      "intro": "The web's ad-blocking endgame",
+      "body": "Microsoft Edge is set to lock out older ad blockers, following Chrome down a path that hands browser makers more control over what users can filter and see, reshaping the",
+      "link_text": "future of online advertising.",
+      "url": "https://www.theverge.com/tech/976880/microsoft-edge-extensions-ad-blockers-mv2-mv3",
+      "source": "The Verge"
+    },
+    {
+      "intro": "Football's hidden dangers",
+      "body": "A top Ugandan footballer was beaten to death by robbers wielding paving stones, a killing that has shaken the sport in East Africa and exposed the everyday perils facing",
+      "link_text": "athletes far from the spotlight.",
+      "url": "https://www.theguardian.com/football/2026/aug/06/top-uganda-footballer-killed-robbery-kampala",
+      "source": "The Guardian"
+    }
+  ]
+}
