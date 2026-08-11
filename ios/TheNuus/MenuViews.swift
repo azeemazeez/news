@@ -1,7 +1,7 @@
 import SwiftUI
 
 enum MenuScreen: String, Identifiable {
-    case archive, saved, about
+    case archive, saved, settings, about
     var id: String { rawValue }
 }
 
@@ -98,7 +98,7 @@ struct ArchiveView: View {
 
 struct SavedView: View {
     @Environment(\.dismiss) private var dismiss
-    @State private var selectedArticle: URL?
+    @State private var selectedStory: Story?
 
     var body: some View {
         NavigationStack {
@@ -121,7 +121,7 @@ struct SavedView: View {
                     List {
                         ForEach(SavedStore.shared.stories) { story in
                             Button {
-                                selectedArticle = story.articleURL
+                                selectedStory = story
                             } label: {
                                 VStack(alignment: .leading, spacing: 4) {
                                     Text(story.cleanIntro)
@@ -147,8 +147,8 @@ struct SavedView: View {
             }
         }
         .tint(Theme.purple)
-        .sheet(item: $selectedArticle) { url in
-            SafariView(url: url).ignoresSafeArea()
+        .sheet(item: $selectedStory) { story in
+            StoryDetailView(story: story)
         }
     }
 }

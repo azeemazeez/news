@@ -52,7 +52,7 @@ struct FeedView: View {
     let model: FeedModel
 
     @Environment(\.horizontalSizeClass) private var sizeClass
-    @State private var selectedArticle: URL?
+    @State private var selectedStory: Story?
     @State private var menuScreen: MenuScreen?
     @State private var speech = SpeechController()
 
@@ -72,6 +72,8 @@ struct FeedView: View {
                         }
                     case .saved:
                         SavedView()
+                    case .settings:
+                        SettingsView()
                     case .about:
                         AboutView()
                     }
@@ -99,8 +101,8 @@ struct FeedView: View {
             speech.stop()
             await model.load()
         }
-        .sheet(item: $selectedArticle) { url in
-            SafariView(url: url).ignoresSafeArea()
+        .sheet(item: $selectedStory) { story in
+            StoryDetailView(story: story)
         }
     }
 
@@ -152,10 +154,10 @@ struct FeedView: View {
 
             ForEach(edition.stories) { story in
                 StoryRow(story: story) {
-                    selectedArticle = story.articleURL
-                    if let url = story.articleURL {
-                        PostHogSDK.shared.capture("article_opened", properties: ["url": url.absoluteString])
-                    }
+                    speech.stop()
+                    selectedStory = story
+                    Prefs.shared.markRead(story)
+                    PostHogSDK.shared.capture("story_opened", properties: ["url": story.url])
                 }
 
                 if story.id != edition.stories.last?.id {
@@ -199,14 +201,21 @@ struct StoryRow: View {
 
     @Environment(\.horizontalSizeClass) private var sizeClass
 
-    /// 22pt on iPad, 17pt on large iPhones (Pro Max class), 16pt otherwise.
+    /// 22pt on iPad, 17pt on large iPhones (Pro Max class), 16pt otherwise,
+    /// then scaled by the user's text-size preference.
     private var textSize: CGFloat {
-        if sizeClass == .regular { return 22 }
-        return UIScreen.main.bounds.width >= 430 ? 17 : 16
+        let base: CGFloat
+        if sizeClass == .regular {
+            base = 22
+        } else {
+            base = UIScreen.main.bounds.width >= 430 ? 17 : 16
+        }
+        return base * Prefs.shared.textSize.scale
     }
 
     var body: some View {
         let saved = SavedStore.shared.isSaved(story)
+        let read = Prefs.shared.isRead(story)
 
         VStack(alignment: .leading, spacing: 12) {
             Group {
@@ -220,6 +229,7 @@ struct StoryRow: View {
             }
             .font(.system(size: textSize))
             .foregroundStyle(Theme.text)
+            .opacity(read ? 0.55 : 1)
             .lineSpacing(sizeClass == .regular ? 7 : 4)
             .frame(maxWidth: .infinity, alignment: .leading)
             .contentShape(Rectangle())
@@ -250,7 +260,7 @@ struct StoryRow: View {
     }
 }
 
-// Lets a bare URL drive a `.sheet(item:)`.
+// Lets a bare URL drive a `.sheet(item:)` (used by the Safari sheets).
 extension URL: @retroactive Identifiable {
     public var id: String { absoluteString }
 }

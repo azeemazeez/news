@@ -30,6 +30,11 @@ struct SiteHeaderView: View {
                             Label("Saved", systemImage: "bookmark")
                         }
                         Button {
+                            onMenu(.settings)
+                        } label: {
+                            Label("Settings", systemImage: "gearshape")
+                        }
+                        Button {
                             onMenu(.about)
                         } label: {
                             Label("About", systemImage: "info.circle")

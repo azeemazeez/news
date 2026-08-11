@@ -19,26 +19,42 @@ final class SpeechController: NSObject, AVSpeechSynthesizerDelegate {
 
     /// Starts reading the edition, or toggles pause if already reading.
     func toggle(_ edition: Edition) {
-        if isSpeaking {
-            if isPaused {
-                synthesizer.continueSpeaking()
-                isPaused = false
-            } else {
-                synthesizer.pauseSpeaking(at: .word)
-                isPaused = true
-            }
-            return
-        }
+        if togglePauseIfSpeaking() { return }
 
-        try? AVAudioSession.sharedInstance().setCategory(.playback, mode: .spokenAudio)
-        try? AVAudioSession.sharedInstance().setActive(true)
-
+        beginSession()
         speak("The Nuus. \(edition.displayDate).")
         for story in edition.stories {
             speak("\(story.cleanIntro). \(story.cleanBody)")
         }
         isSpeaking = true
         isPaused = false
+    }
+
+    /// Starts reading a single story, or toggles pause if already reading.
+    func toggle(_ story: Story) {
+        if togglePauseIfSpeaking() { return }
+
+        beginSession()
+        speak("\(story.cleanIntro). \(story.cleanBody)")
+        isSpeaking = true
+        isPaused = false
+    }
+
+    private func togglePauseIfSpeaking() -> Bool {
+        guard isSpeaking else { return false }
+        if isPaused {
+            synthesizer.continueSpeaking()
+            isPaused = false
+        } else {
+            synthesizer.pauseSpeaking(at: .word)
+            isPaused = true
+        }
+        return true
+    }
+
+    private func beginSession() {
+        try? AVAudioSession.sharedInstance().setCategory(.playback, mode: .spokenAudio)
+        try? AVAudioSession.sharedInstance().setActive(true)
     }
 
     func stop() {
