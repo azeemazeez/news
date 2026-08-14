@@ -1,0 +1,118 @@
+{
+  "date": "2026-08-14",
+  "generated_at": "2026-08-14T01:01:10.522Z",
+  "stories": [
+    {
+      "intro": "Iran war escalates",
+      "body": "The UAE has accused Iran of attacking two ADNOC vessels in the Strait of Hormuz as Washington eyes an indefinite naval blockade, raising fears of a wider conflict at the world's most critical oil chokepoint after Trump declared the US now has",
+      "link_text": "total control over the strait.",
+      "url": "https://www.aljazeera.com/news/2026/8/14/iran-war-live-us-eyes-indefinite-iran-naval-blockade?traffic_source=rss",
+      "source": "Al Jazeera"
+    },
+    {
+      "intro": "Ebola's deadliest surge",
+      "body": "The WHO warns that the Democratic Republic of Congo's fast-spreading outbreak, now reaching a sixth province, is on track to eclipse the deadliest Ebola epidemic in recorded history as the virus outpaces",
+      "link_text": "efforts to contain it.",
+      "url": "https://apnews.com/article/congo-ebola-outbreak-africa-who-d9bb9bfa9816e278ba36a2382334d65f",
+      "source": "Associated Press"
+    },
+    {
+      "intro": "Hacking back legalized",
+      "body": "Trump has given US companies a green light to launch retaliatory cyberattacks against criminals, a dramatic reversal of longstanding policy that security experts warn could trigger escalation, collateral damage, and a lawless digital",
+      "link_text": "free-for-all in cyberspace.",
+      "url": "https://www.nytimes.com/2026/08/13/us/politics/trump-private-companies-hacking-cybercriminals.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Afghan women vanish",
+      "body": "Five years into Taliban rule, women have been systematically erased from public life in Afghanistan — barred from schools, jobs, parks and even speaking aloud in public — in what advocates describe as a deliberate campaign of",
+      "link_text": "gender apartheid.",
+      "url": "https://www.nytimes.com/2026/08/13/world/asia/afghan-women-taliban-rule.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Harvard beats Trump",
+      "body": "A federal judge has dismissed the Trump administration's antisemitism case against Harvard, a significant legal setback in the White House's broader campaign to pressure elite universities and withhold federal funding over",
+      "link_text": "campus ideology disputes.",
+      "url": "https://www.nytimes.com/2026/08/13/us/harvard-antisemitism-case-dismissed.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Putin's island provocation",
+      "body": "Japan has condemned Vladimir Putin's visit to the disputed Kuril Islands as 'absolutely unacceptable', reigniting a territorial dispute dating to World War II and further straining ties between Tokyo and Moscow amid",
+      "link_text": "wider global tensions.",
+      "url": "https://www.theguardian.com/world/2026/aug/13/japan-condemns-vladimir-putin-visit-kuril-islands",
+      "source": "The Guardian"
+    },
+    {
+      "intro": "Yemen truce crumbling",
+      "body": "The UN warns that Yemen faces its highest risk of returning to full-scale war since the 2022 ceasefire, a warning that lands as regional conflict spreads and threatens to reverse years of fragile progress toward",
+      "link_text": "ending the humanitarian catastrophe.",
+      "url": "https://www.aljazeera.com/news/2026/8/14/yemen-faces-highest-risk-of-returning-to-war-since-2022-truce-un-warns?traffic_source=rss",
+      "source": "Al Jazeera"
+    },
+    {
+      "intro": "Zambia's ghost election",
+      "body": "Zambia's presidential vote is being haunted by the shadow of Edgar Lungu, the late arch-rival of incumbent Hakainde Hichilema, whose death and disputed legacy have become an unexpectedly potent force in a closely watched",
+      "link_text": "southern African contest.",
+      "url": "https://www.theguardian.com/world/2026/aug/13/zambia-elections-hakainde-hichilema-haunted-ghost-incumbent-president-arch-rival-edgar-lungu",
+      "source": "The Guardian"
+    },
+    {
+      "intro": "Kennedy Center rebranded",
+      "body": "The board of the storied performing arts institution has voted to inscribe Trump's name on the building and close it for a two-year renovation, a striking politicization of a national cultural landmark that critics call an unprecedented",
+      "link_text": "monument to one president.",
+      "url": "https://www.nytimes.com/2026/08/13/arts/design/kennedy-center-closure-board-vote-trump.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "ICE detainees dying",
+      "body": "The deaths of three detainees at a New Jersey immigration facility have prompted urgent questions about inadequate medical care inside a rapidly expanding detention system, as the human toll of the administration's enforcement surge",
+      "link_text": "comes into sharper focus.",
+      "url": "https://www.nytimes.com/2026/08/13/nyregion/delaney-hall-detainee-health-ice.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Measles record shattered",
+      "body": "The US is now recording its highest number of measles cases in decades as outbreaks spread across multiple states, a resurgence of a once-eliminated disease driven by falling vaccination rates and mounting",
+      "link_text": "public health alarm.",
+      "url": "https://www.cbsnews.com/news/measles-outbreak-us-map-2026/",
+      "source": "CBS News"
+    },
+    {
+      "intro": "Brazil fights mosquitoes",
+      "body": "A Brazilian city has mobilized an aggressive campaign against disease-carrying mosquitoes, deploying novel tactics in a battle against dengue and other spreading illnesses that offers a preview of how a warming world will confront",
+      "link_text": "the march of tropical disease.",
+      "url": "https://www.nytimes.com/2026/08/13/health/mosquitoes-brazil-health-threat.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Faster, cheaper AI",
+      "body": "Google has released Gemini 3.7 Flash, its latest lightweight model, part of a relentless wave of releases from rival labs racing to make powerful AI cheaper and faster to run as competition intensifies over",
+      "link_text": "who dominates the next era.",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/",
+      "source": "Hacker News"
+    },
+    {
+      "intro": "The comprehension problem",
+      "body": "As AI churns out code and text faster than ever, a growing argument holds that the real constraint is no longer generating output but human understanding of it — a shift that could reshape how knowledge work is",
+      "link_text": "structured and valued.",
+      "url": "https://www.geoffreylitt.com/2026/07/02/understanding-is-the-new-bottleneck",
+      "source": "Hacker News"
+    },
+    {
+      "intro": "Lakers as poker chip",
+      "body": "The record $12.5 billion sale of the Los Angeles Lakers to Josh Kushner and Bob Iger reveals how storied sports franchises have become trophy assets traded among America's most powerful men, transforming the very economics of",
+      "link_text": "who owns the game.",
+      "url": "https://www.theguardian.com/sport/2026/aug/13/the-lakers-have-become-a-poker-chip-for-some-of-the-most-powerful-men-in-america",
+      "source": "The Guardian Sport"
+    },
+    {
+      "intro": "Ledecky's endless reign",
+      "body": "Katie Ledecky has extended a staggering 16-year unbeaten streak in the 1500m freestyle with Pan Pacific gold, a run of dominance so total it stands almost alone in the history of the sport and cements her among the greatest",
+      "link_text": "athletes of her generation.",
+      "url": "https://www.theguardian.com/sport/2026/aug/13/katie-ledecky-1500m-pan-pacific-championships-swimming-gold",
+      "source": "The Guardian Sport"
+    }
+  ]
+}
