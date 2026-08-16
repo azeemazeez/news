@@ -8,8 +8,8 @@ struct StoryDetailView: View {
     let story: Story
 
     @Environment(\.dismiss) private var dismiss
+    @Environment(\.openURL) private var openURL
     @State private var speech = SpeechController()
-    @State private var sourceURL: URL?
 
     private var prefs: Prefs { Prefs.shared }
 
@@ -45,7 +45,7 @@ struct StoryDetailView: View {
                             .padding(.vertical, 24)
 
                         Button {
-                            sourceURL = url
+                            openURL(url)
                             PostHogSDK.shared.capture("article_opened", properties: ["url": url.absoluteString])
                         } label: {
                             Label("Read the full story at \(story.source)", systemImage: "arrow.up.right.square")
@@ -79,9 +79,6 @@ struct StoryDetailView: View {
             }
         }
         .tint(Theme.purple)
-        .sheet(item: $sourceURL) { url in
-            SafariView(url: url).ignoresSafeArea()
-        }
         .onDisappear { speech.stop() }
     }
 
@@ -123,5 +120,6 @@ struct StoryDetailView: View {
             Spacer()
         }
         .font(.system(size: 17))
+        .sensoryFeedback(.impact(weight: .light), trigger: saved)
     }
 }

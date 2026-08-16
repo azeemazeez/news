@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A4A8B4E60F52F17B76CEE65 /* AppShortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2A68E38FD976390564D891 /* AppShortcuts.swift */; };
 		0A4FB2D9FC5B60BB18976198 /* ArchivoBlack-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 22B85C265EBF619B30FBCDE3 /* ArchivoBlack-Regular.ttf */; };
-		19FE5FC4E49E974AF181FC51 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0F17E8AA50E91558CCCB7 /* SafariView.swift */; };
 		26AAA77446B44AA74DAE4125 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0A3EAF5CF0A9A9B2F718664 /* Assets.xcassets */; };
 		304ED686A2477563B2C0A5E5 /* ArchivoBlack-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 22B85C265EBF619B30FBCDE3 /* ArchivoBlack-Regular.ttf */; };
 		31DDD18BAFA941863F7CDA08 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A65B5FD4CA3880F87334F4 /* Model.swift */; };
@@ -65,12 +65,12 @@
 		35575FB67EC085BAD778C4DE /* TheNuusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheNuusApp.swift; sourceTree = "<group>"; };
 		46F2F0B32CD9D61EE32E21B0 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		6D89138887D04E0C6431177B /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		6F2A68E38FD976390564D891 /* AppShortcuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppShortcuts.swift; sourceTree = "<group>"; };
 		7BF14B9351AF0D217036DE53 /* SavedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedStore.swift; sourceTree = "<group>"; };
 		8160D6D378FD71BFA0375711 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		95C8FC71BC1A094FFDC346C3 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		967FC464636BF39D66D30C41 /* StoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryDetailView.swift; sourceTree = "<group>"; };
 		A859A79C3D40B2226CBD8CD5 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		ADB0F17E8AA50E91558CCCB7 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 		C06D310BB50102C33EB13C25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C932CF89BDE0A4150C0B7529 /* MenuViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViews.swift; sourceTree = "<group>"; };
 		D793165A2C21E1D833792BD3 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
@@ -96,6 +96,7 @@
 		5F246431D44DCD631C14C985 /* TheNuus */ = {
 			isa = PBXGroup;
 			children = (
+				6F2A68E38FD976390564D891 /* AppShortcuts.swift */,
 				E0A3EAF5CF0A9A9B2F718664 /* Assets.xcassets */,
 				46F2F0B32CD9D61EE32E21B0 /* FeedView.swift */,
 				8160D6D378FD71BFA0375711 /* Info.plist */,
@@ -104,7 +105,6 @@
 				F36E82F52B727D36FB0781FF /* NewsService.swift */,
 				6D89138887D04E0C6431177B /* NotificationManager.swift */,
 				01EF49CCDE44331D0CF4CF1A /* Prefs.swift */,
-				ADB0F17E8AA50E91558CCCB7 /* SafariView.swift */,
 				7BF14B9351AF0D217036DE53 /* SavedStore.swift */,
 				A859A79C3D40B2226CBD8CD5 /* SettingsView.swift */,
 				E4B7BEDDB7F9A2341CBC1538 /* SiteHeaderView.swift */,
@@ -255,13 +255,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A4A8B4E60F52F17B76CEE65 /* AppShortcuts.swift in Sources */,
 				7D96010584C4998131982BE6 /* FeedView.swift in Sources */,
 				FA448FD77501B7642A9DF686 /* MenuViews.swift in Sources */,
 				31DDD18BAFA941863F7CDA08 /* Model.swift in Sources */,
 				A33C453631A4710CA986BDE6 /* NewsService.swift in Sources */,
 				6FACFEC10FD6C0CDD46FE315 /* NotificationManager.swift in Sources */,
 				9CC20AD16D1E0803410052C3 /* Prefs.swift in Sources */,
-				19FE5FC4E49E974AF181FC51 /* SafariView.swift in Sources */,
 				386CB83292E1FF721D434432 /* SavedStore.swift in Sources */,
 				B10D3F523D4E7F9063C8E25D /* SettingsView.swift in Sources */,
 				AA71575A5FF0D9159A7C49FA /* SiteHeaderView.swift in Sources */,
@@ -380,7 +380,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 202608111200;
+				CURRENT_PROJECT_VERSION = 202608161000;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -455,7 +455,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 202608111200;
+				CURRENT_PROJECT_VERSION = 202608161000;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;

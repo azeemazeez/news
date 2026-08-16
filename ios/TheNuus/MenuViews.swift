@@ -8,17 +8,14 @@ enum MenuScreen: String, Identifiable {
 // MARK: - Archive
 
 struct ArchiveView: View {
-    struct MonthGroup: Identifiable {
-        let title: String
-        let dates: [String]
-        var id: String { title }
-    }
-
     /// Called with the picked date; the feed loads that edition.
     let onSelect: (String) -> Void
 
     @Environment(\.dismiss) private var dismiss
-    @State private var groups: [MonthGroup] = []
+    @State private var available: Set<String> = []
+    @State private var range: ClosedRange<Date>?
+    @State private var selected = Date()
+    @State private var noEdition = false
     @State private var failed = false
 
     var body: some View {
@@ -28,23 +25,33 @@ struct ArchiveView: View {
                     Text("Couldn't load the archive.")
                         .font(.system(size: 14))
                         .foregroundStyle(Theme.secondary)
-                } else if groups.isEmpty {
-                    ProgressView().tint(Theme.purple)
-                } else {
-                    List {
-                        ForEach(groups) { group in
-                            Section(group.title) {
-                                ForEach(group.dates, id: \.self) { date in
-                                    Button {
-                                        onSelect(date)
-                                    } label: {
-                                        Text(Self.dayLabel(for: date))
-                                            .foregroundStyle(Theme.text)
-                                    }
+                } else if let range {
+                    Form {
+                        Section {
+                            DatePicker(
+                                "Edition date",
+                                selection: $selected,
+                                in: range,
+                                displayedComponents: .date
+                            )
+                            .datePickerStyle(.graphical)
+                            .onChange(of: selected) { _, day in
+                                let key = Self.key(for: day)
+                                if available.contains(key) {
+                                    noEdition = false
+                                    onSelect(key)
+                                } else {
+                                    noEdition = true
                                 }
                             }
+                        } footer: {
+                            Text(noEdition
+                                 ? "No edition was published on that day — try another."
+                                 : "Pick a day to read that edition.")
                         }
                     }
+                } else {
+                    ProgressView().tint(Theme.purple)
                 }
             }
             .navigationTitle("Archive")
@@ -58,22 +65,19 @@ struct ArchiveView: View {
         .tint(Theme.purple)
         .task {
             do {
-                groups = Self.grouped(try await NewsService.shared.manifestDates())
+                let dates = try await NewsService.shared.manifestDates()
+                available = Set(dates)
+                let days = dates.compactMap(Self.parse)
+                if let newest = days.max(), let oldest = days.min() {
+                    selected = newest
+                    range = oldest...newest
+                } else {
+                    failed = true
+                }
             } catch {
                 failed = true
             }
         }
-    }
-
-    static func grouped(_ dates: [String]) -> [MonthGroup] {
-        var order: [String] = []
-        var buckets: [String: [String]] = [:]
-        for date in dates {
-            let title = monthLabel(for: date)
-            if buckets[title] == nil { order.append(title) }
-            buckets[title, default: []].append(date)
-        }
-        return order.map { MonthGroup(title: $0, dates: buckets[$0] ?? []) }
     }
 
     private static func parse(_ date: String) -> Date? {
@@ -83,9 +87,11 @@ struct ArchiveView: View {
         return formatter.date(from: date)
     }
 
-    static func monthLabel(for date: String) -> String {
-        guard let day = parse(date) else { return date }
-        return day.formatted(.dateTime.month(.wide).year())
+    private static func key(for day: Date) -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd"
+        formatter.locale = Locale(identifier: "en_US_POSIX")
+        return formatter.string(from: day)
     }
 
     static func dayLabel(for date: String) -> String {

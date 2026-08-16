@@ -88,7 +88,7 @@ struct FeedView: View {
                 case .loaded(let edition):
                     stories(edition)
                         .containerRelativeFrame(.horizontal) { width, _ in
-                            sizeClass == .regular ? width * 0.75 : width
+                            sizeClass == .regular ? min(width, 800) : width
                         }
 
                 case .failed(let message):
@@ -103,6 +103,23 @@ struct FeedView: View {
         }
         .sheet(item: $selectedStory) { story in
             StoryDetailView(story: story)
+        }
+        .onChange(of: AppActions.shared.listenRequested) {
+            startListeningIfRequested()
+        }
+        .onChange(of: model.state) {
+            startListeningIfRequested()
+        }
+    }
+
+    /// Honours the "Listen to Today's Edition" Siri shortcut once the
+    /// edition is on screen.
+    private func startListeningIfRequested() {
+        guard AppActions.shared.listenRequested,
+              case .loaded(let edition) = model.state else { return }
+        AppActions.shared.listenRequested = false
+        if !speech.isPlaying {
+            speech.toggle(edition)
         }
     }
 
@@ -200,6 +217,7 @@ struct StoryRow: View {
     let onOpen: () -> Void
 
     @Environment(\.horizontalSizeClass) private var sizeClass
+    @Environment(\.openURL) private var openURL
 
     /// 22pt on iPad, 17pt on large iPhones (Pro Max class), 16pt otherwise,
     /// then scaled by the user's text-size preference.
@@ -234,6 +252,32 @@ struct StoryRow: View {
             .frame(maxWidth: .infinity, alignment: .leading)
             .contentShape(Rectangle())
             .onTapGesture(perform: onOpen)
+            .contextMenu {
+                Button {
+                    onOpen()
+                } label: {
+                    Label("Read", systemImage: "book")
+                }
+
+                Button {
+                    SavedStore.shared.toggle(story)
+                } label: {
+                    Label(saved ? "Remove from Saved" : "Save",
+                          systemImage: saved ? "bookmark.slash" : "bookmark")
+                }
+
+                if let url = story.articleURL {
+                    ShareLink(item: url, message: Text(story.cleanIntro)) {
+                        Label("Share", systemImage: "square.and.arrow.up")
+                    }
+
+                    Button {
+                        openURL(url)
+                    } label: {
+                        Label("Open Source in Browser", systemImage: "safari")
+                    }
+                }
+            }
 
             HStack(spacing: 22) {
                 Button {
@@ -257,10 +301,6 @@ struct StoryRow: View {
             .font(.system(size: 15))
         }
         .padding(.vertical, sizeClass == .regular ? 20 : 16)
+        .sensoryFeedback(.impact(weight: .light), trigger: saved)
     }
-}
-
-// Lets a bare URL drive a `.sheet(item:)` (used by the Safari sheets).
-extension URL: @retroactive Identifiable {
-    public var id: String { absoluteString }
 }

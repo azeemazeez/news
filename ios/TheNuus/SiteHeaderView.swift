@@ -50,13 +50,7 @@ struct SiteHeaderView: View {
                 .padding(.trailing, 4)
             }
             .padding(.vertical, 2)
-            .background(
-                LinearGradient(
-                    colors: [Theme.purple, Theme.magenta],
-                    startPoint: .leading,
-                    endPoint: .trailing
-                )
-            )
+            .background(Theme.headerGradient)
 
             VStack(spacing: 0) {
                 Text("Est. 2026 · Daily Edition")
