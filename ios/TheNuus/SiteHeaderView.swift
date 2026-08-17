@@ -45,6 +45,7 @@ struct SiteHeaderView: View {
                             .foregroundStyle(.white)
                             .frame(width: 40, height: 40)
                             .contentShape(Rectangle())
+                            .accessibilityLabel("Menu")
                     }
                 }
                 .padding(.trailing, 4)

@@ -71,10 +71,12 @@ struct StoryDetailView: View {
                         }
                     } label: {
                         Image(systemName: "textformat.size")
+                            .accessibilityLabel("Text size")
                     }
                 }
                 ToolbarItem(placement: .topBarTrailing) {
                     Button("Done") { dismiss() }
+                        .accessibilityIdentifier("reader-done")
                 }
             }
         }
@@ -108,6 +110,8 @@ struct StoryDetailView: View {
                     .foregroundStyle(saved ? Theme.purple : Theme.secondary)
             }
             .buttonStyle(.plain)
+            .accessibilityLabel(saved ? "Remove from saved" : "Save story")
+            .accessibilityIdentifier("reader-save")
 
             if let url = story.articleURL {
                 ShareLink(item: url, message: Text(story.cleanIntro)) {
@@ -115,6 +119,7 @@ struct StoryDetailView: View {
                         .foregroundStyle(Theme.secondary)
                 }
                 .buttonStyle(.plain)
+                .accessibilityLabel("Share story")
             }
 
             Spacer()

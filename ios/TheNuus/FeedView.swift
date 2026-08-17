@@ -287,6 +287,7 @@ struct StoryRow: View {
                         .foregroundStyle(saved ? Theme.purple : Theme.secondary)
                 }
                 .buttonStyle(.plain)
+                .accessibilityLabel(saved ? "Remove from saved" : "Save story")
 
                 if let url = story.articleURL {
                     ShareLink(item: url, message: Text(story.cleanIntro)) {
@@ -294,6 +295,7 @@ struct StoryRow: View {
                             .foregroundStyle(Theme.secondary)
                     }
                     .buttonStyle(.plain)
+                    .accessibilityLabel("Share story")
                 }
 
                 Spacer()

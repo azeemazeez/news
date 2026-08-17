@@ -18,6 +18,7 @@
 		71F87A1D37B30D5DE80F23E4 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A65B5FD4CA3880F87334F4 /* Model.swift */; };
 		7D96010584C4998131982BE6 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F2F0B32CD9D61EE32E21B0 /* FeedView.swift */; };
 		8CB74891A84F1CFFAB22646D /* PostHog in Frameworks */ = {isa = PBXBuildFile; productRef = F98D643186F132635897CC24 /* PostHog */; };
+		92F7E3358DAD8C078C703ECE /* RecordingFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CB45C71FC33CCED25D0053 /* RecordingFlow.swift */; };
 		9CC20AD16D1E0803410052C3 /* Prefs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EF49CCDE44331D0CF4CF1A /* Prefs.swift */; };
 		A33C453631A4710CA986BDE6 /* NewsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36E82F52B727D36FB0781FF /* NewsService.swift */; };
 		A84D97BB9B69B26A08511E23 /* TheNuusWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = EAFE0C36DA95F59B0E452E61 /* TheNuusWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -33,6 +34,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		E86789DABB42252648949AE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F6CC8476CE77D43DFE09F9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D1ED8525FC85F480D59EA9C;
+			remoteInfo = TheNuus;
+		};
 		EF28A6E6A3D3E1CCFBFA1382 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3F6CC8476CE77D43DFE09F9F /* Project object */;
@@ -59,6 +67,7 @@
 /* Begin PBXFileReference section */
 		01EF49CCDE44331D0CF4CF1A /* Prefs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prefs.swift; sourceTree = "<group>"; };
 		066ABB7ABE186A4325E6FDFD /* SpeechController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechController.swift; sourceTree = "<group>"; };
+		228C68E9419CCA069F258FD0 /* TheNuusUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = TheNuusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B85C265EBF619B30FBCDE3 /* ArchivoBlack-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ArchivoBlack-Regular.ttf"; sourceTree = "<group>"; };
 		2844F07B42E3619AEEF9EDFD /* TheNuusWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheNuusWidget.swift; sourceTree = "<group>"; };
 		28A65B5FD4CA3880F87334F4 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
@@ -73,6 +82,7 @@
 		A859A79C3D40B2226CBD8CD5 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		C06D310BB50102C33EB13C25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C932CF89BDE0A4150C0B7529 /* MenuViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViews.swift; sourceTree = "<group>"; };
+		D1CB45C71FC33CCED25D0053 /* RecordingFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingFlow.swift; sourceTree = "<group>"; };
 		D793165A2C21E1D833792BD3 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		E0A3EAF5CF0A9A9B2F718664 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4B7BEDDB7F9A2341CBC1538 /* SiteHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteHeaderView.swift; sourceTree = "<group>"; };
@@ -122,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				F1C9EAA02A635FC0E81AF916 /* TheNuus.app */,
+				228C68E9419CCA069F258FD0 /* TheNuusUITests.xctest */,
 				EAFE0C36DA95F59B0E452E61 /* TheNuusWidget.appex */,
 			);
 			name = Products;
@@ -148,9 +159,18 @@
 			isa = PBXGroup;
 			children = (
 				5F246431D44DCD631C14C985 /* TheNuus */,
+				FA0362C7CFCF0BA2DBB01852 /* TheNuusUITests */,
 				D9B4AC58F9DF50958DBC9E0C /* TheNuusWidget */,
 				658C1AB6AD1C64F409D50501 /* Products */,
 			);
+			sourceTree = "<group>";
+		};
+		FA0362C7CFCF0BA2DBB01852 /* TheNuusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D1CB45C71FC33CCED25D0053 /* RecordingFlow.swift */,
+			);
+			path = TheNuusUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +197,24 @@
 			productName = TheNuus;
 			productReference = F1C9EAA02A635FC0E81AF916 /* TheNuus.app */;
 			productType = "com.apple.product-type.application";
+		};
+		739D993DF66F496CF664EB0E /* TheNuusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35CFEFE707F4474B23EF638E /* Build configuration list for PBXNativeTarget "TheNuusUITests" */;
+			buildPhases = (
+				F2CDAD8E95E84F7B43F0D062 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				95BBB9BF2317C196AAED5E66 /* PBXTargetDependency */,
+			);
+			name = TheNuusUITests;
+			packageProductDependencies = (
+			);
+			productName = TheNuusUITests;
+			productReference = 228C68E9419CCA069F258FD0 /* TheNuusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		F710816237FFF241C2B4E38E /* TheNuusWidget */ = {
 			isa = PBXNativeTarget;
@@ -205,6 +243,9 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					739D993DF66F496CF664EB0E = {
+						TestTargetID = 0D1ED8525FC85F480D59EA9C;
+					};
 				};
 			};
 			buildConfigurationList = D741B569EAE20A975A6D743A /* Build configuration list for PBXProject "TheNuus" */;
@@ -225,6 +266,7 @@
 			projectRoot = "";
 			targets = (
 				0D1ED8525FC85F480D59EA9C /* TheNuus */,
+				739D993DF66F496CF664EB0E /* TheNuusUITests */,
 				F710816237FFF241C2B4E38E /* TheNuusWidget */,
 			);
 		};
@@ -283,6 +325,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F2CDAD8E95E84F7B43F0D062 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92F7E3358DAD8C078C703ECE /* RecordingFlow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -290,6 +340,11 @@
 			isa = PBXTargetDependency;
 			target = F710816237FFF241C2B4E38E /* TheNuusWidget */;
 			targetProxy = EF28A6E6A3D3E1CCFBFA1382 /* PBXContainerItemProxy */;
+		};
+		95BBB9BF2317C196AAED5E66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0D1ED8525FC85F480D59EA9C /* TheNuus */;
+			targetProxy = E86789DABB42252648949AE8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -329,6 +384,22 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
+		};
+		18FA08500E0BD74281222119 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thenuus.app.UITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TheNuus;
+			};
+			name = Release;
 		};
 		454B1EB0EF7113F79EC9EF1A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -404,6 +475,22 @@
 				SWIFT_VERSION = 5.9;
 			};
 			name = Release;
+		};
+		63E0A21BBA3BBD7DAD2076EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thenuus.app.UITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TheNuus;
+			};
+			name = Debug;
 		};
 		835B16B860570A7EF7A2BDB4 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -495,6 +582,15 @@
 			buildConfigurations = (
 				454B1EB0EF7113F79EC9EF1A /* Debug */,
 				835B16B860570A7EF7A2BDB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		35CFEFE707F4474B23EF638E /* Build configuration list for PBXNativeTarget "TheNuusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63E0A21BBA3BBD7DAD2076EC /* Debug */,
+				18FA08500E0BD74281222119 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
