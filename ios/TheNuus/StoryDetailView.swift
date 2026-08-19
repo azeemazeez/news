@@ -27,7 +27,9 @@ struct StoryDetailView: View {
                         .lineSpacing(5)
                         .padding(.top, 12)
 
-                    Text(story.cleanBody)
+                    // The link text is the tail of the closing sentence; the
+                    // source link itself lives in the footer.
+                    Text("\(story.cleanBody) \(story.cleanLinkText)")
                         .font(.system(size: 18 * prefs.textSize.scale, design: .serif))
                         .foregroundStyle(Theme.text)
                         .lineSpacing(8)

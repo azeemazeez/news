@@ -24,7 +24,7 @@ final class SpeechController: NSObject, AVSpeechSynthesizerDelegate {
         beginSession()
         speak("The Nuus. \(edition.displayDate).")
         for story in edition.stories {
-            speak("\(story.cleanIntro). \(story.cleanBody)")
+            speak(Self.spokenText(for: story))
         }
         isSpeaking = true
         isPaused = false
@@ -35,9 +35,15 @@ final class SpeechController: NSObject, AVSpeechSynthesizerDelegate {
         if togglePauseIfSpeaking() { return }
 
         beginSession()
-        speak("\(story.cleanIntro). \(story.cleanBody)")
+        speak(Self.spokenText(for: story))
         isSpeaking = true
         isPaused = false
+    }
+
+    /// The full story text: the link text is the tail of the closing
+    /// sentence, so leaving it out would cut every story off mid-thought.
+    private static func spokenText(for story: Story) -> String {
+        "\(story.cleanIntro). \(story.cleanBody) \(story.cleanLinkText)"
     }
 
     private func togglePauseIfSpeaking() -> Bool {

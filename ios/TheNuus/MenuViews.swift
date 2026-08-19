@@ -153,9 +153,10 @@ struct AboutView: View {
                         .lineSpacing(5)
                 }
 
-                Text("The Nuus — A MonoBlock Endeavor")
+                Text("The Nuus — A [MonoBlock](https://monoblock.ae) Endeavor")
                     .font(.system(size: 16, weight: .semibold))
                     .foregroundStyle(Theme.text)
+                    .tint(Theme.purple)
                     .padding(.top, 6)
             }
             .frame(maxWidth: .infinity, alignment: .leading)
