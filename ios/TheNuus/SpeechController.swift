@@ -1,6 +1,7 @@
 import AVFoundation
 import MediaPlayer
 import Observation
+import UIKit
 
 /// Reads an edition aloud with on-device text-to-speech.
 @Observable
@@ -69,11 +70,15 @@ final class SpeechController: NSObject, AVSpeechSynthesizerDelegate {
     /// Publishes what's playing to the lock screen and hooks up its
     /// play/pause controls, so listening survives backgrounding.
     private func startNowPlaying(title: String) {
-        MPNowPlayingInfoCenter.default().nowPlayingInfo = [
+        var info: [String: Any] = [
             MPMediaItemPropertyTitle: title,
             MPMediaItemPropertyArtist: "The Nuus",
             MPNowPlayingInfoPropertyPlaybackRate: 1.0,
         ]
+        if let icon = UIImage(named: "LockScreenArtwork") {
+            info[MPMediaItemPropertyArtwork] = MPMediaItemArtwork(boundsSize: icon.size) { _ in icon }
+        }
+        MPNowPlayingInfoCenter.default().nowPlayingInfo = info
 
         let center = MPRemoteCommandCenter.shared()
         center.playCommand.removeTarget(nil)
