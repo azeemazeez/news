@@ -1,3 +1,4 @@
+import AVFoundation
 import SwiftUI
 
 struct SettingsView: View {
@@ -19,6 +20,19 @@ struct SettingsView: View {
                         }
                     }
                     .pickerStyle(.segmented)
+                }
+
+                Section("Listening") {
+                    NavigationLink {
+                        VoicePickerView()
+                    } label: {
+                        HStack {
+                            Text("Voice")
+                            Spacer()
+                            Text(currentVoiceName)
+                                .foregroundStyle(Theme.secondary)
+                        }
+                    }
                 }
 
                 Section {
@@ -52,5 +66,86 @@ struct SettingsView: View {
         .background(Theme.background.ignoresSafeArea())
         .navigationTitle("Settings")
         .navigationBarTitleDisplayMode(.inline)
+    }
+
+    private var currentVoiceName: String {
+        if Prefs.shared.voiceIdentifier == nil { return "Automatic" }
+        return SpeechController.currentVoice()?.name ?? "Automatic"
+    }
+}
+
+/// Lists the installed English voices with a tap-to-preview, so listeners
+/// can pick the narrator they like.
+struct VoicePickerView: View {
+    @State private var preview = SpeechController()
+
+    private let voices = SpeechController.englishVoices()
+        .sorted {
+            if $0.quality != $1.quality { return $0.quality.rawValue > $1.quality.rawValue }
+            return ($0.name, $0.language) < ($1.name, $1.language)
+        }
+
+    var body: some View {
+        List {
+            Section {
+                row(name: "Automatic", detail: "Best installed voice", isSelected: Prefs.shared.voiceIdentifier == nil) {
+                    Prefs.shared.voiceIdentifier = nil
+                    speakSample(with: SpeechController.bestAvailableVoice())
+                }
+            } footer: {
+                Text("Tap a voice to hear it. More voices can be downloaded in the iOS Settings app under Accessibility, Spoken Content, Voices.")
+            }
+
+            Section {
+                ForEach(voices, id: \.identifier) { voice in
+                    row(
+                        name: voice.name,
+                        detail: detailLabel(for: voice),
+                        isSelected: Prefs.shared.voiceIdentifier == voice.identifier
+                    ) {
+                        Prefs.shared.voiceIdentifier = voice.identifier
+                        speakSample(with: voice)
+                    }
+                }
+            }
+        }
+        .scrollContentBackground(.hidden)
+        .background(Theme.background.ignoresSafeArea())
+        .navigationTitle("Voice")
+        .navigationBarTitleDisplayMode(.inline)
+        .onDisappear { preview.stop() }
+    }
+
+    private func row(name: String, detail: String, isSelected: Bool, action: @escaping () -> Void) -> some View {
+        Button(action: action) {
+            HStack {
+                VStack(alignment: .leading, spacing: 2) {
+                    Text(name)
+                        .foregroundStyle(Theme.text)
+                    Text(detail)
+                        .font(.system(size: 12))
+                        .foregroundStyle(Theme.secondary)
+                }
+                Spacer()
+                if isSelected {
+                    Image(systemName: "checkmark")
+                        .foregroundStyle(Theme.purple)
+                }
+            }
+        }
+    }
+
+    private func detailLabel(for voice: AVSpeechSynthesisVoice) -> String {
+        let region = Locale.current.localizedString(forIdentifier: voice.language) ?? voice.language
+        switch voice.quality {
+        case .premium: return "\(region) · Premium"
+        case .enhanced: return "\(region) · Enhanced"
+        default: return region
+        }
+    }
+
+    private func speakSample(with voice: AVSpeechSynthesisVoice?) {
+        preview.stop()
+        preview.speakPreview("The Nuus. Serving you bite-sized news, every day.", voice: voice)
     }
 }

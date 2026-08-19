@@ -69,10 +69,57 @@ final class SpeechController: NSObject, AVSpeechSynthesizerDelegate {
         isPaused = false
     }
 
+    /// Speaks a short sample with an explicit voice (used by the voice picker).
+    func speakPreview(_ text: String, voice: AVSpeechSynthesisVoice?) {
+        stop()
+        beginSession()
+        let utterance = AVSpeechUtterance(string: text)
+        utterance.voice = voice
+        synthesizer.speak(utterance)
+        isSpeaking = true
+        isPaused = false
+    }
+
     private func speak(_ text: String) {
         let utterance = AVSpeechUtterance(string: text)
         utterance.postUtteranceDelay = 0.4
+        utterance.voice = Self.currentVoice()
         synthesizer.speak(utterance)
+    }
+
+    // MARK: - Voice selection
+
+    /// The user's chosen voice, or the best installed English voice.
+    static func currentVoice() -> AVSpeechSynthesisVoice? {
+        if let id = Prefs.shared.voiceIdentifier,
+           let voice = AVSpeechSynthesisVoice(identifier: id) {
+            return voice
+        }
+        return bestAvailableVoice()
+    }
+
+    /// Highest-quality installed English voice: premium beats enhanced beats
+    /// compact, and the device's own English variant beats other accents.
+    static func bestAvailableVoice() -> AVSpeechSynthesisVoice? {
+        let preferred = AVSpeechSynthesisVoice.currentLanguageCode()
+        return englishVoices().max { score($0, preferred: preferred) < score($1, preferred: preferred) }
+    }
+
+    static func englishVoices() -> [AVSpeechSynthesisVoice] {
+        AVSpeechSynthesisVoice.speechVoices()
+            .filter { $0.language.hasPrefix("en") }
+    }
+
+    private static func score(_ voice: AVSpeechSynthesisVoice, preferred: String) -> Int {
+        var score: Int
+        switch voice.quality {
+        case .premium: score = 100
+        case .enhanced: score = 50
+        default: score = 0
+        }
+        if voice.language == preferred { score += 20 }
+        else if voice.language == "en-US" { score += 10 }
+        return score
     }
 
     // MARK: - AVSpeechSynthesizerDelegate

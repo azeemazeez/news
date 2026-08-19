@@ -27,12 +27,19 @@ final class Prefs {
         didSet { UserDefaults.standard.set(textSize.rawValue, forKey: "textSize") }
     }
 
+    /// Identifier of the chosen text-to-speech voice; nil means "pick the
+    /// best installed voice automatically".
+    var voiceIdentifier: String? {
+        didSet { UserDefaults.standard.set(voiceIdentifier, forKey: "voiceIdentifier") }
+    }
+
     /// IDs of stories the user has opened, newest last, so the feed can show
     /// what's already been read. Capped so the list doesn't grow forever.
     private(set) var readStoryIDs: [String]
 
     private init() {
         textSize = TextSize(rawValue: UserDefaults.standard.string(forKey: "textSize") ?? "") ?? .regular
+        voiceIdentifier = UserDefaults.standard.string(forKey: "voiceIdentifier")
         readStoryIDs = UserDefaults.standard.stringArray(forKey: "readStories") ?? []
     }
 
