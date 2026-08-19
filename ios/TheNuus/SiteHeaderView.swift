@@ -53,28 +53,7 @@ struct SiteHeaderView: View {
             .padding(.vertical, 2)
             .background(Theme.headerGradient)
 
-            VStack(spacing: 0) {
-                Text("Est. 2026 · Daily Edition")
-                    .font(.system(size: 11, weight: .bold))
-                    .kerning(2.8)
-                    .textCase(.uppercase)
-                    .foregroundStyle(Theme.eyebrow)
-
-                Text("The Nuus")
-                    .font(.custom("ArchivoBlack-Regular", size: 56))
-                    .kerning(-2.5)
-                    .foregroundStyle(Theme.wordmark)
-                    .padding(.top, 6)
-
-                Text("Serving you bite-sized news, every day.")
-                    .font(.system(size: 17, design: .serif))
-                    .italic()
-                    .foregroundStyle(Theme.secondary)
-                    .padding(.top, 8)
-            }
-            .padding(.top, 26)
-            .padding(.bottom, 24)
-            .padding(.horizontal, 16)
+            MastheadBlock()
         }
         .background(Theme.background)
     }
@@ -85,6 +64,36 @@ struct SiteHeaderView: View {
         let weekday = now.formatted(.dateTime.weekday(.wide))
         let rest = now.formatted(.dateTime.month(.wide).day().year())
         return "\(weekday) · \(rest)"
+    }
+}
+
+/// The eyebrow, wordmark, and tagline — shown on the home feed and repeated
+/// at the top of every sub page so the whole app carries the masthead.
+struct MastheadBlock: View {
+    var body: some View {
+        VStack(spacing: 0) {
+            Text("Est. 2026 · Daily Edition")
+                .font(.system(size: 11, weight: .bold))
+                .kerning(2.8)
+                .textCase(.uppercase)
+                .foregroundStyle(Theme.eyebrow)
+
+            Text("The Nuus")
+                .font(.custom("ArchivoBlack-Regular", size: 56))
+                .kerning(-2.5)
+                .foregroundStyle(Theme.wordmark)
+                .padding(.top, 6)
+
+            Text("Serving you bite-sized news, every day.")
+                .font(.system(size: 17, design: .serif))
+                .italic()
+                .foregroundStyle(Theme.secondary)
+                .padding(.top, 8)
+        }
+        .padding(.top, 26)
+        .padding(.bottom, 24)
+        .padding(.horizontal, 16)
+        .frame(maxWidth: .infinity)
     }
 }
 

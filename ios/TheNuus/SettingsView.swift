@@ -6,6 +6,12 @@ struct SettingsView: View {
 
     var body: some View {
         Form {
+                Section {
+                    MastheadBlock()
+                        .listRowInsets(EdgeInsets())
+                        .listRowBackground(Color.clear)
+                }
+
                 Section("Reading") {
                     Picker("Text size", selection: Bindable(Prefs.shared).textSize) {
                         ForEach(Prefs.TextSize.allCases) { size in
@@ -42,6 +48,8 @@ struct SettingsView: View {
                     }
                 }
         }
+        .scrollContentBackground(.hidden)
+        .background(Theme.background.ignoresSafeArea())
         .navigationTitle("Settings")
         .navigationBarTitleDisplayMode(.inline)
     }

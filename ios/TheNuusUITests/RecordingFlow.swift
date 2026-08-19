@@ -74,13 +74,14 @@ final class RecordingFlow: XCTestCase {
         app.buttons["Saved"].tap()
         sleep(2)
 
-        let savedRow = app.cells.firstMatch
+        // Cell 0 is the masthead; saved stories start at index 1.
+        let savedRow = app.cells.element(boundBy: 1)
         XCTAssertTrue(savedRow.waitForExistence(timeout: 4), "saved list empty")
         savedRow.tap()
         sleep(3)
         app.navigationBars.buttons.firstMatch.tap() // back to saved list
         sleep(1)
-        app.cells.firstMatch.swipeLeft()
+        app.cells.element(boundBy: 1).swipeLeft()
         sleep(1)
         app.buttons["Delete"].firstMatch.tap()
         sleep(2)

@@ -26,6 +26,12 @@ struct ArchiveView: View {
             } else if let range {
                 Form {
                     Section {
+                        MastheadBlock()
+                            .listRowInsets(EdgeInsets())
+                            .listRowBackground(Color.clear)
+                    }
+
+                    Section {
                         DatePicker(
                             "Edition date",
                             selection: $selected,
@@ -52,6 +58,8 @@ struct ArchiveView: View {
                 ProgressView().tint(Theme.purple)
             }
         }
+        .scrollContentBackground(.hidden)
+        .background(Theme.background.ignoresSafeArea())
         .navigationTitle("Archive")
         .navigationBarTitleDisplayMode(.inline)
         .task {
@@ -97,22 +105,31 @@ struct SavedView: View {
     var body: some View {
         Group {
             if SavedStore.shared.items.isEmpty {
-                VStack(spacing: 8) {
-                    Image(systemName: "bookmark")
-                        .font(.system(size: 28))
-                        .foregroundStyle(Theme.secondary)
-                    Text("No saved stories yet")
-                        .font(.system(size: 15, weight: .semibold))
-                        .foregroundStyle(Theme.text)
-                    Text("Save any story from its reading screen or by long-pressing it in the feed.")
-                        .font(.system(size: 13))
-                        .foregroundStyle(Theme.secondary)
+                ScrollView {
+                    VStack(spacing: 8) {
+                        MastheadBlock()
+                        Image(systemName: "bookmark")
+                            .font(.system(size: 28))
+                            .foregroundStyle(Theme.secondary)
+                        Text("No saved stories yet")
+                            .font(.system(size: 15, weight: .semibold))
+                            .foregroundStyle(Theme.text)
+                        Text("Save any story from its reading screen or by long-pressing it in the feed.")
+                            .font(.system(size: 13))
+                            .foregroundStyle(Theme.secondary)
+                            .padding(.horizontal, 32)
+                    }
+                    .multilineTextAlignment(.center)
                 }
-                .multilineTextAlignment(.center)
-                .padding(32)
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
             } else {
                 List {
+                    Section {
+                        MastheadBlock()
+                            .listRowInsets(EdgeInsets())
+                            .listRowBackground(Color.clear)
+                            .listRowSeparator(.hidden)
+                    }
+
                     ForEach(SavedStore.shared.items) { item in
                         NavigationLink(value: ReadRequest(story: item.story, editionDate: item.editionDate)) {
                             VStack(alignment: .leading, spacing: 6) {
@@ -161,6 +178,8 @@ struct AboutView: View {
 
     var body: some View {
         ScrollView {
+            MastheadBlock()
+
             VStack(alignment: .leading, spacing: 18) {
                 ForEach(Self.paragraphs, id: \.self) { paragraph in
                     Text(paragraph)
