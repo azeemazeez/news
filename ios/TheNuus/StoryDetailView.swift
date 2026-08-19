@@ -22,7 +22,7 @@ struct StoryDetailView: View {
                         .foregroundStyle(Theme.purple)
 
                     Text(story.cleanIntro)
-                        .font(.system(size: 27 * prefs.textSize.scale, weight: .bold, design: .serif))
+                        .font(.system(size: 26 * prefs.textSize.scale, weight: .bold))
                         .foregroundStyle(Theme.text)
                         .lineSpacing(5)
                         .padding(.top, 12)
@@ -30,9 +30,9 @@ struct StoryDetailView: View {
                     // The link text is the tail of the closing sentence; the
                     // source link itself lives in the footer.
                     Text("\(story.cleanBody) \(story.cleanLinkText)")
-                        .font(.system(size: 18 * prefs.textSize.scale, design: .serif))
+                        .font(.system(size: 17 * prefs.textSize.scale))
                         .foregroundStyle(Theme.text)
-                        .lineSpacing(8)
+                        .lineSpacing(6)
                         .padding(.top, 18)
 
                     actionRow
