@@ -79,10 +79,17 @@ struct SettingsView: View {
 struct VoicePickerView: View {
     @State private var preview = SpeechController()
 
-    // Compact-quality voices (including the novelty ones) sound synthetic,
-    // so only offer the natural Enhanced and Premium tiers.
+    // The novelty and legacy robotic voices Apple ships alongside the real
+    // ones; quality metadata doesn't reliably separate them, so exclude by name.
+    private static let syntheticNames: Set<String> = [
+        "albert", "bad news", "bahh", "bells", "boing", "bubbles", "cellos",
+        "deranged", "wobble", "good news", "jester", "organ", "superstar",
+        "trinoids", "whisper", "zarvox", "fred", "junior", "kathy", "ralph",
+        "eddy", "flo", "grandma", "grandpa", "reed", "rocko", "sandy", "shelley",
+    ]
+
     private let voices = SpeechController.englishVoices()
-        .filter { $0.quality == .enhanced || $0.quality == .premium }
+        .filter { !Self.syntheticNames.contains($0.name.lowercased()) }
         .sorted {
             if $0.quality != $1.quality { return $0.quality.rawValue > $1.quality.rawValue }
             return ($0.name, $0.language) < ($1.name, $1.language)
