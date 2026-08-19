@@ -1,8 +1,8 @@
 import SwiftUI
 
 /// The website's mobile masthead, recreated natively: gradient utility bar
-/// with today's date, the eyebrow line, the Archivo Black gradient wordmark,
-/// and the italic serif tagline.
+/// with today's date, the Archivo Black gradient wordmark, and the italic
+/// serif tagline.
 struct SiteHeaderView: View {
     let onMenu: (MenuScreen) -> Void
 
@@ -67,22 +67,15 @@ struct SiteHeaderView: View {
     }
 }
 
-/// The eyebrow, wordmark, and tagline — shown on the home feed and repeated
-/// at the top of every sub page so the whole app carries the masthead.
+/// The wordmark and tagline — shown on the home feed and repeated at the
+/// top of every sub page so the whole app carries the masthead.
 struct MastheadBlock: View {
     var body: some View {
         VStack(spacing: 0) {
-            Text("Est. 2026 · Daily Edition")
-                .font(.system(size: 11, weight: .bold))
-                .kerning(2.8)
-                .textCase(.uppercase)
-                .foregroundStyle(Theme.eyebrow)
-
             Text("The Nuus")
                 .font(.custom("ArchivoBlack-Regular", size: 56))
                 .kerning(-2.5)
                 .foregroundStyle(Theme.wordmark)
-                .padding(.top, 6)
 
             Text("Serving you bite-sized news, every day.")
                 .font(.system(size: 17, design: .serif))
