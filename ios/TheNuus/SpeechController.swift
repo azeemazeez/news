@@ -24,8 +24,9 @@ final class SpeechController: NSObject, AVSpeechSynthesizerDelegate {
         beginSession()
         speak("The Nuus. \(edition.displayDate).")
         for story in edition.stories {
-            speak(Self.spokenText(for: story))
+            speak(Self.spokenText(for: story), pauseAfter: 2.0)
         }
+        speak("That's all the news for today, tune in tomorrow for more news.")
         isSpeaking = true
         isPaused = false
     }
@@ -80,9 +81,9 @@ final class SpeechController: NSObject, AVSpeechSynthesizerDelegate {
         isPaused = false
     }
 
-    private func speak(_ text: String) {
+    private func speak(_ text: String, pauseAfter: TimeInterval = 0.4) {
         let utterance = AVSpeechUtterance(string: text)
-        utterance.postUtteranceDelay = 0.4
+        utterance.postUtteranceDelay = pauseAfter
         utterance.voice = Self.currentVoice()
         synthesizer.speak(utterance)
     }
