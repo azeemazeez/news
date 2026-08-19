@@ -29,10 +29,13 @@
     <div class="util-bar">
       <span id="util-date" class="util-date"></span>
       <span class="util-center">Today's 5-minute read</span>
-      <div class="util-links">
+      <div class="util-links" id="util-links">
         <a href="/#subscribe-form">Subscribe</a>
         <a href="/archive">Archive</a>
       </div>
+      <button class="menu-btn" id="menu-btn" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
     <div class="masthead-block">
       <div class="eyebrow">
@@ -78,6 +81,24 @@
     const weekday = now.toLocaleDateString('en-US', { weekday: 'long' });
     const rest = now.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
     utilDate.textContent = `${weekday} \u00b7 ${rest}`;
+  </script>
+  <script>
+    (() => {
+      const btn = document.getElementById('menu-btn');
+      const links = document.getElementById('util-links');
+      if (!btn || !links) return;
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const open = links.classList.toggle('open');
+        btn.setAttribute('aria-expanded', String(open));
+      });
+      document.addEventListener('click', (e) => {
+        if (!links.contains(e.target) && links.classList.contains('open')) {
+          links.classList.remove('open');
+          btn.setAttribute('aria-expanded', 'false');
+        }
+      });
+    })();
   </script>
 </body>
 </html>
