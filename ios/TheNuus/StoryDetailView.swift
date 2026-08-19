@@ -7,15 +7,13 @@ import SwiftUI
 struct StoryDetailView: View {
     let story: Story
 
-    @Environment(\.dismiss) private var dismiss
     @Environment(\.openURL) private var openURL
     @State private var speech = SpeechController()
 
     private var prefs: Prefs { Prefs.shared }
 
     var body: some View {
-        NavigationStack {
-            ScrollView {
+        ScrollView {
                 VStack(alignment: .leading, spacing: 0) {
                     Text(story.source)
                         .font(.system(size: 12, weight: .bold))
@@ -55,32 +53,26 @@ struct StoryDetailView: View {
                         .buttonStyle(.plain)
                     }
                 }
-                .frame(maxWidth: 620, alignment: .leading)
-                .frame(maxWidth: .infinity)
-                .padding(24)
-            }
-            .background(Theme.background.ignoresSafeArea())
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .topBarLeading) {
-                    Menu {
-                        Picker("Text Size", selection: Bindable(Prefs.shared).textSize) {
-                            ForEach(Prefs.TextSize.allCases) { size in
-                                Text(size.rawValue).tag(size)
-                            }
+            .frame(maxWidth: 620, alignment: .leading)
+            .frame(maxWidth: .infinity)
+            .padding(24)
+        }
+        .background(Theme.background.ignoresSafeArea())
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItem(placement: .topBarTrailing) {
+                Menu {
+                    Picker("Text Size", selection: Bindable(Prefs.shared).textSize) {
+                        ForEach(Prefs.TextSize.allCases) { size in
+                            Text(size.rawValue).tag(size)
                         }
-                    } label: {
-                        Image(systemName: "textformat.size")
-                            .accessibilityLabel("Text size")
                     }
-                }
-                ToolbarItem(placement: .topBarTrailing) {
-                    Button("Done") { dismiss() }
-                        .accessibilityIdentifier("reader-done")
+                } label: {
+                    Image(systemName: "textformat.size")
+                        .accessibilityLabel("Text size")
                 }
             }
         }
-        .tint(Theme.purple)
         .onDisappear { speech.stop() }
     }
 

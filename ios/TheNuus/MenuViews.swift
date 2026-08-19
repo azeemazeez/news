@@ -11,7 +11,6 @@ struct ArchiveView: View {
     /// Called with the picked date; the feed loads that edition.
     let onSelect: (String) -> Void
 
-    @Environment(\.dismiss) private var dismiss
     @State private var available: Set<String> = []
     @State private var range: ClosedRange<Date>?
     @State private var selected = Date()
@@ -19,50 +18,42 @@ struct ArchiveView: View {
     @State private var failed = false
 
     var body: some View {
-        NavigationStack {
-            Group {
-                if failed {
-                    Text("Couldn't load the archive.")
-                        .font(.system(size: 14))
-                        .foregroundStyle(Theme.secondary)
-                } else if let range {
-                    Form {
-                        Section {
-                            DatePicker(
-                                "Edition date",
-                                selection: $selected,
-                                in: range,
-                                displayedComponents: .date
-                            )
-                            .datePickerStyle(.graphical)
-                            .onChange(of: selected) { _, day in
-                                let key = Self.key(for: day)
-                                if available.contains(key) {
-                                    noEdition = false
-                                    onSelect(key)
-                                } else {
-                                    noEdition = true
-                                }
+        Group {
+            if failed {
+                Text("Couldn't load the archive.")
+                    .font(.system(size: 14))
+                    .foregroundStyle(Theme.secondary)
+            } else if let range {
+                Form {
+                    Section {
+                        DatePicker(
+                            "Edition date",
+                            selection: $selected,
+                            in: range,
+                            displayedComponents: .date
+                        )
+                        .datePickerStyle(.graphical)
+                        .onChange(of: selected) { _, day in
+                            let key = Self.key(for: day)
+                            if available.contains(key) {
+                                noEdition = false
+                                onSelect(key)
+                            } else {
+                                noEdition = true
                             }
-                        } footer: {
-                            Text(noEdition
-                                 ? "No edition was published on that day — try another."
-                                 : "Pick a day to read that edition.")
                         }
+                    } footer: {
+                        Text(noEdition
+                             ? "No edition was published on that day — try another."
+                             : "Pick a day to read that edition.")
                     }
-                } else {
-                    ProgressView().tint(Theme.purple)
                 }
-            }
-            .navigationTitle("Archive")
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .topBarTrailing) {
-                    Button("Done") { dismiss() }
-                }
+            } else {
+                ProgressView().tint(Theme.purple)
             }
         }
-        .tint(Theme.purple)
+        .navigationTitle("Archive")
+        .navigationBarTitleDisplayMode(.inline)
         .task {
             do {
                 let dates = try await NewsService.shared.manifestDates()
@@ -103,67 +94,49 @@ struct ArchiveView: View {
 // MARK: - Saved
 
 struct SavedView: View {
-    @Environment(\.dismiss) private var dismiss
-    @State private var selectedStory: Story?
-
     var body: some View {
-        NavigationStack {
-            Group {
-                if SavedStore.shared.stories.isEmpty {
-                    VStack(spacing: 8) {
-                        Image(systemName: "bookmark")
-                            .font(.system(size: 28))
-                            .foregroundStyle(Theme.secondary)
-                        Text("No saved stories yet")
-                            .font(.system(size: 15, weight: .semibold))
-                            .foregroundStyle(Theme.text)
-                        Text("Tap the bookmark under any story to keep it here.")
-                            .font(.system(size: 13))
-                            .foregroundStyle(Theme.secondary)
-                    }
-                    .multilineTextAlignment(.center)
-                    .padding(32)
-                } else {
-                    List {
-                        ForEach(SavedStore.shared.stories) { story in
-                            Button {
-                                selectedStory = story
-                            } label: {
-                                VStack(alignment: .leading, spacing: 4) {
-                                    Text(story.cleanIntro)
-                                        .font(.system(size: 15, weight: .semibold))
-                                        .foregroundStyle(Theme.text)
-                                    Text(story.cleanBody)
-                                        .font(.system(size: 13))
-                                        .foregroundStyle(Theme.secondary)
-                                        .lineLimit(2)
-                                }
+        Group {
+            if SavedStore.shared.stories.isEmpty {
+                VStack(spacing: 8) {
+                    Image(systemName: "bookmark")
+                        .font(.system(size: 28))
+                        .foregroundStyle(Theme.secondary)
+                    Text("No saved stories yet")
+                        .font(.system(size: 15, weight: .semibold))
+                        .foregroundStyle(Theme.text)
+                    Text("Save any story from its reading screen or by long-pressing it in the feed.")
+                        .font(.system(size: 13))
+                        .foregroundStyle(Theme.secondary)
+                }
+                .multilineTextAlignment(.center)
+                .padding(32)
+            } else {
+                List {
+                    ForEach(SavedStore.shared.stories) { story in
+                        NavigationLink(value: story) {
+                            VStack(alignment: .leading, spacing: 4) {
+                                Text(story.cleanIntro)
+                                    .font(.system(size: 15, weight: .semibold))
+                                    .foregroundStyle(Theme.text)
+                                Text(story.cleanBody)
+                                    .font(.system(size: 13))
+                                    .foregroundStyle(Theme.secondary)
+                                    .lineLimit(2)
                             }
                         }
-                        .onDelete { SavedStore.shared.remove(atOffsets: $0) }
                     }
-                }
-            }
-            .navigationTitle("Saved")
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .topBarTrailing) {
-                    Button("Done") { dismiss() }
+                    .onDelete { SavedStore.shared.remove(atOffsets: $0) }
                 }
             }
         }
-        .tint(Theme.purple)
-        .sheet(item: $selectedStory) { story in
-            StoryDetailView(story: story)
-        }
+        .navigationTitle("Saved")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
 // MARK: - About
 
 struct AboutView: View {
-    @Environment(\.dismiss) private var dismiss
-
     private static let paragraphs = [
         "The Nuus is a daily news digest built on a simple idea: the stories that matter most, told clearly and without the noise.",
         "Keeping up with the world shouldn't mean juggling a dozen sources, sifting through ads, or hitting paywalls before you've had your first coffee. The Nuus was built to change that — a single, curated view of what's happening right now, delivered every morning.",
@@ -171,33 +144,25 @@ struct AboutView: View {
     ]
 
     var body: some View {
-        NavigationStack {
-            ScrollView {
-                VStack(alignment: .leading, spacing: 18) {
-                    ForEach(Self.paragraphs, id: \.self) { paragraph in
-                        Text(paragraph)
-                            .font(.system(size: 16))
-                            .foregroundStyle(Theme.text)
-                            .lineSpacing(5)
-                    }
-
-                    Text("The Nuus — A MonoBlock Endeavor")
-                        .font(.system(size: 16, weight: .semibold))
+        ScrollView {
+            VStack(alignment: .leading, spacing: 18) {
+                ForEach(Self.paragraphs, id: \.self) { paragraph in
+                    Text(paragraph)
+                        .font(.system(size: 16))
                         .foregroundStyle(Theme.text)
-                        .padding(.top, 6)
+                        .lineSpacing(5)
                 }
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(24)
+
+                Text("The Nuus — A MonoBlock Endeavor")
+                    .font(.system(size: 16, weight: .semibold))
+                    .foregroundStyle(Theme.text)
+                    .padding(.top, 6)
             }
-            .background(Theme.background.ignoresSafeArea())
-            .navigationTitle("About")
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .topBarTrailing) {
-                    Button("Done") { dismiss() }
-                }
-            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding(24)
         }
-        .tint(Theme.purple)
+        .background(Theme.background.ignoresSafeArea())
+        .navigationTitle("About")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }

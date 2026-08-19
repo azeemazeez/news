@@ -28,7 +28,7 @@ struct Edition: Codable, Equatable {
     }
 }
 
-struct Story: Codable, Equatable, Identifiable {
+struct Story: Codable, Equatable, Hashable, Identifiable {
     let intro: String
     let body: String
     let linkText: String

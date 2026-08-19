@@ -38,7 +38,7 @@ final class RecordingFlow: XCTestCase {
         app.buttons["Large"].tap()
         sleep(2)
 
-        app.buttons["reader-done"].tap()
+        app.navigationBars.buttons.firstMatch.tap() // back to feed
         sleep(2)
 
         // ── Context menu (long-press) ────────────────────────────────────
@@ -78,13 +78,13 @@ final class RecordingFlow: XCTestCase {
         XCTAssertTrue(savedRow.waitForExistence(timeout: 4), "saved list empty")
         savedRow.tap()
         sleep(3)
-        app.buttons["reader-done"].tap()
+        app.navigationBars.buttons.firstMatch.tap() // back to saved list
         sleep(1)
         app.cells.firstMatch.swipeLeft()
         sleep(1)
         app.buttons["Delete"].firstMatch.tap()
         sleep(2)
-        app.buttons["Done"].tap()
+        app.navigationBars.buttons.firstMatch.tap() // back to feed
         sleep(2)
 
         // ── Settings: native controls + permission prompt ────────────────
@@ -104,7 +104,7 @@ final class RecordingFlow: XCTestCase {
             allow.tap()
         }
         sleep(3) // reminder time row now visible
-        app.buttons["Done"].tap()
+        app.navigationBars.buttons.firstMatch.tap() // back to feed
         sleep(2)
 
         // ── Finale: dark mode (flipped externally on this marker) ────────

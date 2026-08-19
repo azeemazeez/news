@@ -1,13 +1,11 @@
 import SwiftUI
 
 struct SettingsView: View {
-    @Environment(\.dismiss) private var dismiss
     @State private var reminderOn = NotificationManager.shared.isEnabled
     @State private var permissionDenied = false
 
     var body: some View {
-        NavigationStack {
-            Form {
+        Form {
                 Section("Reading") {
                     Picker("Text size", selection: Bindable(Prefs.shared).textSize) {
                         ForEach(Prefs.TextSize.allCases) { size in
@@ -43,15 +41,8 @@ struct SettingsView: View {
                         Text("A quiet nudge each day when the new edition is ready.")
                     }
                 }
-            }
-            .navigationTitle("Settings")
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .topBarTrailing) {
-                    Button("Done") { dismiss() }
-                }
-            }
         }
-        .tint(Theme.purple)
+        .navigationTitle("Settings")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }

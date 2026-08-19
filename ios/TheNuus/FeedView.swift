@@ -52,64 +52,67 @@ struct FeedView: View {
     let model: FeedModel
 
     @Environment(\.horizontalSizeClass) private var sizeClass
-    @State private var selectedStory: Story?
-    @State private var menuScreen: MenuScreen?
+    @State private var path = NavigationPath()
     @State private var speech = SpeechController()
 
     var body: some View {
-        ScrollView {
-            VStack(spacing: 0) {
-                SiteHeaderView { screen in
-                    menuScreen = screen
-                }
-                .sheet(item: $menuScreen) { screen in
-                    switch screen {
-                    case .archive:
-                        ArchiveView { date in
-                            menuScreen = nil
-                            speech.stop()
-                            Task { await model.load(date: date) }
-                        }
-                    case .saved:
-                        SavedView()
-                    case .settings:
-                        SettingsView()
-                    case .about:
-                        AboutView()
+        NavigationStack(path: $path) {
+            ScrollView {
+                VStack(spacing: 0) {
+                    SiteHeaderView { screen in
+                        path.append(screen)
+                    }
+
+                    switch model.state {
+                    case .loading:
+                        ProgressView()
+                            .tint(Theme.purple)
+                            .padding(.top, 80)
+
+                    case .loaded(let edition):
+                        stories(edition)
+                            .containerRelativeFrame(.horizontal) { width, _ in
+                                sizeClass == .regular ? min(width, 800) : width
+                            }
+
+                    case .failed(let message):
+                        failureView(message)
                     }
                 }
-
-                switch model.state {
-                case .loading:
-                    ProgressView()
-                        .tint(Theme.purple)
-                        .padding(.top, 80)
-
-                case .loaded(let edition):
-                    stories(edition)
-                        .containerRelativeFrame(.horizontal) { width, _ in
-                            sizeClass == .regular ? min(width, 800) : width
-                        }
-
-                case .failed(let message):
-                    failureView(message)
+            }
+            .background(Theme.background.ignoresSafeArea())
+            .toolbar(.hidden, for: .navigationBar)
+            .refreshable {
+                speech.stop()
+                await model.load()
+            }
+            .navigationDestination(for: MenuScreen.self) { screen in
+                switch screen {
+                case .archive:
+                    ArchiveView { date in
+                        path.removeLast()
+                        speech.stop()
+                        Task { await model.load(date: date) }
+                    }
+                case .saved:
+                    SavedView()
+                case .settings:
+                    SettingsView()
+                case .about:
+                    AboutView()
                 }
             }
+            .navigationDestination(for: Story.self) { story in
+                StoryDetailView(story: story)
+            }
+            .onChange(of: AppActions.shared.listenRequested) {
+                startListeningIfRequested()
+            }
+            .onChange(of: model.state) {
+                startListeningIfRequested()
+            }
         }
-        .background(Theme.background.ignoresSafeArea())
-        .refreshable {
-            speech.stop()
-            await model.load()
-        }
-        .sheet(item: $selectedStory) { story in
-            StoryDetailView(story: story)
-        }
-        .onChange(of: AppActions.shared.listenRequested) {
-            startListeningIfRequested()
-        }
-        .onChange(of: model.state) {
-            startListeningIfRequested()
-        }
+        .tint(Theme.purple)
     }
 
     /// Honours the "Listen to Today's Edition" Siri shortcut once the
@@ -172,7 +175,7 @@ struct FeedView: View {
             ForEach(edition.stories) { story in
                 StoryRow(story: story) {
                     speech.stop()
-                    selectedStory = story
+                    path.append(story)
                     Prefs.shared.markRead(story)
                     PostHogSDK.shared.capture("story_opened", properties: ["url": story.url])
                 }
@@ -279,28 +282,11 @@ struct StoryRow: View {
                 }
             }
 
-            HStack(spacing: 22) {
-                Button {
-                    SavedStore.shared.toggle(story)
-                } label: {
-                    Image(systemName: saved ? "bookmark.fill" : "bookmark")
-                        .foregroundStyle(saved ? Theme.purple : Theme.secondary)
-                }
-                .buttonStyle(.plain)
-                .accessibilityLabel(saved ? "Remove from saved" : "Save story")
-
-                if let url = story.articleURL {
-                    ShareLink(item: url, message: Text(story.cleanIntro)) {
-                        Image(systemName: "square.and.arrow.up")
-                            .foregroundStyle(Theme.secondary)
-                    }
-                    .buttonStyle(.plain)
-                    .accessibilityLabel("Share story")
-                }
-
-                Spacer()
+            if saved {
+                Label("Saved", systemImage: "bookmark.fill")
+                    .font(.system(size: 12, weight: .semibold))
+                    .foregroundStyle(Theme.purple)
             }
-            .font(.system(size: 15))
         }
         .padding(.vertical, sizeClass == .regular ? 20 : 16)
         .sensoryFeedback(.impact(weight: .light), trigger: saved)
