@@ -102,8 +102,8 @@ struct FeedView: View {
                     AboutView()
                 }
             }
-            .navigationDestination(for: Story.self) { story in
-                StoryDetailView(story: story)
+            .navigationDestination(for: ReadRequest.self) { request in
+                StoryDetailView(story: request.story, editionDate: request.editionDate)
             }
             .onChange(of: AppActions.shared.listenRequested) {
                 startListeningIfRequested()
@@ -173,9 +173,9 @@ struct FeedView: View {
             }
 
             ForEach(edition.stories) { story in
-                StoryRow(story: story) {
+                StoryRow(story: story, editionDate: edition.date) {
                     speech.stop()
-                    path.append(story)
+                    path.append(ReadRequest(story: story, editionDate: edition.date))
                     Prefs.shared.markRead(story)
                     PostHogSDK.shared.capture("story_opened", properties: ["url": story.url])
                 }
@@ -215,8 +215,16 @@ struct FeedView: View {
     }
 }
 
+/// What the reader screen needs to show a story: the story itself plus the
+/// edition it belongs to.
+struct ReadRequest: Hashable {
+    let story: Story
+    let editionDate: String?
+}
+
 struct StoryRow: View {
     let story: Story
+    let editionDate: String?
     let onOpen: () -> Void
 
     @Environment(\.horizontalSizeClass) private var sizeClass
@@ -263,7 +271,7 @@ struct StoryRow: View {
                 }
 
                 Button {
-                    SavedStore.shared.toggle(story)
+                    SavedStore.shared.toggle(story, editionDate: editionDate)
                 } label: {
                     Label(saved ? "Remove from Saved" : "Save",
                           systemImage: saved ? "bookmark.slash" : "bookmark")

@@ -11,7 +11,9 @@ struct Edition: Codable, Equatable {
     let stories: [Story]
 
     /// "Sunday, July 26, 2026" — matches the wording used on the site.
-    var displayDate: String {
+    var displayDate: String { Edition.displayDate(for: date) }
+
+    static func displayDate(for date: String) -> String {
         let parts = date.split(separator: "-").compactMap { Int($0) }
         guard parts.count == 3 else { return date }
 

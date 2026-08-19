@@ -6,6 +6,7 @@ import SwiftUI
 /// to a footer link.
 struct StoryDetailView: View {
     let story: Story
+    let editionDate: String?
 
     @Environment(\.openURL) private var openURL
     @State private var speech = SpeechController()
@@ -26,6 +27,13 @@ struct StoryDetailView: View {
                         .foregroundStyle(Theme.text)
                         .lineSpacing(5)
                         .padding(.top, 12)
+
+                    if let editionDate {
+                        Text(Edition.displayDate(for: editionDate))
+                            .font(.system(size: 13))
+                            .foregroundStyle(Theme.secondary)
+                            .padding(.top, 8)
+                    }
 
                     // The link text is the tail of the closing sentence; the
                     // source link itself lives in the footer.
@@ -98,7 +106,7 @@ struct StoryDetailView: View {
             .buttonStyle(.plain)
 
             Button {
-                SavedStore.shared.toggle(story)
+                SavedStore.shared.toggle(story, editionDate: editionDate)
             } label: {
                 Image(systemName: saved ? "bookmark.fill" : "bookmark")
                     .foregroundStyle(saved ? Theme.purple : Theme.secondary)

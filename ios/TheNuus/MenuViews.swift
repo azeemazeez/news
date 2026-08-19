@@ -96,7 +96,7 @@ struct ArchiveView: View {
 struct SavedView: View {
     var body: some View {
         Group {
-            if SavedStore.shared.stories.isEmpty {
+            if SavedStore.shared.items.isEmpty {
                 VStack(spacing: 8) {
                     Image(systemName: "bookmark")
                         .font(.system(size: 28))
@@ -110,25 +110,41 @@ struct SavedView: View {
                 }
                 .multilineTextAlignment(.center)
                 .padding(32)
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
             } else {
                 List {
-                    ForEach(SavedStore.shared.stories) { story in
-                        NavigationLink(value: story) {
-                            VStack(alignment: .leading, spacing: 4) {
-                                Text(story.cleanIntro)
-                                    .font(.system(size: 15, weight: .semibold))
-                                    .foregroundStyle(Theme.text)
-                                Text(story.cleanBody)
-                                    .font(.system(size: 13))
-                                    .foregroundStyle(Theme.secondary)
-                                    .lineLimit(2)
+                    ForEach(SavedStore.shared.items) { item in
+                        NavigationLink(value: ReadRequest(story: item.story, editionDate: item.editionDate)) {
+                            VStack(alignment: .leading, spacing: 6) {
+                                if let date = item.editionDate {
+                                    Text(Edition.displayDate(for: date))
+                                        .font(.system(size: 11, weight: .semibold))
+                                        .kerning(1.0)
+                                        .textCase(.uppercase)
+                                        .foregroundStyle(Theme.secondary)
+                                }
+
+                                Group {
+                                    Text(item.story.cleanIntro).fontWeight(.semibold)
+                                        + Text(" ")
+                                        + Text(item.story.cleanBody)
+                                }
+                                .font(.system(size: 16))
+                                .foregroundStyle(Theme.text)
+                                .lineLimit(3)
                             }
+                            .padding(.vertical, 8)
                         }
+                        .listRowBackground(Theme.background)
+                        .listRowSeparatorTint(Theme.rule)
                     }
                     .onDelete { SavedStore.shared.remove(atOffsets: $0) }
                 }
+                .listStyle(.plain)
+                .scrollContentBackground(.hidden)
             }
         }
+        .background(Theme.background.ignoresSafeArea())
         .navigationTitle("Saved")
         .navigationBarTitleDisplayMode(.inline)
     }
@@ -139,7 +155,7 @@ struct SavedView: View {
 struct AboutView: View {
     private static let paragraphs = [
         "The Nuus is a daily news digest built on a simple idea: the stories that matter most, told clearly and without the noise.",
-        "Keeping up with the world shouldn't mean juggling a dozen sources, sifting through ads, or hitting paywalls before you've had your first coffee. The Nuus was built to change that — a single, curated view of what's happening right now, delivered every morning.",
+        "Keeping up with the world shouldn't mean juggling a dozen sources, sifting through ads, or hitting paywalls before you've had your first coffee. The Nuus was built to change that: a single, curated view of what's happening right now, delivered every morning.",
         "We pull from sources across the web and filter for the stories that deserve your attention. Not the loudest headlines. Not the most clicked. The ones with real significance — for curious, informed readers who value their time.",
     ]
 
@@ -153,7 +169,7 @@ struct AboutView: View {
                         .lineSpacing(5)
                 }
 
-                Text("The Nuus — A [MonoBlock](https://monoblock.ae) Endeavor")
+                Text("The Nuus is a [MonoBlock](https://monoblock.ae) endeavor.")
                     .font(.system(size: 16, weight: .semibold))
                     .foregroundStyle(Theme.text)
                     .tint(Theme.purple)
