@@ -79,7 +79,10 @@ struct SettingsView: View {
 struct VoicePickerView: View {
     @State private var preview = SpeechController()
 
+    // Compact-quality voices (including the novelty ones) sound synthetic,
+    // so only offer the natural Enhanced and Premium tiers.
     private let voices = SpeechController.englishVoices()
+        .filter { $0.quality == .enhanced || $0.quality == .premium }
         .sorted {
             if $0.quality != $1.quality { return $0.quality.rawValue > $1.quality.rawValue }
             return ($0.name, $0.language) < ($1.name, $1.language)
@@ -96,15 +99,23 @@ struct VoicePickerView: View {
                 Text("Tap a voice to hear it. More voices can be downloaded in the iOS Settings app under Accessibility, Spoken Content, Voices.")
             }
 
-            Section {
-                ForEach(voices, id: \.identifier) { voice in
-                    row(
-                        name: voice.name,
-                        detail: detailLabel(for: voice),
-                        isSelected: Prefs.shared.voiceIdentifier == voice.identifier
-                    ) {
-                        Prefs.shared.voiceIdentifier = voice.identifier
-                        speakSample(with: voice)
+            if voices.isEmpty {
+                Section {
+                    Text("No natural-sounding voices are installed on this device yet. Download one in the iOS Settings app under Accessibility, Spoken Content, Voices, English — then it will appear here.")
+                        .font(.system(size: 14))
+                        .foregroundStyle(Theme.secondary)
+                }
+            } else {
+                Section {
+                    ForEach(voices, id: \.identifier) { voice in
+                        row(
+                            name: voice.name,
+                            detail: detailLabel(for: voice),
+                            isSelected: Prefs.shared.voiceIdentifier == voice.identifier
+                        ) {
+                            Prefs.shared.voiceIdentifier = voice.identifier
+                            speakSample(with: voice)
+                        }
                     }
                 }
             }
