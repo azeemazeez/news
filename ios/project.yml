@@ -15,7 +15,7 @@ settings:
   base:
     SWIFT_VERSION: "5.9"
     MARKETING_VERSION: "1.1"
-    CURRENT_PROJECT_VERSION: "202608192000"
+    CURRENT_PROJECT_VERSION: "202608192100"
     ENABLE_USER_SCRIPT_SANDBOXING: YES
 
 schemes:
@@ -49,6 +49,8 @@ targets:
         CFBundleVersion: $(CURRENT_PROJECT_VERSION)
         UIAppFonts:
           - ArchivoBlack-Regular.ttf
+        UIBackgroundModes:
+          - audio
         UILaunchScreen: {}
         UISupportedInterfaceOrientations:
           - UIInterfaceOrientationPortrait

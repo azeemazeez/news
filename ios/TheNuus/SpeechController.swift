@@ -1,10 +1,12 @@
 import AVFoundation
+import MediaPlayer
 import Observation
 
 /// Reads an edition aloud with on-device text-to-speech.
 @Observable
 final class SpeechController: NSObject, AVSpeechSynthesizerDelegate {
     private let synthesizer = AVSpeechSynthesizer()
+    private var remoteCommandTokens: [Any] = []
 
     private(set) var isSpeaking = false
     private(set) var isPaused = false
@@ -22,6 +24,7 @@ final class SpeechController: NSObject, AVSpeechSynthesizerDelegate {
         if togglePauseIfSpeaking() { return }
 
         beginSession()
+        startNowPlaying(title: "The Nuus — \(edition.displayDate)")
         speak("The Nuus. \(edition.displayDate).")
         for story in edition.stories {
             speak(Self.spokenText(for: story), pauseAfter: 2.0)
@@ -36,6 +39,7 @@ final class SpeechController: NSObject, AVSpeechSynthesizerDelegate {
         if togglePauseIfSpeaking() { return }
 
         beginSession()
+        startNowPlaying(title: story.cleanIntro)
         speak(Self.spokenText(for: story))
         isSpeaking = true
         isPaused = false
@@ -56,7 +60,62 @@ final class SpeechController: NSObject, AVSpeechSynthesizerDelegate {
             synthesizer.pauseSpeaking(at: .word)
             isPaused = true
         }
+        updateNowPlayingRate()
         return true
+    }
+
+    // MARK: - Lock screen / background playback
+
+    /// Publishes what's playing to the lock screen and hooks up its
+    /// play/pause controls, so listening survives backgrounding.
+    private func startNowPlaying(title: String) {
+        MPNowPlayingInfoCenter.default().nowPlayingInfo = [
+            MPMediaItemPropertyTitle: title,
+            MPMediaItemPropertyArtist: "The Nuus",
+            MPNowPlayingInfoPropertyPlaybackRate: 1.0,
+        ]
+
+        let center = MPRemoteCommandCenter.shared()
+        center.playCommand.removeTarget(nil)
+        center.pauseCommand.removeTarget(nil)
+        center.togglePlayPauseCommand.removeTarget(nil)
+
+        remoteCommandTokens = [
+            center.playCommand.addTarget { [weak self] _ in
+                guard let self, self.isSpeaking, self.isPaused else { return .commandFailed }
+                self.synthesizer.continueSpeaking()
+                self.isPaused = false
+                self.updateNowPlayingRate()
+                return .success
+            },
+            center.pauseCommand.addTarget { [weak self] _ in
+                guard let self, self.isSpeaking, !self.isPaused else { return .commandFailed }
+                self.synthesizer.pauseSpeaking(at: .word)
+                self.isPaused = true
+                self.updateNowPlayingRate()
+                return .success
+            },
+            center.togglePlayPauseCommand.addTarget { [weak self] _ in
+                guard let self, self.isSpeaking else { return .commandFailed }
+                _ = self.togglePauseIfSpeaking()
+                return .success
+            },
+        ]
+    }
+
+    private func updateNowPlayingRate() {
+        MPNowPlayingInfoCenter.default().nowPlayingInfo?[MPNowPlayingInfoPropertyPlaybackRate] =
+            isPlaying ? 1.0 : 0.0
+    }
+
+    private func endNowPlaying() {
+        guard !remoteCommandTokens.isEmpty else { return }
+        let center = MPRemoteCommandCenter.shared()
+        center.playCommand.removeTarget(nil)
+        center.pauseCommand.removeTarget(nil)
+        center.togglePlayPauseCommand.removeTarget(nil)
+        remoteCommandTokens = []
+        MPNowPlayingInfoCenter.default().nowPlayingInfo = nil
     }
 
     private func beginSession() {
@@ -68,6 +127,7 @@ final class SpeechController: NSObject, AVSpeechSynthesizerDelegate {
         synthesizer.stopSpeaking(at: .immediate)
         isSpeaking = false
         isPaused = false
+        endNowPlaying()
     }
 
     /// Speaks a short sample with an explicit voice (used by the voice picker).
@@ -129,6 +189,7 @@ final class SpeechController: NSObject, AVSpeechSynthesizerDelegate {
         if !synthesizer.isSpeaking {
             isSpeaking = false
             isPaused = false
+            endNowPlaying()
             try? AVAudioSession.sharedInstance().setActive(false, options: .notifyOthersOnDeactivation)
         }
     }
@@ -137,6 +198,7 @@ final class SpeechController: NSObject, AVSpeechSynthesizerDelegate {
         if !synthesizer.isSpeaking {
             isSpeaking = false
             isPaused = false
+            endNowPlaying()
         }
     }
 }
