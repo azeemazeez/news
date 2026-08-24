@@ -92,7 +92,7 @@ body {
 /* Wordmark */
 .site-name {
   font-family: 'Archivo', sans-serif;
-  font-size: clamp(54px, 12vw, 134px);
+  font-size: clamp(52px, 12vw, 132px);
   font-weight: 900;
   letter-spacing: -.045em;
   line-height: .9;
