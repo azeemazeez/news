@@ -1,0 +1,118 @@
+{
+  "date": "2026-08-25",
+  "generated_at": "2026-08-25T01:01:16.774Z",
+  "stories": [
+    {
+      "intro": "Trump reshapes American elections",
+      "body": "The Supreme Court has allowed the administration's mail-voting restrictions to proceed, part of a quiet campaign to seize control of the Postal Service and transform how Americans cast their",
+      "link_text": "ballots ahead of the midterms.",
+      "url": "https://www.nytimes.com/2026/08/24/us/politics/mail-voting-supreme-court-postal-service-trump.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Syria comes in from cold",
+      "body": "In a dramatic diplomatic pivot, the US has removed Syria from its 'state sponsor of terrorism' list, potentially reopening the war-shattered country to international investment and",
+      "link_text": "reintegration after decades of isolation.",
+      "url": "https://www.aljazeera.com/news/2026/8/24/us-removes-syria-from-state-sponsor-of-terrorism-list",
+      "source": "Al Jazeera"
+    },
+    {
+      "intro": "Trade war with Canada erupts",
+      "body": "Trump has slapped a 50% tariff on Canadian cars, trucks and steel after talks collapsed, a move that could price Canadian firms out of the US market and threaten",
+      "link_text": "thousands of cross-border jobs.",
+      "url": "https://www.theguardian.com/us-news/2026/aug/24/canada-tariff-increase-trump-auto",
+      "source": "The Guardian"
+    },
+    {
+      "intro": "Cancer vaccines within reach",
+      "body": "mRNA-based cancer vaccines could soon transform how the disease is treated and even prevented, but a rising tide of misinformation about the technology now threatens to derail",
+      "link_text": "one of medicine's biggest breakthroughs.",
+      "url": "https://www.cnn.com/2026/08/23/health/mrna-cancer-vaccines-misinformation",
+      "source": "CNN"
+    },
+    {
+      "intro": "Colombia lurches right",
+      "body": "The country's new hardline president Abelardo de la Espriella has announced a sweeping immigration crackdown, signaling a sharp break from his predecessor and reshaping the political landscape of",
+      "link_text": "a key Latin American nation.",
+      "url": "https://www.theguardian.com/world/2026/aug/25/colombia-immigration-crackdown-president-abelardo-de-la-espriella",
+      "source": "The Guardian"
+    },
+    {
+      "intro": "Congo's constitutional showdown",
+      "body": "A brewing battle over the Democratic Republic of Congo's 2028 vote pits entrenched power against constitutional limits, a fight that will determine the stability of one of Africa's largest and most",
+      "link_text": "resource-rich nations.",
+      "url": "https://www.aljazeera.com/news/2026/8/25/drcs-constitutional-battle-the-fight-over-the-2028-vote",
+      "source": "Al Jazeera"
+    },
+    {
+      "intro": "Hundreds held in Nigeria",
+      "body": "Chilling video has emerged showing hundreds of captives taken in a mass kidnapping from a mosque, underscoring the deepening insecurity gripping northern Nigeria and the state's inability to",
+      "link_text": "protect its citizens.",
+      "url": "https://www.theguardian.com/world/2026/aug/24/video-shows-hundreds-held-captive-after-nigeria-mosque-kidnapping",
+      "source": "The Guardian"
+    },
+    {
+      "intro": "Windows watermarks your images",
+      "body": "Researchers have discovered that MS Paint and the Photos app invisibly embed a unique GUID into even locally generated output, raising fresh questions about privacy and traceability in",
+      "link_text": "everyday Windows software.",
+      "url": "https://xusheng.dev/posts/reversing/mspaint_invisible_watermark/main/",
+      "source": "Hacker News"
+    },
+    {
+      "intro": "China challenges Apple silicon",
+      "body": "Xiaomi's new in-house CPU reportedly matches Apple's cores in single-threaded performance and pulls ahead in multithreaded workloads, a striking sign of China's rapidly closing gap in",
+      "link_text": "high-end chip design.",
+      "url": "https://twitter.com/lemire/status/2091894299289874926",
+      "source": "Hacker News"
+    },
+    {
+      "intro": "China's quiet robot revolution",
+      "body": "Beyond the flashy humanoid machines grabbing headlines, a far more consequential transformation in industrial automation is unfolding across China's factories, one that could reshape",
+      "link_text": "global manufacturing for decades.",
+      "url": "https://www.bbc.co.uk/news/articles/c62m4zn1q6mo",
+      "source": "BBC News"
+    },
+    {
+      "intro": "Europe smothers its makers",
+      "body": "New regulations are quietly crushing small-scale hardware makers and micro-entrepreneurs across the continent, a cautionary tale about how well-meaning rules can strangle grassroots",
+      "link_text": "innovation and independent creators.",
+      "url": "https://lectronz.com/u/lectronz/articles/how-europe-is-killing-makers-and-micro-entrepreneurs",
+      "source": "Hacker News"
+    },
+    {
+      "intro": "The vanishing public toilet",
+      "body": "Public bathrooms have quietly disappeared from American cities over the past century, a story that reveals surprising truths about urban design, class and how societies decide who deserves",
+      "link_text": "dignity in public space.",
+      "url": "https://daily.jstor.org/where-did-all-the-public-bathrooms-go/",
+      "source": "Hacker News"
+    },
+    {
+      "intro": "The Tang Dynasty hoax",
+      "body": "A bizarre corner of China's internet has become convinced that the entire Tang Dynasty was fabricated, a viral conspiracy that offers a strange window into online skepticism and",
+      "link_text": "the erosion of shared history.",
+      "url": "https://www.cnn.com/2026/08/19/style/china-tang-dynasty-never-existed-hoax-intl-hnk",
+      "source": "CNN"
+    },
+    {
+      "intro": "Octopus smarts explained",
+      "body": "Scientists may have traced the octopus's remarkable intelligence to a never-before-seen mutation that helps the animals build proteins with unusual precision, a discovery that could reshape how we understand",
+      "link_text": "the evolution of complex minds.",
+      "url": "https://www.smithsonianmag.com/smart-news/why-are-some-octopuses-so-smart-the-answer-might-lie-in-a-never-before-seen-mutation-that-helps-them-accurately-build-proteins-180989319/",
+      "source": "Smithsonian"
+    },
+    {
+      "intro": "Mpox ravages children",
+      "body": "Children now make up half of all mpox cases in Guinea-Bissau as the epidemic spreads across West Africa, a grim escalation that public health officials warn could overwhelm",
+      "link_text": "fragile regional health systems.",
+      "url": "https://www.theguardian.com/global-development/2026/aug/24/children-half-mpox-disease-cases-guinea-bissau-epidemic-spreads-west-africa",
+      "source": "The Guardian"
+    },
+    {
+      "intro": "Players revolt against Infantino",
+      "body": "Footballers are piling public pressure on FIFA president Gianni Infantino to resign amid open warfare at the top of the sport, declaring 'enough is enough' over his controversial handling of",
+      "link_text": "the game's governance.",
+      "url": "https://www.theguardian.com/football/2026/aug/24/gianni-infantino-fifa-players-resign-football-politics",
+      "source": "The Guardian Sport"
+    }
+  ]
+}
