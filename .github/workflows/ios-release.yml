@@ -54,12 +54,13 @@ jobs:
 
       # --- Everything below only runs when you ask for an upload ---
 
-      - name: Install Apple certificate and provisioning profile
+      - name: Install Apple certificate and App Store Connect key
         if: inputs.upload
         env:
           CERTIFICATE_P12: ${{ secrets.IOS_CERTIFICATE_P12 }}
           CERTIFICATE_PASSWORD: ${{ secrets.IOS_CERTIFICATE_PASSWORD }}
-          PROVISIONING_PROFILE: ${{ secrets.IOS_PROVISIONING_PROFILE }}
+          ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
+          ASC_PRIVATE_KEY: ${{ secrets.ASC_PRIVATE_KEY }}
         run: |
           KEYCHAIN=$RUNNER_TEMP/build.keychain
           KEYCHAIN_PASSWORD=$(uuidgen)
@@ -75,31 +76,43 @@ jobs:
             -k "$KEYCHAIN_PASSWORD" "$KEYCHAIN"
           security list-keychain -d user -s "$KEYCHAIN" login.keychain
 
-          PROFILES=~/Library/MobileDevice/Provisioning\ Profiles
-          mkdir -p "$PROFILES"
-          echo -n "$PROVISIONING_PROFILE" | base64 --decode \
-            -o "$PROFILES/build.mobileprovision"
+          mkdir -p ~/.appstoreconnect/private_keys
+          echo -n "$ASC_PRIVATE_KEY" | base64 --decode \
+            -o ~/.appstoreconnect/private_keys/AuthKey_${ASC_KEY_ID}.p8
 
       - name: Archive
         if: inputs.upload
         working-directory: ios
         env:
           TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
+          ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
+          ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
         run: |
+          # Automatic signing: the app and the widget extension need one
+          # profile each, and both had to be reissued when the shared app
+          # group was added. Letting xcodebuild reconcile them through the
+          # App Store Connect API avoids carrying two profile secrets that
+          # silently go stale whenever an entitlement changes.
           xcodebuild archive \
             -project TheNuus.xcodeproj \
             -scheme "$SCHEME" \
             -destination 'generic/platform=iOS' \
             -archivePath "$RUNNER_TEMP/TheNuus.xcarchive" \
+            -allowProvisioningUpdates \
+            -authenticationKeyPath ~/.appstoreconnect/private_keys/AuthKey_${ASC_KEY_ID}.p8 \
+            -authenticationKeyID "$ASC_KEY_ID" \
+            -authenticationKeyIssuerID "$ASC_ISSUER_ID" \
             DEVELOPMENT_TEAM="$TEAM_ID" \
             CURRENT_PROJECT_VERSION="$BUILD_NUMBER" \
-            CODE_SIGN_STYLE=Manual \
+            CODE_SIGN_STYLE=Automatic \
             | xcbeautify --renderer github-actions
 
       - name: Export .ipa
         if: inputs.upload
         env:
           TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
+          ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
+          ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
         run: |
           cat > "$RUNNER_TEMP/ExportOptions.plist" <<PLIST
           <?xml version="1.0" encoding="UTF-8"?>
@@ -109,7 +122,7 @@ jobs:
             <key>method</key><string>app-store-connect</string>
             <key>teamID</key><string>${TEAM_ID}</string>
             <key>uploadSymbols</key><true/>
-            <key>signingStyle</key><string>manual</string>
+            <key>signingStyle</key><string>automatic</string>
           </dict>
           </plist>
           PLIST
@@ -117,7 +130,11 @@ jobs:
           xcodebuild -exportArchive \
             -archivePath "$RUNNER_TEMP/TheNuus.xcarchive" \
             -exportOptionsPlist "$RUNNER_TEMP/ExportOptions.plist" \
-            -exportPath "$RUNNER_TEMP/export"
+            -exportPath "$RUNNER_TEMP/export" \
+            -allowProvisioningUpdates \
+            -authenticationKeyPath ~/.appstoreconnect/private_keys/AuthKey_${ASC_KEY_ID}.p8 \
+            -authenticationKeyID "$ASC_KEY_ID" \
+            -authenticationKeyIssuerID "$ASC_ISSUER_ID"
 
       - name: Upload to App Store Connect
         if: inputs.upload
@@ -126,10 +143,6 @@ jobs:
           ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
           ASC_PRIVATE_KEY: ${{ secrets.ASC_PRIVATE_KEY }}
         run: |
-          mkdir -p ~/.appstoreconnect/private_keys
-          echo -n "$ASC_PRIVATE_KEY" | base64 --decode \
-            -o ~/.appstoreconnect/private_keys/AuthKey_${ASC_KEY_ID}.p8
-
           xcrun altool --upload-app \
             --type ios \
             --file "$RUNNER_TEMP/export/The Nuus.ipa" \

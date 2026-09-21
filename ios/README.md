@@ -36,8 +36,12 @@ app picks it up on next launch.
    distribution; there is no free path. Enrol at developer.apple.com.
 2. **An App Store Connect API key** (Users and Access → Integrations → App Store
    Connect API). Download the `.p8` **once** — Apple never shows it again.
-3. **A distribution certificate and provisioning profile** for
-   `com.thenuus.app`.
+3. **A distribution certificate** for `com.thenuus.app`. Profiles are created
+   and refreshed automatically by the build; they are not managed by hand.
+4. **The App Groups capability** enabled on both `com.thenuus.app` and
+   `com.thenuus.app.NuusWidget`, sharing `group.com.thenuus.app`. The widget
+   sends its analytics through this group so it counts as the same anonymous
+   person as the app.
 
 ## Repository secrets
 
@@ -48,10 +52,16 @@ Settings → Secrets and variables → Actions:
 | `APPLE_TEAM_ID` | 10-character team ID, shown in the developer portal |
 | `IOS_CERTIFICATE_P12` | Distribution cert as base64: `base64 -i cert.p12` |
 | `IOS_CERTIFICATE_PASSWORD` | Password set when exporting the `.p12` |
-| `IOS_PROVISIONING_PROFILE` | Profile as base64 |
 | `ASC_KEY_ID` | API key ID |
 | `ASC_ISSUER_ID` | API issuer ID |
 | `ASC_PRIVATE_KEY` | The `.p8` file as base64 |
+
+There is deliberately no provisioning profile secret. The app and the widget
+extension need one profile each, and both are reissued whenever an entitlement
+changes — the shared app group added for widget analytics did exactly that.
+Stored profiles go stale silently and fail the build with an entitlement
+mismatch, so `xcodebuild` reconciles them through the App Store Connect API
+with `-allowProvisioningUpdates` instead.
 
 ## Building
 
