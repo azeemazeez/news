@@ -1,4 +1,5 @@
 import SwiftUI
+import UIKit
 import WidgetKit
 
 // MARK: - Timeline
@@ -20,6 +21,16 @@ struct HeadlinesProvider: TimelineProvider {
     func getTimeline(in context: Context, completion: @escaping (Timeline<HeadlinesEntry>) -> Void) {
         Task {
             let edition = try? await WidgetNewsFetcher.latest()
+
+            // Only the timeline is reported. `getSnapshot` also runs while
+            // someone is merely browsing the widget gallery, which is not the
+            // same thing as having the widget on a home screen.
+            Analytics.startForWidget()
+            Analytics.widgetRendered(
+                family: context.family.analyticsName,
+                hasEdition: edition != nil
+            )
+
             let refresh = Calendar.current.date(byAdding: .hour, value: edition == nil ? 1 : 3, to: .now)!
             completion(Timeline(entries: [HeadlinesEntry(date: .now, edition: edition)], policy: .after(refresh)))
         }
@@ -58,54 +69,16 @@ struct HeadlinesView: View {
 
     let entry: HeadlinesEntry
 
-    private var storyCount: Int { family == .systemLarge ? 4 : 2 }
-
     var body: some View {
-        VStack(alignment: .leading, spacing: 0) {
-            HStack(alignment: .firstTextBaseline) {
-                Text("The Nuus")
-                    .font(.custom("ArchivoBlack-Regular", size: 16))
-                    .foregroundStyle(Theme.wordmark)
-
-                Spacer()
-
-                Text(entry.date.formatted(.dateTime.weekday(.wide).month().day()))
-                    .font(.system(size: 10, weight: .semibold))
-                    .textCase(.uppercase)
-                    .kerning(0.5)
-                    .foregroundStyle(Theme.eyebrow)
-            }
-            .padding(.bottom, 8)
-
-            if let edition = entry.edition {
-                ForEach(Array(edition.stories.prefix(storyCount).enumerated()), id: \.element.id) { index, story in
-                    if index > 0 {
-                        Rectangle()
-                            .fill(Theme.rule)
-                            .frame(height: 1)
-                            .padding(.vertical, 6)
-                    }
-                    Group {
-                        Text(story.cleanIntro).fontWeight(.semibold)
-                            + Text(" ")
-                            + Text(story.cleanBody)
-                    }
-                    .font(.system(size: 12))
-                    .foregroundStyle(Theme.text)
-                    .lineLimit(family == .systemLarge ? 3 : 2)
-                }
-            } else {
-                Spacer()
-                Text("Open The Nuus for today's edition.")
-                    .font(.system(size: 12))
-                    .foregroundStyle(Theme.secondary)
-            }
-
-            Spacer(minLength: 0)
-        }
-        .containerBackground(for: .widget) { Theme.background }
+        HeadlinesLayout(edition: entry.edition, date: entry.date, family: family)
+            .containerBackground(for: .widget) { Theme.background }
+            // Tapping opens the app, which reports the tap from `onOpenURL`.
+            // The widget process is long gone by then, so it cannot send this
+            // one itself.
+            .widgetURL(URL(string: "thenuus://widget?family=\(family.analyticsName)"))
     }
 }
+
 
 // MARK: - Widget
 
