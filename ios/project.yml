@@ -60,6 +60,15 @@ targets:
           - UIInterfaceOrientationLandscapeLeft
           - UIInterfaceOrientationLandscapeRight
         ITSAppUsesNonExemptEncryption: false
+        CFBundleURLTypes:
+          - CFBundleURLName: com.thenuus.app
+            CFBundleURLSchemes:
+              - thenuus
+    entitlements:
+      path: TheNuus/TheNuus.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.com.thenuus.app
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.thenuus.app
@@ -86,7 +95,15 @@ targets:
       - path: TheNuusWidget
       - path: TheNuus/Model.swift
       - path: TheNuus/Theme.swift
+      - path: TheNuus/Analytics.swift
       - path: TheNuus/Fonts/ArchivoBlack-Regular.ttf
+    dependencies:
+      - package: PostHog
+    entitlements:
+      path: TheNuusWidget/TheNuusWidget.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.com.thenuus.app
     info:
       path: TheNuusWidget/Info.plist
       properties:

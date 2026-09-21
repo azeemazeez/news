@@ -1,4 +1,3 @@
-import PostHog
 import SwiftUI
 
 /// Native reading screen for a single story: full digest text with reader
@@ -54,7 +53,7 @@ struct StoryDetailView: View {
 
                         Button {
                             openURL(url)
-                            PostHogSDK.shared.capture("article_opened", properties: ["url": url.absoluteString])
+                            Analytics.articleOpened(story, editionDate: editionDate)
                         } label: {
                             Label("Read the full story at \(story.source)", systemImage: "arrow.up.right.square")
                                 .font(.system(size: 15, weight: .semibold))
@@ -69,6 +68,7 @@ struct StoryDetailView: View {
         }
         .background(Theme.background.ignoresSafeArea())
         .navigationBarTitleDisplayMode(.inline)
+        .onAppear { Analytics.screen(.reader) }
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 Menu {
@@ -107,6 +107,7 @@ struct StoryDetailView: View {
 
             Button {
                 SavedStore.shared.toggle(story, editionDate: editionDate)
+                Analytics.storySaveToggled(story, saved: !saved, editionDate: editionDate)
             } label: {
                 Image(systemName: saved ? "bookmark.fill" : "bookmark")
                     .foregroundStyle(saved ? Theme.purple : Theme.secondary)
@@ -116,7 +117,9 @@ struct StoryDetailView: View {
             .accessibilityIdentifier("reader-save")
 
             if let url = story.articleURL {
-                ShareLink(item: url, message: Text(story.cleanIntro)) {
+                Button {
+                    Share.story(story, url: url, editionDate: editionDate)
+                } label: {
                     Image(systemName: "square.and.arrow.up")
                         .foregroundStyle(Theme.secondary)
                 }

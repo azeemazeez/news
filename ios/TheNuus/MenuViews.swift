@@ -43,6 +43,7 @@ struct ArchiveView: View {
                             let key = Self.key(for: day)
                             if available.contains(key) {
                                 noEdition = false
+                                Analytics.archiveDateSelected(key)
                                 onSelect(key)
                             } else {
                                 noEdition = true
@@ -62,6 +63,7 @@ struct ArchiveView: View {
         .background(Theme.background.ignoresSafeArea())
         .navigationTitle("Archive")
         .navigationBarTitleDisplayMode(.inline)
+        .onAppear { Analytics.screen(.archive) }
         .task {
             do {
                 let dates = try await NewsService.shared.manifestDates()
@@ -164,6 +166,7 @@ struct SavedView: View {
         .background(Theme.background.ignoresSafeArea())
         .navigationTitle("Saved")
         .navigationBarTitleDisplayMode(.inline)
+        .onAppear { Analytics.screen(.saved) }
     }
 }
 
@@ -200,5 +203,6 @@ struct AboutView: View {
         .background(Theme.background.ignoresSafeArea())
         .navigationTitle("About")
         .navigationBarTitleDisplayMode(.inline)
+        .onAppear { Analytics.screen(.about) }
     }
 }

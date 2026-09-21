@@ -27,6 +27,7 @@
   <link rel="stylesheet" href="/styles.css">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Archive — The Nuus","url":"https://thenuus.com/archive","isPartOf":{"@type":"WebSite","name":"The Nuus","url":"https://thenuus.com"}}</script>
   <script src="/posthog.js" defer></script>
+  <script src="/analytics.js" defer></script>
 </head>
 <body>
 
@@ -66,6 +67,12 @@
   <script>
     const DAY_NAMES = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
+    // analytics.js is deferred; a missing analytics file must never stop the
+    // calendar from rendering.
+    function track(event, props) {
+      if (window.NuusAnalytics) window.NuusAnalytics.track(event, props);
+    }
+
     function renderCalendar(year, mon, dateSet) {
       const label = new Date(year, mon - 1, 1).toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
       const firstDay = new Date(year, mon - 1, 1).getDay();
@@ -84,7 +91,7 @@
       for (let i = 0; i < cells.length; i += 7) {
         const tds = cells.slice(i, i + 7).map(c => {
           if (!c) return '<td class="cal-empty"></td>';
-          if (c.has) return `<td class="cal-day cal-active"><a class="cal-link" href="/${c.iso}">${c.d}</a></td>`;
+          if (c.has) return `<td class="cal-day cal-active"><a class="cal-link" href="/${c.iso}" data-date="${c.iso}">${c.d}</a></td>`;
           return `<td class="cal-day cal-dim">${c.d}</td>`;
         }).join('');
         rows += `<tr>${tds}</tr>`;
@@ -143,10 +150,24 @@
         script.type = 'application/ld+json';
         script.textContent = JSON.stringify(itemList);
         document.head.appendChild(script);
+
+        track('archive_viewed', { edition_count: manifest.dates.length });
       } catch (e) {
         feed.innerHTML = '<div class="state-message"><p>Could not load archive.</p></div>';
+        track('archive_load_failed', { error: String((e && e.message) || e) });
       }
     }
+
+    // Picking a day navigates this tab away, so the beacon transport is what
+    // gets the event out in time.
+    document.addEventListener('click', (e) => {
+      const link = e.target.closest('.cal-link');
+      if (!link || !window.NuusAnalytics) return;
+      window.NuusAnalytics.trackNavigation('archive_date_selected', {
+        date: link.dataset.date,
+        from: 'archive_page',
+      });
+    });
 
     init();
   </script>

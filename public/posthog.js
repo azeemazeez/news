@@ -4,4 +4,21 @@
 posthog.init('phc_rq8yTiZJXnUNeVbK7Uxar5Qe9nJKE6VFxXDsSeUANHdC', {
   api_host: 'https://us.i.posthog.com',
   defaults: '2026-05-30',
+
+  // There are no accounts, so nobody is ever identified and every event stays
+  // anonymous. This also keeps us off PostHog's person-profile billing.
+  person_profiles: 'identified_only',
+
+  // Session replay. This flag alone does nothing: "Record user sessions" also
+  // has to be switched on in the PostHog project settings.
+  disable_session_recording: false,
+  session_recording: {
+    // The subscribe form's email box is the only input on the site, and it is
+    // never captured into a recording.
+    maskAllInputs: true,
+  },
 });
+
+// Separates website traffic from the iOS app, which registers platform: 'ios'
+// in ios/TheNuus/Analytics.swift.
+posthog.register({ platform: 'web' });

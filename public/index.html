@@ -29,6 +29,7 @@
   <link rel="stylesheet" href="/styles.css">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"The Nuus","url":"https://thenuus.com","description":"The most important stories of the day, selected and curated by AI. Clear, concise, no noise."}</script>
   <script src="/posthog.js" defer></script>
+  <script src="/analytics.js" defer></script>
 </head>
 <body>
 
@@ -78,6 +79,12 @@
 
   <script src="/app.js"></script>
   <script>
+    // The email address itself is deliberately never sent to analytics — only
+    // the fact that a subscription was attempted, and whether it worked.
+    const trackSubscribe = (event, props) => {
+      if (window.NuusAnalytics) window.NuusAnalytics.track(event, props);
+    };
+
     document.getElementById('subscribe-form').addEventListener('submit', async (e) => {
       e.preventDefault();
       const email = document.getElementById('subscribe-email').value;
@@ -88,6 +95,7 @@
       btn.textContent = 'Subscribing…';
       msg.textContent = '';
       msg.className = 'subscribe-msg';
+      trackSubscribe('subscribe_submitted', {});
 
       try {
         const res = await fetch('/api/subscribe', {
@@ -101,12 +109,15 @@
           msg.textContent = 'You\'re subscribed. See you tomorrow.';
           msg.classList.add('subscribe-msg--success');
           e.target.reset();
+          trackSubscribe('subscribe_succeeded', {});
         } else {
           throw new Error(data.error || `Error ${res.status} — please try again`);
         }
       } catch (err) {
         msg.textContent = err.message;
         msg.classList.add('subscribe-msg--error');
+        // err.message already carries the HTTP status for server-side failures.
+        trackSubscribe('subscribe_failed', { error: err.message });
       } finally {
         btn.disabled = false;
         btn.textContent = 'Subscribe';

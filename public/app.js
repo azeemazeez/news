@@ -13,10 +13,18 @@ function strip(str) {
   return (str || '').replace(/\*\*/g, '');
 }
 
-function renderStory(story) {
+function track(event, props) {
+  if (window.NuusAnalytics) window.NuusAnalytics.track(event, props);
+}
+
+function attr(str) {
+  return (str || '').replace(/"/g, '&quot;');
+}
+
+function renderStory(story, index, editionDate) {
   return `
     <article class="story">
-      <p class="story-line"><strong>${strip(story.intro)}</strong> ${strip(story.body)} <a class="story-link" href="${story.url}" target="_blank" rel="noopener noreferrer">${strip(story.link_text)}</a></p>
+      <p class="story-line"><strong>${strip(story.intro)}</strong> ${strip(story.body)} <a class="story-link" href="${story.url}" target="_blank" rel="noopener noreferrer" data-story-source="${attr(story.source)}" data-story-position="${index + 1}" data-edition-date="${attr(editionDate)}">${strip(story.link_text)}</a></p>
     </article>
   `;
 }
@@ -25,7 +33,7 @@ function renderFeed(data) {
   if (!data || !data.stories || data.stories.length === 0) {
     return `<div class="state-message"><h2>No stories available for this date.</h2></div>`;
   }
-  return data.stories.map(renderStory).join('');
+  return data.stories.map((story, i) => renderStory(story, i, data.date)).join('');
 }
 
 function updateCanonical(date) {
@@ -46,12 +54,22 @@ async function loadDay(date) {
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const data = await res.json();
     document.getElementById('feed').innerHTML = renderFeed(data);
+    track('edition_loaded', {
+      edition_date: date,
+      edition_type: date === manifest.dates[0] ? 'latest' : 'archive',
+      story_count: (data.stories || []).length,
+      source: 'network',
+    });
   } catch (e) {
     document.getElementById('feed').innerHTML = `
       <div class="state-message">
         <h2>Could not load ${date}</h2>
         <p>The data file may not exist yet. Run <code>npm run fetch</code> to generate it.</p>
       </div>`;
+    track('edition_load_failed', {
+      edition_date: date,
+      error: String((e && e.message) || e),
+    });
   }
 }
 

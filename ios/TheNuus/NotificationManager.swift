@@ -37,6 +37,7 @@ final class NotificationManager {
             isEnabled = false
             UserDefaults.standard.set(false, forKey: "reminderEnabled")
             UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: ["daily-edition"])
+            Analytics.reminderToggled(enabled: false, hour: reminderHour)
             return true
         }
 
@@ -45,7 +46,12 @@ final class NotificationManager {
         isEnabled = granted
         UserDefaults.standard.set(granted, forKey: "reminderEnabled")
         if granted { schedule() }
+        Analytics.reminderToggled(enabled: granted, hour: reminderHour)
         return granted
+    }
+
+    private var reminderHour: Int {
+        Calendar.current.component(.hour, from: reminderTime)
     }
 
     private func schedule() {

@@ -1,4 +1,3 @@
-import PostHog
 import SwiftUI
 
 @Observable
@@ -23,12 +22,15 @@ final class FeedModel {
             state = .loaded(edition)
             isStale = false
             pastEditionDate = nil
-            PostHogSDK.shared.capture("edition_loaded", properties: ["edition": "latest"])
+            Analytics.editionLoaded(edition, type: .latest, source: .network)
         } catch {
+            Analytics.editionLoadFailed(date: nil, error: error)
+
             // Fall back to the last edition we successfully fetched.
             if let cached = NewsService.shared.cachedEdition() {
                 state = .loaded(cached)
                 isStale = true
+                Analytics.editionLoaded(cached, type: .latest, source: .cache)
             } else {
                 state = .failed(error.localizedDescription)
             }
@@ -41,9 +43,10 @@ final class FeedModel {
             state = .loaded(edition)
             isStale = false
             pastEditionDate = date
-            PostHogSDK.shared.capture("edition_loaded", properties: ["edition": "archive", "date": date])
+            Analytics.editionLoaded(edition, type: .archive, source: .network)
         } catch {
             // Keep whatever is on screen; a failed archive tap shouldn't blank the feed.
+            Analytics.editionLoadFailed(date: date, error: error)
         }
     }
 }
@@ -104,6 +107,12 @@ struct FeedView: View {
             }
             .navigationDestination(for: ReadRequest.self) { request in
                 StoryDetailView(story: request.story, editionDate: request.editionDate)
+            }
+            .onAppear {
+                Analytics.screen(.feed)
+            }
+            .onChange(of: path.count) { _, depth in
+                if depth == 0 { Analytics.screen(.feed) }
             }
             .onChange(of: AppActions.shared.listenRequested) {
                 startListeningIfRequested()
@@ -172,15 +181,15 @@ struct FeedView: View {
                 .padding(.bottom, 16)
             }
 
-            ForEach(edition.stories) { story in
-                StoryRow(story: story, editionDate: edition.date) {
+            ForEach(Array(edition.stories.enumerated()), id: \.element.id) { index, story in
+                StoryRow(story: story, editionDate: edition.date, position: index + 1) {
                     speech.stop()
                     path.append(ReadRequest(story: story, editionDate: edition.date))
                     Prefs.shared.markRead(story)
-                    PostHogSDK.shared.capture("story_opened", properties: ["url": story.url])
+                    Analytics.storyOpened(story, position: index + 1, editionDate: edition.date)
                 }
 
-                if story.id != edition.stories.last?.id {
+                if index < edition.stories.count - 1 {
                     Rectangle()
                         .fill(Theme.rule)
                         .frame(height: 1)
@@ -225,6 +234,8 @@ struct ReadRequest: Hashable {
 struct StoryRow: View {
     let story: Story
     let editionDate: String?
+    /// 1-based place in the edition, reported with the story's events.
+    let position: Int
     let onOpen: () -> Void
 
     @Environment(\.horizontalSizeClass) private var sizeClass
@@ -272,18 +283,22 @@ struct StoryRow: View {
 
                 Button {
                     SavedStore.shared.toggle(story, editionDate: editionDate)
+                    Analytics.storySaveToggled(story, saved: !saved, editionDate: editionDate)
                 } label: {
                     Label(saved ? "Remove from Saved" : "Save",
                           systemImage: saved ? "bookmark.slash" : "bookmark")
                 }
 
                 if let url = story.articleURL {
-                    ShareLink(item: url, message: Text(story.cleanIntro)) {
+                    Button {
+                        Share.story(story, url: url, editionDate: editionDate)
+                    } label: {
                         Label("Share", systemImage: "square.and.arrow.up")
                     }
 
                     Button {
                         openURL(url)
+                        Analytics.articleOpened(story, editionDate: editionDate)
                     } label: {
                         Label("Open Source in Browser", systemImage: "safari")
                     }

@@ -19,7 +19,8 @@ struct ReadEditionIntent: AppIntent {
 
     @MainActor
     func perform() async throws -> some IntentResult {
-        .result()
+        Analytics.shortcutInvoked(.read)
+        return .result()
     }
 }
 
@@ -30,6 +31,7 @@ struct ListenEditionIntent: AppIntent {
 
     @MainActor
     func perform() async throws -> some IntentResult {
+        Analytics.shortcutInvoked(.listen)
         AppActions.shared.listenRequested = true
         return .result()
     }

@@ -66,6 +66,7 @@ struct SettingsView: View {
         .background(Theme.background.ignoresSafeArea())
         .navigationTitle("Settings")
         .navigationBarTitleDisplayMode(.inline)
+        .onAppear { Analytics.screen(.settings) }
     }
 
     private var currentVoiceName: String {
@@ -100,6 +101,7 @@ struct VoicePickerView: View {
             Section {
                 row(name: "Automatic", detail: "Best installed voice", isSelected: Prefs.shared.voiceIdentifier == nil) {
                     Prefs.shared.voiceIdentifier = nil
+                    Analytics.voiceChanged(name: "Automatic", quality: "automatic")
                     speakSample(with: SpeechController.bestAvailableVoice())
                 }
             } footer: {
@@ -121,6 +123,7 @@ struct VoicePickerView: View {
                             isSelected: Prefs.shared.voiceIdentifier == voice.identifier
                         ) {
                             Prefs.shared.voiceIdentifier = voice.identifier
+                            Analytics.voiceChanged(name: voice.name, quality: Self.qualityLabel(for: voice))
                             speakSample(with: voice)
                         }
                     }
@@ -131,6 +134,7 @@ struct VoicePickerView: View {
         .background(Theme.background.ignoresSafeArea())
         .navigationTitle("Voice")
         .navigationBarTitleDisplayMode(.inline)
+        .onAppear { Analytics.screen(.voicePicker) }
         .onDisappear { preview.stop() }
     }
 
@@ -150,6 +154,14 @@ struct VoicePickerView: View {
                         .foregroundStyle(Theme.purple)
                 }
             }
+        }
+    }
+
+    static func qualityLabel(for voice: AVSpeechSynthesisVoice) -> String {
+        switch voice.quality {
+        case .premium: "premium"
+        case .enhanced: "enhanced"
+        default: "default"
         }
     }
 

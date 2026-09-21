@@ -9,6 +9,11 @@ final class SpeechController: NSObject, AVSpeechSynthesizerDelegate {
     private let synthesizer = AVSpeechSynthesizer()
     private var remoteCommandTokens: [Any] = []
 
+    /// Set only while a real listening session is running, never for the voice
+    /// picker's previews, so the analytics describe what a reader actually did.
+    private var listenScope: Analytics.ListenScope?
+    private var listenBegan: Date?
+
     private(set) var isSpeaking = false
     private(set) var isPaused = false
 
@@ -33,6 +38,7 @@ final class SpeechController: NSObject, AVSpeechSynthesizerDelegate {
         speak("That's all the news for today, tune in tomorrow for more news.")
         isSpeaking = true
         isPaused = false
+        beginListenTracking(.edition, editionDate: edition.date)
     }
 
     /// Starts reading a single story, or toggles pause if already reading.
@@ -44,6 +50,7 @@ final class SpeechController: NSObject, AVSpeechSynthesizerDelegate {
         speak(Self.spokenText(for: story))
         isSpeaking = true
         isPaused = false
+        beginListenTracking(.story, editionDate: nil)
     }
 
     /// The full story text: the link text is the tail of the closing
@@ -57,12 +64,37 @@ final class SpeechController: NSObject, AVSpeechSynthesizerDelegate {
         if isPaused {
             synthesizer.continueSpeaking()
             isPaused = false
+            listenScope.map(Analytics.listenResumed)
         } else {
             synthesizer.pauseSpeaking(at: .word)
             isPaused = true
+            listenScope.map(Analytics.listenPaused)
         }
         updateNowPlayingRate()
         return true
+    }
+
+    // MARK: - Listening analytics
+
+    private func beginListenTracking(_ scope: Analytics.ListenScope, editionDate: String?) {
+        listenScope = scope
+        listenBegan = Date()
+        Analytics.listenStarted(
+            scope: scope,
+            editionDate: editionDate,
+            voice: Self.currentVoice()?.name
+        )
+    }
+
+    /// No-op unless a session is open, so the many incidental `stop()` calls —
+    /// pull-to-refresh, navigating away, starting a voice preview — only report
+    /// when there was really something playing.
+    private func endListenTracking(finished: Bool) {
+        guard let scope = listenScope else { return }
+        let seconds = listenBegan.map { Date().timeIntervalSince($0) } ?? 0
+        Analytics.listenEnded(scope: scope, finished: finished, seconds: seconds)
+        listenScope = nil
+        listenBegan = nil
     }
 
     // MARK: - Lock screen / background playback
@@ -90,6 +122,7 @@ final class SpeechController: NSObject, AVSpeechSynthesizerDelegate {
                 guard let self, self.isSpeaking, self.isPaused else { return .commandFailed }
                 self.synthesizer.continueSpeaking()
                 self.isPaused = false
+                self.listenScope.map(Analytics.listenResumed)
                 self.updateNowPlayingRate()
                 return .success
             },
@@ -97,6 +130,7 @@ final class SpeechController: NSObject, AVSpeechSynthesizerDelegate {
                 guard let self, self.isSpeaking, !self.isPaused else { return .commandFailed }
                 self.synthesizer.pauseSpeaking(at: .word)
                 self.isPaused = true
+                self.listenScope.map(Analytics.listenPaused)
                 self.updateNowPlayingRate()
                 return .success
             },
@@ -133,6 +167,7 @@ final class SpeechController: NSObject, AVSpeechSynthesizerDelegate {
         isSpeaking = false
         isPaused = false
         endNowPlaying()
+        endListenTracking(finished: false)
     }
 
     /// Speaks a short sample with an explicit voice (used by the voice picker).
@@ -195,6 +230,7 @@ final class SpeechController: NSObject, AVSpeechSynthesizerDelegate {
             isSpeaking = false
             isPaused = false
             endNowPlaying()
+            endListenTracking(finished: true)
             try? AVAudioSession.sharedInstance().setActive(false, options: .notifyOthersOnDeactivation)
         }
     }

@@ -24,7 +24,11 @@ final class Prefs {
     }
 
     var textSize: TextSize {
-        didSet { UserDefaults.standard.set(textSize.rawValue, forKey: "textSize") }
+        didSet {
+            UserDefaults.standard.set(textSize.rawValue, forKey: "textSize")
+            guard textSize != oldValue else { return }
+            Analytics.textSizeChanged(textSize.rawValue)
+        }
     }
 
     /// Identifier of the chosen text-to-speech voice; nil means "pick the

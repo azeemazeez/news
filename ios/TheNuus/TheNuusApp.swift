@@ -1,14 +1,9 @@
-import PostHog
 import SwiftUI
 
 @main
 struct TheNuusApp: App {
     init() {
-        let config = PostHogConfig(
-            apiKey: "phc_rq8yTiZJXnUNeVbK7Uxar5Qe9nJKE6VFxXDsSeUANHdC",
-            host: "https://us.i.posthog.com"
-        )
-        PostHogSDK.shared.setup(config)
+        Analytics.start()
     }
 
     var body: some Scene {
@@ -31,6 +26,14 @@ struct RootView: View {
                 SplashView()
                     .transition(.opacity)
             }
+        }
+        .onOpenURL { url in
+            guard url.scheme == "thenuus", url.host == "widget" else { return }
+            let family = URLComponents(url: url, resolvingAgainstBaseURL: false)?
+                .queryItems?
+                .first { $0.name == "family" }?
+                .value
+            Analytics.widgetTapped(family: family)
         }
         .task {
             // Load and show the splash concurrently, so a fast network doesn't
