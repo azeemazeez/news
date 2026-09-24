@@ -74,13 +74,23 @@ enum WidgetNewsFetcher {
 }
 
 extension Edition {
-    /// Placeholder content for the widget gallery.
+    /// Placeholder content for the widget gallery. Needs at least `storyCount`
+    /// entries for the large family, or the preview renders short.
     static let sample = Edition(date: "2026-08-06", stories: [
-        Story(intro: "The day's top story appears here", body: "with a concise summary of what happened and why it matters.", linkText: "", url: "https://thenuus.com/1", source: ""),
-        Story(intro: "A second headline", body: "so you can scan the morning's news at a glance.", linkText: "", url: "https://thenuus.com/2", source: ""),
-        Story(intro: "A third story", body: "rounds out the digest.", linkText: "", url: "https://thenuus.com/3", source: ""),
-        Story(intro: "And a fourth", body: "for the large widget.", linkText: "", url: "https://thenuus.com/4", source: ""),
-    ])
+        "The day's lead story", "A second headline", "Markets find their footing",
+        "A breakthrough in the lab", "Talks resume after a long pause",
+        "The quiet shift in energy", "A record falls at last",
+        "What the new ruling changes", "A city rethinks its streets",
+        "And the story to watch tomorrow",
+    ].enumerated().map { index, intro in
+        Story(
+            intro: intro,
+            body: "A concise summary of what happened and why it matters.",
+            linkText: "",
+            url: "https://thenuus.com/\(index + 1)",
+            source: ""
+        )
+    })
 }
 
 // MARK: - Views
@@ -90,7 +100,9 @@ struct HeadlinesView: View {
 
     let entry: HeadlinesEntry
 
-    private var storyCount: Int { family == .systemLarge ? 4 : 2 }
+    // Headlines are one line each, so these are sized to fill the widget rather
+    // than leave a gap: roughly 27pt per row against the usable height.
+    private var storyCount: Int { family == .systemLarge ? 10 : 4 }
 
     /// The date of the edition on screen — not the moment the timeline ran, which
     /// would advance daily and make stale content look current.
@@ -123,24 +135,24 @@ struct HeadlinesView: View {
                     .kerning(0.5)
                     .foregroundStyle(Theme.eyebrow)
             }
-            .padding(.bottom, 8)
+            .padding(.bottom, 6)
 
             if let edition = entry.edition {
+                // Headlines only. The body copy is what forced two stories into the
+                // space that comfortably holds several times that.
                 ForEach(Array(edition.stories.prefix(storyCount).enumerated()), id: \.element.id) { index, story in
                     if index > 0 {
                         Rectangle()
                             .fill(Theme.rule)
                             .frame(height: 1)
-                            .padding(.vertical, 6)
+                            .padding(.vertical, 5)
                     }
-                    Group {
-                        Text(story.cleanIntro).fontWeight(.semibold)
-                            + Text(" ")
-                            + Text(story.cleanBody)
-                    }
-                    .font(.system(size: 12))
-                    .foregroundStyle(Theme.text)
-                    .lineLimit(family == .systemLarge ? 3 : 2)
+                    Text(story.cleanIntro)
+                        .font(.system(size: 13, weight: .semibold))
+                        .foregroundStyle(Theme.text)
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.85)
+                        .frame(maxWidth: .infinity, alignment: .leading)
                 }
             } else {
                 Spacer()
