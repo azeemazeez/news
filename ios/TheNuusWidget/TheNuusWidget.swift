@@ -31,24 +31,54 @@ struct HeadlinesProvider: TimelineProvider {
                 hasEdition: edition != nil
             )
 
-            let refresh = Calendar.current.date(byAdding: .hour, value: edition == nil ? 1 : 3, to: .now)!
+            // Keep checking every half hour until today's edition is actually in
+            // hand, then settle down. Backing off to three hours after a fetch
+            // that failed or landed before publication left the widget a day behind.
+            let isCurrent = edition?.date == WidgetNewsFetcher.expectedDate
+            let refresh = Calendar.current.date(byAdding: .minute, value: isCurrent ? 180 : 30, to: .now)!
+
             completion(Timeline(entries: [HeadlinesEntry(date: .now, edition: edition)], policy: .after(refresh)))
         }
     }
 }
 
 enum WidgetNewsFetcher {
-    static func latest() async throws -> Edition {
-        let base = URL(string: "https://thenuus.com")!
+    private static let base = URL(string: "https://thenuus.com")!
+
+    private static let decoder: JSONDecoder = {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
+        return decoder
+    }()
 
-        let (manifestData, _) = try await URLSession.shared.data(from: base.appending(path: "data/manifest.json"))
-        let manifest = try decoder.decode(Manifest.self, from: manifestData)
+    /// Editions are dated by UAE time (UTC+4), matching the cron that publishes them.
+    private static let dayFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd"
+        formatter.timeZone = TimeZone(secondsFromGMT: 4 * 3600)
+        formatter.locale = Locale(identifier: "en_US_POSIX")
+        return formatter
+    }()
+
+    /// The edition date that should be published by now.
+    static var expectedDate: String { dayFormatter.string(from: .now) }
+
+    static func latest() async throws -> Edition {
+        let manifest: Manifest = try await get("data/manifest.json")
         guard let date = manifest.dates.first else { throw URLError(.resourceUnavailable) }
+        return try await get("data/\(date).json")
+    }
 
-        let (editionData, _) = try await URLSession.shared.data(from: base.appending(path: "data/\(date).json"))
-        return try decoder.decode(Edition.self, from: editionData)
+    private static func get<T: Decodable>(_ path: String) async throws -> T {
+        var request = URLRequest(url: base.appending(path: path))
+        // Mirrors NewsService. Vercel caches these JSON files aggressively at the
+        // edge, and on the default policy the widget re-read a stale manifest and
+        // so never noticed a new edition had been published.
+        request.cachePolicy = .reloadRevalidatingCacheData
+        request.timeoutInterval = 20
+
+        let (data, _) = try await URLSession.shared.data(for: request)
+        return try decoder.decode(T.self, from: data)
     }
 }
 
@@ -69,8 +99,24 @@ struct HeadlinesView: View {
 
     let entry: HeadlinesEntry
 
+    /// The date of the edition on screen — not the moment the timeline ran, which
+    /// would advance every morning and make stale content look current.
+    private var headerDate: Date {
+        guard let edition = entry.edition else { return entry.date }
+
+        let parts = edition.date.split(separator: "-").compactMap { Int($0) }
+        guard parts.count == 3 else { return entry.date }
+
+        var components = DateComponents()
+        components.year = parts[0]
+        components.month = parts[1]
+        components.day = parts[2]
+
+        return Calendar.current.date(from: components) ?? entry.date
+    }
+
     var body: some View {
-        HeadlinesLayout(edition: entry.edition, date: entry.date, family: family)
+        HeadlinesLayout(edition: entry.edition, date: headerDate, family: family)
             .containerBackground(for: .widget) { Theme.background }
             // Tapping opens the app, which reports the tap from `onOpenURL`.
             // The widget process is long gone by then, so it cannot send this
