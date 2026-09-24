@@ -1,0 +1,118 @@
+{
+  "date": "2026-09-09",
+  "generated_at": "2026-09-09T01:01:08.828Z",
+  "stories": [
+    {
+      "intro": "OpenAI claims a math breakthrough",
+      "body": "The lab says it has produced a proof addressing one of the Clay Institute's million-dollar Millennium Problems, the notoriously intractable Navier-Stokes equations governing fluid flow — a claim that, if verified, would mark a stunning fusion of AI and pure mathematics. Skeptics are already scrutinizing the",
+      "link_text": "proof of Navier-Stokes.",
+      "url": "https://www.nytimes.com/2026/09/08/science/openai-proof-millennium-problem.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Britain sanctions Israeli settlements",
+      "body": "The UK banned trade with West Bank settlements and explicitly cited 'ethnic cleansing,' joining allies in an unprecedented rupture that has driven British-Israeli relations to their lowest point in decades and prompted a furious response from",
+      "link_text": "Israel over West Bank sanctions.",
+      "url": "https://www.nytimes.com/2026/09/08/world/europe/uk-sanctions-israel-west-bank-settlements.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "The world redraws Africa",
+      "body": "The UN voted to adopt the Equal Earth projection over the centuries-old Mercator map, correcting a distortion that had long shrunk Africa and inflated Europe and North America — a symbolic but significant shift in how billions of people",
+      "link_text": "see the true scale of Africa.",
+      "url": "https://www.theguardian.com/world/2026/sep/04/un-vote-world-map-mercator-equal-earth-africa",
+      "source": "The Guardian"
+    },
+    {
+      "intro": "Germany's firewall wobbles",
+      "body": "The far-right AfD took a record 44% in Saxony-Anhalt, forcing mainstream parties to confront whether their decades-old 'firewall' against cooperating with the far right can survive as the party edges toward",
+      "link_text": "real power in a German state.",
+      "url": "https://www.axios.com/2026/09/06/afd-saxony-anhalt-germany-far-right-firewall",
+      "source": "Axios"
+    },
+    {
+      "intro": "Somali piracy returns",
+      "body": "Hijackers are exploiting regional turmoil and stretched naval patrols to resume attacks off the Horn of Africa, reviving a threat that shipping lanes had largely subdued for years and raising fresh alarm over",
+      "link_text": "pirates off the coast of Somalia.",
+      "url": "https://www.theguardian.com/world/2026/sep/08/hijacking-pirates-somalia-geopolitical-chaos",
+      "source": "The Guardian"
+    },
+    {
+      "intro": "Trump maps a bigger America",
+      "body": "The president posted a map with the US flag draped over Canada, Greenland and Mexico, an incendiary display of territorial ambition that has rattled allies and prompted the EU to rush reassurances to",
+      "link_text": "a Trump-rattled Greenland.",
+      "url": "https://thehill.com/homenews/administration/6075255-trump-map-territorial-ambitions/",
+      "source": "The Hill"
+    },
+    {
+      "intro": "Canada pivots away from America",
+      "body": "Prime Minister Mark Carney is doubling down on decoupling Canada's economy from its largest trading partner as retaliatory tariffs bite, a historic realignment that could permanently reshape",
+      "link_text": "North America's economic order.",
+      "url": "https://www.nytimes.com/2026/09/08/world/canada/carney-trump-canada-us-trade-war.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "DeepMind maps the genome",
+      "body": "Google's AlphaGenome Atlas offers a high-resolution map of how human DNA functions, promising to illuminate the vast non-coding regions long dismissed as 'junk' and accelerate the search for the roots of",
+      "link_text": "disease hidden in human DNA.",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/alphagenome-atlas/",
+      "source": "Hacker News"
+    },
+    {
+      "intro": "The planet may be warming faster",
+      "body": "A growing trail of evidence suggests Earth's heating could be accelerating beyond what climate models predicted, with recent temperature spikes puzzling scientists and hinting that key feedback loops may be",
+      "link_text": "kicking in sooner than expected.",
+      "url": "https://www.bbc.co.uk/news/articles/c20917w25n4o?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC News"
+    },
+    {
+      "intro": "AI develops its own biases",
+      "body": "New research finds that large language models spontaneously generate novel social biases through 'adaptive exploration,' meaning prejudices can emerge from the systems themselves rather than merely being inherited from",
+      "link_text": "their training data.",
+      "url": "https://openreview.net/challenge?redirect=%2Fforum%3Fid%3Dpc7fqaOcAH",
+      "source": "Hacker News"
+    },
+    {
+      "intro": "Jamaica demands reparations",
+      "body": "A delegation arrived in Britain to hand King Charles a petition seeking compensation for the transatlantic slave trade, escalating a Caribbean campaign that is forcing an overdue reckoning over",
+      "link_text": "the legacy of British slavery.",
+      "url": "https://www.theguardian.com/news/2026/sep/06/jamaica-slavery-reparations-petition-king-charles",
+      "source": "The Guardian"
+    },
+    {
+      "intro": "Egypt sentences TV host to death",
+      "body": "A prominent presenter was among 12 people condemned to death on drug charges, a startling verdict that highlights Egypt's aggressive use of capital punishment and its chilling reach into",
+      "link_text": "public and media figures.",
+      "url": "https://www.theguardian.com/world/2026/sep/05/egyptian-tv-presenter-among-12-sentenced-to-death-for-drug",
+      "source": "The Guardian"
+    },
+    {
+      "intro": "Tokyo cracks down on tourists",
+      "body": "Shinjuku, one of the city's busiest districts, banned short-term rentals amid a flood of complaints, the latest sign that overtourism is straining even the world's most orderly cities and pushing governments to",
+      "link_text": "rein in Airbnb-style rentals.",
+      "url": "https://www.theguardian.com/world/2026/sep/08/shinjuku-tokyo-tourism-hotspot-bans-short-term-rentals-airbnb-surge-in-complaints",
+      "source": "The Guardian"
+    },
+    {
+      "intro": "Smithsonian chief steps down",
+      "body": "The institution's leader is resigning after repeated clashes with the Trump administration over the direction and independence of the nation's museums, a departure that deepens fears about political interference in",
+      "link_text": "America's cultural institutions.",
+      "url": "https://www.nytimes.com/2026/09/08/briefing/smithsonian-leader-resign-openai-math-problem.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Hot drinks and cancer",
+      "body": "A large study finds that very hot beverages may damage the esophagus and raise the risk of cancer, adding weight to warnings that it's not just what you drink but the temperature that could threaten",
+      "link_text": "your food pipe.",
+      "url": "https://www.bbc.co.uk/news/articles/ce3r77d9n90o?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC News"
+    },
+    {
+      "intro": "LIV Golf goes bankrupt",
+      "body": "The Saudi-backed circuit that upended professional golf and lured stars with lavish contracts has filed for bankruptcy protection with $45m owed to players, casting doubt over the future of the breakaway tour and its bid to",
+      "link_text": "'begin the next chapter.'",
+      "url": "https://www.theguardian.com/sport/2026/sep/08/liv-golf-files-for-bankruptcy-protection-as-it-looks-to-begin-the-next-chapter",
+      "source": "The Guardian Sport"
+    }
+  ]
+}

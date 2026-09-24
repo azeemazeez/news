@@ -1,0 +1,118 @@
+{
+  "date": "2026-09-05",
+  "generated_at": "2026-09-05T01:01:10.733Z",
+  "stories": [
+    {
+      "intro": "The world map gets remade",
+      "body": "The UN has voted to adopt the Equal Earth projection over the centuries-old Mercator map, finally depicting Africa at its true scale after generations of a distortion that shrank the continent in the popular imagination. It's a quiet cartographic revolution with real",
+      "link_text": "implications for how we see the world.",
+      "url": "https://www.theguardian.com/world/2026/sep/04/un-vote-world-map-mercator-equal-earth-africa",
+      "source": "The Guardian"
+    },
+    {
+      "intro": "Fermat's Last Theorem, formalized",
+      "body": "Anthropic and mathematicians report progress on translating the notoriously complex proof of Fermat's Last Theorem into a machine-checkable form, a milestone that tests whether AI and formal verification can now grapple with the deepest results in",
+      "link_text": "modern mathematics.",
+      "url": "https://www.anthropic.com/research/formalizing-fermats-last-theorem",
+      "source": "Hacker News"
+    },
+    {
+      "intro": "OpenAI declares the AGI era",
+      "body": "The company's new GPT-6 Astra can reportedly operate a computer better than a human, and OpenAI is framing it as the opening move toward artificial general intelligence — a claim that will invite as much skepticism as",
+      "link_text": "excitement.",
+      "url": "https://www.wired.com/story/openai-says-gpt-6-can-use-a-computer-better-than-a-human/",
+      "source": "Wired"
+    },
+    {
+      "intro": "A more confident Iran",
+      "body": "After six months of war with the United States, intelligence assessments suggest Tehran has emerged emboldened rather than chastened, even as Trump threatens to strike Iran's Pickaxe Mountain site and simultaneously downplays the conflict as",
+      "link_text": "'small potatoes.'",
+      "url": "https://www.nytimes.com/2026/09/04/us/politics/iran-war-intelligence-reports.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Milei revives the Falklands fight",
+      "body": "Argentina's president says 'winds of change' back his country's claim to the islands, while reports suggest Trump might support the bid as a favor to Milei and revenge on the UK — a startling turn that London has moved quickly to",
+      "link_text": "reject.",
+      "url": "https://www.theguardian.com/world/2026/sep/04/president-javier-milei-winds-of-change-support-argentina-claim-to-falkland-islands",
+      "source": "The Guardian"
+    },
+    {
+      "intro": "AfD's bid for power",
+      "body": "Germany's far-right party is poised to make history in an eastern state election, even targeting the iconic Bauhaus school as a cultural flashpoint, in a vote that could give the AfD its first real",
+      "link_text": "taste of governing power.",
+      "url": "https://www.bbc.co.uk/news/articles/cvgypkzgy4wo?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC News"
+    },
+    {
+      "intro": "Nepal's hydropower gamble",
+      "body": "The country staked its energy future almost entirely on hydropower, but catastrophic floods that have trapped and killed have exposed the perils of that bet as a warming climate makes mountain rivers ever more",
+      "link_text": "unpredictable and dangerous.",
+      "url": "https://www.bbc.co.uk/news/articles/cy0zx368prno?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC News"
+    },
+    {
+      "intro": "Half the world's farmers poisoned",
+      "body": "A sweeping new analysis finds that nearly 50% of the planet's farmers suffer pesticide poisoning each year, a staggering toll that reframes agricultural chemicals as a hidden global",
+      "link_text": "public health emergency.",
+      "url": "https://www.theguardian.com/environment/2026/sep/02/50-per-cent-world-farmers-poisoned-pesticides-every-year-experts",
+      "source": "The Guardian"
+    },
+    {
+      "intro": "One drink a day, real risk",
+      "body": "New research finds even modest alcohol consumption meaningfully raises the risk of dying from multiple cancers, further eroding the once-comforting idea that a daily glass carries any",
+      "link_text": "health benefit at all.",
+      "url": "https://www.cnn.com/2026/09/03/health/alcohol-impact-cancer-deaths-wellness",
+      "source": "CNN"
+    },
+    {
+      "intro": "BepiColombo reaches Mercury",
+      "body": "After eight years and billions of miles in transit, two spacecraft are about to settle into orbit around the solar system's least-explored inner planet, poised to unlock long-standing mysteries about how Mercury",
+      "link_text": "formed and endures.",
+      "url": "https://www.space.com/astronomy/mercury/2-spacecraft-will-soon-reach-mercury-after-8-years-in-space-heres-what-bepicolombo-can-do",
+      "source": "Space.com"
+    },
+    {
+      "intro": "Colombia's president posts corpses",
+      "body": "Gustavo Petro provoked widespread revulsion by sharing video of body bags containing alleged guerrillas, a grim display from a leftist leader who once fought in an insurgency, now raising questions about his government's",
+      "link_text": "conduct in the field.",
+      "url": "https://www.theguardian.com/world/2026/sep/04/colombia-president-posts-video-guerrillas-body-bags-abelardo-de-la-espriella",
+      "source": "The Guardian"
+    },
+    {
+      "intro": "Russia shuts German culture",
+      "body": "Moscow is closing Goethe-Institut cultural centers as tensions with Europe deepen over support for Ukraine, a symbolic severing of the last soft-power ties between two nations sliding ever further into",
+      "link_text": "open confrontation.",
+      "url": "https://apnews.com/article/russia-germany-goethe-institute-close-airport-drone-1e72ac4fd59f4a1f44859bd2e78dbde6",
+      "source": "Associated Press"
+    },
+    {
+      "intro": "Corruption belief hits record high",
+      "body": "A record 89% of Americans now say government corruption is widespread, a Gallup milestone that captures a profound and possibly corrosive collapse of public trust in the country's",
+      "link_text": "institutions.",
+      "url": "https://news.gallup.com/poll/713933/record-high-say-government-corruption-widespread.aspx",
+      "source": "Hacker News"
+    },
+    {
+      "intro": "Tesla robotaxis draw scrutiny",
+      "body": "US regulators have opened a safety investigation just as Tesla rolls out its long-promised driverless taxi service, setting up an early test of whether the technology is ready for public roads or being deployed",
+      "link_text": "before it's safe.",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/4/us-regulator-opens-safety-investigation-as-tesla-launches-driverless-taxis?traffic_source=rss",
+      "source": "Al Jazeera"
+    },
+    {
+      "intro": "Tunisia jails another journalist",
+      "body": "The arrest of Mohamed Yousfi marks a fresh escalation in President Kais Saied's crackdown on critics, deepening fears that the birthplace of the Arab Spring is dismantling the last of its",
+      "link_text": "democratic freedoms.",
+      "url": "https://www.aljazeera.com/news/2026/9/4/tunisia-arrests-journalist-amid-crackdown-on-government-critics?traffic_source=rss",
+      "source": "Al Jazeera"
+    },
+    {
+      "intro": "Monfils bows out at last",
+      "body": "The endlessly entertaining showman played his final grand slam match at the US Open, losing to teenager Learner Tien in a passing-of-the-torch moment that closes one of tennis's most beloved",
+      "link_text": "and acrobatic careers.",
+      "url": "https://www.theguardian.com/sport/2026/sep/03/gael-monfils-learner-tien-us-open-final-grand-slam-match",
+      "source": "The Guardian Sport"
+    }
+  ]
+}

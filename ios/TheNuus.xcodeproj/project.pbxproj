@@ -32,7 +32,6 @@
 		CBC08B909E21A3AE827671FF /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C8FC71BC1A094FFDC346C3 /* Theme.swift */; };
 		D88F1B15E67068F490F9941B /* TheNuusWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2844F07B42E3619AEEF9EDFD /* TheNuusWidget.swift */; };
 		E1D78BF26046EFF467CBF584 /* StoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967FC464636BF39D66D30C41 /* StoryDetailView.swift */; };
-		E66203B80F6130FB4AD8D4FC /* HeadlinesLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0812C45963490588CEF528 /* HeadlinesLayout.swift */; };
 		F5325F5B0E729ACA4088FC25 /* TheNuusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35575FB67EC085BAD778C4DE /* TheNuusApp.swift */; };
 		F5603D2EB2A8B52458FC01A2 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C8FC71BC1A094FFDC346C3 /* Theme.swift */; };
 		FA448FD77501B7642A9DF686 /* MenuViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = C932CF89BDE0A4150C0B7529 /* MenuViews.swift */; };
@@ -80,7 +79,6 @@
 		35575FB67EC085BAD778C4DE /* TheNuusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheNuusApp.swift; sourceTree = "<group>"; };
 		46F2F0B32CD9D61EE32E21B0 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		6D89138887D04E0C6431177B /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
-		6F0812C45963490588CEF528 /* HeadlinesLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlinesLayout.swift; sourceTree = "<group>"; };
 		6F2A68E38FD976390564D891 /* AppShortcuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppShortcuts.swift; sourceTree = "<group>"; };
 		7BF14B9351AF0D217036DE53 /* SavedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedStore.swift; sourceTree = "<group>"; };
 		7CE586F247B94FA4F5551ADC /* Analytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analytics.swift; sourceTree = "<group>"; };
@@ -170,7 +168,6 @@
 		D9B4AC58F9DF50958DBC9E0C /* TheNuusWidget */ = {
 			isa = PBXGroup;
 			children = (
-				6F0812C45963490588CEF528 /* HeadlinesLayout.swift */,
 				C06D310BB50102C33EB13C25 /* Info.plist */,
 				D1488F998F24EB5416B8DC58 /* TheNuusWidget.entitlements */,
 				2844F07B42E3619AEEF9EDFD /* TheNuusWidget.swift */,
@@ -347,7 +344,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				70548E4BB11E9C56ECE234A3 /* Analytics.swift in Sources */,
-				E66203B80F6130FB4AD8D4FC /* HeadlinesLayout.swift in Sources */,
 				71F87A1D37B30D5DE80F23E4 /* Model.swift in Sources */,
 				D88F1B15E67068F490F9941B /* TheNuusWidget.swift in Sources */,
 				F5603D2EB2A8B52458FC01A2 /* Theme.swift in Sources */,
@@ -483,7 +479,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 202608192200;
+				CURRENT_PROJECT_VERSION = 202609210948;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -497,7 +493,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -575,7 +571,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 202608192200;
+				CURRENT_PROJECT_VERSION = 202609210948;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -595,7 +591,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;

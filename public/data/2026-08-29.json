@@ -1,0 +1,118 @@
+{
+  "date": "2026-08-29",
+  "generated_at": "2026-08-29T01:01:09.421Z",
+  "stories": [
+    {
+      "intro": "Himalayan floods leave thousands missing",
+      "body": "The death and disappearance toll from the Nepal-Tibet flash floods continues to climb past 2,478 people, with rescuers warning that a newly formed barrier lake could unleash yet another catastrophic surge on already devastated communities. The Red Cross says at least 93,000 people are now",
+      "link_text": "in great need of aid.",
+      "url": "https://www.theguardian.com/world/2026/aug/28/nepal-tibet-flash-floods-red-cross-rescuers-death-toll",
+      "source": "The Guardian"
+    },
+    {
+      "intro": "China hides Tibet's flood toll",
+      "body": "While Nepal's disaster draws global attention, footage of the same floods devastating Tibet is being suppressed inside China, leaving the outside world with almost no information about the scale of loss or the fate of victims on the",
+      "link_text": "Chinese side of the border.",
+      "url": "https://www.bbc.co.uk/news/articles/cx2z415w2gpo",
+      "source": "BBC News"
+    },
+    {
+      "intro": "US locks in Venezuelan oil",
+      "body": "Trump announced a sweeping deal giving the US control over an estimated 65 billion barrels of Venezuela's oil, a move that could reshape hemispheric energy politics even as the country's opposition warns of a resource giveaway and Chevron expands its",
+      "link_text": "footprint in the country.",
+      "url": "https://www.bbc.co.uk/news/articles/cx2zlwe7qj1o",
+      "source": "BBC News"
+    },
+    {
+      "intro": "Iran war enters murky phase",
+      "body": "As the IRGC asserts control over the strategic strait and the US enforces a blockade, Trump finds himself caught between active combat and any genuine peace, with global oil markets watching a conflict that could destabilize the region for",
+      "link_text": "months or years to come.",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/8/29/iran-war-live-irgc-asserts-strait-control-us-enforces-blockade",
+      "source": "Al Jazeera"
+    },
+    {
+      "intro": "Largest-ever autism map",
+      "body": "Scientists have produced the most detailed genetic and biological 'map' of autism to date, offering fresh clues about its underlying mechanisms and potentially opening the door to a new generation of",
+      "link_text": "targeted therapies.",
+      "url": "https://www.cnn.com/2026/08/27/health/autism-treatment-new-map-study",
+      "source": "CNN"
+    },
+    {
+      "intro": "Ebola widens its reach",
+      "body": "The outbreak in the Democratic Republic of Congo has spread to two new zones, with 60 areas now affected, raising alarm among health officials about their ability to contain a virus that keeps",
+      "link_text": "outrunning the response.",
+      "url": "https://www.aljazeera.com/news/2026/8/28/ebola-spreads-to-two-new-zones-in-drc-60-areas-now-affected",
+      "source": "Al Jazeera"
+    },
+    {
+      "intro": "Mpox resurges globally",
+      "body": "The virus is back and appearing in countries that had never recorded cases before, with children among those hardest hit, prompting urgent questions about how the world can contain an outbreak that keeps finding",
+      "link_text": "new places to spread.",
+      "url": "https://www.theguardian.com/global-development/2026/aug/26/global-health-mpox-outbreak-explainer-children",
+      "source": "The Guardian"
+    },
+    {
+      "intro": "Measles claims a newborn",
+      "body": "As a newborn was revealed to have died from measles, US health secretary RFK Jr. responded with anti-vaccine rhetoric, deepening alarm among public health experts over an administration stance they say is accelerating the return of",
+      "link_text": "preventable childhood disease.",
+      "url": "https://arstechnica.com/health/2026/08/rfk-jr-spews-anti-vaccine-rubbish-as-newborn-revealed-to-have-died-from-measles/",
+      "source": "Ars Technica"
+    },
+    {
+      "intro": "Why Putin keeps fighting",
+      "body": "Even as economic strain, battlefield losses and mounting internal problems pile up, the Russian president shows no sign of relenting in Ukraine — an inside look at the calculations keeping him",
+      "link_text": "committed to the war.",
+      "url": "https://www.nytimes.com/2026/08/28/world/europe/russia-ukraine-war-putin.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "US-Canada trade war bites",
+      "body": "As tariffs escalate between the two neighbors, Detroit residents describe the 'insanity' punishing their city, while economists warn the deepening standoff could tip both economies toward",
+      "link_text": "a shared recession.",
+      "url": "https://www.aljazeera.com/economy/2026/8/28/with-the-us-and-canada-locked-in-a-trade-war-fears-of-a-recession-lurk",
+      "source": "Al Jazeera"
+    },
+    {
+      "intro": "Judge blocks Anthropic blacklisting",
+      "body": "A federal court ruled that the Trump administration acted illegally when it blacklisted the AI company Anthropic from government contracts, a decision with significant implications for how Washington can wield procurement power against",
+      "link_text": "tech firms it dislikes.",
+      "url": "https://www.nytimes.com/2026/08/27/technology/anthropic-government-blacklisting-ruling.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Milo Yiannopoulos detained by ICE",
+      "body": "The British far-right provocateur, once a fixture of American right-wing media, has been detained by immigration authorities in the US, an ironic turn given the administration's aggressive enforcement stance he had long",
+      "link_text": "championed.",
+      "url": "https://www.nytimes.com/2026/08/28/us/politics/milo-yiannopoulos-arrested-ice.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Solar panels on train tracks",
+      "body": "A Swiss company called Sun-Ways is testing removable solar farms laid directly between railway rails, a novel approach to generating clean power without consuming new land that could scale across the world's vast",
+      "link_text": "rail networks.",
+      "url": "https://www.nytimes.com/2026/08/28/climate/solar-power-railway-train-tracks.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Meta's settlement ripples worldwide",
+      "body": "Meta's US legal settlement raises pressing questions about what it means for the many other claims stacking up against the company globally, and whether it sets a precedent that could reshape accountability for",
+      "link_text": "the social media giant.",
+      "url": "https://www.theguardian.com/technology/2026/aug/28/meta-facebook-us-lawsuit-settlement-world-impact",
+      "source": "The Guardian"
+    },
+    {
+      "intro": "England's looming water crisis",
+      "body": "With demand rising and reservoirs strained, England faces a genuine risk of running out of water within years, and officials are racing to build new infrastructure and cut waste before shortages become",
+      "link_text": "a routine reality.",
+      "url": "https://www.bbc.co.uk/news/articles/clyrv84yd9ko",
+      "source": "BBC News"
+    },
+    {
+      "intro": "MLB's fake-grave age fraud",
+      "body": "Major League Baseball suspended a Dominican prospect after uncovering an elaborate age-fraud scheme that involved fabricating a grave to support a false identity, a striking case that exposes the pressures shaping international",
+      "link_text": "baseball recruitment.",
+      "url": "https://www.theguardian.com/sport/2026/aug/28/mlb-dominican-prospect-age-fraud-david-severino-guardians",
+      "source": "The Guardian Sport"
+    }
+  ]
+}
