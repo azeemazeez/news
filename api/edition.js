@@ -69,6 +69,7 @@ export default async function handler(req, res) {
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600;900&family=Newsreader:ital,opsz,wght@1,6..72,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <script type="application/ld+json">${schema}</script>
+  <script defer src="https://t.monoblock.ae/s.js" data-key="pk_TOtMGrjGL5HUhE8TvC0xpLBU"></script>
 </head>
 <body>
 
