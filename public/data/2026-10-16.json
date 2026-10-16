@@ -1,0 +1,118 @@
+{
+  "date": "2026-10-16",
+  "generated_at": "2026-10-16T01:01:12.401Z",
+  "stories": [
+    {
+      "intro": "Trump's Russia deal backfires",
+      "body": "A new agreement with Moscow has instead inflamed the very war the president vowed to end, straining Ukraine as questions mount over Washington's shifting",
+      "link_text": "support for Kyiv.",
+      "url": "https://www.nytimes.com/2026/10/15/us/politics/trump-russia-ukraine.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Saudis drawn into Houthi war",
+      "body": "As the Iran conflict widens, Riyadh has condemned Houthi strikes as war crimes while the US warns of threats to Saudi airports, raising the prospect of American",
+      "link_text": "intervention against the Houthis.",
+      "url": "https://responsiblestatecraft.org/trump-defend-saudi-houthis/",
+      "source": "Responsible Statecraft"
+    },
+    {
+      "intro": "Brazil shortens the work week",
+      "body": "Lula's government has cut the standard work week to 40 hours, delivering a major labor win in the run-up to a tense presidential",
+      "link_text": "runoff against Bolsonaro.",
+      "url": "https://www.theguardian.com/world/2026/oct/15/brazil-cuts-work-week-to-40-hours-lula-bolsonaro-election-runoff",
+      "source": "The Guardian"
+    },
+    {
+      "intro": "Senegal's LGBTQ+ crackdown",
+      "body": "Hundreds have been arrested and many are going into hiding as the West African nation intensifies enforcement of its anti-homosexuality laws, with chilling knock-on effects for",
+      "link_text": "HIV testing and care.",
+      "url": "https://www.theguardian.com/global-development/2026/oct/15/senegal-homosexuality-criminalised-anti-lgbtq-arrests-hiv-testing-human-rights-watch",
+      "source": "The Guardian"
+    },
+    {
+      "intro": "World's oldest shipwreck found",
+      "body": "Archaeologists off the coast of Turkey have discovered a vessel they describe as a time capsule at the bottom of the sea, offering a rare glimpse into ancient",
+      "link_text": "Mediterranean trade.",
+      "url": "https://www.cbsnews.com/news/worlds-oldest-shipwreck-found-turkey-archaeologists/",
+      "source": "CBS News"
+    },
+    {
+      "intro": "Spyware hidden in ads",
+      "body": "Citizen Lab researchers have exposed how targeted advertising networks were quietly repurposed into a delivery pipeline for zero-click mercenary spyware, turning everyday browsing into a",
+      "link_text": "surveillance attack vector.",
+      "url": "https://citizenlab.ca/research/how-discover-tech-turned-targeted-ads-into-a-pipeline-for-spyware/",
+      "source": "Hacker News"
+    },
+    {
+      "intro": "Nobel for international law",
+      "body": "Veteran ICJ judge Navi Pillay has won the Nobel peace prize for a lifetime promoting human rights and the rule of law, a pointed honor in an era of eroding",
+      "link_text": "global legal norms.",
+      "url": "https://www.theguardian.com/world/2026/oct/09/navanethem-navi-pillay-wins-nobel-peace-prize",
+      "source": "The Guardian"
+    },
+    {
+      "intro": "Microplastics' bodily toll decoded",
+      "body": "New research is beginning to explain exactly how the tiny plastic particles now found throughout human tissue actually inflict damage, moving the debate from exposure to",
+      "link_text": "biological mechanism.",
+      "url": "https://www.nbcnews.com/health/health-news/how-microplastics-damage-body-study-rcna603252",
+      "source": "NBC News"
+    },
+    {
+      "intro": "Measles roars back",
+      "body": "Doctors in Pennsylvania and Kentucky are documenting severe cases in previously healthy, unvaccinated children as outbreaks surge, a stark reminder of what fading immunization rates can",
+      "link_text": "unleash on communities.",
+      "url": "https://www.nbcnews.com/health/health-news/pennsylvania-measles-outbreak-kids-severe-cases-doctors-complications-rcna602988",
+      "source": "NBC News"
+    },
+    {
+      "intro": "RFK-backed vaccine trial in doubt",
+      "body": "Guinea-Bissau has denied approving a controversial hepatitis B trial in newborns touted by the US health secretary, exposing confusion and ethical alarm over experimental research in",
+      "link_text": "vulnerable African populations.",
+      "url": "https://www.theguardian.com/world/2026/oct/14/guinea-bissau-vaccine-hepatitis-b-trial-denial",
+      "source": "The Guardian"
+    },
+    {
+      "intro": "India's 'cockroach' protesters return",
+      "body": "Demonstrators who adopted the insect as an emblem of resilience are preparing to take to the streets again despite a heavy police crackdown, testing the limits of",
+      "link_text": "dissent in India.",
+      "url": "https://www.bbc.co.uk/news/articles/cmx237n1y9lzo?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC News"
+    },
+    {
+      "intro": "Indonesia battles haze with ice",
+      "body": "Authorities are dropping dry ice from aircraft in a desperate bid to douse raging fires as toxic smoke blankets the region, reviving a perennial Southeast Asian",
+      "link_text": "air pollution crisis.",
+      "url": "https://www.theguardian.com/world/2026/oct/15/indonesia-fires-dry-ice-dropped-toxic-haze-spreads",
+      "source": "The Guardian"
+    },
+    {
+      "intro": "Saving the ghost corals",
+      "body": "Stanford scientists say they have found a way to rescue bleached, ghostly reefs from the brink, offering a possible lifeline for ecosystems ravaged by",
+      "link_text": "warming oceans.",
+      "url": "https://www.sfgate.com/bayarea/article/stanford-coral-study-22475321.php",
+      "source": "SFGate"
+    },
+    {
+      "intro": "Tennis match-fixer banned to 2050",
+      "body": "A Serbian player has received an extraordinary quarter-century suspension for match-fixing, one of the harshest sanctions ever handed down as the sport confronts its",
+      "link_text": "corruption problem.",
+      "url": "https://www.bbc.co.uk/sport/tennis/articles/c8r4yzp2443go?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC Sport"
+    },
+    {
+      "intro": "Infantino under fire",
+      "body": "European football federation heads have declared the FIFA president unfit to lead after a contentious meeting, signaling a rare open revolt at the top of the",
+      "link_text": "global game.",
+      "url": "https://www.theguardian.com/football/2026/oct/15/fifa-gianni-infantino-council",
+      "source": "The Guardian Sport"
+    },
+    {
+      "intro": "A newly named T. rex cousin",
+      "body": "Scientists have identified a fearsome new dinosaur species from a fossil overlooked in a museum drawer for a century, a predator they say would readily have",
+      "link_text": "chased down humans.",
+      "url": "https://www.cbsnews.com/news/new-dinosaur-species-invictibellatrix-amberina-fossil-overlooked-100-years/",
+      "source": "CBS News"
+    }
+  ]
+}
