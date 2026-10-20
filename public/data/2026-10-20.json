@@ -1,0 +1,118 @@
+{
+  "date": "2026-10-20",
+  "generated_at": "2026-10-20T01:01:06.428Z",
+  "stories": [
+    {
+      "intro": "France erupts in unrest",
+      "body": "Curfews have been imposed across central Paris and other cities after nationwide rioting, as a French teen maimed by a tear gas grenade becomes a symbol of the",
+      "link_text": "escalating clash over police response.",
+      "url": "https://www.nytimes.com/2026/10/19/world/europe/france-protests-riots.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Zelensky warns of capitulation",
+      "body": "Ukraine's president says Trump is pressuring Kyiv to surrender to Moscow, while advisers tell the BBC that restricted US intelligence sharing is already costing",
+      "link_text": "Ukrainian lives on the battlefield.",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-18/zelenskyy-says-trump-is-pushing-ukraine-to-capitulate-to-russia",
+      "source": "Bloomberg"
+    },
+    {
+      "intro": "Ebola spreads fast in Congo",
+      "body": "A fast-moving outbreak has reached an eighth province, and cases turning up in neighboring Kenya are highlighting how US funding cuts have gutted the global",
+      "link_text": "disease surveillance safety net.",
+      "url": "https://apnews.com/article/congo-ebola-nordubangi-3396281be43acbd33c4a87bff132dd50",
+      "source": "Associated Press"
+    },
+    {
+      "intro": "Sudan's drone war intensifies",
+      "body": "More than 160 people were reported killed in a wave of drone attacks, including 80 near a single market, as the paramilitary RSF escalates strikes on",
+      "link_text": "civilian areas across the country.",
+      "url": "https://www.aljazeera.com/news/2026/10/19/160-reported-killed-in-escalating-drone-attacks-across-sudan?traffic_source=rss",
+      "source": "Al Jazeera"
+    },
+    {
+      "intro": "China's AI-fueled surprise",
+      "body": "China's economy grew faster than forecast as an artificial intelligence boom boosted exports, defying expectations of a slowdown and reshaping assumptions about the",
+      "link_text": "resilience of its tech sector.",
+      "url": "https://www.theguardian.com/world/2026/oct/19/china-economy-grows-faster-than-forecast-after-ai-boom-boosted-exports",
+      "source": "The Guardian"
+    },
+    {
+      "intro": "Japan reaches for a Martian moon",
+      "body": "Japan has launched a spacecraft on an ambitious mission to collect and return samples from Phobos, aiming to unlock clues about the origins of Mars and its",
+      "link_text": "mysterious orbiting moons.",
+      "url": "https://apnews.com/article/japan-mars-moon-phobos-deimos-sample-return-1f3b292d89e9381c6e1421c9e3c1e884",
+      "source": "Associated Press"
+    },
+    {
+      "intro": "Kenyan cult leader convicted",
+      "body": "A starvation cult leader has been found guilty of the murders of 190 children and one adult, in a chilling case that exposed the deadly reach of extremist",
+      "link_text": "religious movements in East Africa.",
+      "url": "https://www.theguardian.com/world/2026/oct/19/kenya-starvation-cult-leader-guilty-murder-190-children",
+      "source": "The Guardian"
+    },
+    {
+      "intro": "Rwandan critic beheaded",
+      "body": "An exiled opponent of Rwanda's president has been found beheaded in neighboring Uganda, reviving alarm over the fate of dissidents who flee the Kagame government but remain",
+      "link_text": "within reach across borders.",
+      "url": "https://www.aljazeera.com/news/2026/10/20/exiled-critic-of-rwandan-president-found-beheaded-in-uganda?traffic_source=rss",
+      "source": "Al Jazeera"
+    },
+    {
+      "intro": "China's stealth Treasury play",
+      "body": "China appears to be dumping US government debt, but analysts say it may actually be quietly stashing those holdings through custodians in Canada and Belgium to obscure its",
+      "link_text": "true de-dollarization strategy.",
+      "url": "https://fortune.com/2026/10/18/china-dedollarization-us-treasury-debt-holdings-stealth-canada-belgium-custodians/",
+      "source": "Fortune"
+    },
+    {
+      "intro": "El Niño reshapes global weather",
+      "body": "As Hurricane Trudy menaces Mexico's Pacific coast and deadly floods hit Greece, scientists explain five ways the climate pattern is already disrupting",
+      "link_text": "weather around the world.",
+      "url": "https://www.bbc.co.uk/weather/articles/c6dx07dznpyyo?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC News"
+    },
+    {
+      "intro": "Mistral enters time-series race",
+      "body": "The French AI lab has released Timestral, a family of foundation models aimed at forecasting across finance, energy and supply chains — a quiet but significant expansion of AI beyond",
+      "link_text": "text and image generation.",
+      "url": "https://mistral.ai/news/timestral/",
+      "source": "Hacker News"
+    },
+    {
+      "intro": "Quantum speed limit proven",
+      "body": "Physicists have confirmed a long-suspected fundamental limit on how quickly systems can reach thermal equilibrium, a result with implications for the design of future",
+      "link_text": "quantum computers and engines.",
+      "url": "https://phys.org/news/2026-10-physicists-quantum-limit-thermalization.html",
+      "source": "Phys.Org"
+    },
+    {
+      "intro": "FIFA faces a reckoning",
+      "body": "UEFA has given Gianni Infantino a two-week deadline to release key documents relating to a World Cup sell-off scheme, escalating a governance battle at the top of",
+      "link_text": "global football's power structure.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cq398rkpjljlo?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC Sport"
+    },
+    {
+      "intro": "Gymnasts still being failed",
+      "body": "A judge from the Larry Nassar case warns that athletes remain at risk because institutions continue to prioritize 'money and medals over safety,' years after the abuse scandal was",
+      "link_text": "supposed to force reform.",
+      "url": "https://www.theguardian.com/sport/2026/oct/19/larry-nassar-judge-gymnastics-still-being-failed-team-usa",
+      "source": "The Guardian Sport"
+    },
+    {
+      "intro": "Egypt hesitates on Saudi pact",
+      "body": "Egypt's parliament has delayed a vote on providing military support to Saudi Arabia, a telling pause that hints at shifting calculations among the region's",
+      "link_text": "major powers over alliances.",
+      "url": "https://www.aljazeera.com/news/2026/10/19/egyptian-parliament-delays-vote-on-military-support-for-saudi-arabia?traffic_source=rss",
+      "source": "Al Jazeera"
+    },
+    {
+      "intro": "You own the games you buy",
+      "body": "A bipartisan 'Power to the Players Act' introduced in Congress would guarantee that consumers actually own the video games they purchase, challenging an industry model built on",
+      "link_text": "revocable digital licenses.",
+      "url": "https://www.theverge.com/policy/1013521/video-game-ownership-bill-congress-power-to-the-players-act",
+      "source": "The Verge"
+    }
+  ]
+}
