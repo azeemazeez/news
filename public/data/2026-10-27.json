@@ -1,0 +1,118 @@
+{
+  "date": "2026-10-27",
+  "generated_at": "2026-10-27T01:01:07.042Z",
+  "stories": [
+    {
+      "intro": "AI claims scientific breakthroughs",
+      "body": "OpenAI announced three new discoveries spanning mathematics, computer science, and physics, developed in collaboration with academic communities — a notable test of whether frontier models can genuinely advance",
+      "link_text": "the boundaries of human knowledge.",
+      "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities/",
+      "source": "OpenAI"
+    },
+    {
+      "intro": "A pillar of complexity theory falls",
+      "body": "A new preprint claims to disprove the Exponential Time Hypothesis, a foundational conjecture underpinning much of computational complexity, with potentially profound implications for",
+      "link_text": "what computers can efficiently solve.",
+      "url": "https://github.com/openai/math/blob/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf",
+      "source": "Hacker News"
+    },
+    {
+      "intro": "Netanyahu's wartime election timing",
+      "body": "Officials say the Israeli prime minister pushed to attack Iran in the run-up to a national vote, raising uncomfortable questions about whether military decisions were shaped by",
+      "link_text": "domestic political calculation.",
+      "url": "https://www.nytimes.com/2026/10/26/world/middleeast/netanyahu-iran-israel-election.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "UN accuses Israel of genocidal acts",
+      "body": "A UN human rights panel concluded that Israel has committed genocidal acts in Gaza even after the ceasefire took hold, a finding that will reverberate through",
+      "link_text": "international courts and diplomacy.",
+      "url": "https://www.nytimes.com/2026/10/26/world/middleeast/un-human-rights-panel-israel-palestinians.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "UK sanctions Sudan's warlords",
+      "body": "Britain imposed sanctions on Sudanese military leaders implicated in a 'campaign of rape' in El Fasher, as the paramilitary siege of the city reveals atrocities that have",
+      "link_text": "shocked even hardened observers.",
+      "url": "https://www.theguardian.com/global-development/2026/oct/26/uk-sanctions-sudanese-military-leaders-implicated-in-el-fasher-campaign-of",
+      "source": "The Guardian"
+    },
+    {
+      "intro": "Sudan's war goes dark",
+      "body": "Paramilitary drone strikes knocked out power across eastern Sudanese states, a dramatic escalation that extends the devastation of the civil war to regions once considered",
+      "link_text": "safely beyond the front lines.",
+      "url": "https://www.theguardian.com/world/2026/oct/26/sudan-paramilitary-drone-strikes-rapid-support-forces-power-cuts-eastern-states",
+      "source": "The Guardian"
+    },
+    {
+      "intro": "Russian sabotage reaches NATO soil",
+      "body": "Romania says a Russia-run network set fire near a weapons factory, the latest in a pattern of covert attacks across Europe that is blurring the line between",
+      "link_text": "peace and shadow warfare.",
+      "url": "https://www.aljazeera.com/news/2026/10/27/romania-says-russia-run-sabotage-network-set-fire-near-weapons-factory?traffic_source=rss",
+      "source": "Al Jazeera"
+    },
+    {
+      "intro": "Jordan strikes back at Syria",
+      "body": "In a rare cross-border assault, Jordan launched air strikes in Syria killing at least seven after a deadly church attack in Karak, signaling a sharp turn toward",
+      "link_text": "military retaliation in the region.",
+      "url": "https://www.aljazeera.com/news/2026/10/26/jordan-launches-air-strikes-in-syria-in-response-to-a-fatal-church-shooting?traffic_source=rss",
+      "source": "Al Jazeera"
+    },
+    {
+      "intro": "Iran war threatens African plates",
+      "body": "Trade officials warn that the widening conflict with Iran is disrupting food supply chains, putting African food security at risk and showing how distant wars ripple into",
+      "link_text": "the world's most vulnerable economies.",
+      "url": "https://www.aljazeera.com/news/2026/10/26/africa-food-security-under-threat-due-to-iran-war-warn-trade-officials?traffic_source=rss",
+      "source": "Al Jazeera"
+    },
+    {
+      "intro": "Bolsonaro's passport seized",
+      "body": "Police ordered the defeated Flávio Bolsonaro to surrender his passports after Brazil's bruising election, a move that raises the prospect of legal reckoning for",
+      "link_text": "the ousted political dynasty.",
+      "url": "https://www.theguardian.com/world/2026/oct/26/flavio-bolsonaro-brazil-lula-election",
+      "source": "The Guardian"
+    },
+    {
+      "intro": "Ebola's mysterious new source",
+      "body": "A case in Nigeria with no clear origin has alarmed epidemiologists, who fear undetected transmission chains could enable the virus to spread far beyond",
+      "link_text": "its usual outbreak zones.",
+      "url": "https://www.theguardian.com/world/2026/oct/23/ebola-swiss-patient-nigeria-dr-congo-concerns-virus-spread",
+      "source": "The Guardian"
+    },
+    {
+      "intro": "Measles surges across America",
+      "body": "US cases have more than doubled from last year as outbreaks spread, a stark reminder of how fast a once-eliminated disease returns when",
+      "link_text": "vaccination rates slip.",
+      "url": "https://www.npr.org/2026/10/25/nx-s1-6016205/measles-outbreak-pennsylvania",
+      "source": "NPR"
+    },
+    {
+      "intro": "Anthropic warns of catastrophe",
+      "body": "Ahead of a blockbuster share listing, the AI firm's own filings spell out 'catastrophic risk' to humankind alongside explosive revenue growth and even faster spending, laying bare the contradiction at the heart of",
+      "link_text": "the AI gold rush.",
+      "url": "https://www.bbc.co.uk/news/articles/cq398p1wd1evo?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC News"
+    },
+    {
+      "intro": "AI's missing payoff",
+      "body": "An Apollo economist argues that artificial intelligence delivers 'zero financial payoff' to most companies so far, a sobering data point that cuts against the trillion-dollar narrative driving",
+      "link_text": "the current investment frenzy.",
+      "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
+      "source": "TechCrunch"
+    },
+    {
+      "intro": "The Neanderthal mystery",
+      "body": "New research revisits why our closest human relatives vanished, assembling fresh evidence that complicates the familiar story of extinction and hints at a more tangled fate for",
+      "link_text": "a vanished branch of humanity.",
+      "url": "https://www.nytimes.com/2026/10/26/science/what-happened-to-the-neanderthals.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Kane ends England's long wait",
+      "body": "Harry Kane claimed the men's Ballon d'Or, the first Englishman in 25 years to win football's top individual prize, while Alexia Putellas took the women's award for a third time in a ceremony marking",
+      "link_text": "a new chapter for the sport.",
+      "url": "https://www.aljazeera.com/sports/2026/10/26/englands-harry-kane-wins-ballon-dor-alexia-putellas-takes-womens-award?traffic_source=rss",
+      "source": "Al Jazeera"
+    }
+  ]
+}
