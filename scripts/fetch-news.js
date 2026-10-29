@@ -101,7 +101,7 @@ async function curateWithClaude(model, stories, previousStories = []) {
 
   const message = await client.messages.create({
     model,
-    max_tokens: 4096,
+    max_tokens: 16000,
     messages: [
       {
         role: 'user',
@@ -252,7 +252,7 @@ async function main() {
   }
 
   // A refusal repeats on identical input, so the last attempt switches model.
-  const models = ['claude-opus-4-8', 'claude-opus-4-8', 'claude-sonnet-5'];
+  const models = ['claude-opus-4-8', 'claude-opus-4-8', 'claude-opus-5'];
   let curated;
   for (let attempt = 1; attempt <= models.length; attempt++) {
     try {
