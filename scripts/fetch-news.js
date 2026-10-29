@@ -269,7 +269,7 @@ async function main() {
 
   if (process.argv.includes('--dry-run')) {
     console.log(`Dry run: curated ${curated.stories.length} stories, nothing written`);
-    for (const st of curated.stories) console.log(`- ${st.intro} ${st.body}${st.link_text} / ${st.source}`);
+    for (const st of curated.stories) console.log(`- ${st.intro} ${st.body.trim()} ${st.link_text} / ${st.source}`);
     return;
   }
 
