@@ -88,7 +88,7 @@ async function fetchNewsAPI() {
     }));
 }
 
-async function curateWithClaude(stories, previousStories = []) {
+async function curateWithClaude(model, stories, previousStories = []) {
   const storyList = stories
     .map((s, i) =>
       `${i + 1}. [${s.source}${s.score ? `, score:${s.score}` : ''}] ${s.title}\n   ${s.url}`
@@ -100,7 +100,7 @@ async function curateWithClaude(stories, previousStories = []) {
     : '';
 
   const message = await client.messages.create({
-    model: 'claude-opus-4-8',
+    model,
     max_tokens: 4096,
     messages: [
       {
@@ -150,7 +150,13 @@ Return ONLY valid JSON, no markdown, no other text:
     ],
   });
 
-  const text = message.content[0].text.trim();
+  if (message.stop_reason === 'refusal') {
+    const category = message.stop_details?.category ?? 'unspecified';
+    throw new Error(`${model} declined the request (refusal, category: ${category})`);
+  }
+  const textBlock = message.content.find(b => b.type === 'text');
+  if (!textBlock) throw new Error(`${model} returned no text (stop_reason: ${message.stop_reason})`);
+  const text = textBlock.text.trim();
   const jsonMatch = text.match(/\{[\s\S]*\}/);
   if (!jsonMatch) throw new Error('Claude returned non-JSON response');
   return JSON.parse(jsonMatch[0]);
@@ -245,14 +251,16 @@ async function main() {
     } catch {}
   }
 
+  // A refusal repeats on identical input, so the last attempt switches model.
+  const models = ['claude-opus-4-8', 'claude-opus-4-8', 'claude-sonnet-5'];
   let curated;
-  for (let attempt = 1; attempt <= 3; attempt++) {
+  for (let attempt = 1; attempt <= models.length; attempt++) {
     try {
-      curated = await curateWithClaude(pool, previousStories);
+      curated = await curateWithClaude(models[attempt - 1], pool, previousStories);
       break;
     } catch (err) {
       console.warn(`Claude API attempt ${attempt} failed: ${err.message}`);
-      if (attempt === 3) throw err;
+      if (attempt === models.length) throw err;
       await new Promise(r => setTimeout(r, attempt * 5000));
     }
   }
