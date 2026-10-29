@@ -252,7 +252,9 @@ async function main() {
   }
 
   // A refusal repeats on identical input, so the last attempt switches model.
-  const models = ['claude-opus-4-8', 'claude-opus-4-8', 'claude-opus-5'];
+  let models = ['claude-opus-4-8', 'claude-opus-4-8', 'claude-opus-5'];
+  // --fallback-only runs just the last model, to exercise the fallback path.
+  if (process.argv.includes('--fallback-only')) models = models.slice(-1);
   let curated;
   for (let attempt = 1; attempt <= models.length; attempt++) {
     try {
@@ -263,6 +265,12 @@ async function main() {
       if (attempt === models.length) throw err;
       await new Promise(r => setTimeout(r, attempt * 5000));
     }
+  }
+
+  if (process.argv.includes('--dry-run')) {
+    console.log(`Dry run: curated ${curated.stories.length} stories, nothing written`);
+    for (const st of curated.stories) console.log(`- ${st.intro} ${st.body}${st.link_text} / ${st.source}`);
+    return;
   }
 
   const output = {
