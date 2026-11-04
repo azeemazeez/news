@@ -1,0 +1,118 @@
+{
+  "date": "2026-11-04",
+  "generated_at": "2026-11-04T01:01:09.906Z",
+  "stories": [
+    {
+      "intro": "Iranians turn toward the bomb",
+      "body": "A growing chorus inside Iran is calling for nuclear weapons after the war with the US, a shift in public mood that could harden Tehran's posture and reshape",
+      "link_text": "the entire region's security calculus.",
+      "url": "https://www.nytimes.com/2026/11/03/world/europe/iran-nuclear-weapons-war.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Trump cuts Israel loose",
+      "body": "The US president says Washington will end $4 billion in annual aid to Israel at year's end, an abrupt rupture with a decades-old alliance that could upend",
+      "link_text": "Middle East diplomacy.",
+      "url": "https://www.nytimes.com/2026/11/03/us/politics/trump-israel-aid-netanyahu.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "US struck inside Venezuela",
+      "body": "American forces assisted a deadly drone strike targeting alleged drug traffickers on Venezuelan soil, officials say, as Trump presses Caracas for an agreement that would let",
+      "link_text": "US troops remain in the country.",
+      "url": "https://www.nytimes.com/2026/11/03/world/americas/us-venezuela-strike-eln-drug-trafficking.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Third bird flu death",
+      "body": "A third person has died of H5N1 since the virus began jumping to livestock, deepening fears that sustained exposure on farms is giving the pathogen more chances to",
+      "link_text": "adapt to humans.",
+      "url": "https://arstechnica.com/health/2026/11/third-person-dies-of-bird-flu-since-virus-started-jumping-to-livestock/",
+      "source": "Ars Technica"
+    },
+    {
+      "intro": "Ebola could reach Britain",
+      "body": "A top health official warns that Africa's 'unprecedented' Ebola outbreak may spread to the UK, a stark reminder that outbreaks in a connected world rarely stay",
+      "link_text": "contained to one continent.",
+      "url": "https://www.theguardian.com/global-development/2026/oct/28/africa-ebola-outbreak-could-reach-uk-says-top-health-official",
+      "source": "The Guardian"
+    },
+    {
+      "intro": "An 80-cent lifesaver",
+      "body": "A simple plastic pouch that measures blood loss is dramatically cutting deaths from childbirth hemorrhage in Nigeria, showing how a cheap, low-tech fix can",
+      "link_text": "save thousands of women.",
+      "url": "https://www.nytimes.com/2026/11/03/health/maternal-drapes-nigeria-childbirth.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Brazil's fossil-fuel blueprint",
+      "body": "Brazil has published the first global 'roadmap' for phasing out oil, gas and coal, a landmark attempt to turn vague climate pledges into a concrete timeline for",
+      "link_text": "ending the fossil-fuel era.",
+      "url": "https://www.theguardian.com/environment/2026/nov/03/brazil-first-global-roadmap-phasing-out-fossil-fuels",
+      "source": "The Guardian"
+    },
+    {
+      "intro": "Canada and EU pair up",
+      "body": "Ottawa and Brussels have announced a new alliance open to 'like-minded countries', a notable realignment as US partners seek to hedge against Washington's unpredictability and build",
+      "link_text": "a new axis of cooperation.",
+      "url": "https://www.theguardian.com/world/2026/oct/30/canada-european-union-alliance",
+      "source": "The Guardian"
+    },
+    {
+      "intro": "Egypt silences a newsroom",
+      "body": "Authorities have fined prominent editor Lina Attalah and shut down the independent outlet Mada Masr, a severe escalation in a press-freedom crackdown that has steadily hollowed out",
+      "link_text": "Egypt's independent media.",
+      "url": "https://www.theguardian.com/world/2026/oct/28/egypt-lina-attalah-mada-masr-press-freedom-clampdown",
+      "source": "The Guardian"
+    },
+    {
+      "intro": "Britain sanctions Sudan's generals",
+      "body": "The UK has sanctioned Sudanese military leaders implicated in a 'campaign of rape' during the siege of El Fasher, as evidence mounts of systematic atrocities in",
+      "link_text": "the world's worst war.",
+      "url": "https://www.theguardian.com/global-development/2026/oct/26/uk-sanctions-sudanese-military-leaders-implicated-in-el-fasher-campaign-of",
+      "source": "The Guardian"
+    },
+    {
+      "intro": "Multi-cancer blood tests arrive",
+      "body": "Tests that screen for multiple cancers from a single blood draw are coming to some GP surgeries soon, a potential leap in early detection that could transform",
+      "link_text": "how cancer is caught.",
+      "url": "https://www.bbc.co.uk/news/articles/cm9qz93ew22no?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC News"
+    },
+    {
+      "intro": "Binance bleeds billions",
+      "body": "Customers pulled more than $4.6 billion from the crypto exchange after a major heist, a run that exposes how quickly confidence can evaporate in",
+      "link_text": "the digital-asset world.",
+      "url": "https://www.cbsnews.com/news/binance-customers-withdraw-billions-crypto-hack/",
+      "source": "CBS News"
+    },
+    {
+      "intro": "Postman grabs your API data",
+      "body": "The popular developer tool silently auto-installs AI plugins and attempts to share all users' API data, a breach of trust that has enraged engineers and spotlighted",
+      "link_text": "the quiet creep of AI features.",
+      "url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
+      "source": "Hacker News"
+    },
+    {
+      "intro": "AI fuels a tape revival",
+      "body": "Fujifilm plans to boost magnetic-tape production fivefold as the AI boom drives surging demand for cheap, durable long-term storage, reviving a technology many assumed was",
+      "link_text": "long obsolete.",
+      "url": "https://arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand/",
+      "source": "Hacker News"
+    },
+    {
+      "intro": "Selling a stake in Team USA",
+      "body": "The US Olympic and Paralympic Committee is weighing a plan to sell an equity stake in Team USA as the LA Games approach, a startling move that would further",
+      "link_text": "commercialize the Olympic movement.",
+      "url": "https://www.theguardian.com/sport/2026/nov/03/usopc-considering-plan-to-sell-stake-in-team-usa-as-la-olympics-approach",
+      "source": "The Guardian Sport"
+    },
+    {
+      "intro": "28 years on foot",
+      "body": "Englishman Karl Bushby has finally returned home after walking 30,000 miles around the world over nearly three decades, completing an extraordinary odyssey of human",
+      "link_text": "endurance and obsession.",
+      "url": "https://www.cbsnews.com/news/englishman-karl-bushby-returns-home-walking-goliath-expedition/",
+      "source": "CBS News"
+    }
+  ]
+}
