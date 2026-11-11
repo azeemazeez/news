@@ -1,0 +1,118 @@
+{
+  "date": "2026-11-11",
+  "generated_at": "2026-11-11T01:01:15.054Z",
+  "stories": [
+    {
+      "intro": "A spy inside Nvidia",
+      "body": "The New York Times profiles Alice Huang, the Chinese executive at the center of an espionage scandal that saw Jensen Huang targeted by foreign intelligence, forcing Nvidia to hire a major law firm to investigate the affair and its",
+      "link_text": "national security implications.",
+      "url": "https://www.nytimes.com/2026/11/10/technology/alice-huang-megaspeed-nvidia-jensen-huang.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "ANC's historic reckoning",
+      "body": "South Africa's ruling party, which has governed since the end of apartheid, faces a bruising defeat in local elections with 80% of ballots counted, marking a dramatic erosion of the movement once led by",
+      "link_text": "Nelson Mandela.",
+      "url": "https://www.theguardian.com/world/2026/nov/06/anc-faces-defeat-south-african-local-elections",
+      "source": "The Guardian"
+    },
+    {
+      "intro": "Death penalty support collapses",
+      "body": "For the first time since 1971, a majority of Americans no longer back capital punishment, a poll shows — a seismic shift in public opinion on a question that has long divided the",
+      "link_text": "US justice system.",
+      "url": "https://www.aljazeera.com/news/2026/11/10/us-poll-shows-death-penalty-lost-majority-support-for-first-time-since-1971",
+      "source": "Al Jazeera"
+    },
+    {
+      "intro": "Doomsday cult horror",
+      "body": "A Kenyan sect leader was sentenced to 200 years in prison for the murder of 190 children, part of a starvation cult that left hundreds dead and shocked a nation grappling with the power of extremist",
+      "link_text": "religious movements.",
+      "url": "https://www.theguardian.com/world/2026/nov/06/kenyan-doomsday-sect-leader-jailed-murders-paul-mackenzie",
+      "source": "The Guardian"
+    },
+    {
+      "intro": "Falklands oil flashpoint",
+      "body": "The UK warns of 'devastating consequences' for Falkland Islanders if Argentina blocks a major oil project, reigniting a territorial dispute as the case reaches an international tribunal in",
+      "link_text": "Hamburg.",
+      "url": "https://www.theguardian.com/world/2026/nov/10/uk-and-argentina-clash-over-falklands-oil-project-as-hamburg-tribunal-starts",
+      "source": "The Guardian"
+    },
+    {
+      "intro": "China leads green race",
+      "body": "At COP31, former US climate envoy John Kerry argued the world must follow Beijing's aggressive expansion of renewable energy, a striking endorsement of China's dominance in the technologies that will define the",
+      "link_text": "energy transition.",
+      "url": "https://www.theguardian.com/environment/2026/nov/10/china-green-energy-john-kerry-cop31",
+      "source": "The Guardian"
+    },
+    {
+      "intro": "Soldier accused of spying",
+      "body": "A US Army soldier suspected of spying for Russia was arrested in the UK, a rare transnational counterintelligence case that highlights the reach of Moscow's efforts to recruit inside Western",
+      "link_text": "military ranks.",
+      "url": "https://www.bbc.co.uk/news/articles/c6d7q77xgw0vo",
+      "source": "BBC News"
+    },
+    {
+      "intro": "Zemmour's second shot",
+      "body": "French far-right author and pundit Éric Zemmour has launched a fresh bid for the 2027 presidency, setting up another contest over immigration and national identity in a fractured",
+      "link_text": "French political landscape.",
+      "url": "https://www.aljazeera.com/news/2026/11/10/french-far-right-author-zemmour-launches-second-presidential-bid",
+      "source": "Al Jazeera"
+    },
+    {
+      "intro": "IBM shuts the door",
+      "body": "IBM's largest division is ending most US foreign worker sponsorships, a significant move that could reshape the tech talent pipeline and signal a broader corporate retreat from skilled",
+      "link_text": "immigration visas.",
+      "url": "https://www.aljazeera.com/news/2026/11/10/ibms-biggest-division-ends-most-us-foreign-worker-sponsorships",
+      "source": "Al Jazeera"
+    },
+    {
+      "intro": "DeepMind's math breakthrough",
+      "body": "Google DeepMind unveiled AlphaProof Code, extending its AI systems' ability to generate and verify formal mathematical proofs — a step toward machines reasoning through problems that have long resisted",
+      "link_text": "automated solutions.",
+      "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+      "source": "Hacker News"
+    },
+    {
+      "intro": "AI is breaking exams",
+      "body": "A UK regulator warns that students are passing university assessments in minutes using AI tools, raising fundamental questions about the integrity of degrees and the future of academic",
+      "link_text": "evaluation.",
+      "url": "https://www.bbc.co.uk/news/articles/cw0k0klz2x37o",
+      "source": "BBC News"
+    },
+    {
+      "intro": "Smart homes going dark",
+      "body": "A widely-read argument makes the case that smart home devices should work without the internet, spotlighting how cloud dependence has turned everyday appliances into fragile, surveilled products that stop working when",
+      "link_text": "servers go offline.",
+      "url": "https://docodethatmatters.com/home-automation-overnight-success/",
+      "source": "Hacker News"
+    },
+    {
+      "intro": "Billionaire tax fails",
+      "body": "California voters rejected a proposed wealth tax, dealing a significant blow to the progressive movement's flagship fiscal agenda and raising doubts about whether taxing the ultra-rich can win at the",
+      "link_text": "ballot box.",
+      "url": "https://www.nytimes.com/2026/11/10/business/billionaire-tax-progressive-agenda.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Banana crisis brewing",
+      "body": "Latin American banana producers are demanding better pay to cope with the escalating effects of climate change, exposing the fragility of a global supply chain that delivers one of the world's most consumed",
+      "link_text": "fruits.",
+      "url": "https://www.theguardian.com/business/2026/nov/08/banana-producers-in-latin-america-want-better-pay-to-cope-with-effects-of-climate-crisis",
+      "source": "The Guardian"
+    },
+    {
+      "intro": "Cricket's lasting stain",
+      "body": "Nearly a decade after the ball-tampering scandal, Australian cricket still can't escape 'sandpappergate,' with former captain Michael Clarke now calling for the investigation to be reopened amid questions about what fans can still",
+      "link_text": "trust as real.",
+      "url": "https://www.bbc.co.uk/sport/cricket/articles/cjzxlxrp3335o",
+      "source": "BBC Sport"
+    },
+    {
+      "intro": "Antidepressant's edge revealed",
+      "body": "A major analysis finds that escitalopram is more effective than other drugs at preventing relapse in patients recovering from depression, a finding that could reshape prescribing guidance for millions on long-term",
+      "link_text": "antidepressant treatment.",
+      "url": "https://www.bbc.co.uk/news/articles/cv62yyng00jyo",
+      "source": "BBC News"
+    }
+  ]
+}
