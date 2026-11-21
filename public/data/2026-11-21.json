@@ -1,0 +1,118 @@
+{
+  "date": "2026-11-21",
+  "generated_at": "2026-11-21T01:01:26.224Z",
+  "stories": [
+    {
+      "intro": "The Riemann Hypothesis may have fallen",
+      "body": "A mathematician at Anthropic claims to have cracked one of mathematics' most storied unsolved problems — with help from the Claude AI model — a result that, if verified, would be a landmark for both number theory and machine-assisted discovery. Separate claims of a proof are already circulating among researchers at",
+      "link_text": "a feverish pace online.",
+      "url": "https://www.nytimes.com/2026/11/20/science/anthropic-ai-math-riemann-hypothesis.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "AI jitters shake Wall Street",
+      "body": "US stocks slid into correction territory and the Nasdaq erased all its 2026 gains as doubts about the sustainability of the AI boom intensified, following a shaky second day of trading for newly public",
+      "link_text": "Anthropic shares.",
+      "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
+      "source": "The Guardian"
+    },
+    {
+      "intro": "Russian missile hits Poland",
+      "body": "A Russian missile struck NATO member Poland just as Kyiv's allies were holding military exercises, Prime Minister Donald Tusk said, in an escalation that tests the alliance's response and comes as Putin rules out any",
+      "link_text": "limited ceasefire with Ukraine.",
+      "url": "https://www.bbc.co.uk/news/articles/cqx2x9dklxnro?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC News"
+    },
+    {
+      "intro": "COP31 runs into overtime",
+      "body": "The climate summit stalled past its deadline as negotiators deadlocked over whether to commit to phasing out fossil fuels, exposing the gulf between petro-states and nations demanding faster",
+      "link_text": "action on emissions.",
+      "url": "https://www.aljazeera.com/news/2026/11/20/fossil-fuel-talks-deadlock-pushes-cop31-climate-summit-into-overtime?traffic_source=rss",
+      "source": "Al Jazeera"
+    },
+    {
+      "intro": "Voyager phones home",
+      "body": "NASA's Voyager 1, now an astonishing one light-day from Earth, is still transmitting across interstellar space nearly five decades after launch, a quiet triumph of engineering reaching farther than any human-made object",
+      "link_text": "has ever gone.",
+      "url": "https://apnews.com/article/voyager-nasa-light-day-interstellar-space-db9f5f8d9ec3a40f1f434446baf326b5",
+      "source": "Associated Press"
+    },
+    {
+      "intro": "A spy inside Nvidia",
+      "body": "A woman accused of spying on Nvidia's chief executive has been linked to firms with ties to China's military, deepening a widening scandal over how advanced American chips and secrets are",
+      "link_text": "flowing toward Beijing.",
+      "url": "https://www.nytimes.com/2026/11/20/us/politics/nvidia-alice-huang-chips-china.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Trump moves to wall off AI",
+      "body": "The president threatened steep penalties on US tech firms that build data centers abroad, a protectionist bid to keep the computing backbone of the AI era inside American borders — and a warning shot to allies courting",
+      "link_text": "Silicon Valley investment.",
+      "url": "https://www.nytimes.com/2026/11/20/us/politics/trump-data-centers-ban.html",
+      "source": "New York Times"
+    },
+    {
+      "intro": "Denmark foils assassination plot",
+      "body": "Danish authorities accused Russia of plotting to kill a US-Ukrainian rapper on European soil, the latest in a string of alleged Kremlin operations that suggest Moscow's reach for targeted violence",
+      "link_text": "extends deep into Europe.",
+      "url": "https://www.bbc.co.uk/news/articles/cmde1lj4yjxno?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC News"
+    },
+    {
+      "intro": "A judge may face sanctions",
+      "body": "Fears are mounting that the US will impose sanctions on a Nobel-winning World Court judge following the landmark ruling that Myanmar committed genocide against the Rohingya, a move that would mark an extraordinary attack on",
+      "link_text": "international judicial independence.",
+      "url": "https://www.theguardian.com/world/2026/nov/18/us-sanctions-icj-judges-myanmar-genocide-ruling-israel-gaza-court",
+      "source": "The Guardian"
+    },
+    {
+      "intro": "Haiti assassination verdict",
+      "body": "A Florida pastor has been found guilty over the 2021 killing of Haiti's president, a rare conviction in a plot that plunged the Caribbean nation deeper into chaos and whose masterminds remain",
+      "link_text": "largely unaccounted for.",
+      "url": "https://www.theguardian.com/us-news/2026/nov/18/florida-pastor-guilty-haiti-president-assassination",
+      "source": "The Guardian"
+    },
+    {
+      "intro": "Brexit, partially rewound",
+      "body": "Britain and the EU have struck a deal to deepen ties, with figures like Andy Burnham signaling appetite for even closer alignment — though analysts caution that the cost-cutting agreement will not translate into",
+      "link_text": "lower prices for consumers.",
+      "url": "https://www.bbc.co.uk/news/articles/cm1wr029evnqo?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC News"
+    },
+    {
+      "intro": "The race to lead the UN",
+      "body": "The contest to be the next UN secretary general is laying bare the fractures among the world's great powers, as rival blocs maneuver to install a candidate at the helm of an institution struggling to stay",
+      "link_text": "relevant in a divided age.",
+      "url": "https://www.theguardian.com/world/2026/nov/20/race-to-be-next-un-secretary-general-exposes-divisions-among-world-powers",
+      "source": "The Guardian"
+    },
+    {
+      "intro": "ICE's force-feeding tactics",
+      "body": "A secretive campaign to force-feed a Cuban father ended his hunger strike in US immigration detention, part of a pattern of harsh practices emerging as watchdogs also find a cascade of problems in",
+      "link_text": "ICE's rushed training.",
+      "url": "https://www.theguardian.com/us-news/2026/nov/20/ice-cuba-hunger-strike-force-feeding",
+      "source": "The Guardian"
+    },
+    {
+      "intro": "Brussels accused of cooking the books",
+      "body": "The European Commission stands accused of sugarcoating economic figures to justify releasing funds to Egypt, raising uncomfortable questions about whether the bloc is bending its own standards to secure migration deals with",
+      "link_text": "authoritarian partners.",
+      "url": "https://www.theguardian.com/world/2026/nov/18/european-commission-accused-sugarcoating-figures-egypt-loans",
+      "source": "The Guardian"
+    },
+    {
+      "intro": "Wembanyama's revenge tour",
+      "body": "After a humiliating NBA finals defeat, the French phenom Victor Wembanyama has transformed heartbreak into a dominant MVP-caliber campaign, a redemption arc that could reshape the balance of power in",
+      "link_text": "the league for years.",
+      "url": "https://www.theguardian.com/sport/2026/nov/20/victor-wembanyama-spurs-nba-mvp-finals-redemption",
+      "source": "The Guardian"
+    },
+    {
+      "intro": "A men's netball World Cup?",
+      "body": "Long seen as a women's game, netball is edging toward launching a men's World Cup — a structural shift that raises thorny questions about identity, funding and the future of a sport that has guarded",
+      "link_text": "its traditions fiercely.",
+      "url": "https://www.bbc.co.uk/sport/netball/articles/c60evgr13deyo?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC Sport"
+    }
+  ]
+}
